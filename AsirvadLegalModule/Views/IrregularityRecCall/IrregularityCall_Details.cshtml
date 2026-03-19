@@ -1,0 +1,157 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <link href="~/css/irregularityreccall/irregularitycall_details.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/irregularityreccall/irregularitycall_details.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="form-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>IRREGULARITY RECOVERY CALL</h1>
+        </div>
+
+        <!-- Form Section -->
+        <form id="form_irregularity" class="form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="cmb_category" class="form-label">Category Type</label>
+                    <select id="cmb_category1" class="dropdown" @* onchange="_irr.getcategoryDetails();" *@>
+                        <option value="-1">---------- Select ----------</option>
+                        <option value="1">Stolen / Cheating</option>
+                        <option value="2">Auction Loss</option>
+                        <option value="3">Spurious Related</option>
+                        <option value="4">GoldLoan SuitFile</option>
+                      
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_call" class="form-label">Call Type</label>
+                    <select id="cmb_call1" class="dropdown" @* onchange="_irr.getCallDetails();" *@>
+                        <option value="-1">---------- Select ----------</option>
+                        <option value="1">First Call</option>
+                        <option value="2">Follow Up Call</option>
+                        <option value="3">Home Visit</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_custid" class="form-label">Customer Id</label>
+                    <select id="cmb_custid1" class="dropdown" @* onchange="_irr.getCustomerDetails();" *@>
+                        
+                    </select>
+                </div>
+                <h4 class="form-subheader">CUSTOMER DETAILS</h4>
+                <!-- Two-column grid for Customer Name, Phone1, Phone2, and Amount -->
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="txt_custname" class="form-label">Customer Name</label>
+                        <input type="text" id="txt_custname" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph1" class="form-label">Customer Phone1</label>
+                        <input type="text" id="txt_cust_ph1" class="form-input" readonly  @* onkeypress="return (/[0-9]/.test(String.fromCharCode(event.keyCode)));" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph2" class="form-label">Customer Phone2</label>
+                        <input type="text" id="txt_cust_ph2" class="form-input" readonly @* onkeypress="return (/[0-9]/.test(String.fromCharCode(event.keyCode)));" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_amt" class="form-label">Amount To Be Recovered</label>
+                        <input type="text" id="txt_amt" class="form-input" readonly @* onkeypress="return (/[0-9]/.test(String.fromCharCode(event.keyCode)));" *@>
+                    </div>
+                </div>
+                <div style="display:none;" id="div_call">
+                <h4 class="form-subheader">CALL DETAILS</h4>
+                <div class="form-group">
+                    <label for="rad_attend" class="form-label">Call Attended</label>
+                    <div class="radio-group">
+                            <input type="radio" id="rad_yes" name="rad_attend" value="Yes" @* onclick="_irr.callradioclick();" *@>
+                        <label for="rad_yes">Yes</label>
+                            <input type="radio" id="rad_no" name="rad_attend" value="No" @* onclick="_irr.callradioclick();" *@>
+                        <label for="rad_no">No</label>
+                    </div>
+                </div>
+                <div class="form-group" style="display:none;" id="div_res">
+                    <label for="txt_cust_response" class="form-label">Customer Response</label>
+                        <input type="text" id="txt_cust_response1" class="form-input" maxlength="200" autocomplete="off">
+                </div>
+                    <div class="form-group" style="display:none;" id="div_reason">
+                    <label for="cmb_attended_sts" class="form-label">Call Not Attended Reason</label>
+                    <select id="cmb_attended_sts1" class="dropdown" title="Select Call Not Attended Reason">
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="txt_rmrks" class="form-label">Remarks</label>
+                    <input type="text" id="txt_rmrks" class="form-input" maxlength="200" autocomplete="off">
+                </div>
+                </div>
+                <div style="display:none;" id="div_home">
+                <h4 class="form-subheader">HOME VISIT DETAILS</h4>
+                    <div class="form-group-grid">
+                        <div class="form-group">
+                    <label for="rad_rent_own" class="form-label">Rent / Own House</label>
+                    <div class="radio-group">
+                        <input type="radio" id="rad_rent" name="rad_rent_own" value="Rent">
+                        <label for="rad_rent">Rent</label>
+                        <input type="radio" id="rad_own" name="rad_rent_own" value="Own">
+                        <label for="rad_own">Own</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="rad_ownership" class="form-label">Under Your Ownership</label>
+                    <div class="radio-group">
+                        <input type="radio" id="rad_yes_home" name="rad_ownership" value="Yes">
+                        <label for="rad_yes_home">Yes</label>
+                        <input type="radio" id="rad_no_home" name="rad_ownership" value="No">
+                        <label for="rad_no_home">No</label>
+                    </div>
+                </div>
+                    
+                        <div class="form-group">
+                            <label for="txt_doc" class="form-label">Home Visit Document1</label>
+                            <input type="file" id="fileInput1"   />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_docs" class="form-label">Home Visit Document2</label>
+                            <input type="file" id="fileInput2"  />
+                       
+                        </div>
+                    <div class="form-group">
+                        <label for="cust_sts" class="form-label">Customer Status</label>
+                        <select id="cust_sts1" class="dropdown">
+                            <option value="-1">---------- Select ----------</option>
+                            <option value="1">Customer not Willing to Settle</option>
+                            <option value="2">Customer required time for Settlement</option>
+                            <option value="3">Customer Out of Station</option>
+                            <option value="4">Party Amount will Paid / Settled</option>
+                        </select>
+                    </div>
+                        <div class="form-group">
+                            <label for="txt_date" class="form-label">Commitment Date</label>
+                            <input type="date" id="txt_date" class="form-input" @* onchange="_irr.validateDates();" *@>
+                        </div>
+                    </div>
+                <div class="form-group">
+                    <label for="txt_home_rmrk" class="form-label">Home Visit Remarks</label>
+                    <input type="text" id="txt_home_rmrk" class="form-input" maxlength="200" autocomplete="off">
+                </div>
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button" id="btn_Confirm" class="submit-button" @* onclick="_irr.btnSubmitclick();" *@>Confirm</button>
+                <button type="button" id="btn_exit" class="exit-button" @* onclick="redirectToDashboard();" *@>Exit</button>
+            </div>
+            <input type="hidden" id="hdn_BranchID">
+            <input type="hidden" id="hdn_calltype">
+            <input type="hidden" id="hdn_custid">
+        </form>
+    </div>
+</div>

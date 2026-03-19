@@ -1,0 +1,384 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/propertyidentity/BH_ABH_dashboard.css" rel="stylesheet" nonce="5d67de6751aa4e158c33dfd828fc144b" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/propertyidentity/BH_ABH_dashboard.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="dashboard-wrapper">
+    <div class="form-selector">
+        <h1><i class="fas fa-building"></i> Branch Dashboard</h1>
+        <div class="select-wrapper">
+            <select id="formSelect">
+                <option value="-1">--Select a Form--</option>
+                <option value="1">1. List Certificate Challan Upload</option>
+                <option value="2">2. Acknowledgement Upload</option>
+                <option value="3">3. RTI Reply Upload</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Page 1: RTI Challan Upload -->
+    <div class="section" id="section1" style="display:none;">
+        <h2>List Certificate Challan Upload</h2>
+        <div class="section-content">
+            <div class="radio-group">
+                <label><input type="radio" name="entityType" value="customer">Customer</label>
+                <label><input type="radio" name="entityType" value="employee">Employee</label>
+            </div>
+            <div id="customerFields" style="display: none;">
+            <div class="field-row">
+              
+                <div class="field-col">
+                    <label for="selectId1">Customer ID</label>
+                    <select id="selectId1">
+                        <option value="-1">--Select ID--</option>
+                        
+                    </select>
+                </div>
+                <div class="field-col">
+                    <label for="cus_Branch">Customer Branch</label>
+                    <input type="text" id="cus_Branch" readonly>
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-col">
+                        <label for="cus_name">Name</label>
+                    <input type="text" id="cus_name" readonly>
+                </div>
+                <div class="field-col">
+                        <label for="cus_phno">Phone Number</label>
+                    <input type="text" id="cus_phno" readonly>
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-col">
+                        <label for="cus_add">Address</label>
+                    <textarea id="cus_add" readonly></textarea>
+                </div>
+                <div class="field-col">
+                        <label for="cus_hormk">HO Remark</label>
+                    <textarea type="text" id="cus_hormk" readonly></textarea>
+                </div>
+                
+            </div>
+            </div>
+            <div id="employeeFields" style="display: none;">
+                <div class="field-row">
+
+                    <div class="field-col">
+                        <label for="selectId2">Employee ID</label>
+                        <select id="selectId2">
+                            <option value="-1">--Select ID--</option>
+
+                        </select>
+                    </div>
+                    <div class="field-col">
+                        <label for="emp_Branch">Employee Branch</label>
+                        <input type="text" id="emp_Branch" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="emp_name">Name</label>
+                        <input type="text" id="emp_name" readonly>
+                    </div>
+                    <div class="field-col">
+                        <label for="empph_no">Phone Number</label>
+                        <input type="text" id="empph_no" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="emp_add">Address</label>
+                        <textarea id="emp_add" readonly></textarea>
+                    </div>
+                    <div class="field-col">
+                        <label for="emp_hormk">HO Remark</label>
+                        <textarea type="text" id="emp_hormk" readonly></textarea>
+                    </div>
+
+                </div>
+            </div>
+            <div id="all_fileds" style="display: none;">
+            <div class="action-section">
+                <button type="button" id="btn_app" class="download-btn"
+                            data-url="@Url.Action("DownloadApplicationForm", "BH_ABH_Dashboard")">
+                      
+                    <i class="fas fa-download"></i> Download Application Form
+                </button>
+            </div>
+
+            <div class="field-row">
+                <div class="field-col">
+                    <label for="rlNumber">RL Number</label>
+                    <input type="text" id="rlNumber" maxlength="13" autocomplete="off">
+                </div>
+                <div class="field-col">
+                    <label for="dispatchDate">Dispatch Date</label>
+                    <input type="date" id="dispatchDate" >
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-col">
+                    <label for="challanUpload">Upload Challan</label>
+                    <input type="file" id="challanUpload" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+                <div class="field-col">
+                    <label for="receiptUpload">Upload Receipt</label>
+                    <input type="file" id="receiptUpload" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="confirmBtn1">Confirm</button>
+                <button type="button" id="exitBtn1">Exit</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Acknowledgement Upload -->
+    <div class="section" id="section2" style="display:none;">
+        <h2>Upload Acknowledgement Card / Returned Letter</h2>
+        <div class="section-content">
+            <div class="radio-group">
+                <label><input type="radio" name="entityType2" value="customer">Customer</label>
+                <label><input type="radio" name="entityType2" value="employee">Employee</label>
+            </div>
+            <div id="customerFields1" style="display: none;">
+                <div class="field-row">
+
+                    <div class="field-col">
+                        <label for="selectId3">Customer ID</label>
+                        <select id="selectId3">
+                            <option value="-1">--Select ID--</option>
+
+                        </select>
+                    </div>
+                    <div class="field-col">
+                        <label for="cus_Branch3">Customer Branch</label>
+                        <input type="text" id="cus_Branch3" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="cus_name3">Name</label>
+                        <input type="text" id="cus_name3" readonly>
+                    </div>
+                    <div class="field-col">
+                        <label for="cus_phno3">Phone Number</label>
+                        <input type="text" id="cus_phno3" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="cus_add3">Address</label>
+                        <textarea id="cus_add3" readonly></textarea>
+                    </div>
+                    <div class="field-col">
+                        <label for="cus_hormk3">HO Remark</label>
+                        <textarea type="text" id="cus_hormk3" readonly></textarea>
+                    </div>
+
+                </div>
+            </div>
+            <div id="employeeFields1" style="display: none;">
+                <div class="field-row">
+
+                    <div class="field-col">
+                        <label for="selectId4">Employee ID</label>
+                        <select id="selectId4">
+                            <option value="-1">--Select ID--</option>
+
+                        </select>
+                    </div>
+                    <div class="field-col">
+                        <label for="emp_Branch4">Employee Branch</label>
+                        <input type="text" id="emp_Branch4" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="emp_name4">Name</label>
+                        <input type="text" id="emp_name4" readonly>
+                    </div>
+                    <div class="field-col">
+                        <label for="empph_no4">Phone Number</label>
+                        <input type="text" id="empph_no4" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="emp_add4">Address</label>
+                        <textarea id="emp_add4" readonly></textarea>
+                    </div>
+                    <div class="field-col">
+                        <label for="emp_hormk4">HO Remark</label>
+                        <textarea type="text" id="emp_hormk4" readonly></textarea>
+                    </div>
+
+                </div>
+            </div>
+            <div id="all_fileds1" style="display: none;">
+            <div class="field-row">
+                <div class="field-col">
+                    <label for="documentType">Document Type</label>
+                    <select id="documentType">
+                        <option value="-1">--Select Type--</option>
+                        <option value="ACK">Acknowledgement Card</option>
+                        <option value="RTN">Returned Letter</option>
+                    </select>
+                </div>
+                <div class="field-col">
+                    <label for="dateReceived2">Date Received</label>
+                    <input type="date" id="dateReceived2">
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-col">
+                        <label for="ackUpload">Upload Document</label>
+                    <input type="file" id="ackUpload" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="confirmBtn2">Confirm</button>
+                <button type="button" id="exitBtn2">Exit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Page 3: RTI Reply Upload -->
+    <div class="section" id="section3" style="display:none;">
+        <h2>List Certificate Acknowledge / Reply Letter/ Property Document</h2>
+        <div class="section-content">
+            <div class="radio-group">
+                <label><input type="radio" name="entityType3" value="customer">Customer</label>
+                <label><input type="radio" name="entityType3" value="employee">Employee</label>
+            </div>
+
+            <div id="customerFields3" style="display: none;">
+                <div class="field-row">
+
+                    <div class="field-col">
+                        <label for="selectId5">Customer ID</label>
+                        <select id="selectId5">
+                            
+                        </select>
+                    </div>
+                    <div class="field-col">
+                        <label for="cus_Branch5">Customer Branch</label>
+                        <input type="text" id="cus_Branch5" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="cus_name5">Name</label>
+                        <input type="text" id="cus_name5" readonly>
+                    </div>
+                    <div class="field-col">
+                        <label for="cus_phno5">Phone Number</label>
+                        <input type="text" id="cus_phno5" readonly>
+                    </div>
+                </div>
+
+               
+                    <div class="field-col">
+                        <label for="cus_add5">Address</label>
+                        <textarea id="cus_add5" readonly></textarea>
+                    </div>
+
+                
+            </div>
+           
+            <div id="employeeFields3" style="display: none;">
+                <div class="field-row">
+
+                    <div class="field-col">
+                        <label for="selectId6">Employee ID</label>
+                        <select id="selectId6">
+                         
+                        </select>
+                    </div>
+                    <div class="field-col">
+                        <label for="emp_Branch6">Employee Branch</label>
+                        <input type="text" id="emp_Branch6" readonly>
+                    </div>
+                </div>
+
+                <div class="field-row">
+                    <div class="field-col">
+                        <label for="emp_name6">Name</label>
+                        <input type="text" id="emp_name6" readonly>
+                    </div>
+                    <div class="field-col">
+                        <label for="emp_phno6">Phone Number</label>
+                        <input type="text" id="emp_phno6" readonly>
+                    </div>
+                </div>
+
+
+                <div class="field-col">
+                    <label for="emp_add6">Address</label>
+                    <textarea id="emp_add6" readonly></textarea>
+                </div>
+
+                
+            </div>
+            <BR>
+            <div id="allfields3" style="display: none;MARGIN-TOP: 10PX;">
+            <div class="field-row">
+                    <div class="field-col">
+                        <label for="reply6">Select Reply Letter or Certificate</label>
+                        <select id="reply6">
+                            <option value="-1">--Select Type--</option>
+                            <option value="rti_reply">RTI Reply</option>
+                            <option value="list_certificate">List Certificate</option>
+                            <option value="encumbrance">Encumbrance Certificate</option>
+                        </select>
+                    </div>
+                <div class="field-col">
+                    <label for="replyUpload6">Upload Reply Letter or Certificate</label>
+                    <input type="file" id="replyUpload6" accept=".pdf,.jpg,.jpeg,.png">
+                </div>
+            </div>
+
+            <div class="field-row">
+                <div class="field-col">
+                    <label for="remarks6">Remarks</label>
+                    <textarea id="remarks6" rows="4" maxlength="300"></textarea>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="confirmBtn3">Confirm</button>
+                <button type="button" id="exitBtn3">Exit</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="globalLoader" class="loader-overlay" style="display:none;">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Please wait…</p>
+    </div>
+</div>

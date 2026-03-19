@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove=".config\**" />
+    <Compile Remove="bin\**" />
+    <Compile Remove="obj\**" />
+    <Content Remove=".config\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="obj\**" />
+    <EmbeddedResource Remove=".config\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="obj\**" />
+    <None Remove=".config\**" />
+    <None Remove="bin\**" />
+    <None Remove="obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\GoldSuitFIleController.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\GoldSuiteFileJs\RemovalSuitApproval.js" />
+    <Content Remove="wwwroot\js\GoldSuiteFileJs\RemovalSuitRequest.js" />
+    <Content Remove="wwwroot\js\GoldSuiteFileJs\SuitFIleApprove.js" />
+    <Content Remove="wwwroot\js\GoldSuiteFileJs\SuitFileLCHead.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="keys.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Login\Dashboard.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Login\Dashboard.cshtml" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\GoldSuiteFileJs\RemovalSuitApproval.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\GoldSuiteFileJs\RemovalSuitRequest.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\GoldSuiteFileJs\SuitFIleApprove.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\GoldSuiteFileJs\SuitFileLCHead.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="keys.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\API.Handler\API.Handler.csproj" />
+    <ProjectReference Include="..\AsirvadLegalModule.DTO\AsirvadLegalModule.DTO.csproj" />
+    <ProjectReference Include="..\AsirvadLegalModule.Utilities\AsirvadLegalModule.Utilities.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\GoldSuiteFileJs\RemovalSuitApproval.js" />
+    <None Include="wwwroot\js\GoldSuiteFileJs\RemovalSuitRequest.js" />
+    <None Include="wwwroot\js\GoldSuiteFileJs\SuitFIleApprove.js" />
+    <None Include="wwwroot\js\GoldSuiteFileJs\SuitFileLCHead.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="4.2.1-dev-02352" />
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.1-dev-00953" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="9.0.0" />
+  </ItemGroup>
+
+</Project>

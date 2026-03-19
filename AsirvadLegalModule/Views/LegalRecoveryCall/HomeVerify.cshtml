@@ -1,0 +1,108 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/legalrecoverycall/homeverify.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalrecoverycall/homeverify.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="form-container">
+        <div class="header">
+            <h1>RESIGNED STAFF HOME VISIT VERIFICATION</h1>
+        </div>
+
+        <div class="form-grid">
+            <label class="form-label" for="employeeCode">Employee Code:</label>
+            <select id="employeeCode" class="dropdown" @* onchange="_verify.LoadEmployeeDetails(this);" *@>
+                <!-- Add more options as needed -->
+            </select>
+
+            <label class="form-label" for="employeeName">Employee Name:</label>
+            <input type="text" id="employeeName" name="employeeName" class="form-input" readonly />
+
+            <label class="form-label" for="zone">Zone:</label>
+            <input type="text" id="zone" name="zone" class="form-input" readonly />
+
+            <label class="form-label" for="region">Region:</label>
+            <input type="text" id="region" name="region" class="form-input" readonly />
+
+            <label class="form-label" for="area">Area:</label>
+            <input type="text" id="area" name="area" class="form-input" readonly />
+
+            <label class="form-label" for="resignedBranch">Resigned Branch:</label>
+            <input type="text" id="resignedBranch" name="resignedBranch" class="form-input" readonly />
+
+            <label class="form-label" for="phone1">Employee Phone 1:</label>
+            <input type="text" id="phone1" name="phone1" class="form-input" readonly />
+
+            <label class="form-label" for="phone2">Employee Phone 2:</label>
+            <input type="text" id="phone2" name="phone2" class="form-input" readonly />
+
+            <label class="form-label" for="amount">Amount to be Recovered:</label>
+            <input type="text" id="amount" name="amount" class="form-input" readonly />
+
+        </div>
+        <div class="table-container">
+            <!-- Grid View -->
+            <table class="grid-view" id="gridview1">
+                <thead>
+                    <tr>
+                        <th>Father Name</th>
+                        <th>Permanent Address</th>
+                        <th>Landmark</th>
+                        <th>Post Office</th>
+                        <th>District</th>
+                        <th>State</th>
+                        <th>Pin Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated dynamically -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="form-container">
+        <div class="header">
+            <h1>HOME VISIT DETAILS</h1>
+        </div>
+        <div class="form-grid">
+            <label class="form-label" for="visitedEmployee">Visited Employee:</label>
+            <input type="text" id="visitedEmployeeName" name="visitedEmployee" class="form-input" readonly />
+
+            <label class="form-label" for="branch">Branch:</label>
+            <input type="text" id="branch" name="branch" class="form-input" readonly />
+
+            <label class="form-label" for="date">Date:</label>
+            <input type="text" id="date" name="date" class="form-input" readonly />
+
+            <label class="form-label" for="rentOwn">Rent/Own:</label>
+            <input type="text" id="rentOwn" name="rentOwn" class="form-input" readonly />
+
+            <label class="form-label" for="remarks">Remarks:</label>
+            <textarea id="remarks" name="remarks" class="form-input" rows="4" readonly></textarea>
+
+            <label class="form-label" for="photo">Photo:</label>
+            <div class="button-group">
+                <button type="button" id="btn_photo" class="submit-button">View</button>
+                <button type="button" id="btn_dwn" class="submit-button">Download</button>
+            </div>
+
+            <label class="form-label" for="hoRemarks">HO Remarks:</label>
+            <textarea id="hoRemarks" name="hoRemarks" class="form-input" rows="4" maxlength="150" autocomplete="off"></textarea>
+        </div>
+
+        <div class="button-group">
+            <button type="button" id="btnsubmit" class="submit-button" @* onclick="_verify.ButtonConfirmClick(this);" *@>APPROVE</button>
+            <button type="button" id="btnreject" class="submit-button" @* onclick="_verify.ButtonRejectClick(this);" *@>REJECT</button>
+            <button type="button" id="btnexit" class="exit-button" @* onclick="redirectToDashboard();" *@>EXIT</button>
+        </div>
+    </div>
+</div>

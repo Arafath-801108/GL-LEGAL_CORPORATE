@@ -1,0 +1,135 @@
+﻿@{
+    ViewData["Title"] = "Theft Seized Image View";
+}
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/seizedpledges/stolendocview.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/seizedpledges/stolendocview.css" rel="stylesheet" />
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Except Stolen/Stolen Gold Document View</h1>
+        </div>
+        <div class="card-body">
+            <!-- Selection Type -->
+            <div class="form-group radio-selection-group">
+                <div class="radio-container">
+                    <label class="radio-label">
+                        <input type="radio" name="pageSelection" id="pldg_btn" value="pledge" @* onchange="togglePanelVisibility();clearFields();" *@ checked />
+                        <span class="toggle-button">Pledge Wise</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="pageSelection" id="br_btn" value="branch" @* onchange="togglePanelVisibility();Doc.zoneload(this.value);" *@ />
+                        <span class="toggle-button">Branch Wise</span>
+                    </label>
+                </div>
+            </div>
+            <!-- Pledge Wise Panel -->
+            <div id="pnl_pldg">
+                <div class="form-group">
+                    <label class="form-label" for="pledgeNumber">Pledge Number:</label>
+                    <input type="text" id="pledgeNumber" class="form-control" maxlength="16" autocomplete="off" @* oninput="this.value = this.value.replace(/\D/g, '');" *@ @* onchange="Doc.pledgeDetails(this.value);" *@ />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="branchName">Branch Name:</label>
+                    <input type="text" id="branchName" class="form-control" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="customerName">Customer Name:</label>
+                    <input type="text" id="customerName" class="form-control" readonly />
+                </div>
+            </div>
+
+            
+            <!-- Branch Wise Panel -->
+            <div id="pnlNewPage" style="display: none;">
+                <div class="section-row">
+                    <div class="form-group">
+                        <label class="form-label" for="zone_drp">Zone:</label>
+                        <select id="zone_drp" class="form-select" @* onchange="Doc.regload(this.value);" *@>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="reg_drp">Region:</label>
+                        <select id="reg_drp" class="form-select" @* onchange="Doc.areaload(this.value);" *@>
+                          
+                        </select>
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="form-group">
+                        <label class="form-label" for="area_drp">Area:</label>
+                        <select id="area_drp" class="form-select" @* onchange="Doc.branchload(this.value);" *@>
+                           
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="br_drp">Branch:</label>
+                        <select id="br_drp" class="form-select" @* onchange="Doc.branchVal(this.value);"  *@>
+                          
+                        </select>
+                    </div>
+                </div>
+                <div class="section-row">
+                    <div class="form-group">
+                        <label class="form-label" for="from_dt">From Date:</label>
+                        <input type="date" id="from_dt" class="form-select" autocomplete="off" @* onchange="validateDateSelection();" *@ />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="to_dt">To Date:</label>
+                        <input type="date" id="to_dt" class="form-select" autocomplete="off" @* onchange="validateDateSelection();" *@ />
+                    </div>
+                </div>
+                <div class="form-group pledge-selection-group">
+                    <label class="form-label" for="pld_drp">Pledge Number:</label>
+                    <div class="pledge-selection-row section-row">
+                        <button id="pld_button" class="btn btn-primary btn-pledge"@*  onclick="Doc.loadpledge(this.value);" *@>Select Pledge</button>
+                        <select id="pld_drp" class="form-select" @* onchange="Doc.loadcus(this.value);" *@>
+                           
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="cus_name">Customer Name:</label>
+                    <input type="text" id="cus_name" class="form-control" readonly />
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="text-center mt-5">
+                <button type="button" id="btnSubmit" class="btn btn-primary" @* onclick="Doc.viewdocment(this.value);" *@>View</button>
+                <button type="button" id="btnExit" class="btn btn-outline-secondary" @* onclick="redirectToDashboard();" *@>Exit</button>
+            </div>
+
+            <!-- Document View Section -->
+            <div class="document-buttons" id="docview" style="display: none;">
+                <h5 class="section-title">View Documents</h5>
+                <div class="document-links">
+                    <a href="#" id="viewFIR" class="btn-link">View FIR Copy</a>
+                    <a href="#" id="view91" class="btn-link">View 91 CrPC Notice</a>
+                    <a href="#" id="viewPawn" class="btn-link">View Pawn Ticket</a>
+                    <a href="#" id="viewDpn" class="btn-link">View Loan Application Form</a>
+                    <a href="#" id="viewKYC" class="btn-link">View KYC</a>
+                    <a href="#" id="viewSeiz" class="btn-link">View Seizer Mahzor</a>
+                    <a href="#" id="viewCon"  class="btn-link">View Confession Statement</a>
+                    <a href="#" id="viewLO9" class="btn-link">View LO-9/LO-5 Form</a>
+                    <a href="#" id="viewRec" class="btn btn-link">View Cheating Complaint Receipt</a>
+                    <a href="#" id="viewDra" class="btn btn-link">View Cheating Complaint Signed Draft</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="documentModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <iframe id="docViewer" style="width:100%; height:500px; border:none;"></iframe>
+        <img id="imgViewer" style="display:none; max-width:100%; height:auto;" alt="Document View" />
+
+    </div>
+</div>

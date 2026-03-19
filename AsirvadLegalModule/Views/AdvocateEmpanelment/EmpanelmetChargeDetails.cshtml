@@ -1,0 +1,150 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/legalnotice/jquery-3.6.0.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/sweetalert.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/sweetalert2@11.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+@* <link href="~/css/advocateempanelment/empanelmentrequest.css" rel="stylesheet" /> *@
+<link href="~/css/advocateempanelment/empanelmentcharge.css" rel="stylesheet" />
+
+<script src="~/js/advocateempanelment/empanelmentchargesheet.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+        <div class="page-header">
+            <h1>Empanelment Letter</h1>
+        </div>
+          
+        <div class="form-content">
+           
+
+                <!-- Exit Button Section -->
+                <div class="choice-section">
+                    <div class="choice-row">
+                       
+                        <div class="form-group">
+                            <label for="ddlChoice">Select Your Choice:</label>
+                            <select id="ddlChoice" name="SelectedChoice"  class="form-control">
+                               
+
+
+                            </select>
+                        </div>
+
+
+                <div class="button-group">
+                  
+
+
+                    <button class="btn exit-button" id="exit">Exit</button>
+                </div>
+                    </div>
+                </div>
+
+                <!-- Options Selection Section -->
+                <div class="form-section">
+                    <h2>Select Option</h2>
+                    <div class="section-content">
+                      
+
+                        <div class="form-check">
+                            <input type="radio" id="RadioButton1" name="SelectedOption" value="AddEditCharge"  />
+                            <label for="RadioButton1" class="form-check-label">Add/Edit Charge Details</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" id="RadioButton2" name="SelectedOption" value="PrintLetter"/>
+                            <label for="RadioButton2" class="form-check-label">Print Engagement as Panel Advocate</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" id="RadioButton3" name="SelectedOption" value="UploadAdvocateDocs"/>
+                            <label for="RadioButton3" class="form-check-label">Upload Advocate's Documents</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" id="RadioButton4" name="SelectedOption" value="UploadAnnexure1"  />
+                            <label for="RadioButton4" class="form-check-label">Upload Annexure1</label>
+                        </div>
+
+                        <div class="form-check">
+                            <input type="radio" id="RadioButton5" name="SelectedOption" value="UploadAnnexure2" onclick="toggleControls()" />
+                            <label for="RadioButton5" class="form-check-label">Upload Annexure2</label>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                <!-- Add/Edit Charge Details Section -->
+                <div class="form-section" id="addEditChargeSection" style="display: none;">
+                    <h2>Charge Details</h2>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="ChargeDetails">Recommended Charge Details <span class="required">*</span></label>
+                            <span class="text-danger">Enter Recommended Charge Details.</span>
+                    <input type="text" id="ChargeDetails" maxlength="10"  name="ChargeDetails" placeholder="Enter a positive number" />
+                            <p id="error" class="text-danger"></p>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="CompanyCharge">Company Charge <span class="required">*</span></label>
+                            <span class="text-danger">Enter company charge</span>
+                    <input type="text" id="CompanyCharge" maxlength="10" name="CompanyCharge" />
+                            <p id="error1" class="text-danger"></p>
+                        </div>
+                        
+                        <button type="submit" id="SaveChargeDetails" class="btn save-button">Save Charge Details</button>
+                    </div>
+                </div>
+           
+                <!-- Print Button Section -->
+                <div class="form-section" id="printButtonSection" style="display: none;">
+                    <h2>Print Letter</h2>
+                    <div class="section-content">
+                        <button type="submit" id="Print" class="btn btn-primary">View</button>
+                    </div>
+                </div>
+
+                <!-- Advocate Documents Upload Section -->
+                <div class="form-section" id="fileUploadSectionAdvocateDocs" style="display: none;">
+                    <h2>Upload Advocate's Documents</h2>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="AdvocateDocument">Select Document <span class="required">*</span></label>
+                            <input type="file" id="AdvocateDocument" name="AdvocateDocument" />
+                            <span class="file-note">Maximum file size: 5MB</span>
+                        </div>
+                        <button type="button" id="UploadAdvocateDoc" class="btn btn-primary">Upload</button>
+                    </div>
+                </div>
+
+                <!-- Annexure 1 Upload Section -->
+                <div class="form-section" id="fileUploadSectionAnnexure1" style="display: none;">
+                    <h2>Upload Annexure 1</h2>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="Annexure1">Select Annexure 1 <span class="required">*</span></label>
+                            <input type="file" id="Annexure1" name="Annexure1" />
+                            <span class="file-note">Maximum file size: 5MB</span>
+                        </div>
+                        <button type="submit" id="SaveAnnexure1" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+
+                <!-- Annexure 2 Upload Section -->
+                <div class="form-section" id="fileUploadSectionAnnexure2" style="display: none;">
+                    <h2>Upload Annexure 2</h2>
+                    <div class="section-content">
+                        <div class="form-group">
+                            <label for="Annexure2">Select Annexure 2 <span class="required">*</span></label>
+                            <input type="file" id="Annexure2" name="Annexure2" />
+                            <span class="file-note">Maximum file size: 5MB</span>
+                        </div>
+                <button type="submit" id="SaveAnnexure2" class="btn btn-primary">Save</button>
+                    </div>
+                </div>
+           
+        </div>
+    </div>

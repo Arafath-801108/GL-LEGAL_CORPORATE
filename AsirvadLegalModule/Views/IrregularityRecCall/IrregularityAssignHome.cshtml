@@ -1,0 +1,92 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/irregularityreccall/irregularityassignhome.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/irregularityreccall/irregularityassignhome.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="form-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>IRREGULARITY RECOVERY CALL(ASSIGN HOME VISIT)</h1>
+        </div>
+
+        <!-- Form Section -->
+        <form id="form_irregularity" class="form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="cmb_category" class="form-label">Category Type</label>
+                    <select id="cmb_category1" class="dropdown" @* onchange="_assign.getBranchDetails();" *@>
+                        <option value="-1">---------- Select ----------</option>
+                        <option value="1">Stolen / Cheating</option>
+                        <option value="2">Auction Loss</option>
+                        <option value="3">Spurious Related</option>
+                        <option value="4">GoldLoan SuitFile</option>
+
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_branch" class="form-label">Branch</label>
+                    <select id="cmb_branch1" class="dropdown" @* onchange="_assign.getCustomerDetails();" *@>
+                        
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_custid" class="form-label">Customer Id</label>
+                    <select id="cmb_custid1" class="dropdown" @* onchange="_assign.getallDetails();" *@>
+                    </select>
+                </div>
+                <h4 class="form-subheader">CUSTOMER DETAILS</h4>
+                <!-- Two-column grid for Customer Name, Phone1, Phone2, and Amount -->
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="txt_custname" class="form-label">Customer Name</label>
+                        <input type="text" id="txt_custname" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_state" class="form-label">State</label>
+                        <input type="text" id="txt_state1" class="form-input" readonly >
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph" class="form-label">Customer Phone1</label>
+                        <input type="text" id="txt_cust_ph1" class="form-input" readonly >
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph" class="form-label">Customer Phone2</label>
+                        <input type="text" id="txt_cust_ph2" class="form-input" readonly >
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_irr" class="form-label">Irregularity Pledges</label>
+                        <input type="text" id="txt_irr1" class="form-input" readonly >
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_amt" class="form-label">Amount To Be Recovered</label>
+                        <input type="text" id="txt_amt" class="form-input" readonly >
+                    </div>
+                </div>
+                <h4 class="form-subheader">BRANCH DETAILS(HOME VISIT)</h4>
+                <div class="form-group">
+                    <label for="cmb_nearbranch" class="form-label">Branch</label>
+                    <select id="cmb_nearbranch1" class="dropdown" >
+                    </select>
+                </div>
+               
+            </div>
+            <div class="button-group">
+                <button type="button" id="btn_Confirm" class="submit-button" @* onclick="_assign.btnsubmitclick();" *@>Confirm</button>
+                <button type="button" id="btn_exit" class="exit-button" @* onclick="redirectToDashboard();" *@>Exit</button>
+            </div>
+            <input type="hidden" id="hdn_BranchID">
+            <input type="hidden" id="hdn_calltype">
+            <input type="hidden" id="hdn_custid">
+        </form>
+    </div>
+</div>
+

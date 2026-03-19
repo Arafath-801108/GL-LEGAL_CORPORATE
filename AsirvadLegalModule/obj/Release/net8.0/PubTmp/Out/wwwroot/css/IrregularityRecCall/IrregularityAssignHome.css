@@ -1,0 +1,262 @@
+﻿/* Reset and base styles */
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Times New Roman';
+    color: #374151; /* Dark gray text for contrast */
+}
+
+/* Container styles */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 0.5rem; /* Reduced padding to decrease height */
+}
+
+/* Form container styles */
+.form-container {
+    background: #EFF6FF; /* White background */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Slightly smaller shadow */
+    border-radius: 0.375rem; /* Slightly smaller radius */
+    padding: 1rem; /* Reduced padding */
+    max-width: 56rem; /* Slightly smaller max-width */
+    margin: 0 auto;
+}
+
+/* Header styles */
+.header {
+    background: linear-gradient(135deg, #10B981 0%, #065F46 100%); /* Green gradient */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 0.75rem; /* Reduced padding */
+    border-top-left-radius: 0.375rem;
+    border-top-right-radius: 0.375rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+    position: relative;
+    overflow: hidden;
+}
+
+    .header h1 {
+        font-size: 1.25rem; /* Reduced font size */
+        font-weight: 800;
+        margin: 0;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        letter-spacing: 0.02em;
+    }
+
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.3) 0%, transparent 50%);
+        opacity: 0.4;
+        pointer-events: none;
+    }
+
+/* Subheader styles for inner headings */
+.form-subheader {
+    font-size: 1rem; /* Reduced font size for compactness */
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0.5rem 0 0.3rem 0; /* Reduced margins */
+    padding: 0.3rem 0.5rem; /* Added padding for background */
+    text-align: left;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, #10B981 0%, #065F46 100%); /* Green gradient */
+    border-radius: 0.25rem; /* Rounded corners */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+   
+}
+
+/* Form styles */
+.form {
+    padding: 0.75rem; /* Reduced padding */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Reduced gap */
+}
+
+/* Grid layout for form fields (single column) */
+.form-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* Reduced gap */
+}
+
+/* Two-column grid for specific form fields */
+.form-group-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem; /* Reduced gap */
+    width: 100%;
+}
+
+    /* Ensure form-group inside form-group-grid takes full width of grid cell */
+    .form-group-grid .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem; /* Reduced gap */
+    }
+
+    /* Adjust input width inside grid to account for padding */
+    .form-group-grid .form-input {
+        width: 98%; /* Slightly less than 100% to account for padding */
+    }
+
+/* Form group styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* Reduced gap */
+}
+
+/* Label styles */
+.form-label {
+    color: #374151;
+    font-weight: 600;
+    font-size: 0.8rem; /* Reduced font size */
+}
+
+/* Input, select, and textarea styles */
+.form-input {
+    width: 98%;
+    padding: 0.4rem; /* Reduced padding */
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.25rem; /* Smaller radius */
+    font-size: 0.9rem; /* Reduced font size */
+    color: #1F2937;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 0.4rem; /* Reduced padding */
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.25rem;
+    font-size: 0.9rem; /* Reduced font size */
+    color: #1F2937;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+    .form-input[readonly], .dropdown[readonly] {
+        background-color: #E5E7EB;
+        cursor: not-allowed;
+    }
+
+    .form-input:focus, .dropdown:focus {
+        outline: none;
+        border-color: #10B981;
+        box-shadow: 0 0 0 2px rgba(244, 180, 0, 0.3);
+    }
+
+/* Radio group styles */
+.radio-group {
+    display: flex;
+    gap: 0.5rem; /* Reduced gap */
+    align-items: center;
+}
+
+    .radio-group label {
+        color: #374151;
+        font-size: 0.8rem; /* Reduced font size */
+        margin-left: 0.2rem; /* Reduced margin */
+    }
+
+    .radio-group input[type="radio"] {
+        accent-color: #10B981;
+    }
+
+/* Button group styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem; /* Reduced gap */
+    margin-top: 0.75rem; /* Reduced margin */
+}
+
+/* Button styles */
+.exit-button, .submit-button {
+    padding: 0.5rem 1.25rem; /* Reduced padding */
+    min-width: 90px; /* Smaller min-width */
+    border-radius: 0.25rem; /* Smaller radius */
+    border: 1px solid transparent;
+    font-size: 0.8rem; /* Reduced font size */
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Smaller shadow */
+}
+
+.exit-button {
+    background-color: #6B7280;
+    color: #FFFFFF;
+}
+
+    .exit-button:hover {
+        background-color: #4B5563;
+        transform: scale(1.05);
+        border-color: #4B5563;
+    }
+
+.submit-button {
+    background-color: #10B981;
+    color: #FFFFFF;
+}
+
+    .submit-button:hover {
+        background-color: #065F46;
+        transform: scale(1.05);
+        border-color: #065F46;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 0.75rem 0.3rem; /* Further reduced padding */
+    }
+
+    .form-container {
+        padding: 0.75rem; /* Further reduced padding */
+        max-width: calc(100% - 0.75rem);
+    }
+
+    .form {
+        padding: 0.5rem; /* Further reduced padding */
+        gap: 0.5rem; /* Further reduced gap */
+    }
+
+    .form-grid {
+        gap: 0.5rem; /* Further reduced gap */
+    }
+
+    .form-group-grid {
+        grid-template-columns: 1fr; /* Stack fields in one column on smaller screens */
+        gap: 0.5rem; /* Further reduced gap */
+    }
+
+    .form-group {
+        gap: 0.2rem; /* Further reduced gap */
+    }
+
+    .button-group {
+        gap: 0.3rem; /* Further reduced gap */
+        flex-direction: row;
+    }
+
+    .exit-button, .submit-button {
+        padding: 0.4rem 0.75rem; /* Further reduced padding */
+        min-width: 80px; /* Smaller min-width */
+    }
+
+    .form-subheader {
+        font-size: 0.9rem; /* Smaller font size for mobile */
+        margin: 0.3rem 0 0.2rem 0; /* Further reduced margins */
+        padding: 0.2rem 0.4rem; /* Reduced padding */
+    }
+}

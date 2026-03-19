@@ -1,0 +1,312 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>@ViewData["Title"]  Riim</title>
+    <script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/utilitiesjs/pdf.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    
+    <link href="~/css/sweetalert2.min.css" rel="stylesheet" />
+    <link href="~/fonts-awesome/css/all.css" rel="stylesheet" />
+    <link href="~/css/login/dasboardmedia.css" rel="stylesheet" />
+    <script src="~/js/loginjs/logout.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+   
+    <style>
+
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav id="sidebar">
+        <div class="sidebar-header">
+            <img src="~/images/logo1.png" alt="Riim Logo" />
+        </div>
+        <div class="sidebar-content">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="@Url.Action("toDashboard", "Home")">
+                        <i class="fas fa-home"></i> Dashboard
+                    </a>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-box"></i>Legal Suit File
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("SuitFileClassify", "SuitFileClassify")">Legal Classify</a></li>
+                        <li><a class="nav-link" href="@Url.Action("SuitFileApprove", "SuitFileApprove")">Legal AH/RHA/RM Approval</a></li>
+                        <li><a class="nav-link" href="@Url.Action("SuitFileLO", "SuitFileLO")">Legal Corporate Approve</a></li>
+                        <li><a class="nav-link" href="@Url.Action("SuitFileLCHead", "SuitFileLCHead")">Legal Case Approve</a></li>
+                        <li><a class="nav-link" href="@Url.Action("RemovalSuitRequest", "RemovalSuitRequest")">Removal Request</a></li>
+                        <li><a class="nav-link" href="@Url.Action("RemovalSuitApproval", "RemovalSuitApproval")">Removal Approval</a></li>
+                        <li><a class="nav-link" href="@Url.Action("SuitFileReport", "SuitFileReport")">Report</a></li>
+
+
+                    </ul>
+                </li>
+             
+               @*  <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-shopping-cart"></i> Seized Pledges
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("LO9Updation", "LO9Updation")">LO9/LO5 Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("TheftClass", "SeizedClassification")">Seized Classification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("TheftRMLM", "SeizedClassification")">Seized RM/LM Recommendation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("TheftAuction", "SeizedClassification")">Auction Gold Seized Recommend</a></li>
+                        <li><a class="nav-link" href="@Url.Action("TheftSettle", "SeizedSettlement")">Seized Settlement</a></li>
+                        <li><a class="nav-link" href="@Url.Action("DocView", "StolenDocView")">Seized Document View</a></li>
+                        <li><a class="nav-link" href="@Url.Action("ReportView", "StatusReport")">Seized Status Report</a></li>
+
+                    </ul>
+                </li> *@
+
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-users"></i> Legal Notice
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("LegalRequest", "LegalNotice")">Notice Deatils Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("LegalAh_recommend", "LegalNotice")">AH Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("LegalLm_recommend", "LegalNotice")">LM Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("LegalRiimH_recommend", "LegalNotice")">GL-Head Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("LegalLH_recommend", "LegalNotice")">Head Legal Approval</a></li>
+                        <li><a class="nav-link" href="@Url.Action("Legal_Report", "LegalNotice")">Report</a></li>
+                    </ul>
+                </li>
+
+
+              <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-users"></i> Cheque Collection
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("ChequeUpdate", "ChequeUpdation")">Cheque Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("ChequeVerify", "ChequeVerification")">Cheque Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("Challan_bh", "Challan")">Challan Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("Challan_Ah", "Challan_Ah")">Challan Verification </a></li>
+                        <li><a class="nav-link" href="@Url.Action("Cheque_status_up", "Cheque_status_up")">Cheque Status Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("StatusVerify", "ChequeStatusVerification")">Cheque Status Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("ChequeRep", "ChequeReport")">Cheque Status Report</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-bar"></i> Recovery call
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("RecoveryCallHO", "RecoveryCallHO")">Recovery Call</a></li>
+                        <li><a class="nav-link" href="@Url.Action("AssignHomeVisit", "AssignHomeVisit")">Assign Home Visit</a></li>
+                        <li><a class="nav-link" href="@Url.Action("HomeVisit", "HomeVisit")">Home Visit</a></li>
+                        <li><a class="nav-link" href="@Url.Action("HomeVerify", "HomeVerify")">Home Visit Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("StaffBalanceRecovery", "StaffBalanceRecovery")">Staff Balance Recovery</a></li>
+                        <li><a class="nav-link" href="@Url.Action("RecoveryEmpReport", "RecoveryEmpReport")">Staff Debit Report</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-bar"></i> Irregularity call
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("IrregularityRecCall", "IrregularityRecCall")">Irregularity Call</a></li>
+                        <li><a class="nav-link" href="@Url.Action("IrregularityAssignHome", "IrregularityAssignHome")">Assign Home Visit</a></li>
+                        <li><a class="nav-link" href="@Url.Action("IrregularityVerification", "IrregularityVerification")">Home Visit Verification</a></li>
+                        <li><a class="nav-link" href="@Url.Action("IrregularityCallRpt", "IrregularityCallRpt")">Call Report</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-bar"></i> Police Complaint & FIR Updation
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("LegalView", "PoliceComplaintEntry")">Police Complaint Entry</a></li>
+                        <li><a class="nav-link" href="@Url.Action("FIRView", "FIRRegistration")">FIR Register</a></li>
+
+                        <li><a class="nav-link" href="@Url.Action("SPView", "SpComplaint")">Private Complaint Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("SPCOMPLAINTUPDATION", "SpComplaintUpdation")">Private Complaint Status</a></li>
+                        <li><a class="nav-link" href="@Url.Action("FIRCHARGE", "FIRChargeDetails")">Follow Up</a></li>
+                        <li><a class="nav-link" href="@Url.Action("FIRCHARGEUpdate", "FIRChargeDetails")">Charge Details Updation</a></li>
+                        <li><a class="nav-link" href="@Url.Action("Legal_FIR_Report", "SpComplaintUpdation")">Complaint Report</a></li>
+
+
+                    </ul>
+                </li>
+
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-file-alt"></i> Property Identitification
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("HO_Dashboard", "HO_Dashboard")">HO Dashboard</a></li>
+
+                        <li><a class="nav-link" href="@Url.Action("BH_ABH_Dashboard", "BH_ABH_Dashboard")">Branch Dashboard</a></li>
+
+                        <li><a class="nav-link" href="@Url.Action("AH_AMS_Dashboard", "AH_AMS_Dashboard")">AH/AMS Dashboard</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-users"></i> Advocate Empanelment
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("EmpanelmentRequestView", "EmpanelmentRequest")">Empanelment Request</a></li>
+                        <li><a class="nav-link" href="@Url.Action("EmpanelmentApproveView", "EmpanelmentRequest")">Empanelment Approve</a></li>
+                        <li><a class="nav-link" href="@Url.Action("EmpanelmentChargeView", "EmpanelmentRequest")">Empanelment Charge details</a></li>
+                        <li><a class="nav-link" href="@Url.Action("EmpanelmentReport", "EmpanelmentRequest")">Empanelment Report</a></li>
+
+
+                    </ul>
+                </li>
+                <li class="nav-item has-submenu">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-chart-bar"></i> Reports
+                    </a>
+                    <ul class="submenu">
+                        <li><a class="nav-link" href="@Url.Action("Index", "RecoveryStatus_Report")">Legal Recovery Status Report</a></li>
+                     
+
+                    </ul>
+                </li>
+              
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="content">
+        <nav class="navbar">
+            <button type="button" id="sidebarCollapse">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Updated Profile Section with Icon -->
+            <div class="profile-section">
+                <div class="profile-info" id="profileToggle">
+                    <div class="profile-details">
+                       <span id ="span_name" class="profile-name"></span>
+                        <span id="span_id" class="profile-role"></span>
+                    </div>
+                    <div class="profile-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                   @*  <i class="fas fa-chevron-down ml-2"></i> *@
+                </div>
+                <div class="profile-dropdown">
+
+                    @* <hr> *@
+                    <a href="#" id="idlogout" class="profile-dropdown-item" onclick="_Logout.LogoutSession(event);">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="main-content">
+            @RenderBody()
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="#">Designed and Developed by © Macom</a>
+
+                </div>
+                <div class="footer-copyright">
+                   
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script> *@
+    
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script> *@
+   
+   
+    <script nonce="5d67de6751aa4e158c33dfd828fc144b">
+        $(document).ready(async function() {
+           
+            if (!sessionStorage.getItem("EmployeeId") || !sessionStorage.getItem("BranchId") || !sessionStorage.getItem("Token") || !sessionStorage.getItem("Post") || !sessionStorage.getItem("employeeName")) {
+                const isDevelopment = window.location.hostname === 'localhost';
+                const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
+                await showAlert("Alert!", "Session Expired..Please try again..", "warning");
+                return window.location.href = liveurl + '/Login';
+            }
+            const employeeName = decryptAES(sessionStorage.getItem("employeeName"));
+            if (employeeName) {
+                $('#span_name').text(employeeName);
+
+            } else {
+                $('#span_name').text("0");
+            }
+
+            
+            // Handle browser navigation
+           
+
+
+            $('#profileToggle').on('click', function (e) {
+                e.stopPropagation();
+                $('.profile-dropdown').toggleClass('show');
+            });
+
+            // Close dropdown when clicking outside
+            $(document).on('click', function (e) {
+                if (!$(e.target).closest('.profile-section').length) {
+                    $('.profile-dropdown').removeClass('show');
+                }
+            });
+            // Sidebar toggle - update this function
+            $('#sidebarCollapse').on('click', function (e) {
+                e.preventDefault(); // Prevent any default action
+                $('#sidebar').toggleClass('active');
+                $('#content').toggleClass('active');
+            });
+
+            // Submenu toggle
+            $('.has-submenu > .nav-link').on('click', function (e) {
+                e.preventDefault();
+                const $parent = $(this).parent();
+                $parent.toggleClass('open');
+                $parent.find('.submenu').slideToggle(300);
+            });
+
+            // Remove or modify the checkWidth function
+            // Instead of automatically toggling based on width, let the user control it
+            function initialCheckWidth() {
+                if ($(window).width() <= 768) {
+                    // On initial load for small screens, collapse sidebar
+                    $('#sidebar').addClass('active');
+                    $('#content').addClass('active');
+                }
+            }
+
+            // Only run once on page load
+            initialCheckWidth();
+            
+            
+
+        });
+    </script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

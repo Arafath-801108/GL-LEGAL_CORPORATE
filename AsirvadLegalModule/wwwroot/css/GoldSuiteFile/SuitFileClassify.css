@@ -1,0 +1,388 @@
+﻿:root {
+    --primary-color: #2D3748; /* Dark Slate for primary elements */
+    --secondary-color: #A3BFFA; /* Soft Blue for secondary elements */
+    --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --text-color: #1A202C; /* Near Black for text */
+    --light-text: #718096; /* Medium Gray for lighter text */
+    --bg-color: #ECEFF1; /* Soft Gray for backgrounds */
+    --card-bg: #FFFFFF; /* White for cards */
+    --border-color: #B0BEC5; /* Light Gray-Blue for borders */
+    --hover-color: #4A5568; /* Darker Slate for hover effects */
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    --radius: 8px; /* Tighter border radius for modern look */
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.border-danger {
+    border: 2px solid #F6AD55 !important; /* Warm Orange for errors, aligning with first example's required fields */
+}
+
+.card {
+    width: 90%;
+    max-width: 900px; /* Adjusted to match first example's compact container */
+    margin: 2rem auto;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: var(--gradient-bg); /* Gradient for top border */
+    }
+
+.card-header {
+    text-align: center;
+    padding: 1rem 0.75rem; /* Reduced padding for compact header */
+    background: var(--header-gradient, linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color)));
+    border-radius: var(--radius) var(--radius) 0 0;
+    color: white;
+    border-bottom: none;
+    position: relative;
+    transition: transform 0.3s ease;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-header {
+    position: relative;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+    .card-header::after {
+        content: 'Legal - Case Reporting'; /* Main title */
+        font-size: clamp(1.5rem, 4vw, 1.75rem);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+        display: block;
+        position: relative;
+        top:-2rem; /* Adjust to position at the top */
+        z-index: 2;
+        text-transform:uppercase;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+.card-header-subtitle::after {
+    content: 'Legal CaseSuit File'; /* Subtitle */
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    display: block;
+    position: relative;
+    top: 2.5rem; /* Adjust to position below the main title */
+    z-index: 2;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.card-header-subtitle {
+    display: block;
+}
+
+.card-body {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem; /* Consistent spacing */
+    gap: 1rem;
+}
+
+.form-label-col {
+    width: 200px;
+    text-align: left;
+    padding-right: 1rem;
+    flex-shrink: 0;
+}
+
+.form-input-col {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 0;
+}
+
+.form-select {
+    width: 100%;
+    height: 40px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: var(--card-bg);
+    transition: all 0.2s ease;
+}
+
+.form-control {
+    width: 96%;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    background-color: var(--card-bg);
+    transition: all 0.2s ease;
+}
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 6px rgba(45, 55, 72, 0.2); /* Dark Slate shadow */
+        outline: none;
+    }
+
+.input-group-text {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: var(--gradient-bg);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, var(--hover-color), var(--secondary-color));
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(45, 55, 72, 0.1);
+    }
+
+.btn-secondary {
+    background: var(--light-text);
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    width: 100px;
+}
+
+    .btn-secondary:hover {
+        background: #5A7180; /* Darker shade of light-text */
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(45, 55, 72, 0.1);
+    }
+
+.text-danger {
+    color: #F6AD55 !important; /* Warm Orange for errors */
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.25rem;
+    padding-left: 120px;
+}
+
+.validation-summary {
+    margin-bottom: 1.5rem;
+    padding: 0.75rem;
+    background-color: rgba(246, 173, 85, 0.1); /* Orange-tinted background for errors */
+    border-radius: var(--radius);
+    border-left: 4px solid #F6AD55;
+}
+
+.pledge-grid-container {
+    margin-top: 0.75rem;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+}
+
+.pledge-grid {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+    .pledge-grid th {
+        background: var(--gradient-bg);
+        color: white;
+        padding: 0.75rem;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .pledge-grid td {
+        padding: 0.75rem;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .pledge-grid tr:nth-child(even) {
+        background: rgba(163, 191, 250, 0.05); /* Soft Blue tint */
+    }
+
+    .pledge-grid tr:hover {
+        background: rgba(163, 191, 250, 0.1); /* Slightly darker Soft Blue */
+        transition: background 0.2s ease;
+    }
+
+.pledge-input-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.pledge-input {
+    flex: 0 0 60%;
+    max-width: 60%;
+}
+
+.btn-primary.ms-2 {
+    flex-shrink: 0;
+    margin-left: 0.5rem;
+}
+
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.file-upload-icon {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .form-label-col {
+        width: 100%;
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+    }
+
+    .form-input-col {
+        width: 100%;
+    }
+
+    .text-danger {
+        padding-left: 0;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    .btn-container {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .card-header::after {
+        font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+    }
+
+    .pledge-grid th,
+    .pledge-grid td {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    .pledge-input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pledge-input {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-primary.ms-2 {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-control, .form-select {
+        font-size: 0.85rem;
+        height: 36px;
+    }
+
+    .file-upload-container {
+        padding: 0.5rem;
+    }
+
+    .file-upload-icon {
+        font-size: 1rem;
+    }
+
+    .btn-primary, .btn-secondary {
+        font-size: 0.85rem;
+        padding: 0.5rem 1rem;
+    }
+}

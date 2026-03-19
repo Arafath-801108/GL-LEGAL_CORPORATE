@@ -1,0 +1,96 @@
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll

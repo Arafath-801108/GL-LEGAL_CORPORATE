@@ -1,0 +1,278 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/goldsuitefile/suitfileclassify.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/goldsuitefilejs/suitfileclassify.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="card">
+    <div class="card-header">
+        <span class="card-header-subtitle"></span>
+    </div>
+    <div class="card-body">
+        <form asp-action="Index" enctype="multipart/form-data" method="post">
+            <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">COMPLAINT :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                        
+                        <input class="form-control" id="txt_cmp" MaxLength="100" autocomplete="off" @* oninput="this.value = this.value.replace(/[^a-zA-Z0-9\/\s]/g, '')"  *@/>
+                       
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">COMPLAINT TYPE :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                        
+                        <select id="drp_cmp" class="form-select" @* onchange="_classify.getType(this.value);" *@>
+                        </select>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">TIME LINE :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                        
+                        <input id="txt_time" class="form-control" autocomplete="off" readonly>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">PLEDGE NO :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group pledge-input-group">
+                       
+                        <input id="txt_pledge" class="form-control pledge-input" maxlength="16" autocomplete="off" @* oninput="this.value = this.value.replace(/[^0-9]/g, '')" *@ />
+                        <button type="button" id="btnaddpledge" class="btn btn-primary ms-2" @* onclick="_classify.showPledge()" *@>
+                            <i class="bi bi-search me-1"></i> ADD
+                        </button>
+                    </div>
+                    <span class="text-danger"></span>
+                    <div class="pledge-grid-container mt-1">
+                        <table class="pledge-grid table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Pledge Number</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">REASON FOR SUIT FILE :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                        
+                        <select id="drp_res" class="form-select" @* onchange="_classify.getReason(this)" *@>
+                            <option value="0">----------Select----------</option>
+                            <option value="1">Spurious</option>
+                            <option value="2">Stolen</option>
+                            <option value="3">Burglary Gold</option>
+                            <option value="4">Misappropriation</option>
+                            <option value="5">Third Party Case</option>
+                            <option value="6">Customer Complaint</option>
+                        </select>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div id="drp_goldInBr" class="form-row" style="display:none;">
+                <div class="form-label-col">
+                    <label class="form-label">GOLD IN BRANCH :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                       
+                        <select asp-items="ViewBag.Categories" class="form-select" id="drp_goldBranch">
+                            <option value="0">----------Select----------</option>
+                            <option value="1">Possible to release</option>
+                            <option value="3">Not possible to release</option>
+                        </select>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">PREVIOUSLY ENTERED PLEDGE OR NOT :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                        
+                        <select asp-items="ViewBag.Categories" class="form-select" id="drp_previous">
+                            <option value="0">----------Select----------</option>
+                            <option value="1">Yes</option>
+                            <option value="2">No</option>
+                        </select>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">GOLD AVAILABLE PLACE :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                        
+                        <select asp-items="ViewBag.Categories" class="form-select" id="drp_place" >
+                            <option value="0">----------Select----------</option>
+                            <option value="1">Branch</option>
+                            <option value="2">Police Station</option>
+                            <option value="3">Another Branch</option>
+                            <option value="4">Not Available</option>
+                        </select>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div id="div_police" class="form-row" style="display:none;">
+                <div class="form-label-col">
+                    <label class="form-label">POLICE STATION :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                       
+                        <input id="txt_police" class="form-control" autocomplete="off" @* oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" *@ />
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div id="div_doc" class="form-row" style="display:none;">
+                <div class="form-label-col">
+                    <label class="form-label">UPLOAD SEIZER MAHZOR:</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="file-upload-container">
+                      @*   <div class="file-upload-icon">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                        </div> *@
+                        <input type="file" id="fileSeize" accept=".pdf" @* onchange="_classify.validateFile1()" *@ />
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div id="div_branch" class="form-row" style="display:none;">
+                <div class="form-label-col">
+                    <label class="form-label">ANOTHER BRANCH :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                       
+                        <select id="drp_another" class="form-select">
+                        </select>
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div id="div_current"  style="display:none;">
+                <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">BRANCH :</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="input-group">
+                       
+                        <input id="txt_curBranch" class="form-control" autocomplete="off" readonly />
+                        
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">TOP VIEW IMAGE OF PLEDGE:</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+
+                            
+                            <input type="file" id="File1" @*  accept=".pdf" onchange="_classify.validateFile1()" *@ />
+                           
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">BOTTOM VIEW IMAGE OF PLEDGE :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+
+                           
+                            <input type="file" id="File2" @*  accept=".pdf" onchange="_classify.validateFile1()" *@ />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+                <div class="form-label-col">
+                    <label class="form-label">COMPLAINT RELATED DOUCMENT:</label>
+                </div>
+                <div class="form-input-col">
+                    <div class="file-upload-container">
+      @*                   <div class="file-upload-icon">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                        </div> *@
+                        <input type="file" id="fileInput" accept=".pdf" @* onchange="_classify.validateFile()" *@ />
+                    </div>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="button" id="btnexit" class="btn btn-secondary" @* onclick="redirectToDashboard();" *@>
+                    <i class="bi bi-x-circle me-1"></i> EXIT
+                </button>
+                <button type="button" id="btn_submit" class="btn btn-primary" @* onclick="_classify.btnSubmitClick()" *@>
+                    <i class="bi bi-check-circle me-1"></i> SUBMIT
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

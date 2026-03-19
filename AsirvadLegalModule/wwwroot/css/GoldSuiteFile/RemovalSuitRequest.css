@@ -1,0 +1,326 @@
+﻿:root {
+    --primary-color: #2D3748; /* Dark Slate for primary elements */
+    --secondary-color: #A3BFFA; /* Soft Blue for secondary elements */
+    --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    --header-gradient: linear-gradient(90deg, #2D3748, #A3BFFA, #2D3748); /* Dark Slate to Soft Blue gradient for header */
+    --text-color: #1A202C; /* Near Black for text */
+    --light-text: #718096; /* Medium Gray for lighter text */
+    --bg-color: #ECEFF1; /* Soft Gray for backgrounds */
+    --card-bg: #FFFFFF; /* White for cards */
+    --border-color: #B0BEC5; /* Light Gray-Blue for borders */
+    --hover-color: #4A5568; /* Darker Slate for hover effects */
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    --radius: 8px; /* Tighter border radius for modern look */
+}
+
+/* General Styles */
+body {
+    font-family: var(--font-family);
+    background: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; /* Base font size for consistency */
+}
+
+/* Container */
+.container {
+    max-width: 900px; /* Reduced max-width for a more compact form */
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Consistent spacing between sections */
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 1rem 0.75rem; /* Reduced padding for smaller height */
+    background: var(--header-gradient); /* Dark Slate to Soft Blue gradient */
+    border-radius: var(--radius);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .header::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent);
+        opacity: 0.5;
+        z-index: 1;
+    }
+
+    .header:hover {
+        transform: translateY(-2px); /* Subtle lift effect on hover */
+    }
+
+.header-title {
+    font-size: 1.75rem; /* Smaller for compact header */
+    font-weight: 800; /* Bolder for impact */
+    color: white; /* White text for contrast */
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.header-subtitle {
+    font-size: 1rem; /* Smaller for compact header */
+    color: #f5f5f5; /* Light gray for contrast */
+    margin-top: 0.5rem;
+    font-weight: 400;
+    position: relative;
+    z-index: 2;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+/* Radio Button Group */
+.radio-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+    background: var(--card-bg);
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px; /* Constrain width for alignment */
+}
+
+    .btn-group .btn {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 6px;
+        background: var(--bg-color);
+        color: var(--text-color);
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+        .btn-group .btn:hover {
+            background: var(--gradient-bg);
+            color: white;
+        }
+
+    .btn-group input[type="radio"]:checked + label {
+        background: var(--gradient-bg);
+        color: white;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+/* Date Pickers */
+.date-picker-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.date-picker-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: var(--card-bg);
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+}
+
+.date-label {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.9rem;
+}
+
+.required {
+    color: #F6AD55; /* Warm Orange for required fields */
+}
+
+/* Form Control */
+.form-control {
+    width: 100%;
+    max-width: 180px; /* Slightly smaller for balance */
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+    .form-control:focus {
+        border-color: var(--primary-color);
+        box-shadow: 0 0 6px rgba(45, 55, 72, 0.2); /* Dark Slate shadow */
+        outline: none;
+    }
+
+/* Search Section */
+.search-group {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    justify-content: center;
+}
+
+.search-label {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    width: 80px;
+}
+
+.search-label-value {
+    color: var(--light-text);
+    font-weight: 400;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--gradient-bg);
+    color: white;
+    width: 100px;
+}
+
+    .btn-primary:hover {
+        background: linear-gradient(135deg, var(--hover-color), var(--secondary-color));
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(45, 55, 72, 0.1);
+    }
+
+.btn-secondary {
+    background: var(--light-text);
+    color: white;
+    width: 100px;
+}
+
+    .btn-secondary:hover {
+        background: #5A7180; /* Darker shade of light-text for hover */
+        transform: translateY(-1px);
+    }
+
+/* GridView */
+.table-container {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow-x: auto;
+}
+
+.grid-view {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+    .grid-view th {
+        background: var(--gradient-bg); /* Dark Slate to Soft Blue gradient */
+        color: #ffffff; /* White text for contrast */
+        padding: 0.75rem;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .grid-view td {
+        padding: 0.75rem;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .grid-view tr:nth-child(even) {
+        background: rgba(163, 191, 250, 0.05); /* Soft Blue tint for even rows */
+    }
+
+    .grid-view tr:hover {
+        background: rgba(163, 191, 250, 0.1); /* Slightly darker Soft Blue hover effect */
+        transition: background 0.2s ease;
+    }
+
+/* Confirm Button */
+.confirm-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .radio-group,
+    .date-picker-group,
+    .search-group {
+        max-width: 100%;
+    }
+
+    .date-picker-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .form-control {
+        max-width: none;
+    }
+
+    .btn-group {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+        .btn-group .btn {
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+    .search-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+        .search-group .btn {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+}

@@ -1,0 +1,137 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="~/css/sweetalert2.min.css" rel="stylesheet" />
+<link href="~/css/legalrecoverycall/recoverycalldetail.css" rel="stylesheet" />
+    <script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/legalrecoverycall/recoverycalldetail.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="form-container">
+        <div class="header">
+            <h1>RESIGNED STAFF CALLING MODULE - HO</h1>
+        </div>
+        <form id="staffForm" class="form">
+            <!-- Form Section -->
+            <div class="form-grid">
+                <!-- Employee ID -->
+                <div class="form-label">
+                    <label for="employee-id">Select Employee Id</label>
+                </div>
+                <div>
+                    <select id="employee-id" class="dropdown" @* onchange="_employee.LoadEmployeeDetails(this);" *@>
+                        
+                        <!-- Populate options dynamically via JavaScript or backend -->
+                    </select>
+                </div>
+                <!-- Employee Name -->
+                <div class="form-label">
+                    <label for="employee-name">Employee Name</label>
+                </div>
+                <div>
+                    <input type="text" id="employee-name" class="input-field" disabled>
+                </div>
+                <!-- Employee Phone 1 -->
+                <div class="form-label">
+                    <label for="phone1">Employee Phone1</label>
+                </div>
+                <div>
+                    <input type="text" id="phone1" class="input-field" @* onkeypress="return isNumberKey(event)" *@ disabled>
+                </div>
+                <!-- Employee Phone 2 -->
+                <div class="form-label">
+                    <label for="phone2">Employee Phone2</label>
+                </div>
+                <div>
+                    <input type="text" id="phone2" class="input-field" @* onkeypress="return isNumberKey(event)" *@ disabled>
+                </div>
+                <!-- Amount to Recover -->
+                <div class="form-label">
+                    <label for="amount">Amount To Be Recovered</label>
+                </div>
+                <div>
+                    <input type="text" id="amount" class="input-field" @* onkeypress="return isNumberKey(event)" *@ disabled>
+                </div>
+            </div>
+
+            <!-- Grid Section -->
+            <div class="table-container">
+                <table class="grid-view" id="gridView1">
+                    <thead>
+                        <tr>
+                            <th>Father Name</th>
+                            <th>Permanent Address</th>
+                            <th>Landmark</th>
+                            <th>Post Office</th>
+                            <th>District Name</th>
+                            <th>State Name</th>
+                            <th>Pin Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Call Status Section -->
+            <div class="form-grid">
+                <!-- Call Attended -->
+                <div class="form-label">
+                    <label>Call Attended</label>
+                </div>
+                <div class="radio-group">
+                    <label><input type="radio" id="radioyes" name="call-attended" value="yes" @* onclick="_employee.toggleSections()" *@> Yes</label>
+                        <label><input type="radio" id="radiono" name="call-attended" value="no" @* onclick="_employee.toggleSections()" *@> No</label>
+                </div>
+                <!-- Response -->
+                <div id="responsesection" class="form-label" style="display:none;">
+                    <label for="response">Response</label>
+                </div>
+                <div id="responseinput" style="display:none;">
+                    <input type="text" id="response" class="input-field" maxlength="150" autocomplete="off">
+                </div>
+                <!-- Call Not Attended Reason -->
+                <div id="reasonsection1" class="form-label" style="display:none;">
+                    <label for="reason">Call Not Attended Reason</label>
+                </div>
+                <div id="reasoninput1" style="display:none;">
+                    <select id="reason" class="dropdown">
+                        <option value="-1">---------Select---------</option>
+                        <option value="1">Switched Off</option>
+                        <option value="2">Not Attended/Responding</option>
+                        <option value="3">Out Of Service</option>
+                        <option value="4">Wrong Number</option>
+                        
+                    </select>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="button-group">
+                    <button type="button" id="confirm-btn" class="submit-button"@*  onclick="_employee.ButtonConfirmClick(this);" *@>CONFIRM</button>
+                <button type="button" id="exit-btn" class="exit-button" @* onclick="_employee.ExitClick(this);" *@>EXIT</button>
+                
+            </div>
+
+            <!-- Hidden Fields -->
+            @* <input type="hidden" id="branch-id">
+            <input type="hidden" id="call-type">
+            <input type="hidden" id="call-type1">
+            <input type="hidden" id="cust-id"> *@
+        </form>
+    </div>
+</div>
+    </body>

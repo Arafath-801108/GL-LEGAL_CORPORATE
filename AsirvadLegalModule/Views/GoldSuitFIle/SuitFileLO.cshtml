@@ -1,0 +1,303 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/goldsuitefile/suitfilelo.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/goldsuitefilejs/suitfilelo.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <span class="card-header-subtitle"></span>
+        </div>
+    </div>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">BRANCH</span>
+            </div>
+            <div class="form-input-col">
+                <select id="cmbBranch" class="custom-dropdown" @* onchange="_Legal.complaintDropdown(this)" *@>
+                    
+                </select>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">COMPLAINT NO</span>
+            </div>
+            <div class="form-input-col">
+                <select id="cmbComplaintNo" class="custom-dropdown" @* onchange="_Legal.GetcomplaintDeatails(this)" *@>
+                    
+                </select>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">COMPLAINT TYPE</span>
+            </div>
+            <div class="form-input-col">
+                <select id="cmb_casetype" class="custom-dropdown" >
+                    
+                </select>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">TIME LINE</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="txt_time" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">COMPLAINT RELATED DOCUMENT</span>
+            </div>
+            <div class="form-input-col">
+                <div class="input-group">
+                    <input type="text" id="txtCompDoc" class="custom-textbox" readonly >
+                    <a href="#" class="download-button" id="btn_cmp">
+                        <i class="bi bi-search me-1"></i> DOWNLOAD
+                    </a>
+                </div>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">COMPLAINT</span>
+            </div>
+            <div class="form-input-col">
+                <div class="input-group">
+                    <input type="text" id="txtcomplaint" class="custom-textbox" readonly>
+                    <button type="button" id="btnShowPledge" class="download-button" @* onclick="_Legal.ShowPledgeList();" *@>Pledge List</button>
+                </div>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row" id="div_grid" style="display:none;">
+            <div class="form-label-col"></div>
+            <div class="form-input-col">
+                <table class="gridview">
+                    <thead>
+                        <tr>
+                            <th>Pledge Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">GOLD AVAILABLE PLACE</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="TextBox1" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+
+
+
+
+       
+
+
+
+
+        <div class="form-row panel" id="div_ps" style="display:none;">
+            <div class="form-label-col">
+                <span class="form-label">POLICE STATION NAME</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="TextBox3" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row panel" id="div_ab" style="display:none;">
+            <div class="form-label-col">
+                <span class="form-label">BRANCH</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="TextBox5" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div  id="div_br" style="display:block;">
+
+
+            <div class="form-row panel">
+                <div class="form-label-col">
+                    <span class="form-label">BRANCH</span>
+                </div>
+                <div class="form-input-col">
+                    <input type="text" id="TextBox4" class="custom-textbox" readonly>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+            <div class="form-row panel">
+                <div class="form-label-col">
+                    <span class="form-label">TOP SIDE IMAGE OF THE PLEDGE:</span>
+                </div>
+                <div class="form-input-col">
+                    <button type="button" id="btntopview" class="download-button" @* onclick="_Legal.Download_Pledge_photos(this.value);" *@>View</button>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-row panel">
+                <div class="form-label-col">
+                    <span class="form-label">BOTTOM SIDE IMAGE OF THE PLEDGE:</span>
+                </div>
+                <div class="form-input-col">
+                    <button type="button" id="btnbottomview" class="download-button" @* onclick="_Legal.Download_Pledge_photos1(this.value);" *@>View</button>
+                    <span class="text-danger"></span>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+       
+
+
+        <div class="form-row panel" id="div_ps1" style="display:none;">
+            <div class="form-label-col">
+                <span class="form-label">SEIZER MAHZOR RELATED DOCUMENT</span>
+            </div>
+            <div class="form-input-col">
+                <div class="input-group">
+                    <input type="text" id="TextBox2" class="custom-textbox" readonly >
+                    <a href="#" class="download-button" id="btn_police">
+                        <i class="bi bi-search me-1"></i> DOWNLOAD
+                    </a>
+                   @*  <button type="button" id="btn_police" class="download-button">Download</button> *@
+                </div>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">REASON FOR SUIT FILE</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="TextBox7" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row panel" id="div_bg" style="display:none;">
+            <div class="form-label-col">
+                <span class="form-label">GOLD IN BRANCH</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="TextBox8" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">PREVIOUSLY ENTERED PLEDGE OR NOT</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="TextBox9" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">RM COMMENTS</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="txtRmComment" class="custom-textbox" readonly >
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">CASE TYPE</span>
+            </div>
+            <div class="form-input-col">
+                <select id="cmbCaseType" class="custom-dropdown">
+                    
+                </select>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">NAME OF THE LAWYER</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="txtLawyer" class="custom-textbox" autocomplete="off" maxlength="200" @* onkeypress="return /[a-zA-Z\s]/.test(event.key)" *@>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">COURT NAME</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="txtCourt" class="custom-textbox" maxlength="200" autocomplete="off" @* onkeypress="return /[a-zA-Z\s]/.test(event.key)" *@>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">CASE NUMBER</span>
+            </div>
+            <div class="form-input-col">
+                <input type="text" id="txtCase" class="custom-textbox" autocomplete="off" maxlength="20" @* onkeypress="return /[a-zA-Z0-9]/.test(event.key)" *@>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-label-col">
+                <span class="form-label">NOTICE TYPE</span>
+            </div>
+            <div class="form-input-col">
+                <select id="cmbNotice" class="custom-dropdown">
+                   
+                </select>
+                <span class="text-danger"></span>
+            </div>
+        </div>
+             <div id="div_rm" class="form-row">
+         <div class="form-label-col">
+             <label class="form-label">COMMENTS :</label>
+         </div>
+         <div class="form-input-col">
+             <div class="input-group">
+                 <span class="input-group-text">
+                     <i class="bi bi-tag"></i>
+                 </span>
+                 <textarea id="txt_rm" class="form-control" rows="4" cols="50" Maxlength="200" autocomplete="off" @* oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s]/g, '')" *@></textarea>
+
+             </div>
+             <span class="text-danger"></span>
+         </div>
+     </div>
+        <div class="btn-container">
+            <button type="button"  id="btnConfirm" class="custom-button" @* onclick="_Legal.ButtonConfirmClick()" *@>CONFIRM</button>
+            <button type="button" id="btnCancel" class="custom-button" @* onclick="_Legal.ButtonRejectClick()" *@>REJECT</button>
+            <button type="button" id="btnExits" class="custom-button" @* onclick="redirectToDashboard();" *@>EXIT</button>
+        </div>
+        <input type="hidden" id="HiddenField1" name="HiddenField1">
+    </form>
+</div>

@@ -1,0 +1,148 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Complaint Updation</title>
+    <link href="~/css/jquery-ui.css" rel="stylesheet" />
+    <script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <link href="~/css/legalfir/policecomplaint.css" rel="stylesheet" />
+    <script src="~/js/legalfir/policecomplaintentry.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+   
+    <div class="container">
+        <div class="page-header">
+            <h2>Police Complaint Entry</h2>
+        </div>
+
+        <div class="form-container">
+            <form id="policeComplaintForm">
+
+
+                <div class="two-column-section">
+                   
+                    <div class="left-column">
+                       
+                        <div class="section-title">Basic Information</div>
+
+                        <div class="row">
+                            <div class="col-sm-6 form-group">
+                                <label for="drp_branch">Branch Name</label>
+                                <select id="drp_branch" name="BranchId" class="form-control form-select" onchange="loadBranchs()">
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="drp_cust">Customer ID</label>
+                                <select id="drp_cust" name="CustomerId" class="form-control form-select" onchange="loadPledgeDetails()">
+                                    
+                                </select>
+                            </div>
+
+                            <div class="col-sm-12 form-group">
+                                <label for="txt_case">Case Amount</label>
+                                <input type="text" id="txt_case" name="CaseAmount" class="form-control" readonly>
+                            </div>
+                        </div>
+
+
+                    <div class="row">
+                    
+                        <div class="right-column">
+                         
+                            <div class="section-title">Pledge Details</div>
+                            <table class="gridview" id="GridView2">
+                                <thead>
+                                    <tr>
+                                        <th>Customer Id</th>
+                                        <th>Pledge No</th>
+                                        <th>Amount</th>
+                                        <th>Loss</th>
+                                        <th>Irregularity</th>
+                                        <th>Gold Wt</th>
+                                        <th>Police complaint is required or not?</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="pledgeGridBody">
+                                    <tr>
+                                       
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                          
+                          
+                            </div>
+                            </div>
+
+                        <!-- Location Information Section -->
+                        <div class="section-title" id="part3">Location Information</div>
+
+                        <div class="row" id="part1">
+                            <div class="col-sm-6 form-group">
+                                <label id="state">Police Station State</label>
+                                <select id="drp_state" name="StateId" class="form-control form-select" >
+                                   
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label id="District">Police Station District</label>
+                                <select id="drp_dis" name="DistrictId" class="form-control form-select">
+                                   
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label id="Name">Police Station Name</label>
+                                <input type="text" id="txt_police" name="PoliceStationName" class="form-control" autocomplete="off" maxlength="100">
+                            </div>
+
+                            <div class="col-sm-6 form-group">
+                                <label for="txt_date">Complaint Filed Date</label>
+                            <input type="date" id="txt_date" name="ComplaintFiledDate" class="form-control" autocomplete="off">
+                        </div>
+
+                        <div class="col-sm-12 form-group">
+                                <label for="file1">Upload Complaint Copy</label>
+                                <div class="upload-box">
+                                    <input type="file" name="ComplaintFile" id="file1" class="form-control-file" accept=".pdf,.jpg,.jpeg,.png">
+                                </div>
+                            </div>
+                        </div>
+
+                       
+
+                        <!-- Remarks Section -->
+                    <div class="section-title" id="part4">Case Remarks</div>
+
+                    <div class="row" id="part2">
+                            <div class="col-sm-12 form-group">
+                                <label for="TXT_RMK">Case Remarks (Min 300 chars)</label>
+                                <textarea id="TXT_RMK" name="CaseRemarks" class="form-control" autocomplete="off" maxlength="500" placeholder="Enter detailed case remarks..."></textarea>
+                            <span id="rmk_error" style="color:red; display:none;">Remarks must be at least 300 characters.</span>
+                                <div class="char-counter" id="charCount">0 / 300</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Action Buttons -->
+                <div class="btn-group-custom">
+                    <button type="button" id="btn_sub" class="btn-custom btn-submit">Submit</button>
+                    <button type="button" id="btn_exit" class="btn-custom btn-exit" onclick="window.location.href='/'">Exit</button>
+                </div>
+
+                <input type="hidden" id="hdvUserID" name="UserId">
+                <input type="hidden" id="hdvbrID" name="BranchUserId">
+            </form>
+        </div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

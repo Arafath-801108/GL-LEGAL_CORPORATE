@@ -1,0 +1,293 @@
+﻿:root {
+    --primary-color: #2D3748; /* Dark Slate for primary elements */
+    --secondary-color: #A3BFFA; /* Soft Blue for secondary elements */
+    --gradient-bg: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Gradient from first design */
+    --header-gradient: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color)); /* Gradient for header */
+    --text-color: #1A202C; /* Near Black for text */
+    --light-text: #718096; /* Medium Gray for lighter text */
+    --bg-color: #ECEFF1; /* Soft Gray for backgrounds */
+    --card-bg: #FFFFFF; /* White for cards */
+    --border-color: #B0BEC5; /* Light Gray-Blue for borders */
+    --hover-color: #4A5568; /* Darker Slate for hover effects */
+    --accent-color: #F6AD55; /* Warm Orange for errors and accents */
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    --radius: 8px; /* Tighter border radius for modern look */
+    --sidebar-width: 250px;
+}
+
+body {
+    font-family: var(--font-family); /* Updated to match first design */
+    min-height: 100vh;
+    margin: 0;
+    background: var(--bg-color); /* Soft Gray background */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 900px; /* Adjusted to match first design's compact container */
+    margin: 2rem auto;
+    padding: 20px;
+}
+
+.outter {
+    background: var(--card-bg); /* White for card background */
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    position: relative;
+    overflow: hidden;
+}
+
+    .outter::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: var(--gradient-bg); /* Gradient top border from first design */
+    }
+
+.headingBar {
+    background: var(--header-gradient); /* Gradient from first design */
+    color: white;
+    font-size: clamp(1.5rem, 4vw, 1.75rem); /* Adjusted to match first design */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    padding: 1rem 0.75rem; /* Compact padding from first design */
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: var(--radius);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+    .headingBar:hover {
+        transform: translateY(-2px); /* Subtle lift effect from first design */
+    }
+
+    .headingBar::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2), transparent);
+        opacity: 0.5;
+        z-index: 1;
+        text-transform: uppercase;
+    }
+
+    .headingBar::after {
+        
+        content: 'Legal Case Suit File'; /* Placeholder, update as needed */
+        font-size: clamp(.7rem, 4vw, .1rem);
+        font-weight: 800;
+        letter-spacing: 1px;
+        display: block;
+        position: relative;
+        z-index: 2;
+        
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    }
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+.heading-text {
+    position: relative;
+    z-index: 2;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1.5rem; /* Consistent spacing from first design */
+
+}
+.form-group1 {
+    margin-bottom: 1.5rem; /* Consistent spacing from first design */
+    justify-content: center;
+    gap:20px;
+}
+.control-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Reduced gap for consistency */
+    flex-wrap: wrap;
+}
+
+.dropdown-wrapper {
+    flex: 1;
+    min-width: 200px;
+}
+
+.label {
+    font-weight: 500;
+    color: var(--text-color); /* Near Black for text */
+    margin-bottom: 8px;
+    display: block;
+    font-size: 0.9rem; /* Consistent with first design */
+}
+
+.custom-dropdown {
+    width: 100%;
+    max-width: 400px;
+    height: 40px; /* Adjusted to match first design */
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 0.5rem 0.75rem;
+    background-color: var(--card-bg);
+    font-size: 0.9rem;
+    color: var(--text-color);
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%231A202C" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 12px;
+}
+
+    .custom-dropdown:focus {
+        outline: none;
+        border-color: var(--primary-color);
+        box-shadow: 0 0 6px rgba(45, 55, 72, 0.2); /* Dark Slate shadow from first design */
+    }
+
+    .custom-dropdown option {
+        padding: 10px;
+    }
+
+.custom-button {
+    background: var(--gradient-bg); /* Gradient from first design */
+    color: white;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: var(--radius);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+    .custom-button:hover {
+        background: linear-gradient(135deg, var(--hover-color), var(--secondary-color));
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(45, 55, 72, 0.1); /* Lighter shadow from first design */
+    }
+
+    .custom-button:active {
+        transform: translateY(0);
+        box-shadow: none;
+    }
+
+.exit-button {
+    background: var(--light-text); /* Medium Gray from first design */
+    color: white;
+    width: 120px;
+}
+
+    .exit-button:hover {
+        background: #5A7180; /* Darker shade of Medium Gray */
+        transform: translateY(-1px);
+        box-shadow: 0 2px 6px rgba(45, 55, 72, 0.1);
+    }
+
+.chkHeader, .chkItem {
+    text-align: center;
+}
+
+.GridView1 {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-top: 0.75rem; /* Adjusted to match first design */
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+    .GridView1 th {
+        background: var(--gradient-bg); /* Gradient from first design */
+        color: white;
+        padding: 0.75rem;
+        text-align: center;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .GridView1 td {
+        padding: 0.75rem;
+        text-align: center;
+        color: var(--text-color);
+        border-bottom: 1px solid var(--border-color);
+        background: var(--card-bg);
+    }
+
+    .GridView1 tr:nth-child(even) {
+        background-color: rgba(163, 191, 250, 0.05); /* Soft Blue tint from first design */
+    }
+
+    .GridView1 tr:hover {
+        background-color: rgba(163, 191, 250, 0.1); /* Slightly darker Soft Blue */
+    }
+
+.text-muted {
+    font-size: 0.8rem; /* Adjusted to match first design's .text-danger */
+    color: var(--light-text);
+    text-align: center;
+}
+
+.text-danger {
+    color: var(--accent-color) !important; /* Warm Orange for errors */
+    font-size: 0.8rem;
+    display: block;
+    margin-top: 0.25rem;
+    padding-left: 120px; /* Consistent with first design */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .custom-dropdown {
+        max-width: 100%;
+    }
+
+    .headingBar {
+        font-size: clamp(1.25rem, 3.5vw, 1.5rem);
+    }
+
+    .control-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .dropdown-wrapper {
+        max-width: 100%;
+    }
+}
+
+
+/* ... rest of the master page styles remain unchanged ... */

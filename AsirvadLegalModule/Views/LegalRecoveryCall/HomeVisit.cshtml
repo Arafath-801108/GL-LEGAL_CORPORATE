@@ -1,0 +1,115 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/legalrecoverycall/homevisit.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalrecoverycall/homevisit.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <!-- Header Section -->
+            <div class="header">
+                <h1>Resigned Staff Home Visit</h1>
+            </div>
+
+            <!-- Form Section -->
+            <form id="form2" class="form">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="TextBox6" class="form-label">Category Type</label>
+                        <input type="text" id="TextBox6" class="form-input" readonly value="Resigned/Terminated">
+                    </div>
+                    <div class="form-group">
+                        <label for="TextBox7" class="form-label">Call Type</label>
+                        <input type="text" id="TextBox7" class="form-input" readonly value="Home Visit">
+                    </div>
+                    <div class="form-group">
+                        <label for="cmb_custid" class="form-label">Select Employee Id</label>
+                        <select id="cmb_custid" class="dropdown" @* onchange="_visit.LoadEmployeeDetails();" *@>
+                            <!-- Options would typically be populated dynamically -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_custname" class="form-label">Customer Name</label>
+                        <input type="text" id="txt_custname" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph1" class="form-label">Customer Phone1</label>
+                        <input type="text" id="txt_cust_ph1" class="form-input" readonly @* onkeypress="return isNumberKey(event)" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph2" class="form-label">Customer Phone2</label>
+                        <input type="text" id="txt_cust_ph2" class="form-input" readonly @* onkeypress="return isNumberKey(event)" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_amt" class="form-label">Amount To Be Recovered</label>
+                        <input type="text" id="txt_amt" class="form-input" readonly @* onkeypress="return isNumberKey(event)" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_add" class="form-label">Address</label>
+                        <textarea id="txt_add" class="form-input" readonly rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="rentOwn" class="form-label">Rent/Own House</label>
+                        <div class="radio-group">
+                            <input type="radio" id="RadioButton1" name="rad_attend1" value="Rent" @* onclick="_visit.RadioClickDetails();" *@>
+                            <label for="RadioButton1">Rent</label>
+                            <input type="radio" id="RadioButton2" name="rad_attend1" value="Own" @* onclick="_visit.RadioClickDetails();" *@>
+                            <label for="RadioButton2">Own</label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="Tr10" style="display: none;">
+                        <label for="ownership" class="form-label">Under Your Ownership</label>
+                        <div class="radio-group">
+                            <input type="radio" id="RadioButton3" name="rad_attend" value="Yes" @* onclick="_visit.RadioOwnerClickDetails();" *@>
+                            <label for="RadioButton3">Yes</label>
+                            <input type="radio" id="RadioButton4" name="rad_attend" value="No" @* onclick="_visit.RadioOwnerClickDetails();" *@>
+                            <label for="RadioButton4">No</label>
+                        </div>
+                    </div>
+                    <div class="form-group" id="Tr13" style="display: none;">
+                        <label for="txt_ren_add" class="form-label">Rent Place Address</label>
+                        <textarea id="txt_ren_add" class="form-input" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label
+                        <label for="txt_vis" class="form-label">Visited Person Employee Code</label>
+                        <input type="text" id="txt_vis" class="form-input" maxlength="6" autocomplete="off" @* oninput="this.value = this.value.replace(/[^0-9]/g, '');" onchange="_visit.GetEmployeeNameDetail();" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_vis_per" class="form-label">Visited Person</label>
+                        <input type="text" id="txt_vis_per" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_dt" class="form-label">Visited Date</label>
+                        <input type="date" id="txt_dt" class="form-input" @* onchange="_visit.fromDateChanged1()" *@>
+                    </div>
+                    <div class="form-group">
+                        <label for="FileUpload1" class="form-label">Home Visit Photo</label>
+                        <input type="file" id="FileUpload1" class="form-input" @* onchange="_visit.validateFile()" *@>
+                        <label id="Label1" class="error-label">File Must be Type of JPEG, JPG or PNG</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_rem_visi" class="form-label">Home Visit Remarks</label>
+                        <input type="text" id="txt_rem_visi" class="form-input" maxlength="150" autocomplete="off">
+                    </div>
+                </div>
+                <div class="button-group">
+                    <button type="button" id="btn_Confirm" class="submit-button" @* onclick="_visit.buttonSubmitClick(this);" *@>CONFIRM</button>
+                    <button type="button" id="Button_d" class="exit-button" @* onclick="redirectToDashboard();" *@>EXIT</button>
+                </div>
+                <input type="hidden" id="hdn_BranchID">
+                <input type="hidden" id="hdn_calltype">
+                <input type="hidden" id="hdn_calltype1">
+            </form>
+        </div>
+    </div>
+</body> 

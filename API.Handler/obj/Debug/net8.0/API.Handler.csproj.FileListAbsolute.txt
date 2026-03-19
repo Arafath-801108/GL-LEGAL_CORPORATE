@@ -1,0 +1,144 @@
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\nale\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\testing legalcop\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\uat_latest11\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\live_legal\legal_corporate\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101281\Desktop\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.deps.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\bin\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.AssemblyInfo.cs
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\refint\API.Handler.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\API.Handler.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Debug\net8.0\ref\API.Handler.dll

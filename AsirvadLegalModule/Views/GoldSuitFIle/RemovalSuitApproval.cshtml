@@ -1,0 +1,56 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/goldsuitefile/removalsuitapproval.css" rel="stylesheet" />
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/goldsuitefilejs/removalsuitapproval.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="outter">
+        <div class="headingBar">
+            <span class="heading-text">Legal - Approve Suit Removal</span>
+        </div>
+
+        <div class="form-group control-row">
+            <div class="dropdown-wrapper">
+                <label class="label" >Legal ID <span style="color: var(--primary-color);">*</span></label>
+                <select id="ddllegalid" class="custom-dropdown" @* onchange="_Removal.Pledge_Details(this)" *@>
+                    
+                </select>
+            </div>
+            <input type="button" id="btnExit" style="display:none;" value="EXIT" class="custom-button exit-button" @* onclick="redirectToDashboard();" *@ />
+        </div>
+        <div class="form-group" id="div_pledge" style="display:none;">
+            <table id="GridView1" class="GridView1">
+                <thead>
+                    <tr>
+                        <th>Pledge No</th>
+                        <th>Legal ID</th>
+                        <th>Complaint</th>
+                        <th>Case No</th>
+                        <th>
+                            <span>Select All</span>
+                            <input type="checkbox" id="chkSelectAll" class="chkHeader" @* onclick="_Removal.setupSelectAll()" *@ />
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+        <div class="form-group1" id="div_btn" style="display: none;">
+            <input type="submit" id="btnRemove"  value="Confirm" class="custom-button" @*  onclick="_Removal.RemovalSubmit()"  *@/>
+            <input type="button" id="btnExit2" value="EXIT" class="custom-button exit-button" @* onclick="redirectToDashboard();" *@ />
+
+        </div>
+    </div>
+</div>
+        

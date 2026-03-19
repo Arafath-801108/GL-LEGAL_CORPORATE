@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="~/js/legalnotice/jspdf.umd.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/jquery-3.6.0.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<!-- jQuery (required for DataTables and other libraries) -->
+
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<!-- jsPDF for PDF generation -->
+<script src="~/js/legalnotice/jspdf.umd.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<!-- jsPDF AutoTable for structured table exports -->
+<script src="~/js/legalnotice/jspdf.plugin.autotable.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<!-- SheetJS (xlsx) for Excel export -->
+<script src="~/js/legalnotice/xlsx.full.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/legalfir/legal_fir_report.css" rel="stylesheet" nonce="5d67de6751aa4e158c33dfd828fc144b" />
+<!-- DataTables for handling dynamic tables -->
+<script src="~/js/legalnotice/jquery.datatables.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalfir/legal_fir_report.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<!-- SweetAlert2 for better alert dialogs -->
+<script src="~/lib/sweet-alert/sweetalert2v11_22_2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="body">
+
+    <form id="form1" runat="server">
+        <div class="container-fluid mt-4" id="fullbody">
+            <div class="card text-center">
+                <div class="card-header" id="chead">
+                     COMPLAINT REPORT 
+                </div>
+                <div class="card-body" style="flex: 1; overflow-y: auto; overflow-x: auto;">
+                    <div class="container text-center">
+                        <div class="align-items-center">
+                            <div class="row">
+                                <label for="f_dt" class="form-label mb-0">FROM DATE</label>
+                            </div>
+                            <div class="row">
+                                <input type="date" class="form-control" id="FromDate" @* onchange="_report.validateDate(this)" *@ />
+                            </div>
+                            <div class="row">
+                                <label for="t_dt" class="form-label mb-0">TO DATE</label>
+                            </div>
+                            <div class="row">
+                                <input type="date" class="form-control" @* onchange="_report.validateDate1(this)" *@ id="toDate" />
+                            </div>
+                            <div class="row">
+                                <button type="button" class="btn btn-primary" id="search"@*  onclick="_report.getdtl(this)" *@>Search</button>
+                            </div>
+
+                        </div>
+
+                        <div id="second_sub" style="display: none">
+                            <div class="card-header" id="chead1" style="margin: 2rem 0rem 1.5rem 0rem">
+                                LEGAL NOTICE REPORT
+                            </div>
+                            <div class="container-fluid mt-4">
+                                
+                                <button type="button" id="btnexcel" class="btn btn-secondary btn-side" @* onclick="_report.downloadExcel(this)" *@ title="Export Data">
+                                    <i class="fas fa-download"></i>
+                                    <span class="button-text">Excel</span>
+                                </button>
+                                <button type="button" id="btnexit" class="btn btn-secondary btn-side" @* onclick="redirectToDashboard(this)" *@ title="Export Data">
+                                    <i class="fas fa-solid fa-left-from-bracket"></i>
+                                    <span class="button-text">Exit</span>
+                                </button>
+                            </div>
+                            <div class="container-fluid mt-4" id="tbl">
+                                <div class="table-responsive" style="flex: 1; overflow-y: auto; overflow-x: auto;">
+                                    <div class="table-side-button left-button">
+                                    </div>
+                                    <table id="dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>COMPLAINT ID</th>
+                                                <th>BRANCH NAME & ID</th>
+                                                <th>POLICE COMPLAINT DATE</th>
+                                                <th>COURT NAME</th>
+                                                <th>ADVOCATE NAME</th>
+                                                <th>PRIVATE COMPLAINT DATE</th>
+                                                <th>LAG DAYS</th>
+                                                <th>CUSTOMER ID</th>
+                                                <th>UPDATED DOCUMENTS</th>
+                                               
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableBody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card-footer text-bg-dark">
+                   
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+

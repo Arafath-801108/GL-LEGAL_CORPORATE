@@ -1,0 +1,138 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/legalrecoverycall/recoveryempreport.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalrecoverycall/recoveryempreport.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="card-header">
+    <h3 class="card-title">Staff Debit Recovery Report</h3>
+</div>
+<div class="container-fluid">
+    <div class="card">
+        
+        <div class="card-body">
+            <div id="reportZone" style="display:none;">
+                <h5 class="section-title">Zone Wise Report</h5>
+                <div class="report-table-container">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Zonal ID</a></th>
+                                <th>Zonal Name</th>
+                                <th>Total Call</th>
+                                <th>First Pending Call</th>
+                                <th>First Call Completed</th>
+                                <th>Follow Pending Call</th>
+                                <th>Follow Call Completed</th>
+                                <th>Home Visit Completed</th>
+                                <th>Home Visit Pending</th>
+                                <th>Assign Home Visit Pending</th>
+                                <th>Home Verify Pending</th>
+                                <th>Home Verify Completed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reportTableZone"></tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div id="reportRegion" style="display:none;">
+                <div class="text-left mb-3">
+                    <button class="btn-secondary" id="btnbackZone" onclick="_Report.goBackZone(this)">&#8592; Back</button>
+                </div>
+                <h5 class="section-title">Region Wise Report</h5>
+                <div class="report-table-container">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Region ID</th>
+                                <th>Region Name</th>
+                                <th>Total Call</th>
+                                <th>First Pending Call</th>
+                                <th>First Call Completed</th>
+                                <th>Follow Pending Call</th>
+                                <th>Follow Call Completed</th>
+                                <th>Home Visit Completed</th>
+                                <th>Home Visit Pending</th>
+                                <th>Assign Home Visit Pending</th>
+                                <th>Home Verify Pending</th>
+                                <th>Home Verify Completed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reportTableReg"></tbody>
+                    </table>
+                </div>
+
+            </div>
+            <div id="reportArea" style="display:none;">
+                <div class="text-left mb-3">
+                    <button class="btn-secondary" id="btnbackReg" onclick="_Report.goBackReg(this)">&#8592; Back</button>
+                </div>
+                <h5 class="section-title">Area Wise Report</h5>
+                <div class="report-table-container">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Area ID</th>
+                                <th>Area Name</th>
+                                <th>Total Call</th>
+                                <th>First Pending Call</th>
+                                <th>First Call Completed</th>
+                                <th>Follow Pending Call</th>
+                                <th>Follow Call Completed</th>
+                                <th>Home Visit Completed</th>
+                                <th>Home Visit Pending</th>
+                                <th>Assign Home Visit Pending</th>
+                                <th>Home Verify Pending</th>
+                                <th>Home Verify Completed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reportTableArea"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+            <div id="reportBranch" style="display:none;">
+                <div class="text-left mb-3">
+                    <button class="btn-secondary" id="btnbackArea" onclick="_Report.goBackArea(this)">&#8592; Back</button>
+                </div>
+                <h5 class="section-title">Branch Wise Report</h5>
+                <div class="report-table-container">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>Branch ID</th>
+                                <th>Branch Name</th>
+                                <th>Total Call</th>
+                                <th>First Pending Call</th>
+                                <th>First Call Completed</th>
+                                <th>Follow Pending Call</th>
+                                <th>Follow Call Completed</th>
+                                <th>Home Visit Completed</th>
+                                <th>Home Visit Pending</th>
+                                <th>Assign Home Visit Pending</th>
+                                <th>Home Verify Pending</th>
+                                <th>Home Verify Completed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="reportTableBranch"></tbody>
+                    </table>
+                </div>
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="text-center mt-5">
+        <button class="btn-secondary"  id="btnexit" onclick="redirectToDashboard();">Exit</button>
+    </div>
+</div>

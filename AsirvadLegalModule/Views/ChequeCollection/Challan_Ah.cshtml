@@ -1,0 +1,381 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/chequecollection/challan_ah.css" rel="stylesheet" />
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/site.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/chequecollection/challan_ah.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+@* <div class="body"> *@
+<div class="main-content">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Irregularity Case Challan Ah Verification</h3>
+            </div>
+            <div class="card-body">
+                <!-- Main Form Section -->
+                <div class="form-section">
+                    <div class="form-group">
+                        <label for="drp_irr" class="form-label">Irregularity Type</label>
+                        <select id="drp_irr" name="drp_irr" class="form-select" @* onchange="Challan_Ah.pledgeddl(this.value);" *@>
+                            <option value="0">SELECT</option>
+                            <option value="1">Stolen Gold</option>
+                            <option value="2">Spurious Gold</option>
+                            <option value="3">Auction Loss</option>
+                            <option value="4">Employee Debit</option>
+                            <option value="5">Packet Missing</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Employee Section -->
+                <div id="employee_div" style="display: none;" class="form-section">
+                    <h5 class="section-title">Employee Details</h5>
+
+                    <div class="form-group">
+                        <label for="drp_pledge" class="form-label">Select Employee Code</label>
+                        <select id="drp_emp" name="drp_pledge" class="form-select" @* onchange="Challan_Ah.getEmpDetails(this.value);" *@>
+                            @*  <option value="-1">SELECT</option> *@
+                            <!-- Populate dynamically -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="txt_cat" class="form-label">Category</label>
+                        <input type="text" id="txt_cat" name="txt_cat" class="form-control" disabled />
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="txt_emp" class="form-label">Employee Name</label>
+                            <input type="text" id="txt_emp" name="txt_emp" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_add" class="form-label">Address</label>
+                            <input type="text" id="txt_add" name="txt_add" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="txt_ph" class="form-label">Phone Number</label>
+                            <input type="text" id="txt_ph" name="txt_ph" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_des" class="form-label">Designation</label>
+                            <input type="text" id="txt_des" name="txt_des" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="txt_bran" class="form-label">Branch Name</label>
+                            <input type="text" id="txt_bran" name="txt_bran" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_brid" class="form-label">Branch Id</label>
+                            <input type="text" id="txt_brid" name="txt_brid" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="txt_area" class="form-label">Area Name</label>
+                            <input type="text" id="txt_area" name="txt_area" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_reg" class="form-label">Region Name</label>
+                            <input type="text" id="txt_reg" name="txt_reg" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="txt_zone" class="form-label">Zone Name</label>
+                            <input type="text" id="txt_zone" name="txt_zone" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_amt" class="form-label">Staff Debit Amount</label>
+                            <input type="text" id="txt_amt" name="txt_amt" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="txt_redt" class="form-label">Employee Resignation / Termination Date</label>
+                            <input type="text" id="txt_redt" name="txt_redt" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_chal_dt" class="form-label">Challan Date</label>
+                            <input type="text" id="txt_chal_dt" name="txt_chal_dt" class="form-control" disabled/>
+                        </div>
+                    </div>
+
+                    <div class="document-section">
+                        <div class="document-row">
+                            <h6 class="document-label">Cheque Document:</h6>
+                            <button type="button" id="viewChequeBtn" class="btn view-btn" @* onclick="Challan_Ah.pdfdownload(this.value)" *@>VIEW</button>
+                        </div>
+                    </div>
+
+                    <div class="document-section">
+                        <div class="document-row">
+                            <h6 class="document-label">Challan/Receipt Document:</h6>
+                            <button type="button" id="viewChequeBtn1" class="btn view-btn"@*  onclick="Challan_Ah.pdfdownload1(this.value)" *@>VIEW</button>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="txt_remark1" class="form-label">Remark</label>
+                        <textarea id="txt_remark1" name="txt_remark1" class="form-control" maxlength="100" @* oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');" onkeyup="checkLength(this, 150);" *@></textarea>
+                    </div>
+
+                    <div class="button-row">
+                        <button type="button" id="btnconfirm" class="btn primary-btn"  @* onclick="Challan_Ah.sumbitEmpDetails(this.value)" *@>CONFIRM</button>
+                        <button type="button" id="btnReject" class="btn danger-btn"  @* onclick="Challan_Ah.RejectEmpDetails(this.value)"*@>REJECT </button>
+                        <button type="button" id="btnExit" class="btn secondary-btn"  @* onclick="redirectToDashboard()" *@>EXIT</button>
+                    </div>
+                </div>
+
+                <!-- Customer Section -->
+                <div id="customer_div" style="display: none;" class="form-section">
+                    <h5 class="section-title">Customer Details</h5>
+
+                    <div class="form-group">
+                        <label for="DropDownList2" class="form-label">Select Pledge No</label>
+                        <select id="DropDownList2" name="DropDownList2" class="form-select" @* onchange="Challan_Ah.getPledgeDetails(this.value);" *@>
+                            @* <option value="-1">SELECT</option> *@
+                            <!-- Populate dynamically -->
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Text18" class="form-label">Category</label>
+                        <input type="text" id="Text18" name="Text18" class="form-control" disabled />
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text10" class="form-label">Customer ID</label>
+                            <input type="text" id="Text10" name="Text10" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text11" class="form-label">Customer Name</label>
+                            <input type="text" id="Text11" name="Text11" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="mob_num" class="form-label">Contact Number</label>
+                            <input type="text" id="mob_num" name="mob_num" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="createdDate" class="form-label">Reported Date</label>
+                            <input type="text" id="createdDate" name="createdDate" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="gross_we" class="form-label">Gross Weight</label>
+                            <input type="text" id="gross_we" name="gross_we" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="totalOutstandingAmount" class="form-label">Loss Amount</label>
+                            <input type="text" id="totalOutstandingAmount" name="totalOutstandingAmount" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text12" class="form-label">Branch Id</label>
+                            <input type="text" id="Text12" name="Text12" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text13" class="form-label">Branch Name</label>
+                            <input type="text" id="Text13" name="Text13" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text14" class="form-label">Area Name</label>
+                            <input type="text" id="Text14" name="Text14" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text15" class="form-label">Region Name</label>
+                            <input type="text" id="Text15" name="Text15" class="form-control" disabled />
+                        </div>
+                    </div>
+
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text16" class="form-label">Zone</label>
+                            <input type="text" id="Text16" name="Text16" class="form-control" disabled />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text17" class="form-label">Challan Date</label>
+                            <input type="text" id="Text17" name="Text17" class="form-control" disabled/>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">Address</label>
+                        <textarea id="address" name="address" class="form-control" disabled rows="3"></textarea>
+                    </div>
+
+                    <div class="document-section">
+                        <div class="document-row">
+                            <h6 class="document-label">Cheque Document:</h6>
+                            <button type="button" id="imgview" class="btn view-btn" @* onclick="Challan_Ah.pdfdownload(this.value)" *@>VIEW</button>
+                        </div>
+                    </div>
+                    <div class="document-section">
+                        <div class="document-row">
+                            <h6 class="document-label">Challan/Receipt Document:</h6>
+                            <button type="button" id="imgview1" class="btn view-btn" @* onclick="Challan_Ah.pdfdownload1(this.value)" *@>VIEW</button>
+                        </div>
+                    </div>
+
+                   
+
+                    <div class="form-group">
+                        <label for="remarks" class="form-label">Remark</label>
+                        <textarea id="remarks" name="remarks" class="form-control" maxlength="100" @* oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');" onkeyup="checkLength(this, 150);" *@></textarea>
+                    </div>
+
+                    <div class="button-row">
+                        <button type="button" id="btnconfirm1" class="btn primary-btn" @* onclick="Challan_Ah.sumbitPledgeDetails(this.value);" *@>CONFIRM</button>
+                        <button type="button" id="btnReject1" class="btn danger-btn" @* onclick="Challan_Ah.RejectPledgeDetails(this.value)" *@>REJECT</button>
+                        <button type="button" id="btnExit" class="btn secondary-btn" @* onclick="redirectToDashboard()" *@>EXIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script nonce="5d67de6751aa4e158c33dfd828fc144b">
+
+
+    function validateirrgularity() {
+        const irregularityType = document.getElementById("drp_irr").value;
+        const employeeDiv = document.getElementById("employee_div");
+        const customerDiv = document.getElementById("customer_div");
+
+        if (irregularityType === "4") { // Employee Debit
+            employeeDiv.style.display = "block";
+            customerDiv.style.display = "none";
+        } else if (irregularityType !== "0") { // Other options except SELECT
+            employeeDiv.style.display = "none";
+            customerDiv.style.display = "block";
+        } else { // SELECT option
+            employeeDiv.style.display = "none";
+            customerDiv.style.display = "none";
+        }
+    }
+
+    function convertDateFormat(inputDate) {
+        var parts = inputDate.split('-');
+        var day = parts[0];
+        var month = parts[1];
+        var year = parts[2];
+        var monthNames = {
+            'JAN': '01', 'FEB': '02', 'MAR': '03', 'APR': '04',
+            'MAY': '05', 'JUN': '06', 'JUL': '07', 'AUG': '08',
+            'SEP': '09', 'OCT': '10', 'NOV': '11', 'DEC': '12'
+        };
+        var monthNumber = monthNames[month.toUpperCase()];
+        var formattedDate = year + '-' + monthNumber + '-' + (day.length === 1 ? '0' + day : day);
+        return formattedDate;
+    }
+
+   
+
+    function validateInput() {
+        if (document.getElementById("drp_irr").value === "0") {
+            AlertM1("Please select irregularity type..!!");
+            document.getElementById("drp_irr").focus();
+            return false;
+        }
+        if (document.getElementById("DropDownList2").value === "-1") {
+            AlertM1("Please select pledge..!!");
+            document.getElementById("DropDownList2").focus();
+            return false;
+        }
+        if (document.getElementById("Text17").value == "") {
+            AlertM1("Please select challan date..!!");
+            document.getElementById("Text17").focus();
+            return false;
+        }
+        if (document.getElementById('FileUpload1').value === "") {
+            AlertM1("Please attach challan document..!!");
+            document.getElementById('FileUpload1').focus();
+            return false;
+        }
+        var fp = document.getElementById("FileUpload1").value;
+        var fileExtension = fp.trim().toLowerCase().split('.').pop();
+        if (fileExtension !== "pdf") {
+            AlertM1("Only PDF files are allowed for uploading.");
+            document.getElementById("FileUpload1").value = "";
+            return false;
+        }
+        if (document.getElementById("remarks").value == "") {
+            AlertM1("Please enter remark..!!");
+            document.getElementById("remarks").focus();
+            return false;
+        }
+    }
+
+    function validateInput1() {
+        if (document.getElementById("drp_irr").value === "0") {
+            AlertM1("Please select irregularity type..!!");
+            document.getElementById("drp_irr").focus();
+            return false;
+        }
+        if (document.getElementById("drp_pledge").value === "-1") {
+            AlertM1("Please select employee..!!");
+            document.getElementById("drp_pledge").focus();
+            return false;
+        }
+        if (document.getElementById("txt_chal_dt").value == "") {
+            AlertM1("Please select challan date..!!");
+            document.getElementById("txt_chal_dt").focus();
+            return false;
+        }
+        if (document.getElementById('FileUpload2').value === "") {
+            AlertM1("Please attach challan document..!!");
+            document.getElementById('FileUpload2').focus();
+            return false;
+        }
+        var fp = document.getElementById("FileUpload2").value;
+        var fileExtension = fp.trim().toLowerCase().split('.').pop();
+        if (fileExtension !== "pdf") {
+            AlertM1("Only PDF files are allowed for uploading.");
+            document.getElementById("FileUpload2").value = "";
+            return false;
+        }
+        if (document.getElementById("txt_remark1").value == "") {
+            AlertM1("Please enter remark..!!");
+            document.getElementById("txt_remark1").focus();
+            return false;
+        }
+    }
+
+    function checkLength(textBox, maxLength) {
+        if (textBox.value.length > maxLength) {
+            textBox.value = textBox.value.substring(0, maxLength);
+        }
+    }
+</script>
+@* </div> *@
+

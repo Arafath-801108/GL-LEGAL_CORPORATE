@@ -1,0 +1,257 @@
+﻿/* Container Styling */
+.container-fluid {
+    padding: 20px;
+    background: #f8f9fa;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background: linear-gradient(90deg, #ff4500, #ffd700);
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-control, .form-select {
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.95rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+}
+
+    .form-control:focus, .form-select:focus {
+        border-color: #ff4500;
+        box-shadow: 0 0 6px rgba(255, 69, 0, 0.3);
+        outline: none;
+    }
+
+/* Section Headers */
+h5.section-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ffd700;
+}
+/* Action Buttons Container */
+
+
+/* Comments Textarea */
+textarea.form-control {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px; /* Minimum height for the textarea */
+}
+
+/* Increase spacing between document links and action buttons */
+.text-center.mt-5 {
+    margin-top: 3rem; /* Increase margin-top to create more space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Button Styling */
+.btn-primary {
+    min-width: 120px;
+    text-align: center;
+    background-color: #ff4500;
+    border-color: #ff4500;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .btn-primary:hover {
+        background-color: #e03e00;
+        border-color: #e03e00;
+    }
+
+.btn-outline-secondary {
+    min-width: 120px;
+    text-align: center;
+    border-color: #ffd700;
+    color: #333;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+    .btn-outline-secondary:hover {
+        background-color: #fffacd;
+        border-color: #ffd700;
+    }
+
+.btn-danger {
+    min-width: 120px;
+    text-align: center;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .btn-danger:hover {
+        background-color: #c82333;
+        border-color: #c82333;
+    }
+
+.btn-link {
+    font-size: 0.9rem;
+    color: #ff4500;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+    .btn-link:hover {
+        color: #e03e00;
+        text-decoration: underline;
+    }
+
+/* Document Links */
+.document-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+    .document-links .btn-link {
+        flex: 1 1 auto;
+        text-align: center;
+        padding: 8px 12px;
+        border: 1px solid #ffd700;
+        border-radius: 6px;
+        transition: background-color 0.2s;
+    }
+
+        .document-links .btn-link:hover {
+            background-color: #fffacd;
+        }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .document-links .btn-link {
+        flex: 1 1 100%;
+    }
+
+    .row > div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .form-control, .form-select {
+        font-size: 0.9rem;
+    }
+}
+/* Ensure rows within sections use flexbox for single-line layout */
+.section-row {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to keep fields in one line */
+    gap: 15px; /* Space between fields */
+    margin-bottom: 15px;
+}
+
+    .section-row .form-group {
+        flex: 1; /* Each form group takes equal space */
+        margin-bottom: 0; /* Remove bottom margin since we're in a single line */
+    }
+
+/* Adjust form controls for consistency */
+.form-control, .form-select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .section-row {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+        .section-row .form-group {
+            flex: 1 1 100%; /* Stack fields vertically */
+            margin-bottom: 12px;
+        }
+}
+
+@media (max-width: 576px) {
+    .section-row .form-group {
+        flex: 1 1 100%;
+    }
+
+    .form-control, .form-select {
+        font-size: 0.9rem;
+    }
+}

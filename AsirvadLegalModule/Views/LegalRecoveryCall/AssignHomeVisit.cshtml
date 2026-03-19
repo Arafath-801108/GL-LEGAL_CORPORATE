@@ -1,0 +1,106 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/legalrecoverycall/assignhomevisit.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalrecoverycall/assignhomevisit.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="form-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>Resigned Staff Assign Home Visit - HO</h1>
+        </div>
+
+        <!-- Employee Information Section -->
+        <div class="form">
+            <div class="form-grid">
+                <label for="employee-code" class="form-label">Select Employee Code</label>
+                <select id="drp_emp" class="dropdown" @* onchange="_assign.LoadEmployeeDetails(this);" *@>
+                    <!-- Options will be populated dynamically -->
+                </select>
+
+                <label for="employee-name" class="form-label">Employee Name</label>
+                <input type="text" id="employee-name" class="form-input" readonly>
+
+                <label for="zone" class="form-label">Zone</label>
+                <input type="text" id="zone" class="form-input" readonly>
+
+                <label for="region" class="form-label">Region</label>
+                <input type="text" id="region" class="form-input" readonly>
+
+                <label for="area" class="form-label">Area</label>
+                <input type="text" id="area" class="form-input" readonly>
+
+                <label for="resigned-branch" class="form-label">Resigned Branch</label>
+                <input type="text" id="resigned-branch" class="form-input" readonly>
+
+                <label for="phone1" class="form-label">Employee Phone 1</label>
+                <input type="text" id="phone1" class="form-input" readonly>
+
+                <label for="phone2" class="form-label">Employee Phone 2</label>
+                <input type="text" id="phone2" class="form-input" readonly>
+
+                <label for="amount" class="form-label">Amount to be Recovered</label>
+                <input type="text" id="amount" class="form-input" readonly>
+            </div>
+
+            <!-- Grid Section -->
+            <div class="grid-view-container">
+                <table class="grid-view" id="gridView1">
+                    <thead>
+                        <tr>
+                            <th>Father Name</th>
+                            <th>Permanent Address</th>
+                            <th>Landmark</th>
+                            <th>Post Office</th>
+                            <th>District Name</th>
+                            <th>State Name</th>
+                            <th>Pin Code</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Rows will be populated dynamically -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Nearest Branch Update Section -->
+            <div class="header">
+                <h1>Nearest Branch Updation</h1>
+            </div>
+            <div class="form-grid">
+                <label for="nearest-branch" class="form-label">Select Nearest Branch</label>
+                <select id="drp_near" class="dropdown" @* onchange="_assign.LoadOtherBranchDetails(this);" *@>
+                    <!-- Options will be populated dynamically -->
+                </select>
+
+                <label for="branch-id" class="form-label">Branch ID</label>
+                <input type="text" id="branch-id" class="form-input" readonly>
+
+                <label for="branch-zone" class="form-label">Selected Branch: Zone</label>
+                <input type="text" id="branch-zone" class="form-input" readonly>
+
+                <label for="branch-region" class="form-label">Selected Branch: Region</label>
+                <input type="text" id="branch-region" class="form-input" readonly>
+
+                <label for="branch-area" class="form-label">Selected Branch: Area</label>
+                <input type="text" id="branch-area" class="form-input" readonly>
+
+                <label for="remarks" class="form-label">Remarks</label>
+                <input type="text" id="remarks" class="form-input" maxlength="150" autocomplete="off">
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="btnsubmit" class="submit-button" @* onclick="_assign.btnSubmitClick();" *@>Confirm</button>
+                <button type="button" id="btnexit" class="exit-button" @* onclick="redirectToDashboard();" *@>Exit</button>
+            </div>
+        </div>
+    </div>
+</div>

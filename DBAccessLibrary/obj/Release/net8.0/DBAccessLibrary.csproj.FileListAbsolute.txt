@@ -1,0 +1,84 @@
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll

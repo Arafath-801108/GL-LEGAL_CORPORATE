@@ -1,0 +1,231 @@
+﻿@{
+    Layout = null;
+}
+<link href="~/css/sweetalert2.min.css" rel="stylesheet" />
+
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/legalnotice/legal_report.css" rel="stylesheet" />
+<link href="~/css/goldsuitefile/suitfile_report.css" rel="stylesheet" />
+
+<!-- SweetAlert2 for better alert dialogs -->
+
+
+<link href="~/css/sweetalert2.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/jquery-3.6.0.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/jspdf.umd.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/goldsuitefilejs/suitfilereport.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<script src="~/js/legalnotice/jspdf.plugin.autotable.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/xlsx.full.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/jquery.datatables.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+
+<div class="body">
+
+    <form id="form1" runat="server">
+        <div class="container-fluid mt-4" id="fullbody">
+            <div class="card text-center">
+                <div class="card-header" id="chead">
+                    Suit File Report
+                </div>
+                <div class="card-body" style="flex: 1; overflow-y: auto; overflow-x: auto;">
+                    <div class="container text-center">
+                        <div class="align-items-center">
+                            <div class="row">
+                                <label for="report_type" class="form-label mb-0">Report Type</label>
+                            </div>
+                            <div class="row">
+                                <select id="drp_report" class="form-control">
+                                    <option value="0">----------Select----------</option>
+                                    <option value="1">Suit File Remove Report</option>
+                                    <option value="2">Suit File Report</option>
+                                </select>
+                            </div>
+                            <div class="row">
+                                <label for="f_dt" class="form-label mb-0">FROM DATE</label>
+                            </div>
+                            <div class="row">
+                                <input type="date" class="form-control" id="FromDate" @* onchange="_report.validateDate(this)" *@ />
+                            </div>
+                            <div class="row">
+                                <label for="t_dt" class="form-label mb-0">TO DATE</label>
+                            </div>
+                            <div class="row">
+                                <input type="date" class="form-control" @* onchange="_report.validateDate1(this)" *@ id="toDate" />
+                            </div>
+                            <div class="row">
+                                <button type="button" id="btnsearch" class="btn btn-primary" @* onclick="_report.getdtl(this)" *@>Search</button>
+                            </div>
+                            <button type="button" id="btnexit" class="btn btn-secondary btn-side" @* onclick="redirectToDashboard(this)" *@ title="Export Data">
+                                <i class="fas fa-solid fa-left-from-bracket"></i>
+                                <span class="button-text">Exit</span>
+                            </button>
+                        </div>
+
+                        <div id="second_sub" style="display: none">
+                            <div class="card-header" id="chead1" style="margin: 2rem 0rem 1.5rem 0rem">
+								Suit File Report 
+                            </div>
+                            <div class="container-fluid mt-4">
+                               @*  <button type="button" class="btn btn-secondary btn-side" onclick="_report.downloadPDF(this)" title="Export Data">
+                                    <i class="fas fa-download"></i>
+                                    <span class="button-text">PDF</span>
+                                </button> *@
+                                <button type="button" id="btndownload1" class="btn btn-secondary btn-side" @* onclick="_report.downloadExcel(this)" *@ title="Export Data">
+                                    <i class="fas fa-download"></i>
+                                    <span class="button-text">Excel</span>
+                                </button>
+                               @*  <button type="button" class="btn btn-secondary btn-side" onclick="redirectToDashboard(this)" title="Export Data">
+                                    <i class="fas fa-solid fa-left-from-bracket"></i>
+                                    <span class="button-text">Exit</span>
+                                </button> *@
+                            </div>
+                            <div class="container-fluid mt-4" id="tbl">
+                                <div class="table-responsive" style="flex: 1; overflow-y: auto; overflow-x: auto;">
+                                    <div class="table-side-button left-button">
+                                    </div>
+                                    <table id="dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>LegalID</th>
+                                                <th>CustomerName</th>
+                                                <th>PledgeNumber</th>
+                                                <th>Branch</th>
+                                                <th>State</th>
+                                                <th>RegionName</th>
+                                                <th>TypeOfItem</th>
+                                                <th>case_no</th>
+                                                <th>Opendate</th>
+                                                <th>Deferdate</th>
+                                                <th>Closedate</th>
+                                                <th>Customer Id</th>
+                                                <th>Reported Date</th>
+                                                <th>Approved Date</th>
+                                                <th>Pledge Date</th>
+                                                <th>Pledge vale</th>
+                                                <th>Balance</th>
+                                                <th>Act weight</th>
+                                                <th>Net weight</th>
+                                                <th>Stone weight</th>
+                                                <th>Status</th>
+                                                <th>LCU Remark</th>
+                                                <th>Pending Days</th>
+                                                <th>Complaint Type</th>
+                                                <th>GOLD AVAILABLE PLACE</th>
+                                                <th>POLICE STATION</th>
+                                                <th>CURRENT_BRANCH</th>
+                                                <th>ANOTHER BRANCH ID</th>
+                                                <th>REASON FOR SUIT FILE</th>
+                                                <th>GOLD IN BRANCH</th>
+                                                <th>PREVIOUSLY ENTERED PLEDGE OR NOT</th>
+                                                <th>Next Review Date</th>
+                                                <th>Pledge Status</th>
+                                                <th>Loss Amount</th>
+                                                <th>Irregularity Type</th>
+                                                <th>Purity</th>
+                                                <th>Gold availability status</th>
+                                                <th>Case Status</th>
+                                                <th>Requested BH</th>
+                                                <th>BH Requested Date</th>
+                                                <th>Recommended AH</th>
+                                                <th>AH Recommended Date</th>
+                                                <th>Recommended RHA</th>
+                                                <th>RHA Recommended Date</th>
+                                                <th>Recommended RM</th>
+                                                <th>RM Recommended Date</th>
+                                                <th>Recommended LM/LO</th>
+                                                <th>LM/LO Recommended Date</th>
+                                                <th>Approved HO</th>
+                                                <th>HO Approved Date</th>
+                                                <th>AH Approve/Reject Remarks</th>
+                                                <th>RHA Approve/Reject Remarks</th>
+                                                <th>RM Approve/Reject Remarks</th>
+                                                <th>LO Approve/Reject Remarks </th>
+                                                <th>SEIZER MAHZOR</th>
+                                                <th>Top View image </th>
+                                                <th>Bottom View image </th>
+                                                <th>Complaint Related Document</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableBody"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="second_sub1" style="display: none">
+                            <div class="card-header" id="chead1" style="margin: 2rem 0rem 1.5rem 0rem">
+                                Suit File Remove Report
+                            </div>
+                            <div class="container-fluid mt-4">
+                                @*  <button type="button" class="btn btn-secondary btn-side" onclick="_report.downloadPDF(this)" title="Export Data">
+                                    <i class="fas fa-download"></i>
+                                    <span class="button-text">PDF</span>
+                                </button> *@
+                                <button type="button" id="btndownload" class="btn btn-secondary btn-side" @* onclick="_report.downloadExcel1(this)" *@ title="Export Data">
+                                    <i class="fas fa-download"></i>
+                                    <span class="button-text">Excel</span>
+                                </button>
+                                @*  <button type="button" class="btn btn-secondary btn-side" onclick="redirectToDashboard(this)" title="Export Data">
+                                    <i class="fas fa-solid fa-left-from-bracket"></i>
+                                    <span class="button-text">Exit</span>
+                                </button> *@
+                            </div>
+                            <div class="container-fluid mt-4" id="tbl">
+                                <div class="table-responsive" style="flex: 1; overflow-y: auto; overflow-x: auto;">
+                                    <div class="table-side-button left-button">
+                                    </div>
+                                    <table id="dataTable1">
+                                        <thead>
+                                            <tr>
+                                                <th>Legal Id</th>
+                                                <th>Branch Code</th>
+                                                <th>Branch</th>
+                                                <th>Area</th>
+                                                <th>Region</th>
+                                                <th>Zone</th>
+                                                <th>Pledge Number</th>
+                                                <th>Pledge Value</th>
+                                                <th>Irregularity</th>
+                                                <th>Loss Amount</th>
+                                                <th>Suit File Approved Date</th>
+                                                <th>Remove Requested By</th>
+                                                <th>Remove Requested Date</th>
+                                                <th>Removal Approved By</th>
+                                                <th>Removal Approved Date</th>
+                                                <th>SEIZER MAHZOR</th>
+                                                <th>Top View image </th>
+                                                <th>Bottom View image </th>
+                                                <th>compliant Related Document</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableBody1"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card-footer text-bg-dark">
+                </div>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+
+
+

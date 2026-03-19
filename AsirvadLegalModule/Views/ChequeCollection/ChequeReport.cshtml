@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Generate Report";
+}
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<script src="~/js/chequecollection/chequereport.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/chequecollection/chequereport.css" rel="stylesheet" />
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/xlxs.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">CHEQUE STATUS REPORT</h3>
+        </div>
+        <div class="card-body">
+           
+            <div class="section-row">
+                <div class="form-group">
+                    <label for="fmDate" class="form-label">From Date:</label>
+                    <input type="date" id="fmDate" name="fmDate" class="form-control" placeholder="Select start date" @* onchange="validateDates();" *@ />
+                </div>
+                <div class="form-group">
+                    <label for="toDate" class="form-label">To Date:</label>
+                    <input type="date" id="toDate" name="toDate" class="form-control" placeholder="Select end date" @* onchange="validateDates();"  *@/>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="DrpIrr" class="form-label">Irregularity Type</label>
+                <select id="DrpIrr" name="DrpIrr" class="form-select">
+                    <option value="0">SELECT</option>
+                    <option value="1">Stolen Gold</option>
+                    <option value="2">Spurious Gold</option>
+                    <option value="3">Auction Loss</option>
+                    <option value="4">Employee Debit</option>
+                    <option value="5">Packet Missing</option>
+                </select>
+            </div>
+            <div class="text-center mt-5">
+                <button id="GenerateReport" class="btn btn-primary"@*  onclick="ChReport.ReportDetails(this.value);" *@>Generate Report</button>
+                <button id="Excel" class="btn btn-primary" @* onclick="ChReport.ExportToExcel(this.value);" *@>Excel</button>
+
+                <button id="exitButton" class="btn btn-secondary" @* onclick="redirectToDashboard();" *@>Exit</button>
+            </div>
+            <div id="EmpReport" style="display:none;">
+                <h5 class="section-title">Report Results</h5>
+                <div class="report-table-container">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>ZONAL NAME</th>
+                                <th>REGION NAME</th>
+                                <th>AREA NAME</th>
+                                <th>BRANCH NAME</th>
+                                <th>BRANCH ID</th>
+                                <th>EMPLOYEE CODE</th>
+                                <th>EMPLOYEE NAME</th>
+                                <th>DESIGNATION </th>
+                                <th>AMOUNT</th>
+                                <th>EMPLOYEE RESIGNATION/ TERMINATION DATE</th>
+                                <th>IRREGULARITY TYPE</th>
+                                <th>IRREGULARITY STATUS</th>
+                                <th>CHEQUE DOCUMENT DETAIL</th>
+                                <th>CHEQUE NOT UPDATED REASON	</th>
+                                <th>CHEQUE DATE	</th>
+                                <th>CHEQUE UPLOADED EMPLOYEE</th>
+                                <th>CHEQUE UPLOADED DATE</th>
+                                <th>CHEQUE STATUS</th>
+                                <th>CHEQUE VERIFIED EMPLOYEE</th>
+                                <th>CHEQUE VERIFIED DATE</th>
+                                <th>CHALLAN UPLOADED EMPLOYEE</th>
+                                <th>CHALLAN UPLOADED DATE</th>
+                                <th>CHALLAN DATE</th>
+                                <th>CHALLAN VERIFIED EMPLOYEE</th>
+                                <th>CHALLAN VERIFIED DATE</th>
+                                <th>CHEQUE STATUS UPLOADED EMPLOYEE</th>
+                                <th>CHEQUE STATUS UPLOADED DATE</th>
+                                <th>STATUS</th>
+                                <th>CHEQUE STATUS VERFICATION EMPLOYEE</th>
+                                <th>CHEQUE STATUS VERFICATION DATE</th>
+                                <th>CHEQUE DOCUMENT</th>
+                                <th>CHALLAN DOCUMENT</th>
+                                <th>RETURNED MEMO/STATEMENT DOCUMENT</th>
+                                <th>BOUNCED CHEQUE DOCUMENT</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody id="EmpReportTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Employee Debit Report Table -->
+            <div id="CusReport" style="display:none;">
+                <h5 class="section-title">Report Results</h5>
+                <div class="report-table-container">
+                    <table class="report-table">
+                        <thead>
+                            <tr>
+                                <th>ZONAL NAME</th>
+                                <th>REGION NAME</th>
+                                <th>AREA NAME</th>
+                                <th>BRANCH NAME</th>
+                                <th>BRANCH ID</th>
+                                <th>CUSTOMER ID	</th>
+                                <th>CUSTOMER NAME</th>
+                                <th>PLEDGE NO</th>
+                                <th>IRREGULARITY TYPE</th>
+                                <th>IRREGULARITY STATUS</th>
+                                <th id="auctionDateHeader">AUCTION DATE</th> <!-- Dynamic heading -->
+                                <th>GROSS WEIGHT	</th>
+                                <th>LOSS</th>
+                                <th>CHEQUE DOCUMENT DETAIL</th>
+                                <th>CHEQUE NOT UPDATED REASON	</th>
+                                <th>CHEQUE DATE	</th>
+                                <th>CHEQUE UPLOADED EMPLOYEE</th>
+                                <th>CHEQUE UPLOADED DATE</th>
+                                <th>CHEQUE STATUS</th>
+                                <th>CHEQUE VERIFIED EMPLOYEE</th>
+                                <th>CHEQUE VERIFIED DATE</th>
+                                <th>CHALLAN UPLOADED EMPLOYEE</th>
+                                <th>CHALLAN UPLOADED DATE</th>
+                                <th>CHALLAN DATE</th>
+                                <th>CHALLAN VERIFIED EMPLOYEE</th>
+                                <th>CHALLAN VERIFIED DATE</th>
+                                <th>CHEQUE STATUS UPLOADED EMPLOYEE</th>
+                                <th>CHEQUE STATUS UPLOADED DATE</th>
+                                <th>STATUS</th>
+                                <th>CHEQUE STATUS VERFICATION EMPLOYEE</th>
+                                <th>CHEQUE STATUS VERFICATION DATE</th>
+                                <th>CHEQUE DOCUMENT</th>
+                                <th>CHALLAN DOCUMENT</th>
+                                <th>RETURNED MEMO/STATEMENT DOCUMENT</th>
+                                <th>BOUNCED CHEQUE DOCUMENT</th>
+                            </tr>
+                        </thead>
+                        <tbody id="CusReportTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+</div>

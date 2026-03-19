@@ -1,0 +1,268 @@
+﻿.container-fluid {
+    padding: 20px;
+    background: #f8f9fa;
+    /* margin-top: 60px; */
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background: blue;
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced from 15px */
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-control {
+    border-radius: 6px;
+    padding: 6px; /* Reduced from 10px */
+    font-size: 0.95rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 95%; /* Adjusted from 90% to fit within form-group */
+}
+
+    .form-control:focus {
+        border-color: #ff4500;
+        box-shadow: 0 0 6px rgba(255, 69, 0, 0.3);
+        outline: none;
+    }
+
+h5.section-title {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 500;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid blue;
+}
+
+.text-center.mt-5 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    min-width: 120px;
+    text-align: center;
+    background-color: none;
+    border-color: #ff4500;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .btn-primary:hover {
+        background-color: #e03e00;
+        border-color: #e03e00;
+    }
+.btn-primary1 {
+    min-width: 120px;
+    text-align: center;
+    background-color: none;
+    border-color: green;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .btn-primary1:hover {
+        background-color: #e03e00;
+        border-color: #e03e00;
+    }
+.btn-secondary {
+    min-width: 120px;
+    text-align: center;
+    background-color: #6c757d;
+    border-color: #6c757d;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+    color: #fff;
+}
+
+    .btn-secondary:hover {
+        background-color: #5a6268;
+        border-color: #5a6268;
+    }
+
+/* Section Row for Form Fields */
+.section-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px; /* Reduced from 15px */
+    margin-bottom: 10px; /* Reduced from 15px */
+}
+
+    .section-row .form-group {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+/* Table Container */
+.report-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 6px;
+    background: #fff;
+    border: 1px solid #ced4da;
+}
+
+/* Table Styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    color: #333;
+    background: #fff;
+}
+
+    .report-table thead {
+        background: blue;
+        color: #fff;
+    }
+
+    .report-table th {
+        padding: 12px 15px;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .report-table tbody tr {
+        border-bottom: 1px solid #ced4da;
+        transition: background-color 0.2s;
+    }
+
+        .report-table tbody tr:hover {
+            background-color: #f8f9fa;
+        }
+
+    .report-table td {
+        padding: 10px 15px;
+        vertical-align: middle;
+    }
+
+    .report-table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 15px;
+        margin-top: 50px; /* Adjusted for smaller screens */
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .section-row {
+        flex-wrap: wrap;
+        gap: 8px; /* Reduced from 10px */
+    }
+
+        .section-row .form-group {
+            flex: 1 1 100%;
+            margin-bottom: 10px;
+        }
+
+    .form-control {
+        padding: 5px; /* Further reduced padding */
+    }
+
+    .report-table {
+        font-size: 0.9rem;
+    }
+
+        .report-table th,
+        .report-table td {
+            padding: 8px 10px;
+        }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        margin-top: 45px; /* Further adjusted for very small screens */
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+        padding: 4px; /* Further reduced padding */
+    }
+
+    .section-row {
+        gap: 6px; /* Further reduced gap */
+    }
+
+        .section-row .form-group {
+            flex: 1 1 100%;
+        }
+
+    .report-table {
+        font-size: 0.85rem;
+    }
+
+        .report-table th,
+        .report-table td {
+            padding: 6px 8px;
+        }
+}

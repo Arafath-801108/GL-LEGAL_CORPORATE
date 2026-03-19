@@ -1,0 +1,67 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/legalrecoverycall/staffbalancerecovery.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalrecoverycall/staffbalancerecovery.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="form-container">
+        <div class="header">
+            <h1>STAFF DEBIT BALANCE RECOVERY</h1>
+        </div>
+        <form id="form1" class="form">
+            <div class="form-grid">
+                <div class="form-label">
+                    <label for="txt_custname">Enter Employee Code</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="txt_custname" maxlength="6" @* oninput="this.value = this.value.replace(/[^0-9]/g, '');" *@  autocomplete="off">
+                    <button type="button" id="btn1" class="submit-button" @* onclick="_recovery.searchBtnClick(this);" *@>SEARCH</button>
+                </div>
+            </div>
+
+            <table id="GridView2" class="gridview" style="display:none;">
+                <thead>
+                    <tr>
+                        <th>Employee Name</th>
+                        <th>Branch Name</th>
+                        <th>Branch Id</th>
+                        <th>Designation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+
+            <div class="form-grid">
+                <div class="form-label">
+                    <label for="txt_bal">Balance</label>
+                </div>
+                <div>
+                    <input type="text" id="txt_bal" disabled>
+                </div>
+                <div class="form-label">
+                    <label for="txt_amt">Amount</label>
+                </div>
+                <div>
+                    <input type="text" id="txt_amt" @* oninput="_recovery.validateDecimalInput(this)" *@ autocomplete="off">
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="btn_Confirm" class="submit-button" @* onclick="_recovery.btnConfirmClick(this);" *@>CONFIRM</button>
+                <button type="button" id="btn_exit" class="exit-button" @* onclick="redirectToDashboard();" *@ >EXIT</button>
+            </div>
+
+            <input type="hidden" id="hd_us">
+        </form>
+    </div>
+</div>

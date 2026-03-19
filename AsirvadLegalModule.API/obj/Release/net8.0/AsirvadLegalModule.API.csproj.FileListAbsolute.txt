@@ -1,0 +1,665 @@
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+D:\New Module Backup\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.staticwebassets.endpoints.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.endpoints.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+C:\Users\101281\Desktop\legal\ASIRVADLEGALMODULE\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.staticwebassets.endpoints.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.endpoints.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+C:\Users\101264\Desktop\api-5-6\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+D:\LEGAL COPORATE GOLD LOAN\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.staticwebassets.endpoints.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.endpoints.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+C:\Users\101264\Desktop\nale3\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.staticwebassets.endpoints.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.endpoints.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+C:\Users\101281\Desktop\uat_latest12\AsirvadLegalModule\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.Development.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\appsettings.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.staticwebassets.endpoints.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.exe
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\keys.xml
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.deps.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.runtimeconfig.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Bcl.Memory.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Microsoft.OpenApi.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Newtonsoft.Json.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Oracle.ManagedDataAccess.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.AspNetCore.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Hosting.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Extensions.Logging.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Formatting.Compact.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Settings.Configuration.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Console.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Debug.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.File.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Serilog.Sinks.Seq.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.IO.Pipelines.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\System.Text.Json.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\linux\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\osx\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\win\lib\net8.0\System.DirectoryServices.Protocols.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\DBAccessLibrary.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.AssemblyReference.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfoInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.AssemblyInfo.cs
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.csproj.CoreCompileInputs.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\scopedcss\bundle\AsirvadLegalModule.API.styles.css
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.development.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.build.endpoints.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.AsirvadLegalModule.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.build.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildMultiTargeting.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets\msbuild.buildTransitive.AsirvadLegalModule.API.props
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.pack.json
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadL.A5B33C8F.Up2Date
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\refint\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.pdb
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\AsirvadLegalModule.API.genruntimeconfig.cache
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\obj\Release\net8.0\ref\AsirvadLegalModule.API.dll
+C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.API\bin\Release\net8.0\AspNetCoreRateLimit.dll

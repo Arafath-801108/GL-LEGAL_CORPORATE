@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<keys>
+<publickey>
+	<RSAKeyValue>
+		<Modulus>vSf/ddW3vfkTCiItzml07nm0Ryy1OfRXrarvAqpvzOJ9pKYdA3NoF1Q3M0dT5V84ZOamXaIzwYcBge4bTeErMy4BFIgmvNsTWXC35dOGfIvCpC5t8Xb3WYLWis28XdtuHLY13FKk8JyvwYLmae5nJgB/5fQEDpt/axVihuykERXR5CyItLLA/5ofEVVgcQeyQbDNBfVulMRLHxVN8WEsnYjPcWz8j/oFtT+Pmfx8WvfI/pgttsN5Ea0bXDs5UfNJsykHjqYK9ZfJLXUxaZFZqxXkY6apHHolE3wDdBkja9ZMKs3mujnS1HVsfgyeVCVtpcfjYZwac5fVYsYerzKQWQ==</Modulus>
+		<Exponent>AQAB</Exponent>
+	</RSAKeyValue>
+</publickey>
+<privatekey>
+	<RSAKeyValue>
+		<Modulus>vSf/ddW3vfkTCiItzml07nm0Ryy1OfRXrarvAqpvzOJ9pKYdA3NoF1Q3M0dT5V84ZOamXaIzwYcBge4bTeErMy4BFIgmvNsTWXC35dOGfIvCpC5t8Xb3WYLWis28XdtuHLY13FKk8JyvwYLmae5nJgB/5fQEDpt/axVihuykERXR5CyItLLA/5ofEVVgcQeyQbDNBfVulMRLHxVN8WEsnYjPcWz8j/oFtT+Pmfx8WvfI/pgttsN5Ea0bXDs5UfNJsykHjqYK9ZfJLXUxaZFZqxXkY6apHHolE3wDdBkja9ZMKs3mujnS1HVsfgyeVCVtpcfjYZwac5fVYsYerzKQWQ==</Modulus>
+		<Exponent>AQAB</Exponent>
+		<P>13oTb9swTFK+6wJ9FGqTAnKSLhaQNPV3JmJ8ZOKwFhYZch8Go/umGCd2cLldqlxHJ60qZW94CL40dhDAeqExVBwgyhsdYJVJWpS20t2aBtDoOzW4xzB5fq0lth8WVDQe0ykAuQek7VA8uKeXbdSgplcPC751wSUWC1vyc3z9Zvs=</P>
+		<Q>4Lq9zTFdhKEgnqmXN+Hw8W+x6n9fkaijHYasKpHxLJ+A/c7Mkx1/qbg02rWliLnC7jTTXXAWb1PR1UIXFmi6ilcbhcyDHnZrsjLRmZ4MFsq9aQ35BCRhA3XseXXhbnd2tqEZ/5gfV1Ra//H8LlEn6tBlojK/pXj2Mu17+PQFVbs=</Q>
+		<DP>AyjeGhjLt4LLG+UYcnExoKqPbC+Wg8BJs/1jt5L/ZAOE8gB0d3kcMWR6vyJotjPOM029vmkJCI/JcyXBvMqaT5JuBKirIJxvy+08VRE8zfbIQP4DrKAQWAQv9mC0Uh3FifEi+pObHoO7sDV86fZhOK80IEb1sRRbI2WAw6LEkHs=</DP>
+		<DQ>w161iUDka1xk7mrDcyqy/EK9av8HB6uS+yVMYcn04HVef8icIz2e8d6Z3JXUbjQImmxEYNQEPQ6iuoK1bZ7opUIrRDvStdX/tLDndWRoYBwrZLxoA0jZKlgHmGR58j5bb1RJNOJ8RMCqSB6IvX+Cc2pvIP57jBDIAOhjQcBrLuc=</DQ>
+		<InverseQ>okguYqQGyPS6ZzVzhVZTkaLNr7xE6X7Fx/IyIkFJoQxk/uay4MC04Q9XRSE6IkXPM/MGTx+OmAmI3BWOCsQhENbGE8eYGKiBoDZkFviHX4J4k27k/jkMPrliSsFnYB9fwoD+rvgXMhQQJi/kYqqJvyDyIkZwYK2m67FomKsQj3Y=</InverseQ>
+		<D>Z8frNEaG4lcm6BdqlGZtvm3NyIMyB1MVS/aN3iOO5ZWao9xz7LHD+ZC+HIdU83Lz6QBXZOYaiWK+JAB0wJz668Cg3Rf6UQHNsvPSIemVTv4LU7MZpTLFcToE5fENGV3MIzqhgHljf5QoJf7g1lv0AfiiM5NXKoCMPz9jaG2rcqdZlEl90Ao8HeNIFl7HY2VY7Ngig5fG2OHexOpYdO+CsTqq8vRKT/EUKrmHUSCm34efDuF2Hw84tgta9tvTt3lCkbcZ6Cx14GQDQ9TNE1BOCpZmyGG70Mu4RTl7AmA4yiJ9wzpr4B6BXafBDGiMFs3iN/kFR99BabeFtmTUKaRp9Q==</D>
+	</RSAKeyValue>
+</privatekey>
+	<aeskey>
+		Anu||@thattu*#0770||^TTT
+	</aeskey>
+</keys>

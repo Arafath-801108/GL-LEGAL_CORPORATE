@@ -1,0 +1,111 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@* <link href="~/css/legalnotice/legalLh_recommend.css" rel="stylesheet" /> *@
+<link href="~/css/legalnotice/legalah_recommend.css" rel="stylesheet" />
+<script src="~/lib/jquery/dist/jquery.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/jquery/dist/jquery.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/lh_approve.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class ="body">
+    <div class="container">
+        <h1>HEAD LEGAL APPROVAL</h1>
+        <form>
+            <div class="form-group">
+                <label for="selectBranch">Select Branch</label>
+                <select id="selectBranch" class="equal-width light-blue" @* onchange="_approve.noticeTypeDropdown(this.value)" *@>
+                   
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="noticeType">Type Of Notice</label>
+                <select id="noticeType" class="equal-width light-blue" @* onchange="_approve.LegalFetch(this.value)" *@>
+                   
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="documentType">Type of Document</label>
+                <input type="text" id="docType" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="relatedEmployee">Related Employee</label>
+                <input type="text" id="relatedEmployee" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="relatedDepartment">Related Department</label>
+                <input type="text" id="relatedDepartment" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="receivedDate">Document Received Date</label>
+                <input type="text" id="receivedDate" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <button type="button" id="btnpdf" class="btn btn-green" @* onclick="_approve.pdfview()" *@>Document View</button>
+            </div>
+
+            <div class="form-group">
+                <label for="updatedBH">Updated BH</label>
+                <input type="text" id="updatedBh" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="bhRemarks">BH Remarks</label>
+                <div class="w-100">
+                    <input type="text" id="bhRemarks" class="equal-width" readonly>
+                    
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="updatedAH">Updated AH</label>
+                <input type="text" id="updatedAh" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="ahRemarks">AH Remarks</label>
+                <input type="text" id="ahRemarks" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="legalManagerCode">Legal Manager Employee Code</label>
+                <input type="text" id="lmEmployeeCode" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="legalManagerRemarks">Legal Manager Remarks</label>
+                <input type="text" id="lmRemarks" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="riimHead">GL Head</label>
+                <input type="text" id="riimHead" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="riimHeadRemarks">GL Head Remarks</label>
+                <input type="text" id="riimHeadRemarks" class="equal-width" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="legalHeadRemarks">Legal Head Remarks</label>
+                <textarea id="legalHeadRemarks" class="equal-width" maxlength="500"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="btnsubmit" class="btn btn-green"@*  onclick="_approve.ah_update()" *@>Submit</button>
+                <button type="button" id="btnreject" class="btn btn-blue" @* onclick="_approve.lh_reject()" *@>Return</button>
+                <button type="button" id="btnexit" class="btn btn-red" @* onclick="redirectToDashboard()" *@>Exit</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,93 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="~/css/goldsuitefile/removalsuitrequest.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/goldsuitefilejs/removalsuitrequest.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+
+<div class="container">
+    <!-- Header -->
+    <header class="header text-center">
+        <h1 class="header-title">Legal - Recommend Suit Removal</h1>
+        <p class="header-subtitle">Legal Case Suit File</p>
+    </header>
+
+    <!-- Radio Button Group -->
+    <div class="radio-group">
+        <div class="btn-group" role="group" aria-label="Search options">
+            <label class="btn">
+                <input type="radio" id="rbtchoice1" name="choice" runat="server" data-type="Legal" @* onclick="_Suit.handleRadioClick(this);"  *@/>
+                Legal ID
+            </label>
+            <label class="btn">
+                <input type="radio" id="rbtchoice2" name="choice" runat="server" data-type="Pledge"  @* onclick="_Suit.handleRadioClick(this);"  *@/>
+                Pledge No
+            </label>
+            <label class="btn"> 
+                <input type="radio" id="rbtchoice3" name="choice" runat="server" data-type="Customer" @* onclick="_Suit.handleRadioClick(this);" *@ />
+                Customer ID
+            </label>
+            <label class="btn">
+                <input type="radio" id="rbtchoice4" name="choice" runat="server" data-type="Period" @* onclick="_Suit.handleRadioClick(this);" *@ />
+                Period
+            </label>
+        </div>
+    </div>
+
+    <!-- Date Pickers -->
+    <div id="div_date" class="date-picker-group" style="display:none;">
+        <div class="date-picker-wrapper">
+            <label for="DatePickerTextBox" class="date-label">From: <span class="required">*</span></label>
+            <input type="date" id="DatePickerTextBox" runat="server" class="form-control" @* onkeypress="return false" *@ autocomplete="off" @* onchange="_Suit.fromDateChanged1(this);" *@ />
+            <label for="DatePickerTextBox1" class="date-label">To: <span class="required">*</span></label>
+            <input type="date" id="DatePickerTextBox1" runat="server" class="form-control" @* onkeypress="return false" *@ autocomplete="off" @* onchange="_Suit.toDateChanged1(this);" *@ />
+        </div>
+    </div>
+
+    <!-- Search Section -->
+    <div  class="search-group" >
+        <div id="div_legalid" style="display:none;">
+        <label for="txtcomplaint" class="search-label">Search By:</label>
+        <span id="lblcomplaint" runat="server" class="search-label-value"></span>
+        <input type="text" id="txtcomplaint" runat="server" class="form-control" @* onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" autocomplete="off" *@ />
+        </div>
+        <div id="div_btn" style="display:none;">
+        <button id="btnConfirm" runat="server" class="btn btn-primary" @* onclick="_Suit.buttonSubmitClick(this);" *@>Search</button>
+            <button id="btnExit" runat="server" class="btn btn-secondary"@*  onclick="redirectToDashboard();" *@ >Exit</button>
+        </div>
+    </div>
+
+    <!-- GridView -->
+    <div id="div_grid" class="table-container" style="display:none;">
+        <asp:GridView ID="GridView1" runat="server" CssClass="grid-view" AutoGenerateColumns="False">
+            <Columns>
+                <asp:BoundField HeaderText="Pledge No" DataField="pledge_no" />
+                <asp:BoundField HeaderText="Legal ID" DataField="legal_id" />
+                <asp:BoundField HeaderText="Complaint" DataField="complaint" />
+                <asp:BoundField HeaderText="Case no" DataField="case_no" />
+                <asp:TemplateField HeaderText="Remove Suit">
+                    <HeaderTemplate>
+                        <span>Select All</span>
+                        <asp:CheckBox ID="chkSelectAll" runat="server" CssClass="chkHeader" />
+                    </HeaderTemplate>
+                    <ItemTemplate>
+                        <asp:CheckBox ID="chkSelect" runat="server" CssClass="chkItem" />
+                    </ItemTemplate>
+                </asp:TemplateField>
+            </Columns>
+        </asp:GridView>
+    </div>
+
+    <!-- Confirm Button -->
+    <div id ="div_confirm" class="confirm-group" style="display:none;">
+        <button id="btnRemove" runat="server" class="btn btn-primary" @* onclick="_Suit.buttonConfirmClick();" *@>Confirm</button>
+    </div>
+</div>

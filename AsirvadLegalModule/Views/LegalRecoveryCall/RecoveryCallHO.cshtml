@@ -1,0 +1,76 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/legalrecoverycall/recoverycallho.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalrecoverycall/recoverycallho.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="container">
+    <div class="form-container">
+        <div class="header">
+            <h1>RESIGNED STAFF CALLING MODULE - HO</h1>
+        </div>
+        <form id="staffForm" class="form">
+            <div class="form-grid">
+                <div class="form-label">
+                    <label for="callType">Select Call Type</label>
+                </div>
+                <div>
+                    <select id="drp_callType" class="dropdown" @* onchange="_Recovery.LoadZonalDropdown(this)" *@>
+                        <option value="-1">-----------------Select---------------</option>
+                        <option value="0">First Call</option>
+                        <option value="1">Follow up Call</option>
+                    </select>
+                </div>
+
+                <div class="form-label">
+                    <label for="zone">Zone Selection</label>
+                </div>
+                <div>
+                    <select id="drp_zone" class="dropdown" @* onchange="_Recovery.LoadRegionDropdown(this)" *@>
+                       
+                    </select>
+                </div>
+
+                <div class="form-label">
+                    <label for="region">Region Selection</label>
+                </div>
+                <div>
+                    <select id="drp_region" class="dropdown" @* onchange="_Recovery.LoadAreaDropdown(this)" *@>
+                       
+                    </select>
+                </div>
+
+                <div class="form-label">
+                    <label for="area">Area Selection</label>
+                </div>
+                <div>
+                    <select id="drp_area" class="dropdown" @* onchange="_Recovery.LoadBranchDropdown(this)" *@>
+                     
+                    </select>
+                </div>
+
+                <div class="form-label">
+                    <label for="branch">Branch Selection</label>
+                </div>
+                <div>
+                    <select id="drp_branch" class="dropdown">
+                      
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-group">
+                
+                <button type="button" id="btnsubmit" class="submit-button" @* onclick="_Recovery.ButtonGoClick(this);" *@>GO</button>
+                <button type="button" id="btnexit" class="exit-button"@*  onclick="redirectToDashboard();" *@ >EXIT</button>
+            </div>
+        </form>
+    </div>
+</div>

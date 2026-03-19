@@ -1,0 +1,288 @@
+﻿:root {
+    --primary-color: #2c9e8e;
+    --primary-gradient-light: #e0f5f2;
+    --primary-gradient-dark: #166678;
+    --secondary-color: #f0f9f8;
+    --accent-color: #3cbeaa;
+    --text-color: #4a4a4a;
+    --border-color: #b8e8e0;
+    --disabled-bg: #f0f7f6;
+    --disabled-text: #888;
+    --section-bg: #fff;
+    --header-bg: #f0f9f8;
+    --shadow: 0 4px 12px rgba(44, 158, 142, 0.1);
+    --button-gradient: linear-gradient(135deg, #3cbeaa 0%, #166678 100%);
+    --header-gradient: linear-gradient(135deg, #42e695 60%, #3bb2b8 100%, #166678 50%);
+    --card-gradient: linear-gradient(to bottom, #fff 0%, #f0f9f8 100%);
+    --link-btn-bg: linear-gradient(90deg, #007bff, #0056b3);
+    --link-btn-hover-bg: linear-gradient(90deg, #0056b3, #003d80);
+    --textbox-focus-border: #2c9e8e;
+    --textbox-bg: #f9fafa;
+}
+
+.container-fluid {
+    padding: 20px;
+    background: var(--secondary-color);
+    /* margin-top: 60px; */
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    background: var(--section-bg);
+    margin-bottom: 30px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0;
+    background: var(--header-gradient);
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: none;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+.form-control, .form-select {
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 0.95rem;
+    border: 1px solid var(--border-color);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    width: 100%;
+    background: var(--textbox-bg);
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+}
+
+    .form-control:focus, .form-select:focus {
+        border-color: var(--textbox-focus-border);
+        box-shadow: 0 0 6px rgba(44, 158, 142, 0.3);
+        outline: none;
+    }
+
+h5.section-title {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    font-weight: 500;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.text-center.mt-5 {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-primary#GenerateReport {
+    min-width: 120px;
+    text-align: center;
+    background: var(--link-btn-bg);
+    border: none;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    color: #fff;
+}
+
+    .btn-primary#GenerateReport:hover {
+        background: var(--link-btn-hover-bg);
+    }
+
+.btn-primary#Excel {
+    min-width: 120px;
+    text-align: center;
+    background: var(--accent-color);
+    border: none;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    color: #fff;
+}
+
+    .btn-primary#Excel:hover {
+        background: var(--primary-color);
+    }
+
+.btn-secondary#exitButton {
+    min-width: 120px;
+    text-align: center;
+    background: #dc3545;
+    border: none;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background 0.2s;
+    color: #fff;
+}
+
+    .btn-secondary#exitButton:hover {
+        background: #c82333;
+    }
+
+.section-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 25px; /* Slightly increased gap */
+    margin-bottom: 15px;
+}
+
+    .section-row .form-group:first-child {
+        margin-right: 15px; /* Additional spacing for the first form-group */
+    }
+
+    .section-row .form-group {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+.report-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-radius: 6px;
+    background: var(--section-bg);
+    border: 1px solid var(--border-color);
+}
+
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    background: var(--section-bg);
+}
+
+    .report-table thead {
+        background: var(--header-gradient);
+        color: #fff;
+    }
+
+    .report-table th {
+        padding: 12px 15px;
+        font-weight: 500;
+        text-align: left;
+        border-bottom: 2px solid var(--primary-gradient-dark);
+    }
+
+    .report-table tbody tr {
+        border-bottom: 1px solid var(--border-color);
+        transition: background-color 0.2s;
+    }
+
+        .report-table tbody tr:hover {
+            background-color: var(--primary-gradient-light);
+        }
+
+    .report-table td {
+        padding: 10px 15px;
+        vertical-align: middle;
+    }
+
+    .report-table tbody tr:last-child {
+        border-bottom: none;
+    }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .section-row {
+        flex-wrap: wrap;
+        gap: 15px; /* Reduced gap for smaller screens if needed */
+    }
+
+        .section-row .form-group:first-child {
+            margin-right: 0; /* Remove extra margin when stacked vertically */
+        }
+
+    .report-table {
+        font-size: 0.9rem;
+    }
+
+        .report-table th,
+        .report-table td {
+            padding: 8px 10px;
+        }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        margin-top: 45px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .form-control, .form-select {
+        font-size: 0.9rem;
+    }
+
+    .section-row .form-group {
+        flex: 1 1 100%;
+    }
+
+    .report-table {
+        font-size: 0.85rem;
+    }
+
+        .report-table th,
+        .report-table td {
+            padding: 6px 8px;
+        }
+}

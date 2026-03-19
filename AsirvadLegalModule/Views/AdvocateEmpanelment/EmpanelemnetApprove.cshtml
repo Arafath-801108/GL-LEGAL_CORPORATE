@@ -1,0 +1,589 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script src="~/js/legalnotice/jquery-3.6.0.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/sweetalert.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/sweetalert2@11.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/advocateempanelment/empanelmentrequest.css" rel="stylesheet" />
+<script src="~/js/advocateempanelment/advocateapprove.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<div class="container fade-in">
+    <div class="page-header">
+        <h1>⚖️ Advocate Empanelment Approve</h1>
+        <p>Legal Department</p>
+    </div>
+
+    <div class="form-content">
+        <!-- Choice Selection -->
+        <div class="choice-section">
+            <div class="choice-row">
+                
+                <div class="form-group" id="advocateGroup">
+                    <label for="ddlAdvocate">Advocate Name: <span class="required">*</span></label>
+                    <select id="ddlAdvocate">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="ddlCategory">Vertical Name: <span class="required">*</span></label>
+                    <input type="text" id="ddlCategory"  maxlength="100" readonly>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal & Contact Details -->
+        <div class="form-section">
+            <h2 onclick="toggleSection(this)">Personal & Contact Details</h2>
+            <div class="section-content show">
+                
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Full Name (As per Legal Documents): <span class="required">*</span></label>
+                        <input type="text" id="fullName" placeholder="Enter full name" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Father's Name / Spouse Name:<span class="required">*</span></label>
+                        <input type="text" id="relativeName" placeholder="Enter father's/spouse name" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Residence Address:<span class="required">*</span></label>
+                        <input type="text" id="Residence" placeholder="Enter Residence Address" maxlength="120" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Office Address: <span class="required">*</span></label>
+                        <input type="text" id="Ofceadrs" placeholder="Enter Office Address" maxlength="120" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Date Of Birth:<span class="required">*</span></label>
+                        <input type="date" id="dob" placeholder="Select Date Of Birth" maxlength="50" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender:<span class="required">*</span></label>
+                        <input type="text" id="gender" placeholder="Enter Gender (Male/Female/Other)" maxlength="20" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>State: <span class="required">*</span></label>
+                        <input type="text" id="drp_state" placeholder="Enter State Name" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>District: <span class="required">*</span></label>
+                        <input type="text" id="drp_dis" placeholder="Enter District Name" maxlength="100" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Occupation:<span class="required">*</span></label>
+                        <input type="text" id="ocupdtls" placeholder="Enter occupation" maxlength="50" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Nationality: <span class="required">*</span></label>
+                        <input type="text" id="nation" placeholder="Nationality" maxlength="50" readonly>
+                    </div>
+                </div>
+
+                <h3>Basic Information</h3>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Landline (with STD Code):<span class="required">*</span></label>
+                        <input type="text" id="landline" placeholder="0XXX-XXXXXXX" maxlength="12" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Mobile Number: <span class="required">*</span></label>
+                        <input type="text" id="mobileNumber" placeholder="+91 XXXXXXXXXXXX" maxlength="16" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label>WhatsApp Number:<span class="required">*</span></label>
+                        <input type="text" id="whatsappNumber" placeholder="+91 XXXXXXXXXXXX" maxlength="16" readonly>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address: <span class="required">*</span></label>
+                        <input type="email" id="emailInput" placeholder="primary@domain.com" maxlength="50" readonly>
+                        <div class="error-message" id="errorMessage">Please enter a valid email address</div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <label>PAN Number: <span class="required">*</span></label>
+                        <input type="text" id="panNumber" placeholder="ABCDE1234F" maxlength="10" style="text-transform: uppercase;" readonly>
+                        <span id="panError" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label>Social Media Contact:<span class="required">*</span></label>
+                        <input type="text" id="sociacnt" placeholder="Social Media Contact" maxlength="100">
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+
+        <!-- Professional Details & Specialization -->
+        <div class="form-section">
+            <h2 id="toggleProfessional">Professional Details & Specialization</h2>
+            <div class="section-content" id="professionalSection">
+                <h3>Legal Entity Type</h3>
+                <div class="checkbox-grid">
+                    <div class="form-check">
+                        <input type="checkbox" id="chk1" disabled>
+                        <label for="chk1" class="form-check-label">Public Limited Company</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="chk2" disabled>
+                        <label for="chk2" class="form-check-label">Private Limited Company</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="chk3" disabled>
+                        <label for="chk3" class="form-check-label">Individual Practitioner</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="chk4" disabled>
+                        <label for="chk4" class="form-check-label">Partnership</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="chk5" disabled>
+                        <label for="chk5" class="form-check-label">Partnership Firm</label>
+                    </div>
+                </div>
+
+                <h3>Field of Specialization (Select All That Apply)</h3>
+                <div class="checkbox-grid">
+                    <div class="form-check">
+                        <input type="checkbox" id="spec1" disabled>
+                        <label for="spec1" class="form-check-label">Civil Law</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="spec2" disabled>
+                        <label for="spec2" class="form-check-label">Criminal Law</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="spec3" disabled>
+                        <label for="spec3" class="form-check-label">SARFAESI Act</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="spec4" disabled>
+                        <label for="spec4" class="form-check-label">Consumer Protection</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="spec5" disabled>
+                        <label for="spec5" class="form-check-label">Arbitration & Mediation</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="spec12" disabled>
+                        <label for="spec12" class="form-check-label">Others (Specify Below)</label>
+                    </div>
+                </div>
+
+                <div class="row-1">
+                    <div class="form-group">
+                        <label>If Others, Please Specify:</label>
+                        <input type="text" id="otherText" placeholder="Specify other areas of specialization" maxlength="200" readonly>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Professional Credentials</h3>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Year of Inception: <span class="required">*</span></label>
+                        <input type="number" id="yearOfInception" min="1900" max="2025" placeholder="YYYY" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Registration Number:</label>
+                        <input type="text" id="regnum" placeholder="Registration number" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Place Of Practice:</label>
+                        <input type="text" id="txtpractice" placeholder="Place Of Practice" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Total Years of Experience: <span class="required">*</span></label>
+                        <input type="number" placeholder="Years" min="0" max="60" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Grade of the Advocate: <span class="required">*</span></label>
+                        <input type="text" id="ddlgrade" placeholder="Enter Grade (A/B/C/D)" maxlength="10" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Bar Association Membership No:</label>
+                        <input type="text" id="MemNo" placeholder="Membership number" maxlength="20" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>References 1 (Name, Contact in Bank/NBFC):</label>
+                        <input type="text" id="ref1" placeholder="Name, Designation" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>References 2 (Name, Contact in Bank/NBFC):</label>
+                        <input type="text" id="ref2" placeholder="Name, Designation" maxlength="100" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Number of Partners/Directors:</label>
+                        <input type="number" id="part1" placeholder="Count" min="0" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Details of Firm Representing:</label> 
+                        <input type="text" id="firm" placeholder="Firm name" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Date Of Empaneled:</label>
+                        <input type="date" id="empdate" placeholder="Select The Date" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Registered with Regulatory Body: <span class="required">*</span></label>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="regulatory" value="yes" id="regYes" disabled> Yes</label>
+                            <label><input type="radio" name="regulatory" value="no" id="regNo" disabled> No</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="partner-details" id="partnerDetails" style="display: none;">
+                    <h4>Director/Partner 1 Details</h4>
+                    <div class="row">
+                        <div class="form-group span-2">
+                            <label>Full Name:</label>
+                            <input type="text" id="fname" maxlength="100" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Age:</label>
+                            <input type="number" id="age" min="18" max="100" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>PAN Number:</label>
+                            <input type="text" id="Pan1" maxlength="10" placeholder="ABCDE1234F" style="text-transform: uppercase;" readonly>
+                            <span id="pan1Error" class="text-danger"></span>
+                        </div>
+                        <div class="form-group span-2">
+                            <label>Address:</label>
+                            <textarea rows="2" id="adrs1" readonly></textarea>
+                        </div>
+                    </div>
+
+                    <h4 style="margin-top: 20px;">Director/Partner 2 Details</h4>
+                    <div class="row">
+                        <div class="form-group span-2">
+                            <label>Full Name:</label>
+                            <input type="text" id="fname1" maxlength="100" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>Age:</label>
+                            <input type="number" id="age1" min="18" max="100" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label>PAN Number:</label>
+                            <input type="text" id="Pan2" maxlength="10" placeholder="ABCDE1234F" style="text-transform: uppercase;" readonly>
+                            <span id="pan2Error" class="text-danger"></span>
+                        </div>
+                        <div class="form-group span-2">
+                            <label>Address:</label>
+                            <textarea rows="2" id="adrs2" readonly></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="case-number-row">
+                  
+                    <div class="form-group">
+                        <label>Case Amount:</label>
+                        <input type="text" id="caseam" maxlength="10" placeholder="Enter the Amount" readonly>
+
+                    </div>
+
+                </div>
+
+                <div class="table-header">
+                    <h3>Case Numbers List</h3>
+                    <span class="case-count">Total: <span id="caseCount">0</span></span>
+                </div>
+
+                <table id="caseTable">
+                    <thead>
+                        <tr>
+                            <th class="serial-column">S.No</th>
+                            <th>Case Number</th>
+                            <th class="action-column">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="caseTableBody">
+                        <tr>
+                            <td colspan="3" class="empty-message">
+                                No case numbers added yet.<br>
+                                Enter a case number above and click "Add to Table"
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="table-header">
+                    <h3>Case Type List</h3>
+                    <span class="case-count">Total: <span id="caseTypeCount">0</span></span>
+                </div>
+
+                <table id="caseTypeTable">
+                    <thead>
+                        <tr>
+                            <th class="serial-column">S.No</th>
+                            <th>Case Type</th>
+                            <th class="action-column">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="caseTypeTableBody">
+                        <tr>
+                            <td colspan="3" class="empty-message">
+                                No case types added yet.<br>
+                                Enter a case Type above and click "Add to Table"
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+               
+            </div>
+        </div>
+
+        <!-- Additional & Bank Details -->
+        <div class="form-section">
+            <h2 id="toggleadditional">Additional</h2>
+            <div class="section-content" id="additional">
+                <div class="row">
+                    <div class="form-group">
+                        <label>Number of Junior Advocates (year): <span class="required">*</span></label>
+                        <input type="text" id="jnradv" maxlength="100" placeholder="Number of Junior Advocates" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Any Other Branches: <span class="required">*</span></label>
+                        <input type="text" id="othrbranches" maxlength="100" placeholder="Any Other Branches" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Mode Of Communication: <span class="required">*</span></label>
+                        <input type="text" maxlength="100" id="mode" placeholder="Mode Of Communication" readonly>
+                    </div>
+                </div>
+
+                <h3>Bank Account Details</h3>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Account Holder Name: <span class="required">*</span></label>
+                        <input type="text" id="acholder1" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Bank Name: <span class="required">*</span></label>
+                        <input type="text" id="bnknm1" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Account Number: <span class="required">*</span></label>
+                        <input type="text" id="acno1" maxlength="20" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>IFSC Code: <span class="required">*</span></label>
+                        <input type="text" id="ifsc1" maxlength="11" style="text-transform: uppercase;" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Account Type: <span class="required">*</span></label>
+                        <input type="text" id="actype1" placeholder="Enter Account Type (Savings/Current)" maxlength="50" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>MICR Code:</label>
+                        <input type="text" id="micr1" maxlength="15" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Branch Code:</label>
+                        <input type="text" id="brcode1" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Branch Name:</label>
+                        <input type="text" id="brnm1" readonly>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>Secondary Bank Account Details</h3>
+                <div class="row">
+                    <div class="form-group">
+                        <label>Account Holder Name:</label>
+                        <input type="text" id="acholder2" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Bank Name: <span class="required">*</span></label>
+                        <input type="text" id="bnknm2" maxlength="100" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Account Number:</label>
+                        <input type="text" id="acno2" maxlength="20" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>IFSC Code:</label>
+                        <input type="text" maxlength="11" id="ifsc2" style="text-transform: uppercase;" readonly>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group">
+                        <label>Account Type:</label>
+                        <input type="text" id="actype2" placeholder="Enter Account Type (Savings/Current)" maxlength="50" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>MICR Code:</label>
+                        <input type="text" id="micr2" maxlength="15" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Branch Code:</label>
+                        <input type="text" id="brcode2" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Branch Name:</label>
+                        <input type="text" id="brnm2" readonly>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+
+        <!-- Document Submission & Verification -->
+        <div class="form-section">
+            <h2 id="Document1">Document Submission & Verification</h2>
+            <div class="section-content" id="DocumentDetails">
+                <h3>In Case Of Individual</h3>
+                <div class="checkbox-grid">
+                    <div class="form-check">
+                        <input type="checkbox" id="doc1" disabled>
+                        <label for="doc1" class="form-check-label">PAN Card Copy</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="doc3" disabled>
+                        <label for="doc3" class="form-check-label">Passport Size Photograph</label>
+                    </div>
+                    <div class="form-check"> 
+                        <input type="checkbox" id="doc5" disabled>
+                        <label for="doc5" class="form-check-label">Driving License/Electricity/RationCard</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="doc7" disabled>
+                        <label for="doc7" class="form-check-label">Bank Statement (Last 3 Months)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="doc8" disabled>
+                        <label for="doc8" class="form-check-label">Signature Verification</label>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3>In case Of Company</h3>
+                <div class="checkbox-grid">
+                    <div class="form-check">
+                        <input type="checkbox" id="comp1" disabled>
+                        <label for="comp1" class="form-check-label">Company PAN Card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp3" disabled>
+                        <label for="comp3" class="form-check-label">Memorandum of Association (MOA)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp5" disabled>
+                        <label for="comp5" class="form-check-label">Board Resolution</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp6" disabled>
+                        <label for="comp6" class="form-check-label">List of Directors with Details</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp7" disabled>
+                        <label for="comp7" class="form-check-label">List of Shareholders</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp8" disabled>
+                        <label for="comp8" class="form-check-label">Audited Balance Sheet (Last 2 Years)</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp10" disabled>
+                        <label for="comp10" class="form-check-label">Directors' PAN & Address Proof</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="comp11" disabled>
+                        <label for="comp11" class="form-check-label">Proof Of Business Place</label>
+                    </div>
+                </div>
+
+                <h3>In Case Partnership Firms</h3>
+                <div class="checkbox-grid">
+                    <div class="form-check">
+                        <input type="checkbox" id="part1" disabled>
+                        <label for="part1" class="form-check-label">Firm PAN Card</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="part2" disabled>
+                        <label for="part2" class="form-check-label">Partnership Deed</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="part3" disabled>
+                        <label for="part3" class="form-check-label">Registration Certificate</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="part5" disabled>
+                        <label for="part5" class="form-check-label">Firm Address Proof</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="part6" disabled>
+                        <label for="part6" class="form-check-label">Partners' PAN & Address Proof</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" id="part7" disabled>
+                        <label for="part7" class="form-check-label">Signature Verification of All Partners</label>
+                    </div>
+                    <div class="form-check">
+                        <label for="checkLawyer" class="form-check-label">Lawyer: Copy of Sanand, Minimum 10 Year Experience as a Practicing Lawyer, Legal Scrutiny Experience in NBFCs or Private/Nationalized Banks</label>
+                        <input type="checkbox" id="part8" disabled>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <h3> Documents</h3>
+                <div class="form-group">
+                    <button class="btn view-button" id="subdoc">view documents</button>
+                </div>
+               
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="ddltype">Action <span class="required">*</span></label>
+            <select id="ddltype">
+                <option value="0">-- Select  --</option>
+                <option value="1">Approve</option>
+                <option value="2">Reject</option>
+
+            </select>
+        </div>
+        <div class="form-group" id="reject" style="display:none;">
+            <label id="actionLabel">Action</label>
+            <input type="text" id="rjt_reason">
+        </div>
+        <div class="button-group">
+            <button class="btn save-button" id="sublas">submit</button>
+
+            <button class="btn exit-button" id="exit">Exit</button>
+        </div>
+    </div>
+    <input type="hidden" id="hiddenField" name="AdvocateId" value="">
+</div>

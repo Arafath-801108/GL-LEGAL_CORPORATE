@@ -1,0 +1,236 @@
+﻿/* Reset and base styles */
+body {
+    background-color: #f8edeb; /* Light cream background */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family:'Times New Roman';
+    color: #2c2c2c; /* Dark gray text for readability */
+}
+
+/* Container styles */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Card-like form container styles */
+.form-container {
+    background: #ffffff; /* White background for card effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Softer, deeper shadow */
+    border-radius: 1rem; /* Smoother corners */
+    padding: 2rem;
+    max-width: 52rem; /* Slightly wider for balance */
+    margin: 2rem auto;
+    border: 1px solid #e0e0e0; /* Subtle border for definition */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .form-container:hover {
+        transform: translateY(-4px); /* Slight lift on hover */
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+/* Header styles */
+.header {
+    background: linear-gradient(135deg, #d94550 0%, #f4a261 100%); /* Terracotta to warm orange gradient */
+    color: #fefae0; /* Cream text for contrast */
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 0.75rem 0.75rem 0 0; /* Rounded top corners */
+    margin: -2rem -2rem 1.5rem; /* Negative margins to align with card edges */
+}
+
+    .header h1 {
+        font-size: 1.75rem; /* Slightly larger for emphasis */
+        font-weight: 700;
+        margin: 0;
+        letter-spacing: 0.02em; /* Subtle letter spacing */
+    }
+
+/* Form styles */
+.form {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem; /* Increased gap for breathing room */
+}
+
+/* Grid layout for form fields */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Label styles */
+.form-label {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #2c2c2c; /* Darker text for contrast on white */
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding-right: 1rem;
+}
+
+/* Input and dropdown styles */
+.input-field, .dropdown {
+    width: 100%;
+    padding: 0.75rem; /* Increased padding for comfort */
+    background: #f5f6f5; /* Light gray for inputs */
+    border: 1px solid #d0d0d0; /* Subtle border */
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    color: #2c2c2c;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .input-field:disabled {
+        background: #e8e8e8; /* Lighter disabled state */
+        cursor: not-allowed;
+    }
+
+    .input-field:focus, .dropdown:focus {
+        outline: none;
+        border-color: #f4a261; /* Warm orange focus */
+        box-shadow: 0 0 0 3px rgba(244, 162, 97, 0.2); /* Softer focus ring */
+    }
+
+/* Radio group styles */
+.radio-group {
+    display: flex;
+    gap: 1.25rem;
+    color: #2c2c2c;
+}
+
+    .radio-group label {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+    }
+
+/* Table container styles */
+.table-container {
+    margin-top: 2rem;
+    overflow-x: auto;
+    background: #ffffff; /* White background for table */
+    border-radius: 0.5rem;
+    padding: 0.5rem; /* Padding around table */
+}
+
+/* Table styles */
+.grid-view {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f5f6f5; /* Light gray background */
+    color: #2c2c2c;
+    font-size: 0.9rem;
+}
+
+    .grid-view th {
+        background: #3a4f50; /* Deep teal for headers */
+        color: #fefae0;
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid #d0d0d0;
+        font-weight: 600;
+    }
+
+    .grid-view td {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid #d0d0d0;
+    }
+
+    .grid-view tr:nth-child(even) {
+        background: #e8e8e8; /* Light gray for alternating rows */
+    }
+
+    .grid-view tr:hover {
+        background: #d0d0d0; /* Subtle hover effect */
+    }
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Button group styles */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Button styles */
+.exit-button, .submit-button {
+    padding: 0.75rem 2.5rem;
+    min-width: 140px; /* Slightly larger buttons */
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exit-button {
+    background-color: #8d9e9a; /* Light teal */
+    color: #2c2c2c;
+}
+
+    .exit-button:hover {
+        background-color: #6b7a76;
+        transform: translateY(-2px); /* Subtle lift */
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+.submit-button {
+    background-color: #d94550; /* Terracotta */
+    color: #fefae0;
+}
+
+    .submit-button:hover {
+        background-color: #b93843;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .header {
+        margin: -1.5rem -1.5rem 1rem;
+        padding: 1rem;
+    }
+
+    .form-label {
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .grid-view th, .grid-view td {
+        padding: 0.75rem;
+        font-size: 0.8rem;
+    }
+}

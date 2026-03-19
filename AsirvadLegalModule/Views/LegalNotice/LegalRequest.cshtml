@@ -1,0 +1,70 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script nonce="abc123" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+
+<!-- PDF.js worker file -->
+<script nonce="5d67de6751aa4e158c33dfd828fc144b">
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+</script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalnotice/legalrequest.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<link href="~/css/legalnotice/index.css" rel="stylesheet" />
+    <div class="container">
+    <h1>Notice Details Updation</h1>
+    <form class="container">
+        <div class="formgroup">
+            <label for="DropDownList2">Select Type of Notice</label>
+            <select id="DropDownList2" class="equalwidth" style="background-color: #E6FAFF;" @* onchange="_approve.noticetype(this.value);" *@>
+                <option value="0">---------------Select-------------------</option>
+                <option value="1">Legal Notice</option>
+                <option value="2">Summons</option>
+                <option value="3">91/102 Notice</option>
+                <option value="4">Miscellaneous</option>
+            </select>
+
+        </div>
+        <div class="formgroup">
+            <label for="DropDownList3">Select Type of Document</label>
+            <select id="DropDownList3" class="equalwidth" style="background-color: #E6FAFF;">
+            </select>
+        </div>
+        <div class="formgroup">
+            <label for="Text1">Related Employee</label>
+            <input type="text" id="Text1" class="equalwidth" autocomplete="off" maxlength="50" @* oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '')" *@ />
+        </div>
+        <div class="formgroup">
+            <label for="Text2">Related Department</label>
+            <input type="text" id="Text2" class="equalwidth" autocomplete="off" maxlength="100" @* oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '')" *@ />
+        </div>
+        <div class="formgroup">
+            <label for="TextArea2">Remarks</label>
+            <textarea id="TextArea2" class="equalwidth" autocomplete="off" maxlength="350" @* oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '')" *@></textarea>
+        </div>
+        <div class="formgroup">
+            <label for="TextBox1">Document Received Date</label>
+            <div>
+                <input type="date" id="TextBox1" name="TextBox1" class="equalwidth" @* onchange="_approve.validateDate()" *@ />
+
+            </div>
+        </div>
+        <div class="formgroup">
+            <label for="FileUpload2">Upload Related Document</label>
+            <input type="file" id="FileUpload2" class="equalwidth box" accept=".pdf" @* onchange="UploadFN(this)" *@/>
+        </div>
+        <div class="formgroup1">
+            <button type="button" id="btnsubmit" class="btn btn-primary group" @* onclick="_approve.LegalRequestindata(this.value);" *@>Submit</button>
+            <button type="button" id="btnexit" class="btn btn-secondary group" @* onclick="redirectToDashboard()" *@>Exit</button>
+        </div>
+    </form>
+</div>

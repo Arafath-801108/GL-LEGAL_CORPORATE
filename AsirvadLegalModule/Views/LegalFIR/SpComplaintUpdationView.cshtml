@@ -1,0 +1,214 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Police Complaint Updation</title>
+<link href="~/css/jquery-ui.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/legalfir/policecomplaint.css" rel="stylesheet" />
+<script src="~/js/legalfir/SpComplaintUpdation.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+@* <script src="~/js/legalfir/firregister.js" ></script> *@
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/legalfir/spcomplaintupdation.js"></script>
+<div class="maincontent">
+    <div class="container">
+        <div class="page-header">
+            <h2>Private Complaint Status</h2>
+        </div>
+
+        <div class="form-container">
+            <form id="PrivateComplaintForm">
+
+                <!-- Basic Information Section -->
+                <div class="left-column">
+                    <div class="section-title">Basic Information</div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="drp_branch">Branch Name</label>
+                            <select id="drp_branch" name="BranchId" class="form-control form-select">
+                            </select>
+                        </div>
+
+                        <div class="col-sm-6 form-group">
+                            <label for="drp_cust">Register ID</label>
+                            <select id="drp_cust" name="CustomerId" class="form-control form-select" onchange="loadPledgeDetails()">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pledge Details Section -->
+                <div class="right-column">
+                    <div class="section-title">Pledge Details</div>
+
+                    <table class="gridview" id="GridView2">
+                        <thead>
+                            <tr>
+                                <th>Customer Id</th>
+                                <th>Pledge No</th>
+                                <th>Amount</th>
+                                <th>Loss</th>
+                                <th>Irregularity</th>
+                                <th>Gold Wt</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pledgeGridBody">
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Location Information Section -->
+                <div class="left-column">
+                    <div class="section-title">Location Information</div>
+
+                    <div class="row">
+                        <div class="col-md-3 form-group">
+                            <label for="txt_case">Case Amount</label>
+                            <input type="text" id="txt_case" name="CaseAmount" class="form-control" readonly>
+                        </div>
+
+                        <div class="col-md-3 form-group">
+                            <label for="txt_state">Police Station State</label>
+                            <input type="text" id="txt_state" name="ComplaintFiledState" class="form-control" autocomplete="off" readonly>
+                        </div>
+
+                        <div class="col-md-3 form-group">
+                            <label for="txt_dis">Police Station District</label>
+                            <input type="text" id="txt_dis" name="ComplaintFiledDis" class="form-control" autocomplete="off" readonly>
+                        </div>
+
+                        <div class="col-md-3 form-group">
+                            <label for="btn_view">Complaint Copy</label>
+                            <div class="view-button-box">
+                                <button type="button" id="btn_view" class="btn btn-primary btn-view">View</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_police">Police Station Name</label>
+                            <input type="text" id="txt_police" name="PoliceStationName" class="form-control" autocomplete="off" maxlength="100" readonly>
+                        </div>
+
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_date">Complaint Filed Date</label>
+                            <input type="text" id="txt_date" name="ComplaintFiledDate" class="form-control" autocomplete="off" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_complainted_by">Complainted By</label>
+                            <input type="text" id="txt_complainted_by" name="ComplaintedBy" class="form-control" readonly>
+                        </div>
+
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_complainted_date">Complainted Date</label>
+                            <input type="text" id="txt_complainted_date" name="ComplaintedDate" class="form-control" readonly>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+
+                        <div class="col-sm-12 form-group">
+                            <label for="drp_dis"> FiledStatus</label>
+                            <select id="drp_dis" name="FiledStatus" class="form-control form-select">
+                                <option value="0">-- Select --</option>
+                                <option value="1">Yes</option>
+                                <option value="2">No</option>
+                            </select>
+                         
+                        </div>
+                     
+                    </div>
+
+                    <div class="row" id="firNumberDiv">
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_FIRNumber">Private Complaint Number</label>
+                            <input type="text" id="txt_FIRNumber" name="FIRNumber" class="form-control" >
+                        </div>
+
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_FIR_date">SP Complaint </label>
+                            <input type="text" id="txt_SP_date" name="FIRFiledDate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row" id="firNumberDiv3">
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_advnae">Advocate Name</label>
+                            <input type="text" id="txt_advname" name="Advocate_Name" class="form-control" readonly>
+                        </div>
+
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_dst">District</label>
+                            <input type="text" id="txt_dist" name="District Name" class="form-control" readonly>
+                        </div>
+                    </div>
+                    <div class="row" id="firNumberDiv1">
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_Court">Court Name</label>
+                            <input type="text" id="txt_crt_name" name="FIRFiledDate" class="form-control" readonly>
+                        </div>
+                       
+                    </div>
+
+                    <div class="row" id="firNumberDiv5" style="display: none;">
+                        <div class="col-sm-6 form-group">
+                            <label for="txt_Court">FIR Number</label>
+                            <input type="text" id="txt_crt_num" name="FIR" class="form-control" maxlength="80">
+                        </div>
+                        <div class="col-sm-6 form-group" id="dates" style="display: none;">
+                            <label for="txt_Court">FIR Date</label>
+                            <input type="date" id="txt_fir_date" name="FIRFiledDate" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row" id="dates1" style="display: none;">
+                    <div class="col-sm-12 form-group" >
+                        <label for="file1">Upload Complaint Copy</label>
+                        <div class="upload-box">
+                            <input type="file" name="ComplaintFile" id="file1" class="form-control-file" accept=".pdf,.jpg,.jpeg,.png">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="row">
+
+
+                        <div class="col-sm-12 form-group">
+                            <label for="txt_remark">Case Remarks</label>
+                            <textarea id="txt_remark" name="CaseRemarks" class="form-control" autocomplete="off" maxlength="300" readonly ></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row" id="firNumberDiv2">
+                        <div class="col-sm-12 form-group">
+                            <label for="txt_fir_remark">SP Remarks</label>
+                            <textarea id="txt_fir_remark" name="FIRRemarks" class="form-control" autocomplete="off" maxlength="300" placeholder="Enter detailed FIR remarks..." readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="row" id="firNumberDiv3" style="display: none;">
+                        <div class="col-sm-12 form-group">
+                            <label for="txt_sp_remark">SP Status Remarks</label>
+                            <textarea id="txt_fir_rim" name="FIRRemarks" class="form-control" autocomplete="off" maxlength="300" placeholder="Enter detailed FIR remarks..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="btn-group-custom">
+                    <button type="button" id="btn_sub" class="btn-custom btn-submit">Submit</button>
+                    <button type="button" id="btn_exit" class="btn-custom btn-exit" onclick="window.location.href='/'">Exit</button>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

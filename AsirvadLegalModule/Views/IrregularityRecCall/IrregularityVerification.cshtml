@@ -1,0 +1,125 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="~/css/irregularityreccall/irregularityverification.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/irregularityreccall/irregularityverification.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<div class="container">
+    <div class="form-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>HOME VISIT VERIFICATION</h1>
+        </div>
+
+        <!-- Form Section -->
+        <form id="form_homevisit" class="form">
+            <div class="form-grid">
+               
+                <div class="form-group">
+                    <label for="cmb_category" class="form-label">Category Selection</label>
+                    <select id="cmb_category" class="dropdown" @* onchange="_verify.getBranchDetails();" *@>
+                        <option value="-1">---------- Select ----------</option>
+                        <option value="1">Stolen / Cheating</option>
+                        <option value="2">Auction Loss</option>
+                        <option value="3">Spurious Related</option>
+                        <option value="4">GoldLoan SuitFile</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_branchid" class="form-label">Branch ID Selection</label>
+                    <select id="cmb_branchid" class="dropdown" @* onchange="_verify.getCustomerDetails();" *@>
+                        <option value="-1">---------- Select ----------</option>
+                        <!-- Branch options to be populated dynamically -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="cmb_custid" class="form-label">Customer ID Selection</label>
+                    <select id="cmb_custid" class="dropdown" @* onchange="_verify.getallDetails();" *@>
+                        <option value="-1">---------- Select ----------</option>
+                        <!-- Customer IDs to be populated dynamically -->
+                    </select>
+                </div>
+                <h4 class="form-subheader">CUSTOMER DETAILS</h4>
+                <!-- Two-column grid for Customer Details -->
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="txt_custname" class="form-label">Customer Name</label>
+                        <input type="text" id="txt_custname" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_state" class="form-label">State</label>
+                        <input type="text" id="txt_state1" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph" class="form-label">Customer Phone1</label>
+                        <input type="text" id="txt_cust_ph1" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_cust_ph" class="form-label">Customer Phone2</label>
+                        <input type="text" id="txt_cust_ph2" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_irr" class="form-label">Irregularity Pledges</label>
+                        <input type="text" id="txt_irr1" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_amt" class="form-label">Amount To Be Recovered</label>
+                        <input type="text" id="txt_amt" class="form-input" readonly>
+                    </div>
+                </div>
+                <h4 class="form-subheader">HOME VISIT DETAILS</h4>
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="txt_assignedbranch" class="form-label">Assigned Branch</label>
+                        <input type="text" id="txt_assignedbranch" class="form-input" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="txt_visitedemployee" class="form-label">Visited Employee</label>
+                        <input type="text" id="txt_visitedemployee" class="form-input" readonly>
+                    </div>
+                </div>
+                <div class="form-group-grid">
+                    <div class="form-group">
+                        <label for="btn_doc1" class="form-label">Document 1</label>
+                        <button type="button" id="btn_doc1" class="document-button" aria-label="View Document 1">View Document 1</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="btn_doc2" class="form-label">Document 2</label>
+                        <button type="button" id="btn_doc2" class="document-button" aria-label="View Document 2">View Document 2</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="txt_customerhouse" class="form-label">Customer House</label>
+                    <input type="text" id="txt_customerhouse" class="form-input" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="txt_customerresponse" class="form-label">Customer Response</label>
+                    <input type="text" id="txt_customerresponse" class="form-input" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="txt_date1" class="form-label">Commitment Date</label>
+                    <input type="text" id="txt_date1" class="form-input" readonly />
+                </div>
+                <div class="form-group">
+                    <label for="txt_remark" class="form-label">Remark</label>
+                    <input type="text" id="txt_remark" class="form-input" maxlength="200" autocomplete="off" />
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button" id="btn_confirm" class="submit-button"@*  onclick="_verify.btnConfirmClick();" *@>Confirm</button>
+                <button type="button" id="btn_reject" class="reject-button"@*  onclick="_verify.btnRejectClick();" *@>Reject</button>
+                <button type="button" id="btn_exit" class="exit-button" @* onclick="redirectToDashboard();" *@>Exit</button>
+            </div>
+            <input type="hidden" id="hdn_branchid">
+            <input type="hidden" id="hdn_custid">
+        </form>
+    </div>
+</div>
+

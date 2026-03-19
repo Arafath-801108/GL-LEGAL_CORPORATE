@@ -1,0 +1,311 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Ensure Bootstrap Icons and viewport meta tag are in _Layout.cshtml -->
+<!-- Example for _Layout.cshtml:
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+-->
+
+<link href="~/css/goldsuitefile/suitfileapprove.css" rel="stylesheet" />
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/goldsuitefilejs/suitfileapprove.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+
+
+<div class="form-container">
+    <div class="form-card card">
+        <div class="card-header">
+            <h3 class="header-title text-white">
+                <i class="bi bi-briefcase-fill me-2"></i>LEGAL AH/RHA/RM APPROVAL
+            </h3>
+            <p class="header-subtitle">Legal Case Suit File</p>
+        </div>
+        <div class="card-body">
+            <form asp-action="ManageCase" enctype="multipart/form-data" method="post">
+                <div asp-validation-summary="ModelOnly" class="validation-summary"></div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">BRANCH :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-building"></i>
+                            </span>
+                            <select id="drp_branch" class="form-select" @* onchange="_approve.checkComplaint(this.value);" *@>
+                            </select>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">COMPLAINT :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-exclamation-circle"></i>
+                            </span>
+                            <select id="drp_complaint" class="form-select" @* onchange="_approve.legalDetails(this.value);" *@>
+                            </select>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">CASE TYPE :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-file-text"></i>
+                            </span>
+                            <input id="txt_casetype" class="form-control" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">TIME LINE :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group pledge-input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-tag"></i>
+                            </span>
+                            <input id="txt_time" class="form-control pledge-input" readonly />
+                            <button type="button" id="btnpledge" class="btn btn-primary ms-2" @* onclick="_approve.showPledge()" *@>
+                                <i class="bi bi-search me-1"></i> SHOW PLEDGE
+                            </button>
+                        </div>
+                        <span class="text-danger"></span>
+                        <!-- Grid View Container -->
+                        <div id="div_grid" style="display:none;" class="pledge-grid-container mt-1">
+                            <table class="pledge-grid table table-bordered" readonly>
+                                <thead>
+                                    <tr>
+                                        <th>Pledge Number</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">COMPLAINT DOCUMENT :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group pledge-input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-tag"></i>
+                            </span>
+                            <input id="txt_cmp" class="form-control pledge-input" readonly />
+                            <a href="#" class="btn btn-primary ms-2" id="btn_cmp" style="font-size:10pt;">
+                                <i class="bi bi-search me-1"></i> DOWNLOAD
+                            </a>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">GOLD AVAILABLE PLACE :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-geo-alt"></i>
+                            </span>
+                            <input id="txt_goldplace" class="form-control" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div id="div_police" class="form-row" style="display:none;">
+                    <div class="form-label-col">
+                        <label class="form-label">POLICE STATION :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group pledge-input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-tag"></i>
+                            </span>
+                            <input id="txt_police" class="form-control pledge-input" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div id="div_seize" class="form-row" style="display:none;">
+                    <div class="form-label-col">
+                        <label class="form-label">SEIZER MAHZOR DOCUMENT :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group pledge-input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-tag"></i>
+                            </span>
+                            <input id="txt_seize" class="form-control pledge-input" readonly />
+                            <a href="#" class="btn btn-primary ms-2" id="btn_police" style="font-size:10pt;">
+                                <i class="bi bi-search me-1"></i> DOWNLOAD
+                            </a>
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+                @* <div id="div_br" style="display: flex; flex-direction: colunm; justify-content:space-between;"> *@
+                @*     <div class="form-row"> *@
+                @*         <h5>1</h5> *@
+                @*         <h5>2</h5> *@
+                @*         <h5>3</h5> *@
+
+                @*         </div> *@
+
+                @* </div> *@
+                 <div id="div_br" style="display:none;">
+                    <div class="form-row">
+                        <div class="form-label-col">
+                            <label class="form-label">BRANCH :</label>
+                        </div>
+                        <div class="form-input-col">
+                            <div class="input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-building"></i>
+                                </span>
+                                <input id="txt_br" class="form-control" readonly />
+                            </div>
+                            <span class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label-col">
+                            <span class="form-label">TOP VIEW IMAGE OF THE PLEDGE:</span>
+                        </div>
+                        <div class="form-input-col">
+                            <button type="button" id="btntopview" class="btn btn-primary ms-2" @* onclick="_approve.Download_Pledge_photos(this.value);" *@>View</button>
+                            <span class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-label-col">
+                            <span class="form-label">BOTTOM IMAGE OF THE PLEDGE:</span>
+                        </div>
+                        <div class="form-input-col">
+                            <button type="button" id="btnbottomview" class="btn btn-primary ms-2" @* onclick="_approve.Download_Pledge_photos1(this.value);" *@>View</button>
+                            <span class="text-danger"></span>
+                        </div>
+                    </div>
+                 </div> 
+
+                <div id="div_ab" class="form-row" style="display:none;">
+                    <div class="form-label-col">
+                        <label class="form-label">BRANCH :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-geo-alt"></i>
+                            </span>
+                            <input id="txt_ab" class="form-control" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">REASON FOR SUITFILE :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-file-text"></i>
+                            </span>
+                            <input id="txt_reason" class="form-control" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row" style="display:none;">
+                    <div class="form-label-col">
+                        <label class="form-label">GOLD IN BRANCH :</label>
+                    </div>
+                    <div id="div_gold" class="form-input-col" style="display:none;">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-geo-alt"></i>
+                            </span>
+                            <input id="txt_goldInbranch" class="form-control" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">PREVIOUSLY ENTER PLEDGE :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-tag"></i>
+                            </span>
+                            <input id="txt_prev_pledge" class="form-control" readonly />
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+                <div id="div_rm" class="form-row">
+                    <div class="form-label-col">
+                        <label class="form-label">COMMENTS :</label>
+                    </div>
+                    <div class="form-input-col">
+                        <div class="input-group">
+                            <span class="input-group-text">
+                                <i class="bi bi-tag"></i>
+                            </span>
+                            <textarea id="txt_rm" class="form-control" rows="4" cols="50" Maxlength="200" autocomplete="off" @* oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s]/g, '')" *@></textarea>
+
+                        </div>
+                        <span class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="btn-container">
+                    <button type="button" id="btnexit" class="btn btn-secondary" @* onclick="redirectToDashboard();" *@>
+                        <i class="bi bi-x-circle me-1"></i> EXIT
+                    </button>
+                    <button type="button" id="btnsubmit" class="btn btn-success" @* onclick="_approve.btnSubmitClick()" *@>
+                        <i class="bi bi-check-circle me-1"></i> CONFIRM
+                    </button>
+                    <button type="button" id="btnreject" class="btn btn-danger" @* onclick="_approve.btnRejectClick()" *@>
+                        <i class="bi bi-x-circle me-1"></i> REJECT
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

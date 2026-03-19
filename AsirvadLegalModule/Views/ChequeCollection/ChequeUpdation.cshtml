@@ -1,0 +1,267 @@
+﻿@{
+    ViewData["Title"] = "Cheque Updation";
+}
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/chequecollection/chequeupdation.css" rel="stylesheet" />
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/chequecollection/chequeupdation.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+<div class="main-content">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">IRREGULARITY CASE CHEQUE COLLECT FROM CUSTOMER AND EMPLOYEE</h3>
+            </div>
+            <div class="card-body">
+                <div class="form-section">
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="DrpIrr" class="form-label">Irregularity Type</label>
+                            <select id="DrpIrr" name="DrpIrr" class="form-select" @* onchange="Update.IrrSelect(this.value);validateirrgularity();clearAllFields()" *@>
+                                <option value="0">SELECT</option>
+                                <option value="1">Stolen Gold</option>
+                                <option value="2">Spurious Gold</option>
+                                <option value="3">Auction Loss</option>
+                                <option value="4">Employee Debit</option>
+                                <option value="5">Packet Missing</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="DrpCat" class="form-label">Select Categories</label>
+                            <select id="DrpCat" name="DrpCat" class="form-select" @* onchange="Update.CatSelect(this.value);clearexceptirr();" *@>
+                                <!-- Populate dynamically via controller -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="employee_div" style="display: none;" class="form-section">
+                    <h5 class="section-title">Employee Details</h5>
+                  
+                    <div class="form-group">
+                        <label for="DrpPledgeEmp" class="form-label" id="DrpPledgeLabel">Select Employee Code</label>
+                            <select id="DrpPledgeEmp" name="DrpPledgeEmp" class="form-select" @* onchange="Update.LoadDetails(this.value);cleardiv();" *@>
+                            <!-- Populate dynamically via controller -->
+                        </select>
+                    </div>
+                  @*   <div class="section-row">
+ *@
+                        <div class="form-group">
+                            <label for="CustomerId" class="form-label">Employee Name</label>
+                            <input type="text" id="emp_name" name="CustomerId" class="form-control" readonly/>
+                        </div>
+                      @*   </div> *@
+               
+             
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text8" class="form-label">Phone Number</label>
+                            <input type="text" id="phone_no" name="Text8" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text9" class="form-label">Designation</label>
+                            <input type="text" id="desg" name="Text9" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text1" class="form-label">Branch Name</label>
+                            <input type="text" id="br_name" name="Text1" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text2" class="form-label">Branch Id</label>
+                            <input type="text" id="br_id" name="Text2" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text3" class="form-label">Area Name</label>
+                            <input type="text" id="ar_name" name="Text3" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text4" class="form-label">Region Name</label>
+                            <input type="text" id="rg_name" name="Text4" class="form-control" readonly />
+                        </div>
+                </div>
+                    <div class="section-row"> 
+                        <div class="form-group">
+                            <label for="Text5" class="form-label">Zone Name</label>
+                            <input type="text" id="zone" name="Text5" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="Text6" class="form-label">Staff Debit Amount</label>
+                            <input type="text" id="amount" name="Text6" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="CustomerName" class="form-label">Address</label>
+                            <input type="text" id="emp_add" name="CustomerName" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Text7" class="form-label">Employee Resignation / Termination Date</label>
+                            <input type="text" id="emp_dt" name="Text7" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="TextBox1" class="form-label">Cheque Date</label>
+                            <input type="date" id="chdt1" name="TextBox1" class="form-control" @* onchange="validateEmpChequeDate()" *@ />
+                        </div>
+                    </div>
+                    <div class="radio-group">
+                        <h5 class="section-title">Irregularity Case Check Updation</h5>
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input type="radio" id="RadioButton3" name="IrregularityCheck" value="Yes" @* onclick="Radio3_onclick();radioclear();" *@ />
+                                <label for="RadioButton3">Yes</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="RadioButton4" name="IrregularityCheck" value="No" @* onclick="Radio4_onclick();radioclear();" *@ />
+                                <label for="RadioButton4">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div1" class="form-group" style="display: none;">
+                        <label for="DropDownList1" class="form-label">Status</label>
+                        <select id="emp_status" name="DropDownList1" class="form-select">
+                            <option value="-1">SELECT</option>
+                            <option value="1">Cheque coming days provide</option>
+                            <option value="2">Within week provide</option>
+                            <option value="3">Within 10 days provided</option>
+                            <option value="4">Cheque Not available</option>
+                            <option value="5">Others</option>
+                        </select>
+                    </div>
+                    <div id="div2" class="form-group" style="display: none;">
+                        <label for="FileUpload2" class="form-label">Cheque Upload</label>
+                        <input type="file" id="FileUpload2" name="FileUpload2" class="form-control file-upload" @* onchange="UploadFN(this)" *@ accept="application/pdf" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Remark2" class="form-label">Remark</label>
+                        <textarea id="Remark2" name="Remark2" class="form-control" maxlength="100" @* oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');" *@></textarea>
+                    </div>
+                   @*  <div class="button-row">
+                        <button type="submit" class="btn primary-btn" onclick=" Update.SubmitDetails(this.value);">Confirm</button>
+                        <a href="#" class="btn secondary-btn" onclick="redirectToDashboard();"> Exit</a>
+                    </div> *@
+                </div>
+
+                <div id="customer_div" style="display: none;" class="form-section">
+                    <h5 class="section-title">Customer Details</h5>
+                    <div class="form-group">
+                        <label for="DrpPledgeCust" class="form-label" id="DrpPledgeLabelCustomer">Select Pledge No</label>
+                        <select id="DrpPledgeCust" name="DrpPledgeCust" class="form-select" @* onchange="Update.LoadDetails(this.value);cleardiv();" *@>
+                            <!-- Populate dynamically via controller -->
+                        </select>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="BhCustomerId" class="form-label">Customer ID</label>
+                            <input type="text" id="cust_id" name="BhCustomerId" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="BhCustomerName" class="form-label">Customer Name</label>
+                            <input type="text" id="cust_name" name="BhCustomerName" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="BhContactNumber" class="form-label">Contact Number</label>
+                            <input type="text" id="con_num" name="BhContactNumber" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="ReportedDate" class="form-label">Reported Date</label>
+                            <input type="text" id="in_dt" name="ReportedDate" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="GrossWeight" class="form-label">Gross Weight</label>
+                            <input type="text" id="gr_wt" name="GrossWeight" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="LossAmount1" class="form-label">Loss Amount</label>
+                            <input type="text" id="loss" name="LossAmount1" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="BranchId1" class="form-label">Branch Id</label>
+                            <input type="text" id="br_id1" name="BranchId1" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="BranchName" class="form-label">Branch Name</label>
+                            <input type="text" id="br_name1" name="BranchName" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="AreaName" class="form-label">Area Name</label>
+                            <input type="text" id="ar_name1" name="AreaName" class="form-control" readonly />
+                        </div>
+                        <div class="form-group">
+                            <label for="RegionName" class="form-label">Region Name</label>
+                            <input type="text" id="rg_name1" name="RegionName" class="form-control" readonly />
+                        </div>
+                    </div>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label for="Zone1" class="form-label">Zone</label>
+                            <input type="text" id="zone1" name="Zone1" class="form-control" readonly />
+                        </div>
+                       
+                    </div>
+                    <div class="form-group">
+                        <label for="Address1" class="form-label">Address</label>
+                        <input type="text" id="add1" name="Address1" class="form-control" readonly />
+                    </div>
+                    <div class="form-group">
+                        <label for="Date1" class="form-label">Cheque Date</label>
+                        <input type="date" id="chdt2" name="Date1" class="form-control" @* onchange="validateCusChequeDate()" *@ />
+                    </div>
+                    <div class="radio-group">
+                        <h5 class="section-title">Irregularity Case Check Updation</h5>
+                        <div class="radio-options">
+                            <div class="radio-option">
+                                <input type="radio" id="Radio1" name="IrregularityCheckCustomer" value="Yes" @* onclick="Radio1_onclick();radioclear();"  *@/>
+                                <label for="Radio1">Yes</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" id="Radio2" name="IrregularityCheckCustomer" value="No" @* onclick="Radio2_onclick();radioclear();" *@ />
+                                <label for="Radio2">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="div25" class="form-group" style="display: none;">
+                        <label for="DropDownList3" class="form-label">Status</label>
+                        <select id="cus_status" name="DropDownList3" class="form-select">
+                            <option value="-1">SELECT</option>
+                            <option value="1">Cheque coming days provide</option>
+                            <option value="2">Within week provide</option>
+                            <option value="3">Within 10 days provided</option>
+                            <option value="4">Cheque Not available</option>
+                            <option value="5">Others</option>
+                        </select>
+                    </div>
+                    <div id="div26" class="form-group" style="display: none;">
+                        <label for="FileUpload1" class="form-label">Cheque Upload</label>
+                        <input type="file" id="FileUpload1" name="FileUpload1" class="form-control file-upload" accept="application/pdf" />
+                    </div>
+                    <div class="form-group">
+                        <label for="Remark1" class="form-label">Remark</label>
+                        <textarea id="Remark1" name="Remark1" class="form-control" maxlength="100" @* oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '');" *@ ></textarea>
+                    </div>
+                   
+                </div>
+                <div class="button-row">
+                    <button type="submit" id="btnsubmit" class="btn primary-btn" @* onclick="Update.SubmitDetails(this.value);" *@>Confirm</button>
+                    <a href="#" class="btn secondary-btn" id="btnexit" @* onclick="redirectToDashboard();" *@>Exit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

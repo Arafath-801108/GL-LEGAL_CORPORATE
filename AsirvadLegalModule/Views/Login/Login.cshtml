@@ -1,0 +1,109 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Login";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, private" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- Bootstrap CSS -->
+    <script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b" asp-append-version="true"></script>
+    <script src="~/js/loginjs/login.js" nonce="5d67de6751aa4e158c33dfd828fc144b" asp-append-version="true"></script>
+
+    
+
+    <script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <link href="~/css/font.css" rel="stylesheet" />
+    <link href="~/css/login/logmedia.css" rel="stylesheet" />
+    <link href="~/css/sweetalert2.min.css" rel="stylesheet" />
+    <script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="row no-gutters justify-content-center">
+            <div class="col-12">
+                <div class="main-wrapper">
+                    <div class="login-container">
+                        <div class="login-header">
+                            <img src="~/images/logo1.png" alt="Logo" />
+                            <h4 class="welcome-text">Asirvad Gold Loan - Legal Department</h4>
+                        </div>
+                        <form method="post" runat="server" id="formid1" autocomplete="off">
+                            @Html.AntiForgeryToken()
+                            <!-- Hidden input to confuse autofill -->
+                            <input type="text" style="display:none;" autocomplete="off" />
+                            <input type="password" style="display:none;" autocomplete="off" />
+                            <div class="form-group">
+                                <input id="txt_user" class="form-control" placeholder="Username" maxlength="6" @* oninput="this.value = this.value.replace(/[^0-9]/g, '');" onchange="_login.getBranch(this.value);" onpaste="return false" oncut="return false" oncopy="return false" *@ autocomplete="off" />
+                                <span  class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <input id="txt_pass" class="form-control" placeholder="Password" type="text" maxlength="20" @* onpaste="return false" oncut="return false" oncopy="return false" *@ autocomplete="new-password" />
+                                <input id="hidden_pass" type="hidden" />
+                                <span  class="text-danger"></span>
+                            </div>
+                            <div class="form-group" id="BranchDropdown"  style="display:none;">
+                                <select  id="drp_branch" class="form-control" placeholder="BranchName">
+                                 
+                                </select>
+                               @*  <span asp-validation-for="BranchName" class="text-danger"></span> *@
+                            </div>
+                            <div id="captchaSection" class="captcha-box">
+                                <canvas id="captchaCanvas" width="150" height="40"></canvas>
+
+                                <div class="captcha-controls">
+                                    <input type="text" id="captchaInput" placeholder="Enter CAPTCHA" class="captcha-input" @* onpaste="return false" oncut="return false" oncopy="return false" oninput="this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '')" *@ />
+                                    <button type="button" id="btncaptcha" @* onclick="_login.generateCaptcha()" *@ class="refresh-btn">⟳</button>
+                                </div>
+                            </div>
+
+
+
+
+                          
+                            <button id="btn_submit" type="button" class="btn btn-primary" @* onclick="_login.btnclick(event);_login. validateCaptchaInput;" *@>Login</button>
+                        </form>
+                    </div>
+
+                    <!-- Label outside and under the login-container -->
+                    <div style="text-align: center; margin-top: 30px;">
+                        <label style="text-align: center;">WARNING</label><br />
+                    </div>
+                    <div>
+                        <label class="text-info">
+                            This computer system/application is the property of the Asirvad Micro Finance Ltd. It is for authorized use only.  By using this system, all users acknowledge notice of, and agree to comply with, the Asirvad’ s Acceptable Use Policy (“AUP”) and Information Security Policy. Users have no personal privacy rights in any materials they place, view, access, or transmit on this system. Unauthorized or improper use of this system may result in administrative disciplinary action, and/or other sanctions as set forth in the Asirvad’ s AUP. By continuing to use this system you indicate your awareness of and consent to these terms and conditions of use.LOG OFF IMMEDIATELY if you do not agree to the conditions stated in this warning
+                        </label>
+                    </div>
+                </div>
+               
+
+            </div>
+            
+        </div>
+        
+    </div>
+    <div id="loader" class="loader-overlay" style="display: none;">
+        <div class="loader-spinner"></div>
+    </div>
+    <!-- Required JavaScript -->
+    @* <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script> *@
+    
+   
+</body>
+</html>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

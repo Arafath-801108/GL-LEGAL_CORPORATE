@@ -1,0 +1,365 @@
+﻿:root {
+    --primary-color: #ff4500;
+    --secondary-color: #ffd700;
+    /*--primary-color: BLACK;
+    --secondary-color: GREY;*/
+    --sidebar-width: 250px;
+}
+
+body {
+    
+    min-height: 100vh;
+    margin: 0;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+}
+
+/* First, ensure the sidebar itself is fixed height */
+#sidebar {
+    min-width: var(--sidebar-width);
+    max-width: var(--sidebar-width);
+    height: 100vh; /* Changed from min-height to fixed height */
+    background: linear-gradient(135deg, #000000 0%, #808080 100%);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent sidebar itself from scrolling */
+    /* Add border radius only to the right side */
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    /* Add padding to ensure content doesn't peek out of rounded corners */
+    padding-right: 5px !important;
+    /* Extend the sidebar slightly beyond the viewport */
+    margin-top: -2px !important;
+    margin-bottom: -2px !important;
+    height: calc(100vh + 4px) !important;
+    /* Add shadow for depth but only on the right edge */
+   /* box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15) !important;*/
+}
+/* Make the content area scrollable */
+.sidebar-content {
+    flex: 1;
+    height: calc(100vh - 100px);
+    padding: 15px;
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    overflow-y: scroll;
+    padding-right: 10px !important;
+}
+    #sidebar.active {
+        margin-left: calc(-1 * var(--sidebar-width));
+    }
+/* Make menu items rounded */
+#sidebar .nav-link {
+    margin: 3px 10px !important;
+    border-radius: 10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Make submenu items rounded too */
+#sidebar .submenu .nav-link {
+    border-radius: 8px !important;
+    margin-left: 20px !important;
+    margin-right: 10px !important;
+}
+/* Optional: Add a subtle fade effect to the sidebar header */
+#sidebar .sidebar-header {
+    padding: 15px 15px;
+    text-align: center;
+    margin: 0;
+    flex-shrink: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+        #sidebar .sidebar-header img {
+            max-width: 200px;
+            height: auto;
+        }
+#sidebar::-webkit-scrollbar {
+    display: none; /* Slim scrollbar */
+}
+
+    #sidebar::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.2); /* Subtle scrollbar color */
+        border-radius: 3px;
+    }
+
+/* Navigation Styles */
+.nav {
+    list-style: none; /* Removes default bullets */
+    padding: 0; /* Removes default padding */
+    margin: 0;
+}
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:30px;
+}
+
+.nav-item {
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+/* You might also want to round the corners of menu items */
+.nav-link {
+    color: white !important;
+    padding: 10px 0px;
+    transition: all 0.3s;
+    position: relative;
+    font-weight: 500;
+    border-radius: 8px;
+    display: flex;
+    text-decoration: none !important;
+    align-items: center;
+    /* Add padding to create space for rounded effect */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 2px 5px;
+}
+
+    /* Make the active/hover state more visually appealing */
+    .nav-link:hover, .nav-link.active {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateX(3px);
+    }
+
+    .nav-link i {
+        margin-right: 12px;
+        width: 20px;
+        text-align: center;
+    }
+
+/* Submenu Styles */
+.submenu {
+    list-style: none;
+   /* padding-left: 45px;*/
+    display: none;
+    margin: 0;
+    /*background: rgba(255, 255, 255, 0.05);*/
+}
+
+    .submenu li {
+        list-style: none; /* Ensures no bullets */
+        margin: 0;
+    }
+
+    .submenu .nav-link {
+       /* padding: 8px 15px;*/
+        font-size: 0.9rem;
+        opacity: 0.9;
+        text-decoration: none !important;
+    }
+
+.has-submenu > .nav-link:after {
+    content: '\f107';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+a {
+    text-decoration: none !important;
+}
+.has-submenu.open > .nav-link:after {
+    transform: rotate(180deg);
+}
+
+/* Profile Styles */
+.profile-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+    margin-left: auto; /* Pushes to right */
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 25px;
+    transition: all 0.3s;
+}
+
+    .profile-info:hover {
+        background: #f8f9fa;
+    }
+/* Profile Dropdown Styles */
+.profile-dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
+    display: none;
+    z-index: 1000;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+    .profile-dropdown.show {
+        display: block;
+    }
+
+.profile-dropdown-item {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+    .profile-dropdown-item:hover {
+        background: #f8f9fa;
+        color: var(--primary-color);
+    }
+
+    .profile-dropdown-item i {
+        margin-right: 10px;
+        width: 20px;
+        text-align: center;
+    }
+
+.profile-dropdown hr {
+    margin: 5px 0;
+    border-color: #eee;
+}
+
+@media (max-width: 768px) {
+    .profile-dropdown {
+        right: 0;
+        left: auto;
+    }
+}
+
+.profile-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border-radius: 50%;
+    color: var(--primary-color);
+}
+
+.profile-name {
+    font-weight: 500;
+    color:black;
+    font-size: 0.9rem;
+}
+
+.profile-role {
+    color: #666;
+    font-size: 0.8rem;
+    display: block;
+}
+
+/* Footer Styles */
+.footer {
+    background: white;
+    padding: 10px 10px;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+    height:30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+    .footer-links a {
+        color: #666;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+        .footer-links a:hover {
+            color: var(--primary-color);
+        }
+
+.footer-copyright {
+    color: #666;
+}
+/* Style for navbar and footer to ensure no gaps */
+.navbar, .footer {
+    position: relative !important;
+    z-index: 999 !important; /* Just below sidebar z-index */
+}
+/* Main Content Styles */
+#content {
+    width: calc(100% - var(--sidebar-width));
+    margin-left: var(--sidebar-width);
+    transition: all 0.3s;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+    #content.active {
+        width: 100%;
+        margin-left: 0;
+    }
+
+/* Navbar Styles */
+.navbar {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px 25px;
+}
+
+#sidebarCollapse {
+    background: transparent;
+    border: none;
+    padding: 0;
+    color: #666;
+    font-size: 1.5rem;
+}
+
+.main-content {
+    padding: 25px;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    /* Other CSS rules remain the same */
+
+    /* Position toggle button in top-right corner instead */
+    #sidebarCollapse {
+        display: block !important;
+        position: absolute;
+        z-index: 1001;
+        right: 15px; /* Position from right instead of left */
+        top: 15px;
+        left: auto; /* Reset left positioning */
+    }
+
+    /* If you have other elements in the top-right, adjust them */
+    .profile-section {
+        margin-right: 50px; /* Make room for the toggle button */
+    }
+}

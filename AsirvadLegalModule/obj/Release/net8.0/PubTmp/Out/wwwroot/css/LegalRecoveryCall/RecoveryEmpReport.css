@@ -1,0 +1,242 @@
+﻿/* Container Styling */
+.container-fluid {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Card Styling */
+.card {
+    background: #3a4f50; /* Deep teal */
+    margin-bottom: 20px;
+    border: 1px solid #8d9e9a; /* Light teal border */
+}
+
+.card-header {
+    background: linear-gradient(90deg, #d94550, #f4a261); /* Terracotta to warm orange */
+    color: #fefae0; /* Cream text */
+    padding: 15px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 1rem;
+    color: #fefae0; /* Cream text */
+    font-weight: 500;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #8d9e9a; /* Light teal border */
+    background: #5c6f68; /* Muted teal input background */
+    color: #fefae0; /* Cream text */
+    width: 100%;
+}
+
+    .form-control:focus {
+        border-color: #f4a261; /* Warm orange focus border */
+        outline: none;
+    }
+
+/* Section Title */
+.section-title {
+    font-size: 1.2rem;
+    color: #fefae0; /* Cream text */
+    font-weight: 500;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d94550; /* Terracotta */
+}
+
+/* Button Styling */
+.text-center.mt-5 {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    min-width: 120px;
+    background: linear-gradient(90deg, #d94550, #f4a261); /* Terracotta to warm orange */
+    border: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: #fefae0; /* Cream text */
+    text-align: center;
+}
+
+.btn-secondary {
+    min-width: 120px;
+    background: linear-gradient(90deg, #8d9e9a, #6b7a76); /* Light teal to darker teal */
+    border: none;
+    font-weight: 500;
+    padding: 10px 20px;
+    color: #2c2c2c; /* Dark gray text */
+    text-align: center;
+}
+
+/* Section Row for Form Fields */
+.section-row {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+    .section-row .form-group {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+/* Table Container */
+.report-table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+    background: #5c6f68; /* Muted teal */
+    border: 1px solid #8d9e9a; /* Light teal border */
+}
+
+/* Table Styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    color: #fefae0; /* Cream text */
+    background: #5c6f68; /* Muted teal */
+}
+
+    .report-table thead {
+        background: linear-gradient(90deg, #d94550, #f4a261); /* Terracotta to warm orange */
+        color: #fefae0; /* Cream text */
+    }
+
+    .report-table th {
+        padding: 12px 15px;
+        font-weight: 600;
+        text-align: left;
+        border: 1px solid #8d9e9a; /* Light teal border for each column */
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+
+    .report-table tbody tr {
+        border-bottom: 1px solid #8d9e9a; /* Light teal */
+    }
+
+    .report-table td {
+        padding: 12px 15px;
+        border: 1px solid #8d9e9a; /* Light teal border for each column */
+        vertical-align: middle;
+        text-align: left; /* Consistent text alignment */
+    }
+
+    .report-table tbody tr:last-child {
+        border-bottom: none; /* Remove bottom border for last row */
+    }
+.zonal-id-link {
+    color: #f28c38;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+    .zonal-id-link:hover {
+        
+        color: #e07b30;
+    }
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container-fluid {
+        padding: 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .card-title {
+        font-size: 1.6rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .section-row {
+        flex-wrap: wrap;
+    }
+
+        .section-row .form-group {
+            flex: 1 1 100%;
+            margin-bottom: 15px;
+        }
+
+    .report-table {
+        font-size: 0.9rem;
+    }
+
+        .report-table th,
+        .report-table td {
+            padding: 10px 12px;
+            border: 1px solid #8d9e9a; /* Maintain borders */
+        }
+}
+
+@media (max-width: 576px) {
+    .container-fluid {
+        padding: 10px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .form-control {
+        font-size: 0.9rem;
+    }
+
+    .section-row .form-group {
+        flex: 1 1 100%;
+    }
+
+    .report-table {
+        font-size: 0.85rem;
+    }
+
+        .report-table th,
+        .report-table td {
+            padding: 8px 10px;
+            border: 1px solid #8d9e9a; /* Maintain borders */
+        }
+}

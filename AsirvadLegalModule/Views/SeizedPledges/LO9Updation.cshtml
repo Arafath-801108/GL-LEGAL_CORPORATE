@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "LO9Updation";
+}
+@* <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> *@
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<link href="~/css/seizedpledges/lo9updation.css" rel="stylesheet" />
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/seizedpledges/lo9updation.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<div class="container-fluid py-4">
+   
+    <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Seized Pledge LO-9/LO-5 Updation</h4>
+                </div>
+                <div class="card-body">
+                    <!-- Case Details -->
+                    <h5 class="section-title">Case Details</h5>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label class="form-label">Case Category</label>
+                            <select id="casecatdrp" class="form-select" @* onchange="LO9.SendCaseCat(this.value);clearAllFields();" *@>
+                                <option value="0">------------Select Category-----------</option>
+                                <option value="1">STOLEN</option>
+                                <option value="2">EXCEPT STOLEN</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Pledge Number</label>
+                            <select id="pledg_drp" class="form-select" >
+                               
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Auction Zone Pledge</label>
+                            <input id="case_typ" type="text" class="form-control" readonly>
+                          
+                        </div>
+                    </div>
+
+                    <!-- Customer Details -->
+                    <h5 class="section-title">Customer Details</h5>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label class="form-label">Customer Name</label>
+                            <input id="cus_name" type="text" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Customer ID</label>
+                            <input id="cus_id" type="text" class="form-control" readonly>
+                        </div>
+                    </div>
+
+                    <!-- Loan Details -->
+                    <h5 class="section-title">Loan Details</h5>
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label class="form-label">Pledge Value</label>
+                            <input id="pledg_val"type="text" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Gross Weight</label>
+                            <input id="gross_wt" type="text" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Stone Weight</label>
+                            <input id="stone_wt" type="text" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Net Weight</label>
+                            <input id="net_wt" type="text" class="form-control" readonly>
+                        </div>
+                    </div>
+
+                   
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label class="form-label">Paperless Approval ID</label>
+                            <input id="paper_id" type="text" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Manual Approval ID</label>
+                            <input id="man_id" type="text" class="form-control" readonly>
+                        </div>
+                    </div>
+
+                    
+                 
+                    <div class="section-row">
+                        <div class="form-group">
+                            <label class="form-label">Type of Irregularity</label>
+                            <input id="irr_type" type="text" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">LO9/LO5 Document</label>
+                            <input id="Lo9_upload" type="file" class="form-control"  accept=".doc,.docx,.jpeg,.jpg,.pdf">
+                        </div>
+                    </div>
+
+                     <div id="docDiv" class="section-row" style="display:none;">
+                        <div class="form-group">
+                            <label class="form-label">Cheating Complaint Receipt</label>
+                            <input id="receipt_upload" type="file" class="form-control" accept=".doc,.docx,.jpeg,.jpg,.pdf">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Cheating Complaint Signed Draft</label>
+                            <input id="draft_upload" type="file" class="form-control" accept=".doc,.docx,.jpeg,.jpg,.pdf">
+                        </div>
+                    </div>
+
+                    <!-- Document Links -->
+                    <h5 class="section-title">Documents</h5>
+                    <div class="document-links">
+                        <a href="#" id="viewFIR" class="btn btn-link">View FIR</a>
+                        <a href="#" id="view91" class="btn btn-link">View 91-Notice</a>
+                        <a href="#" id="viewPawn" class="btn btn-link">View Pawn Ticket</a>
+                        <a href="#" id="viewDpn"class="btn btn-link">View DPN</a>
+                        <a href="#" id="viewKYC" class="btn btn-link">View KYC</a>
+                        <a href="#" id="viewSeiz" class="btn btn-link">View Seizure Mahazar</a>
+                        <a href="#" id="viewCon" class="btn btn-link">View Confession Statement</a>
+                    </div>
+
+                  
+                    <div class="text-center mt-5">
+                        <button id="Lo9submit" type="button" class="btn btn-primary me-3" >
+                            Confirm
+                        </button>
+                        <button id ="btn_exit" type="button" class="btn btn-outline-secondary">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="globalLoader" class="loader-overlay" style="display:none;">
+        <div class="loader-spinner"></div>
+        <p class="loader-text">Please wait…</p>
+    </div>
+</div>
+<div id="documentModal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <iframe id="docViewer" style="width:100%; height:500px; border:none;"></iframe>
+        <img id="imgViewer" style="display:none; max-width:100%; height:auto;" alt="Document View" />
+        
+    </div>
+</div>
