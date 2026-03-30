@@ -1,0 +1,246 @@
+﻿@{
+    ViewData["Title"] = "Legal Audit Master";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style>
+    :root {
+        --primary-blue: #0061f2;
+        --success-green: #00ac69;
+        --bg-body: #f2f6fc;
+        --card-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 40, 0.12);
+    }
+
+    body { background-color: var(--bg-body); font-family: 'Segoe UI', sans-serif; color: #212832; }
+
+    /* Header & Navigation */
+    .app-header { background: white; padding: 0.8rem 2rem; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    .brand-box { font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; color: var(--primary-blue); }
+    .btn-dashboard { background: #f8f9fa; border: 1px solid #c5ccd6; color: #495057; font-weight: 600; border-radius: 0.35rem; transition: 0.2s; }
+    .btn-dashboard:hover { background: #e2e6ea; color: #212832; }
+
+    /* Search Section (Ref Image Style) */
+    .filter-section { background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid #dee2e6; box-shadow: var(--card-shadow); }
+    .search-input-grp { background: #f8f9fa; border: 1px solid #c5ccd6; border-radius: 0.5rem; padding: 5px; display: flex; }
+    .search-input-grp select { border: none; background: transparent; flex: 1; padding: 12px; outline: none; font-weight: 600; color: #495057; cursor: pointer; }
+
+    /* Metrics */
+    .stat-card { background: white; border-radius: 0.5rem; padding: 1.25rem; border-left: 0.3rem solid var(--primary-blue); box-shadow: 0 0.15rem 1rem rgba(33, 40, 50, 0.05); }
+    .stat-label { font-size: 0.72rem; font-weight: 700; color: #69707a; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-value { font-size: 1.3rem; font-weight: 800; display: block; margin-top: 4px; }
+
+    /* Table & Forms */
+    .data-grid-container { background: white; border-radius: 0.5rem; border: 1px solid #dee2e6; overflow: hidden; box-shadow: var(--card-shadow); }
+    .grid-header { background: #f8f9fa; padding: 1rem 1.5rem; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; }
+    .table thead th { background: #eff2f5; color: #495057; font-size: 0.75rem; font-weight: 700; padding: 12px; border: none; text-transform: uppercase; }
+    .inner-input { border: 1px solid #e2e8f0 !important; border-radius: 6px !important; font-size: 0.85rem; }
+
+    /* Loader */
+    .loading-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999; justify-content: center; align-items: center; }
+</style>
+
+<div class="loading-overlay" id="loader">
+    <div class="spinner-border text-primary" role="status"></div>
+</div>
+
+<div class="app-header">
+    <div class="brand-box"><i class="bi bi-shield-check-fill me-2 fs-3"></i> LEGAL AUDIT PORTAL</div>
+    <div>
+        <a href="../Home/toDashboard" class="btn btn-dashboard btn-sm px-3 py-2">
+            <i class="bi bi-grid-fill me-2"></i> BACK TO DASHBOARD
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid p-4">
+    <div class="filter-section">
+        <p class="small fw-bold text-muted mb-2">SYSTEM RETRIEVAL</p>
+        <div class="search-input-grp">
+            <span class="px-3 d-flex align-items-center"><i class="bi bi-search text-muted"></i></span>
+            <select id="sopDropdown" onchange="autoFetch(this.value)">
+                <option value="" disabled selected>Select System ID (Auto-Loading)...</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="noDataView" class="text-center py-5">
+        <i class="bi bi-search" style="font-size: 4rem; color: #dee2e6;"></i>
+        <h5 class="text-muted mt-3">Select an ID from the dropdown to automatically load audit details.</h5>
+    </div>
+
+    <div id="contentView" style="display:none;">
+        <div class="row g-4 mb-4">
+            <div class="col-md-3"><div class="stat-card"><span class="stat-label">Pledge Count</span><span id="lblPledgeCount" class="stat-value">0</span></div></div>
+            <div class="col-md-3"><div class="stat-card"><span class="stat-label">Customers</span><span id="lblCustCount" class="stat-value">0</span></div></div>
+            <div class="col-md-3"><div class="stat-card" style="border-left-color: var(--success-green);"><span class="stat-label">Total Loss</span><span id="lblLoss" class="stat-value text-success">₹0.00</span></div></div>
+            <div class="col-md-3"><div class="stat-card" style="border-left-color: #f4a100;"><span class="stat-label">Reported Date</span><span id="lblReportedDate" class="stat-value text-warning">--</span></div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="data-grid-container mb-4">
+                    <div class="grid-header">
+                        <h6 class="m-0 fw-bold">ACCUSED PARTIES</h6>
+                        <button class="btn btn-primary btn-sm rounded-pill px-3" onclick="addRow()">
+                            <i class="bi bi-person-plus me-1"></i> ADD ENTITY
+                        </button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table align-middle m-0">
+                            <thead>
+                                <tr>
+                                    <th class="ps-4">Entity Name</th>
+                                    <th>Category</th>
+                                    <th>Remarks</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="accusedBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="filter-section h-100">
+                    <h6 class="fw-bold text-primary mb-4 border-bottom pb-2"><i class="bi bi-file-earmark-medical me-2"></i>LEGAL FILING</h6>
+                    
+                    <div class="mb-3">
+                        <label class="small fw-bold text-muted mb-1">Police Complaint Date</label>
+                        <input type="date" id="txtPoliceDt" class="form-control inner-input" onchange="calculateSLA()">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="small fw-bold text-muted mb-1">Court CNR Number</label>
+                        <input type="text" id="txtCNR" class="form-control inner-input" placeholder="CNR Reference">
+                    </div>
+
+                    <div class="p-3 bg-light rounded-3 mb-3 border">
+                        <span class="small fw-bold text-muted d-block mb-1">SLA COMPLIANCE</span>
+                        <div id="slaBadge" class="h6 m-0 fw-bold text-secondary">AWAITING DATE...</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="small fw-bold text-muted mb-1">Audit Remarks</label>
+                        <textarea id="txtGeneralRemarks" class="form-control inner-input" rows="3" placeholder="General observations..."></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100 py-3 fw-bold shadow" onclick="finalSubmit()">
+                        <i class="bi bi-shield-lock-fill me-2"></i> AUTHORIZE & SAVE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let GLOBAL_REPORT_DATE = "";
+
+    $(document).ready(function() {
+        // Load Dropdown on start
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", contentType: "application/json",
+            data: JSON.stringify({ flag: 5, indata: "ALL", employeeId: "", branch: "" }),
+            success: function(res) {
+                const data = JSON.parse(JSON.parse(decryptAES(res)).outdata).Table;
+                data.forEach(x => $('#sopDropdown').append(`<option value="${x.SYSTEM_ID_NO}">${x.SYSTEM_ID_NO}</option>`));
+            }
+        });
+    });
+
+    // Automatically triggers when user selects an ID
+    function autoFetch(id) {
+        if(!id) return;
+        $('#loader').css('display', 'flex');
+        
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", contentType: "application/json",
+            data: JSON.stringify({ flag: 3, indata: encryptAES(id), employeeId: "", branch: "" }),
+            success: function(res) {
+                const data = JSON.parse(JSON.parse(decryptAES(res)).outdata).Table[0];
+                if(data) {
+                    $('#lblPledgeCount').text(data.TOTAL_PLEDGE_COUNT);
+                    $('#lblCustCount').text(data.CUSTOMER_COUNT);
+                    $('#lblLoss').text("₹" + Number(data.LOSS_AMOUNT).toLocaleString('en-IN'));
+                    $('#lblReportedDate').text(data.REPORTED_DATE);
+                    GLOBAL_REPORT_DATE = data.REPORTED_DATE;
+                    
+                    $('#loader').hide();
+                    $('#noDataView').hide();
+                    $('#contentView').fadeIn(400);
+                    calculateSLA();
+                }
+            },
+            error: function() { $('#loader').hide(); }
+        });
+    }
+
+    function addRow() {
+        $('#accusedBody').append(`<tr>
+            <td class="ps-4"><input type="text" class="form-control form-control-sm inner-input accused-name" placeholder="Name"></td>
+            <td><select class="form-select form-select-sm inner-input accused-type"><option value="CUSTOMER">CUSTOMER</option><option value="EMPLOYEE">EMPLOYEE</option></select></td>
+            <td><input type="text" class="form-control form-control-sm inner-input accused-remarks" placeholder="Notes"></td>
+            <td class="text-center"><i class="bi bi-trash text-danger" style="cursor:pointer" onclick="$(this).closest('tr').remove()"></i></td>
+        </tr>`);
+    }
+
+    function calculateSLA() {
+        const filed = $('#txtPoliceDt').val();
+        if(!filed) return;
+        const parts = GLOBAL_REPORT_DATE.split('-');
+        const reported = new Date(parts[2], parts[1]-1, parts[0]);
+        const complaint = new Date(filed);
+        const diff = Math.ceil((complaint - reported) / (1000 * 60 * 60 * 24));
+        
+        if(diff <= 7) {
+            $('#slaBadge').text("COMPLIANT").attr('class', 'h6 m-0 fw-bold text-success');
+        } else {
+            $('#slaBadge').text("DELAYED BY " + diff + " DAYS").attr('class', 'h6 m-0 fw-bold text-danger');
+        }
+    }
+
+    function finalSubmit() {
+        const sopId = $('#sopDropdown').val();
+        const policeDate = $('#txtPoliceDt').val();
+        if(!policeDate) return Swal.fire('Incomplete', 'Complaint Date is required.', 'warning');
+
+        const accusedList = [];
+        $('#accusedBody tr').each(function() {
+            accusedList.push({
+                name: $(this).find('.accused-name').val(),
+                type: $(this).find('.accused-type').val(),
+                remarks: $(this).find('.accused-remarks').val()
+            });
+        });
+
+        const payload = {
+            police_date: policeDate,
+            cnr_no: $('#txtCNR').val(),
+            accused: accusedList,
+            audit_remarks: $('#txtGeneralRemarks').val()
+        };
+
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", contentType: "application/json",
+            data: JSON.stringify({ 
+                flag: 4, 
+                indata: encryptAES(JSON.stringify(payload)), 
+                employeeId: encryptAES(sopId) 
+            }),
+            success: function(res) {
+                Swal.fire('Saved', 'Legal Registry Updated.', 'success').then(() => {
+                    location.href = "../Home/toDashboard";
+                });
+            }
+        });
+    }
+</script>

@@ -1,18 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Globalization;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System.Xml.Linq;
-using AsirvadLegalModule.DTO.AdvocateEmpanelment.Response;
+﻿using AsirvadLegalModule.DTO.AdvocateEmpanelment.Response;
 using AsirvadLegalModule.DTO.ChequeCollection.Response;
 using AsirvadLegalModule.DTO.GoldSuitFIle.Request;
 using AsirvadLegalModule.DTO.GoldSuitFIle.Response;
 using AsirvadLegalModule.DTO.IrregularityRecCall.Response;
+using AsirvadLegalModule.DTO.LegalAudit;
 using AsirvadLegalModule.DTO.LegalFIR.Response;
 using AsirvadLegalModule.DTO.LegalNotice.Response;
 using AsirvadLegalModule.DTO.LegalRecoveryCall.Response;
@@ -26,6 +17,16 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Oracle.ManagedDataAccess.Client;
 using Oracle.ManagedDataAccess.Types;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Globalization;
+using System.Linq;
+using System.Reflection.Metadata;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 using static AsirvadLegalModule.DTO.GoldSuitFIle.Response.getPledgeListResponse;
 
 namespace AsirvadLegalModule.Core
@@ -516,7 +517,7 @@ namespace AsirvadLegalModule.Core
         {
             try
             {
-                GetSuitFileDeatailsResponse response= new GetSuitFileDeatailsResponse();
+                GetSuitFileDeatailsResponse response = new GetSuitFileDeatailsResponse();
                 DataSet depDS = new DataSet();
                 OracleParameter[] parameter = new OracleParameter[7];
 
@@ -536,7 +537,7 @@ namespace AsirvadLegalModule.Core
                 parameter[6].Direction = ParameterDirection.Output;
 
                 depDS = new OracleHelper().ExecuteDataSet("PLP_LEGAL_SELECT", parameter);
-               
+
 
                 if (depDS != null && depDS.Tables.Count > 0 && depDS.Tables[0].Rows.Count > 0)
                 {
@@ -559,7 +560,7 @@ namespace AsirvadLegalModule.Core
             }
 
         }
-       
+
         public static LegalRecoveryDeatailsResponse PROC_RECOVERY_EMPLOYEE_CONFIRM(string as_optflag, string p_indata)
         {
             try
@@ -648,7 +649,7 @@ namespace AsirvadLegalModule.Core
             return dS;
         }
 
-        public static DataSet Suitfile_doc(int flag, string img1,string img2, string indata)
+        public static DataSet Suitfile_doc(int flag, string img1, string img2, string indata)
         {
             DataSet dS = new DataSet();
             byte[] outdata1 = Convert.FromBase64String(img1);
@@ -687,7 +688,7 @@ namespace AsirvadLegalModule.Core
                 parameter[7].Direction = ParameterDirection.Output;
 
                 dS = new OracleHelper().ExecuteDataSet("proc_suitfile_doc", parameter);
-                
+
             }
             catch (Exception ex)
             {
@@ -698,7 +699,7 @@ namespace AsirvadLegalModule.Core
         }
 
 
-        public static AccessCheckResponse proc_legal_access_check(string employeeId,string post, string formId,string barnch)
+        public static AccessCheckResponse proc_legal_access_check(string employeeId, string post, string formId, string barnch)
         {
             AccessCheckResponse response = new AccessCheckResponse();
             OracleParameter[] parameter = new OracleParameter[7];
@@ -726,7 +727,7 @@ namespace AsirvadLegalModule.Core
 
             DataSet Result = new DataSet();
             Result = new OracleHelper().ExecuteDataSet("proc_legal_access_check", parameter);
-            
+
             response.err_code = parameter[5].Value.ToString();
             response.err_sts = parameter[4].Value.ToString();
 
@@ -1183,100 +1184,100 @@ namespace AsirvadLegalModule.Core
 
             return dS;
         }
-	
-
-	 public static ChequeCollectionResponse ChequeCollection(int flag, string indata)
- {
-     ChequeCollectionResponse response = new ChequeCollectionResponse();
-     OracleParameter[] parameter = new OracleParameter[4];
 
 
-     parameter[0] = new OracleParameter("p_flag", OracleDbType.Int16);
-     parameter[0].Direction = ParameterDirection.Input;
-     parameter[0].Value = flag;
-
-     parameter[1] = new OracleParameter("data", OracleDbType.Varchar2);
-     parameter[1].Direction = ParameterDirection.Input;
-     parameter[1].Value = indata;
-
-     parameter[2] = new OracleParameter("Error_status", OracleDbType.Int64);
-     parameter[2].Direction = ParameterDirection.Output;
-
-     parameter[3] = new OracleParameter(" qry_result ", OracleDbType.RefCursor);
-     parameter[3].Direction = ParameterDirection.Output;
+        public static ChequeCollectionResponse ChequeCollection(int flag, string indata)
+        {
+            ChequeCollectionResponse response = new ChequeCollectionResponse();
+            OracleParameter[] parameter = new OracleParameter[4];
 
 
+            parameter[0] = new OracleParameter("p_flag", OracleDbType.Int16);
+            parameter[0].Direction = ParameterDirection.Input;
+            parameter[0].Value = flag;
+
+            parameter[1] = new OracleParameter("data", OracleDbType.Varchar2);
+            parameter[1].Direction = ParameterDirection.Input;
+            parameter[1].Value = indata;
+
+            parameter[2] = new OracleParameter("Error_status", OracleDbType.Int64);
+            parameter[2].Direction = ParameterDirection.Output;
+
+            parameter[3] = new OracleParameter(" qry_result ", OracleDbType.RefCursor);
+            parameter[3].Direction = ParameterDirection.Output;
 
 
 
-     DataSet Result = new DataSet();
-     Result = new OracleHelper().ExecuteDataSet("proc_new_irregularity_recovery", parameter);
-     //string dtJson = JsonConvert.SerializeObject(Result);
-     //response.outdata = Uri.EscapeDataString(dtJson).ToString();
 
-     var resultList = new List<Dictionary<string, object>>();
-     foreach (DataTable table in Result.Tables)
-     {
-         foreach (DataRow row in table.Rows)
-         {
-             var rowDictionary = new Dictionary<string, object>();
-             foreach (DataColumn column in table.Columns)
-             {
-                 rowDictionary[column.ColumnName] = row[column];
-             }
-             resultList.Add(rowDictionary);
-         }
-     }
+
+            DataSet Result = new DataSet();
+            Result = new OracleHelper().ExecuteDataSet("proc_new_irregularity_recovery", parameter);
+            //string dtJson = JsonConvert.SerializeObject(Result);
+            //response.outdata = Uri.EscapeDataString(dtJson).ToString();
+
+            var resultList = new List<Dictionary<string, object>>();
+            foreach (DataTable table in Result.Tables)
+            {
+                foreach (DataRow row in table.Rows)
+                {
+                    var rowDictionary = new Dictionary<string, object>();
+                    foreach (DataColumn column in table.Columns)
+                    {
+                        rowDictionary[column.ColumnName] = row[column];
+                    }
+                    resultList.Add(rowDictionary);
+                }
+            }
 
             response.outdata = JsonConvert.SerializeObject(new { Table = resultList });
             response.status = parameter[2].Value?.ToString() ?? "-1";
 
 
 
-     return response;
+            return response;
 
 
- }
+        }
 
- public static DataSet ChequeCollection_imgdownload(int flag, string indata)
- {
-     ChequeCollectionResponse response = new ChequeCollectionResponse();
-     OracleParameter[] parameter = new OracleParameter[4];
-     DataSet ds = new DataSet();
-     try
-     {
+        public static DataSet ChequeCollection_imgdownload(int flag, string indata)
+        {
+            ChequeCollectionResponse response = new ChequeCollectionResponse();
+            OracleParameter[] parameter = new OracleParameter[4];
+            DataSet ds = new DataSet();
+            try
+            {
 
-         parameter[0] = new OracleParameter("p_flag", OracleDbType.Int16);
-         parameter[0].Direction = ParameterDirection.Input;
-         parameter[0].Value = flag;
+                parameter[0] = new OracleParameter("p_flag", OracleDbType.Int16);
+                parameter[0].Direction = ParameterDirection.Input;
+                parameter[0].Value = flag;
 
-         parameter[1] = new OracleParameter("data", OracleDbType.Varchar2);
-         parameter[1].Direction = ParameterDirection.Input;
-         parameter[1].Value = indata;
+                parameter[1] = new OracleParameter("data", OracleDbType.Varchar2);
+                parameter[1].Direction = ParameterDirection.Input;
+                parameter[1].Value = indata;
 
-         parameter[2] = new OracleParameter("Error_status", OracleDbType.Int64);
-         parameter[2].Direction = ParameterDirection.Output;
+                parameter[2] = new OracleParameter("Error_status", OracleDbType.Int64);
+                parameter[2].Direction = ParameterDirection.Output;
 
-         parameter[3] = new OracleParameter(" qry_result ", OracleDbType.RefCursor);
-         parameter[3].Direction = ParameterDirection.Output;
-
-
-         
+                parameter[3] = new OracleParameter(" qry_result ", OracleDbType.RefCursor);
+                parameter[3].Direction = ParameterDirection.Output;
 
 
-         
-         ds = new OracleHelper().ExecuteDataSet("proc_new_irregularity_recovery", parameter);
-         
-     }
-     catch (Exception ex)
-     {
-        ds = null;
-         
-     }
 
-     return ds;
 
- }
+
+
+                ds = new OracleHelper().ExecuteDataSet("proc_new_irregularity_recovery", parameter);
+
+            }
+            catch (Exception ex)
+            {
+                ds = null;
+
+            }
+
+            return ds;
+
+        }
 
         public static LegalRecoveryDeatailsResponse proc_recoverycall_select(string as_optflag, string p_indata)
         {
@@ -1838,7 +1839,103 @@ namespace AsirvadLegalModule.Core
             }
         }
 
+        public class AuditReportResponse
+        {
+            public string outdata { get; set; }
+            public string err_sts { get; set; } // Matches Error_status
+            public string err_msg { get; set; } // Matches Error_msg
+        }
 
+        //    public static LegalAuditResponse Proc_new_RIIM_Legal_Details(int flag, string indata)
+        //    {
+        //        // Use the DTO Response type here
+        //        LegalAuditResponse response = new LegalAuditResponse();
 
+        //        OracleParameter[] parameter = new OracleParameter[5];
+
+        //        parameter[0] = new OracleParameter("flag", OracleDbType.Int32);
+        //        parameter[0].Direction = ParameterDirection.Input;
+        //        parameter[0].Value = flag;
+
+        //        parameter[1] = new OracleParameter("Error_status", OracleDbType.Int32);
+        //        parameter[1].Direction = ParameterDirection.Output;
+
+        //        parameter[2] = new OracleParameter("indata", OracleDbType.Varchar2);
+        //        parameter[2].Direction = ParameterDirection.Input;
+        //        parameter[2].Value = indata;
+
+        //        parameter[3] = new OracleParameter("Error_msg", OracleDbType.Varchar2, 1000);
+        //        parameter[3].Direction = ParameterDirection.Output;
+
+        //        parameter[4] = new OracleParameter("out_result", OracleDbType.RefCursor);
+        //        parameter[4].Direction = ParameterDirection.Output;
+
+        //        DataSet Result = new OracleHelper().ExecuteDataSet("Proc_new_RIIM_Legal_Details", parameter);
+
+        //        var resultList = new List<Dictionary<string, object>>();
+        //        if (Result != null && Result.Tables.Count > 0)
+        //        {
+        //            foreach (DataRow row in Result.Tables[0].Rows)
+        //            {
+        //                var rowDict = new Dictionary<string, object>();
+        //                foreach (DataColumn col in Result.Tables[0].Columns)
+        //                {
+        //                    rowDict[col.ColumnName] = row[col];
+        //                }
+        //                resultList.Add(rowDict);
+        //            }
+        //        }
+
+        //        // Map values to your DTO properties
+        //        response.outdata = JsonConvert.SerializeObject(new { Table = resultList });
+        //        response.Error_status = Convert.ToInt32(parameter[1].Value.ToString());
+
+        //        // Error_msg is a string, so this stays the same
+        //        response.Error_msg = parameter[3].Value.ToString();
+
+        //        return response;
+        //    }
+        //}
+        public static LegalAuditResponse Proc_new_RIIM_Legal_Details(LegalAuditRequest request)
+        {
+            LegalAuditResponse response = new LegalAuditResponse();
+
+            // We need 6 parameters: flag, indata, employeeId, out_result, Error_status, Error_msg
+            OracleParameter[] parameters = new OracleParameter[6];
+
+            parameters[0] = new OracleParameter("flag", OracleDbType.Int32) { Value = request.flag };
+            parameters[1] = new OracleParameter("indata", OracleDbType.Varchar2) { Value = (object)request.indata ?? DBNull.Value };
+            parameters[2] = new OracleParameter("employeeId", OracleDbType.Varchar2) { Value = (object)request.employeeId ?? DBNull.Value };
+            parameters[3] = new OracleParameter("out_result", OracleDbType.RefCursor) { Direction = ParameterDirection.Output };
+            parameters[4] = new OracleParameter("Error_status", OracleDbType.Int32) { Direction = ParameterDirection.Output };
+            parameters[5] = new OracleParameter("Error_msg", OracleDbType.Varchar2, 1000) { Direction = ParameterDirection.Output };
+
+            DataSet ds = new OracleHelper().ExecuteDataSet("Proc_new_RIIM_Legal_Details", parameters);
+
+            // Convert DataTable to List of Dictionaries for JSON serialization
+            var resultList = new List<Dictionary<string, object>>();
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    var dict = new Dictionary<string, object>();
+                    foreach (DataColumn col in ds.Tables[0].Columns) dict[col.ColumnName] = row[col];
+                    resultList.Add(dict);
+                }
+            }
+
+            response.outdata = JsonConvert.SerializeObject(new { Table = resultList });
+
+            // FIX for line 1891: Safe conversion of Output Parameters
+            if (parameters[4].Value != null && parameters[4].Value != DBNull.Value)
+            {
+                int.TryParse(parameters[4].Value.ToString(), out int status);
+                response.Error_status = status;
+            }
+
+            response.Error_msg = parameters[5].Value?.ToString() ?? "Success";
+
+            return response;
+        }
     }
 }

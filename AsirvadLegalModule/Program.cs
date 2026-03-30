@@ -5,141 +5,114 @@ using Serilog;
 using static AsirvadLegalModule.Exception_Handler;
 
 var builder = WebApplication.CreateBuilder(args);
-//Seilog
+
+// --- 1. CONFIGURE SERVICES ---
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
+
 builder.Host.UseSerilog((context, configuration) =>
     configuration.ReadFrom.Configuration(context.Configuration));
 
-// Add services to the container
 builder.Services.AddSession(options =>
 {
-    options.IdleTimeout = TimeSpan.FromMinutes(120); // Set session timeout to 30 minutes
+    options.IdleTimeout = TimeSpan.FromMinutes(120);
     options.Cookie.HttpOnly = true;
     options.Cookie.IsEssential = true;
     options.Cookie.MaxAge = TimeSpan.FromMinutes(120);
     options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
-    options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.Strict;
-
+    options.Cookie.SameSite = Microsoft.AspNetCore.Http.SameSiteMode.None;
 });
+
 builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
 builder.Services.AddProblemDetails();
-
-// Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<PrivateAPIManager, PrivateAPIManager>();
 
 var app = builder.Build();
 
+// --- 2. CONFIGURE MIDDLEWARE PIPELINE ---
+
 app.UseSerilogRequestLogging();
-app.UseSession();
-// Configure the HTTP request pipeline.
+
 if (!app.Environment.IsDevelopment())
 {
-   
-}
- app.UseExceptionHandler("/Login");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+}
 
+app.UseExceptionHandler("/Login");
 
-
-
-app.UseHttpsRedirection();
+// Static files MUST be allowed before custom security logic
 app.UseStaticFiles();
 
 app.UseRouting();
-// Use session middleware
+app.UseCors("AllowAll");
+app.UseSession();
 
-app.UseAuthorization();
-
+// --- 3. CUSTOM SECURITY MIDDLEWARE ---
 app.Use(async (context, next) =>
 {
     var path = context.Request.Path.ToString().ToLower();
-    var key = context.Request.QueryString;
-    var queryCount = context.Request.Query.Count;
-    //if (!string.IsNullOrEmpty(key.ToString()) && context.Request.Query["menuId"].ToString() == "")
-    //{
-    //    context.Response.Redirect("Account/NoPageFound");
-    //    return;
-    //}
-    if (path.Equals("/RecoveryCallDetail/RecoveryCallDetail",StringComparison.OrdinalIgnoreCase))
-    {
-        if(queryCount>2)
-        {
-            context.Response.Redirect("/Login/Login");
-            return;
 
-        }
+    // A. CORS HANDSHAKE
+    if (HttpMethods.IsOptions(context.Request.Method))
+    {
+        context.Response.StatusCode = 200;
+        await context.Response.CompleteAsync();
+        return;
     }
-    else if (path.Equals("/EmpanelmentRequest/EmpanelmentLetter", StringComparison.OrdinalIgnoreCase))
-    {
-        if (queryCount > 2)
-        {
-            context.Response.Redirect("/Login/Login");
-            return;
 
-        }
+    // B. BYPASS API & STATIC ASSETS (CRITICAL FIX)
+    // This stops the middleware from redirecting your JS/CSS files to the Login page
+    if (path.StartsWith("/api/") ||
+        path.Contains("/js/") ||
+        path.Contains("/lib/") ||
+        path.Contains("/css/") ||
+        path.EndsWith(".js") ||
+        path.EndsWith(".css"))
+    {
+        await next.Invoke();
+        return;
+    }
+
+    // C. UI NAVIGATION LOGIC
+    var queryCount = context.Request.Query.Count;
+
+    // Specific Page logic
+    if (path.Equals("/recoverycalldetail/recoverycalldetail", StringComparison.OrdinalIgnoreCase) ||
+        path.Equals("/empanelmentrequest/empanelmentletter", StringComparison.OrdinalIgnoreCase))
+    {
+        if (queryCount > 2) { context.Response.Redirect("/Login/Login"); return; }
     }
     else
     {
-        if (queryCount > 0)
+        // Fix: Added check to ensure we aren't redirecting actual file requests
+        if (queryCount > 0 && !path.Contains("login") && !path.Contains("."))
         {
             context.Response.Redirect("/Login/Login");
             return;
-
         }
-
     }
 
-
-    if (path == "/" || path == "/account/login" || path == "/account/logout")
+    // D. CLEAR COOKIES ON LOGOUT/LOGIN ENTRY
+    if (path == "/" || path == "/account/login" || path == "/account/logout" || path == "/login/login")
     {
-        foreach (var items in context.Request.Cookies.Keys)
-        {
-            if (items.Any())
-            {
-                context.Response.Cookies.Delete(items);
-            }
-        }
-
+        foreach (var item in context.Request.Cookies.Keys) { context.Response.Cookies.Delete(item); }
     }
-
-   // context.Response.Headers.Remove("Set-Cookie");
-   // context.Response.Cookies.Delete("my-application-browser-tab");
-   // context.Response.Headers.Append("Set-Cookie", ".my-application-browser-tab=secured; path=/;SameSite=Strict;HttpOnly=true;Secure=true");
-
-   
-
-   // context.Response.Headers[HeaderNames.CacheControl] = "no-cache, no-store, must-revalidate";
-   // context.Response.Headers[HeaderNames.Expires] = "0";
-   // context.Response.Headers[HeaderNames.Pragma] = "no-cache";
-
-
-
-
-   // context.Response.Headers.Append("X-Content-Type-Options", "nosniff");
-   //context.Response.Headers.Append("Content-Security-Policy", "img-src 'self' data:  blob:; script-src  'nonce-5d67de6751aa4e158c33dfd828fc144b' 'strict-dynamic' ; base-uri 'self'; object-src 'none'");
-
-
-
-   // context.Response.Headers.Append("Referrer-Policy", "no-referrer");
-
-
-
-   // context.Response.Headers.Append("Permissions-Policy", "accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()");
-
-
-   // context.Response.Headers.Append("Cross-Origin-Embedder-Policy", "require-corp");
-
-   // context.Response.Headers.Append("Cross-Origin-Resource-Policy", "same-origin");
-
-
-   // context.Response.Headers.Append("Cross-Origin-Opener-Policy", "same-origin");
 
     await next.Invoke();
-    
-
 });
 
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

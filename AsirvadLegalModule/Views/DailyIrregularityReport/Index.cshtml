@@ -1,0 +1,291 @@
+﻿@* File: Views/LegalAudit/Index.cshtml *@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Legal Audit - Daily Irregularity Report";
+}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style type="text/css">
+    body { background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+    .card { border-radius: 15px; overflow: hidden; border: none; }
+    .table thead th { background-color: #f8fafd; font-size: 0.75rem; font-weight: 700; padding: 15px 10px; text-transform: uppercase; color: #495057; }
+    .table tbody tr:hover { background-color: #f1f4ff !important; }
+    .badge-pledge { background: #e9ecef; padding: 4px 8px; border-radius: 4px; font-family: monospace; font-weight: bold; color: #333; }
+    .amount-cell { font-weight: 600; }
+    .btn-excel { background-color: #1d6f42; color: white; border: none; }
+    .btn-excel:hover { background-color: #155231; color: white; }
+</style>
+
+<div class="container-fluid py-5">
+    <div class="card shadow-lg mx-auto" style="max-width: 1200px;">
+        <div class="card-header bg-white py-4 d-flex justify-content-between align-items-center">
+            <h3 class="fw-bold m-0"><i class="bi bi-shield-lock text-primary me-2"></i>Legal Audit</h3>
+            <button class="btn btn-excel shadow-sm" id="btnExportExcel">
+                <i class="bi bi-file-earmark-spreadsheet me-2"></i>EXPORT TO EXCEL
+            </button>
+        </div>
+
+        <div class="card-body bg-light border-bottom p-4">
+            <div class="row g-3 align-items-end">
+                <div class="col-md-6">
+                    <label class="form-label small fw-bold">Pledge Number / Search</label>
+                    <div class="input-group shadow-sm">
+                        <input type="text" id="pInput" class="form-control" placeholder="Search customer or pledge...">
+                        <button class="btn btn-primary px-4 fw-bold" id="btnSearch">EXECUTE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-responsive" style="min-height: 400px;">
+            <table class="table align-middle mb-0" id="auditTable">
+                <thead>
+                    <tr>
+                        <th width="50" class="ps-4"><input type="checkbox" id="selectAll" checked></th>
+                        <th>Customer Details</th>
+                        <th>Pledge No</th>
+                        <th>Weight (Gross/Net)</th>
+                        <th>Pledge Value</th>
+                        <th>Date</th>
+                        <th class="text-end pe-4">Loss Amount</th>
+                    </tr>
+                </thead>
+                <tbody id="gBody">
+                    <tr><td colspan="7" class="text-center py-5">System Initializing...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card-footer bg-white py-3 px-4 d-flex justify-content-between align-items-center">
+            <h6 id="rowCount" class="m-0 fw-bold text-muted">0 Records Found</h6>
+            <button class="btn btn-success px-5 fw-bold shadow-sm" id="btnConfirmAction">
+                <i class="bi bi-cloud-upload me-2"></i>CONFIRM & SUBMIT
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+$(document).ready(function () {
+    const API_URL = "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details";
+    const KEY_STR = "Anu||@@thattu*#0770||^TTT";
+    const key = CryptoJS.enc.Utf8.parse(KEY_STR);
+    const iv = CryptoJS.enc.Utf8.parse("\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0");
+
+    // --- Core Functions ---
+    function encryptAES(txt) {
+        if (!txt) return "";
+        return CryptoJS.AES.encrypt(txt.toString(), key, { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 }).toString();
+    }
+
+    function decryptAES(cipher) {
+        try {
+            if (!cipher) return "";
+            let cleanCipher = cipher.toString().replace(/^"|"$/g, '').trim();
+            const decrypted = CryptoJS.AES.decrypt(cleanCipher, key, { iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7 });
+            return decrypted.toString(CryptoJS.enc.Utf8);
+        } catch (e) { return null; }
+    }
+
+    window.updateCounter = function() {
+        const count = $('.row-chk:checked').length;
+        $('#rowCount').text(count + " Records Selected");
+    };
+
+    // --- Loading Helper ---
+    function showLoading(msg = "Processing...") {
+        Swal.fire({
+            title: msg,
+            allowOutsideClick: false,
+            didOpen: () => { Swal.showLoading(); }
+        });
+    }
+
+    // --- Flag 1: Fetch ---
+    function fetchAuditData() {
+        const pNo = $('#pInput').val() || "";
+        const payload = {
+            flag: 1,
+            indata: encryptAES(pNo),
+            employeeId: encryptAES("364625"),
+            branch: "1",
+            p_type: "SEARCH"
+        };
+
+        showLoading("Loading Records...");
+
+        $.ajax({
+            url: API_URL,
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify(payload),
+            success: function(res) {
+                Swal.close();
+                const decrypted = decryptAES(res);
+                if (!decrypted) { 
+                    Swal.fire("Error", "Decryption failed!", "error");
+                    return; 
+                }
+                try {
+                    const result = JSON.parse(decrypted);
+                    const tableData = JSON.parse(result.outdata).Table;
+                    renderTable(tableData);
+                } catch (err) {
+                    $('#gBody').html('<tr><td colspan="7" class="text-center text-danger">Data Parse Error</td></tr>');
+                }
+            },
+            error: () => { Swal.fire("Failed", "Could not reach server", "error"); }
+        });
+    }
+
+    function renderTable(data) {
+        let html = "";
+        if (!data || data.length === 0) {
+            $('#gBody').html('<tr><td colspan="7" class="text-center py-5">No records found.</td></tr>');
+            $('#rowCount').text("0 Records Found");
+            return;
+        }
+        data.forEach(item => {
+            html += `
+            <tr data-brid="${item.BRANCH_ID || '1'}" data-brnm="${item.BRANCH_NAME || ''}" 
+                data-regnm="${item.REGION_NAME || ''}" data-audit="${item.TYPE_OF_AUDIT || 'LEGAL'}">
+                <td class="ps-4"><input type="checkbox" class="form-check-input row-chk" checked onchange="updateCounter()"></td>
+                <td>
+                    <div class="fw-bold text-dark cust-name">${item.CUST_NAME || ''}</div>
+                    <div class="text-muted small cust-id">ID: ${item.CUST_ID || ''}</div>
+                </td>
+                <td class="pledge-no"><span class="badge-pledge">${item.PLEDGE_NO}</span></td>
+                <td>
+                    <div class="small fw-bold wts">${item.ACT_WT || 0}g / ${item.NET_WT || 0}g</div>
+                    <div class="extra-small text-muted stone-wt" style="font-size:10px">Stone: ${item.STONE_WT || 0}g</div>
+                </td>
+                <td class="amount-cell text-primary p-val">₹${Number(item.PLEDGE_VAL || 0).toLocaleString('en-IN')}</td>
+                <td class="small fw-medium tra-dt">${item.TRA_DT || ''}</td>
+                <td class="text-end pe-4 amount-cell text-danger loss-amt">₹${Number(item.LOSS || 0).toLocaleString('en-IN')}</td>
+            </tr>`;
+        });
+        $('#gBody').html(html);
+        updateCounter();
+    }
+
+    // --- Flag 2: Submit ---
+    $('#btnConfirmAction').on('click', function() {
+        const selected = [];
+        const checkedRows = $('.row-chk:checked').closest('tr');
+
+        if (checkedRows.length === 0) {
+            Swal.fire("Selection Empty", "Please select at least one record to submit.", "warning");
+            return;
+        }
+
+        Swal.fire({
+            title: 'Confirm Submission',
+            text: `Are you sure you want to submit ${checkedRows.length} records?`,
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#198754',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, Submit it!'
+        }).then((res) => {
+            if (res.isConfirmed) {
+                submitData(checkedRows);
+            }
+        });
+    });
+
+    function submitData(checkedRows) {
+        const selected = [];
+        checkedRows.each(function() {
+            const $r = $(this);
+            selected.push({
+                PLEDGE_NO: $r.find('.pledge-no').text().trim(),
+                CUST_ID: $r.find('.cust-id').text().replace('ID: ', '').trim(),
+                CUST_NAME: $r.find('.cust-name').text().trim(),
+                BRANCH_ID: $r.data('brid').toString(),
+                BRANCH_NAME: $r.data('brnm'),
+                REGION_NAME: $r.data('regnm'),
+                PLEDGE_VAL: parseFloat($r.find('.p-val').text().replace(/[₹,]/g, '')),
+                LOSS: parseFloat($r.find('.loss-amt').text().replace(/[₹,]/g, '')),
+                ACT_WT: parseFloat($r.find('.wts').text().split('/')[0]),
+                NET_WT: parseFloat($r.find('.wts').text().split('/')[1]),
+                STONE_WT: parseFloat($r.find('.stone-wt').text().replace('Stone: ', '')),
+                TRA_DT: $r.find('.tra-dt').text().trim(),
+                TYPE_OF_AUDIT: $r.data('audit')
+            });
+        });
+
+        showLoading("Submitting to Legal Database...");
+
+        $.ajax({
+            url: API_URL,
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({
+                flag: 2,
+                indata: encryptAES(JSON.stringify(selected)),
+                employeeId: encryptAES("364625"),
+                branch: "1",
+                p_type: "SUBMIT"
+            }),
+            success: function(res) {
+                const dec = decryptAES(res);
+                try {
+                    let result = (typeof dec === "string") ? JSON.parse(dec) : dec;
+                    let outDataObj = (typeof result.outdata === "string") ? JSON.parse(result.outdata) : result.outdata;
+                    const server = outDataObj.Table ? outDataObj.Table[0] : (Array.isArray(outDataObj) ? outDataObj[0] : outDataObj);
+
+                    const status = (server.STATUS || server.status || "").toUpperCase();
+                    if (status === "SUCCESS") {
+                        Swal.fire({
+                            title: 'Success!',
+                            html: `<b>System No:</b> ${server.SYSTEM_NO || server.system_no}<br><b>Status:</b> Recorded`,
+                            icon: 'success'
+                        }).then(() => { location.reload(); });
+                    } else {
+                        Swal.fire("Database Error", status || "Unknown Response", "error");
+                    }
+                } catch (e) {
+                    Swal.fire("Parse Error", "Invalid response from server", "error");
+                }
+            },
+            error: () => { Swal.fire("Error", "Server unreachable during submission", "error"); }
+        });
+    }
+
+    // --- Excel ---
+    $('#btnExportExcel').click(function() {
+        const exportData = [["Name", "ID", "Pledge", "Gross", "Net", "Value", "Date", "Loss"]];
+        const selectedRows = $('.row-chk:checked').closest('tr');
+        
+        if(selectedRows.length === 0) return Swal.fire("No Selection", "Select rows to export", "info");
+
+        selectedRows.each(function() {
+            const $r = $(this);
+            exportData.push([
+                $r.find('.cust-name').text(), $r.find('.cust-id').text().replace('ID: ', ''),
+                $r.find('.pledge-no').text(), $r.find('.wts').text().split('/')[0],
+                $r.find('.wts').text().split('/')[1], $r.find('.p-val').text().replace(/[₹,]/g, ''),
+                $r.find('.tra-dt').text(), $r.find('.loss-amt').text().replace(/[₹,]/g, '')
+            ]);
+        });
+        const ws = XLSX.utils.aoa_to_sheet(exportData);
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "LegalAudit");
+        XLSX.writeFile(wb, "Legal_Audit_Report.xlsx");
+    });
+
+    $('#btnSearch').click(fetchAuditData);
+    $('#selectAll').on('change', function() { 
+        $('.row-chk').prop('checked', $(this).prop('checked')); 
+        updateCounter();
+    });
+
+    fetchAuditData();
+});
+</script>

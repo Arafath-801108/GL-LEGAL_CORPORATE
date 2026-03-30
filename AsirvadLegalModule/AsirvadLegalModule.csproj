@@ -61,6 +61,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="..\AsirvadLegalModule.API\wwwroot\js\legalAudit.js" Link="legalAudit.js" />
     <None Include="wwwroot\js\GoldSuiteFileJs\RemovalSuitApproval.js" />
     <None Include="wwwroot\js\GoldSuiteFileJs\RemovalSuitRequest.js" />
     <None Include="wwwroot\js\GoldSuiteFileJs\SuitFIleApprove.js" />

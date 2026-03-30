@@ -178,3 +178,19 @@ C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.DTO\obj\Debug\net8.0\refint\AsirvadLegalModule.DTO.dll
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.pdb
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.DTO\obj\Debug\net8.0\ref\AsirvadLegalModule.DTO.dll
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\bin\Debug\net8.0\AsirvadLegalModule.DTO.deps.json
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\bin\Debug\net8.0\AsirvadLegalModule.DTO.dll
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\bin\Debug\net8.0\AsirvadLegalModule.DTO.pdb
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\bin\Debug\net8.0\AsirvadLegalModule.Utilities.dll
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\bin\Debug\net8.0\AsirvadLegalModule.Utilities.pdb
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.csproj.AssemblyReference.cache
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.GeneratedMSBuildEditorConfig.editorconfig
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.AssemblyInfoInputs.cache
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.AssemblyInfo.cs
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.csproj.CoreCompileInputs.cache
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.sourcelink.json
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadL.CBA42B9B.Up2Date
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.dll
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\refint\AsirvadLegalModule.DTO.dll
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\AsirvadLegalModule.DTO.pdb
+D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.DTO\obj\Debug\net8.0\ref\AsirvadLegalModule.DTO.dll
