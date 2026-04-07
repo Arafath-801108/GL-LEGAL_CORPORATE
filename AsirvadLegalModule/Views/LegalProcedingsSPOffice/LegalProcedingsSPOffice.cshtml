@@ -1,0 +1,415 @@
+﻿@{
+    ViewData["Title"] = "Legal Procedings SP Office";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<style>
+    :root {
+        --primary-blue: #0061f2;
+        --success-green: #00ac69;
+        --bg-body: #f2f6fc;
+        --card-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 40, 0.12);
+    }
+
+    body { background-color: var(--bg-body); font-family: 'Segoe UI', sans-serif; color: #212832; }
+
+    /* Header & Navigation */
+    .app-header { background: white; padding: 0.8rem 2rem; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+    .brand-box { font-weight: 800; font-size: 1.2rem; display: flex; align-items: center; color: var(--primary-blue); }
+    .btn-dashboard { background: #f8f9fa; border: 1px solid #c5ccd6; color: #495057; font-weight: 600; border-radius: 0.35rem; transition: 0.2s; }
+    .btn-dashboard:hover { background: #e2e6ea; color: #212832; }
+
+    /* Search Section & Content Cards */
+    .filter-section, .form-section { background: white; border-radius: 0.75rem; padding: 1.5rem; margin-bottom: 2rem; border: 1px solid #dee2e6; box-shadow: var(--card-shadow); }
+    .search-input-grp { background: #f8f9fa; border: 1px solid #c5ccd6; border-radius: 0.5rem; padding: 5px; display: flex; }
+    .search-input-grp select { border: none; background: transparent; flex: 1; padding: 12px; outline: none; font-weight: 600; color: #495057; cursor: pointer; }
+
+    /* Metrics */
+    .stat-card { background: white; border-radius: 0.5rem; padding: 1.25rem; border-left: 0.3rem solid var(--primary-blue); box-shadow: 0 0.15rem 1rem rgba(33, 40, 50, 0.05); }
+    .stat-label { font-size: 0.72rem; font-weight: 700; color: #69707a; text-transform: uppercase; letter-spacing: 0.5px; }
+    .stat-value { font-size: 1.3rem; font-weight: 800; display: block; margin-top: 4px; }
+
+    /* Form Styles */
+    .section-title { font-size: 0.9rem; font-weight: 700; color: var(--primary-blue); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1.25rem; display: block; }
+    .inner-input { border: 1px solid #c5ccd6 !important; border-radius: 0.35rem !important; font-size: 0.9rem; padding: 0.6rem; width: 100%; }
+    .inner-input:focus { border-color: var(--primary-blue) !important; box-shadow: 0 0 0 0.2rem rgba(0, 97, 242, 0.25); outline: 0; }
+    .btn-submit { background: var(--primary-blue); color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 0.35rem; font-weight: 600; width: 100%; transition: 0.2s; }
+    .btn-submit:hover { background: #0052cc; }
+    
+    label { font-size: 0.85rem; font-weight: 600; color: #495057; margin-bottom: 0.4rem; }
+    .note { font-size: 0.75rem; color: #69707a; display: block; margin-top: 0.25rem; }
+
+    /* Loader */
+    .loading-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999; justify-content: center; align-items: center; }
+</style>
+
+<div class="loading-overlay" id="loader">
+    <div class="spinner-border text-primary" role="status"></div>
+</div>
+
+<div class="app-header">
+    <div class="brand-box"><i class="bi bi-shield-check-fill me-2 fs-3"></i> LEGAL AUDIT PORTAL</div>
+    <div>
+        <a href="../Home/toDashboard" class="btn btn-dashboard btn-sm px-3 py-2">
+            <i class="bi bi-grid-fill me-2"></i> BACK TO DASHBOARD
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid p-4">
+    <div class="filter-section">
+        <p class="small fw-bold text-muted mb-2">SYSTEM RETRIEVAL</p>
+        <div class="search-input-grp">
+            <span class="px-3 d-flex align-items-center"><i class="bi bi-search text-muted"></i></span>
+            <select id="sopDropdown" onchange="autoFetch(this.value)">
+                <option value="" disabled selected>Select System ID (Auto-Loading)...</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="noDataView" class="text-center py-5">
+        <i class="bi bi-search" style="font-size: 4rem; color: #dee2e6;"></i>
+        <h5 class="text-muted mt-3">Select an ID from the dropdown to automatically load audit details.</h5>
+    </div>
+
+    <div id="contentView" style="display:none;">
+        
+        <div class="row g-4 mb-4">
+            <div class="col-md-3"><div class="stat-card"><span class="stat-label">Pledge Count</span><span id="lblPledgeCount" class="stat-value">0</span></div></div>
+            <div class="col-md-3"><div class="stat-card"><span class="stat-label">Customers</span><span id="lblCustCount" class="stat-value">0</span></div></div>
+            <div class="col-md-3"><div class="stat-card" style="border-left-color: var(--success-green);"><span class="stat-label">Total Loss</span><span id="lblLoss" class="stat-value text-success">₹0.00</span></div></div>
+            <div class="col-md-3"><div class="stat-card" style="border-left-color: #f4a100;"><span class="stat-label">Reported Date</span><span id="lblReportedDate" class="stat-value text-warning">--</span></div></div>
+        </div>
+
+        <form id="legalForm">
+            
+            <div class="form-section">
+                <span class="section-title">FIR Registration Status</span>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="firStatus"> Status</label>
+                        <input 
+    type="text" 
+    id="firStatus" 
+    class="inner-input" 
+    placeholder="Enter FIR Status" 
+    oninput="toggleWorkflowSections()" 
+/>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="privateComplaintSection" class="form-section" style="display:none;">
+                <span class="section-title">Private Complaint Details</span>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="filingDate">Private Complaint Filing Date</label>
+                        <input type="date" id="filingDate" name="filingDate" class="inner-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="handoverDate">Hand over to Advocate Date</label>
+                        <input type="date" id="handoverDate" name="handoverDate" class="inner-input">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="timelineDate">Timeline Date</label>
+                        <input type="date" id="timelineDate" name="timelineDate" class="inner-input">
+                    </div>
+                    <div class="col-md-12">
+                        <label for="delayRemarks">Remarks for Delay (if any)</label>
+                        <textarea id="delayRemarks" name="delayRemarks" class="inner-input" rows="3" placeholder="Explain reasons for timeline extension..."></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="legalCourtSection" class="form-section" style="display:none;">
+                <span class="section-title">Legal Representation & Court Info</span>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="advocateName">Advocate Name</label>
+                        <input type="text" id="advocateName" name="advocateName" class="inner-input" placeholder="Enter full name">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="courtName">Court Name</label>
+                        <input type="text" id="courtName" name="courtName" class="inner-input" placeholder="e.g. District & Sessions Court">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="cnrNumber">CNR Number</label>
+                        <input type="text" id="cnrNumber" name="cnrNumber" class="inner-input" placeholder="16-character alphanumeric code">
+                        <span class="note">Example: MHPU010012342026</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="submitContainer" class="mb-5" style="display:none;">
+                <button type="submit" class="btn-submit">Update Legal Record</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+    let GLOBAL_REPORT_DATE = "";
+
+    $(document).ready(function() {
+        // Load Dropdown on start
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", 
+            contentType: "application/json",
+            data: JSON.stringify({ flag: 5, indata: "ALL", employeeId: "", branch: "" }),
+            success: function(res) {
+                try {
+                    const decrypted = decryptAES(res);
+                    const parsedResponse = JSON.parse(decrypted);
+                    
+                    let outDataObj = typeof parsedResponse.outdata === 'string' 
+                        ? JSON.parse(parsedResponse.outdata) 
+                        : parsedResponse.outdata;
+
+                    const data = outDataObj.Table;
+                    data.forEach(x => $('#sopDropdown').append(`<option value="${x.SYSTEM_ID_NO}">${x.SYSTEM_ID_NO}</option>`));
+                } catch (e) {
+                    console.error("Error loading dropdown:", e);
+                }
+            }
+        });
+    });
+
+    // Triggers when user selects a System ID
+    function autoFetch(id) {
+        if(!id) return;
+        $('#loader').css('display', 'flex');
+        
+        // Reset workflow states when changing ID
+        $('#firStatus').val('');
+        $('#privateComplaintSection').hide();
+        $('#legalCourtSection').hide();
+        $('#submitContainer').hide();
+        
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", 
+            contentType: "application/json",
+            data: JSON.stringify({ flag: 3, indata: encryptAES(id), employeeId: "", branch: "" }),
+            success: function(res) {
+                try {
+                    
+                    const decrypted = decryptAES(res);
+                    const parsedResponse = JSON.parse(decrypted);
+                    
+                    let outDataObj = typeof parsedResponse.outdata === 'string' 
+                        ? JSON.parse(parsedResponse.outdata) 
+                        : parsedResponse.outdata;
+
+                    const data = outDataObj.Table[0];
+                    if(data) {
+                        $('#lblPledgeCount').text(data.TOTAL_PLEDGE_COUNT);
+                        $('#lblCustCount').text(data.CUSTOMER_COUNT);
+                        $('#lblLoss').text("₹" + Number(data.LOSS_AMOUNT).toLocaleString('en-IN'));
+                        $('#lblReportedDate').text(data.REPORTED_DATE);
+                        GLOBAL_REPORT_DATE = data.REPORTED_DATE;
+                        
+                        $('#loader').hide();
+                        $('#noDataView').hide();
+                        $('#contentView').fadeIn(400);
+
+                        // 🔥 TRIGGER FIR FETCH AUTOMATICALLY HERE
+                        firfetch(id);
+                    }
+                } catch(e) {
+                    console.error("Error parsing audit details:", e);
+                    $('#loader').hide();
+                }
+            },
+            error: function() { $('#loader').hide(); }
+        });
+    }
+
+    // Fetches the FIR status based on the selected ID
+    function firfetch(Id) {
+    // Prevent execution if Id is missing to avoid encryption errors
+    if (typeof Id === 'undefined' || !Id) {
+        console.warn("⚠️ Cannot fetch FIR: 'Id' is not defined or empty.");
+        return;
+    }
+
+    $.ajax({
+        url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({ 
+            flag: 6, 
+            indata: encryptAES(Id), 
+            employeeId: "", 
+            branch: "" 
+        }),
+        success: function(res) {
+            try {
+                const decrypted = decryptAES(res);
+                const parsedResponse = JSON.parse(decrypted);
+                
+                let outDataObj = typeof parsedResponse.outdata === 'string' 
+                    ? JSON.parse(parsedResponse.outdata) 
+                    : parsedResponse.outdata;
+
+                const data = outDataObj.Table[0];
+
+                // FIX: Checked for both uppercase 'FIR_STATUS' and 'Fir_status' just in case
+                const dbStatus = data ? (data.FIR_STATUS || data.Fir_status) : null;
+
+                if (dbStatus) {
+                    // Update the text box with human-readable text ("Registered" / "Not Registered")
+                    $("#firStatus").val(dbStatus);
+                    $("#firStatus").prop("disabled", true);
+
+                    // Standardize string to trigger your UI visual effects
+                    const normalizedStatus = dbStatus.toLowerCase().replace(/\s+/g, '_');
+
+                    // Run the UI layout updates
+                    if (typeof executeWorkflowAnimation === 'function') {
+                        executeWorkflowAnimation(normalizedStatus);
+                    } else {
+                        console.warn("⚠️ executeWorkflowAnimation function is not defined.");
+                    }
+                } else {
+                    console.warn("⚠️ No FIR status found in the response table.");
+                }
+            } catch (e) {
+                console.error("Error parsing FIR fetch data:", e);
+            }
+        },
+        error: function(err) {
+            console.error("Error fetching FIR status from DB:", err);
+        }
+    });
+}
+
+$(document).ready(function() {
+    
+    // Listen for the submit button click
+    $(".btn-submit").on("click", function(e) {
+        
+        // Stop the button from refreshing the page
+        e.preventDefault(); 
+        
+        // 1. Grab values from your HTML inputs
+        // (Ensures blank fields send empty strings instead of breaking)
+        const filingDate   = $("#filingDate").val() || "";
+        const handoverDate = $("#handoverDate").val() || "";
+        const timelineDate = $("#timelineDate").val() || "";
+        const advocateName = $("#advocateName").val() || "";
+        const courtName    = $("#courtName").val() || "";
+        const cnrNumber    = $("#cnrNumber").val() || "";
+        const delayRemarks = $("#delayRemarks").val() || "";
+
+        const status = $('#firStatus').val().toLowerCase().replace(/\s+/g, '_');
+
+        if (status === 'not_registered') {
+            
+            if (!filingDate) {
+                alert("Please enter private complaint filing date.");
+                return; // Blocks execution here
+            }
+
+            if (!handoverDate) {
+                alert("Please enter handover to advocate date.");
+                return; 
+            }
+
+            if (!timelineDate) {
+                alert("Please enter timeline date.");
+                return;
+            }
+        }
+
+        // Validations for fields required in BOTH statuses (Court Section is always visible)
+        if (status === 'registered' || status === 'not_registered') {
+            
+            if (!advocateName) {
+                alert("Please enter advocate name.");
+                return;
+            }
+
+            if (!courtName) {
+                alert("Please enter court name.");
+                return;
+            }
+
+            if (!cnrNumber) {
+                alert("Please enter CNR number.");
+                return;
+            }
+        }
+
+        // 2. Combine them into an array
+        const dataarray = [
+            filingDate,   // Position 1 (REGEXP_SUBSTR 1)
+            handoverDate, // Position 2 (REGEXP_SUBSTR 2)
+            timelineDate, // Position 3 (REGEXP_SUBSTR 3)
+            advocateName, // Position 4 (REGEXP_SUBSTR 4)
+            courtName,    // Position 5 (REGEXP_SUBSTR 5)
+            cnrNumber,    // Position 6 (REGEXP_SUBSTR 6)
+            delayRemarks  // Position 7 (REGEXP_SUBSTR 7)
+        ];
+
+        // 3. Make the simple pipe-delimited string
+        const concatenatedString = dataarray.join('|');
+
+        
+
+        // 4. Execute AJAX
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ 
+                flag: 7, 
+                indata: encryptAES(concatenatedString), // Encrypt the payload
+                employeeId: "", 
+                branch: "" 
+            }),
+            success: function(res) {
+                alert("Updated successfully!");
+                location.reload();
+            },
+            error: function(err) {
+                console.error("AJAX Error:", err);
+                alert("Failed to update. Check console for details.");
+            }
+        });
+    });
+});
+
+    // Handles logic for controlling which forms appear
+    function executeWorkflowAnimation(normalizedStatus) {
+        // Fallback to reading the text box directly if normalized status isn't passed
+        const status = normalizedStatus || $('#firStatus').val().toLowerCase().replace(/\s+/g, '_');
+
+        if (status === 'registered') {
+            $('#privateComplaintSection').slideUp(200);
+            $('#legalCourtSection').slideDown(400);
+            $('#submitContainer').fadeIn(400);
+        } 
+        else if (status === 'not_registered') {
+            $('#privateComplaintSection').slideDown(400);
+            $('#legalCourtSection').slideDown(400);
+            $('#submitContainer').fadeIn(400);
+        } 
+        else {
+            $('#privateComplaintSection').slideUp(200);
+            $('#legalCourtSection').slideUp(200);
+            $('#submitContainer').fadeOut(200);
+        }
+    }
+
+    // Retained this function because you have oninput="toggleWorkflowSections()" in the HTML
+    function toggleWorkflowSections() {
+        executeWorkflowAnimation();
+    }
+</script>

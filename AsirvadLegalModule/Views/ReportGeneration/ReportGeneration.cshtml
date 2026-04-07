@@ -1,0 +1,231 @@
+﻿@{
+    ViewData["Title"] = "Report";
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal Pledge Data Report</title>
+    
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; padding: 20px; }
+        .container { max-width: 1200px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .filter-section { display: flex; gap: 15px; align-items: flex-end; margin-bottom: 25px; flex-wrap: wrap; }
+        .form-group { display: flex; flex-direction: column; }
+        label { font-weight: 600; margin-bottom: 5px; color: #333; }
+        input[type="month"] { padding: 8px; border: 1px solid #ccc; border-radius: 4px; min-width: 200px; font-family: inherit; }
+        
+        button { padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: 600; transition: 0.3s; }
+        #searchBtn { background-color: #007bff; color: white; }
+        #searchBtn:hover { background-color: #0056b3; }
+        #download { background-color: #28a745; color: white; }
+        #download:hover { background-color: #218838; }
+
+        #loading { display: none; color: #007bff; font-weight: bold; margin: 10px 0; }
+        #noDataMsg { display: none; color: #dc3545; font-weight: bold; margin: 10px 0; }
+        
+        /* 🔒 LOCKING TABLE ELEMENTS & REMOVING GAPS */
+        #reportContainer { display: none; margin-top: 20px; border: 1px solid #dee2e6; border-radius: 4px; overflow: hidden; }
+
+        /* Remove the gap between header and body created by DataTables scroll wrapper */
+        .dataTables_scrollBody {
+            border-top: none !important;
+            margin-top: -1px !important;
+        }
+
+        /* Sticky Header Styling */
+        table.dataTable thead th { 
+            background-color: #f8f9fa !important; 
+            color: #333;
+            font-weight: 700;
+            border-bottom: 2px solid #dee2e6 !important; 
+            text-align: left !important; 
+            padding: 12px 10px !important;
+            white-space: nowrap;
+        }
+
+        /* Body Styling */
+        table.dataTable tbody td {
+            text-align: left !important;
+            padding: 10px !important;
+            border-bottom: 1px solid #eee !important;
+            white-space: nowrap;
+        }
+
+        /* Remove top border from first row to prevent double-line look */
+        #assetTable tbody tr:first-child td {
+            border-top: none !important;
+        }
+
+        .page-header { text-align: center; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="page-header">
+    <h2 class="page-title"><i class="fas fa-clipboard-list"></i> Legal Pledge Data Report</h2>
+</div>
+
+<div class="container">
+    <div class="filter-section">
+        <div class="form-group">
+            <label for="monthPicker">Select Month & Year</label>
+            <input type="month" id="monthPicker">
+        </div>
+        <button id="searchBtn">Search Report</button>
+        <button id="download">Download Excel</button>
+    </div>
+
+    <div id="loading">Fetching data, please wait...</div>
+    <div id="noDataMsg">No records found for the selected month and year.</div>
+
+    <div id="reportContainer">
+        <table id="assetTable" class="display nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Branch Name</th>
+                    <th>Region Name</th>
+                    <th>Pledge No</th>
+                    <th>Customer Name</th>
+                    <th>Customer ID</th>
+                    <th>Irregularity Date</th>
+                    <th>CNR Number</th>
+                    <th>Timeline Date</th>
+                    <th>Advocate Name</th>
+                    <th>Court Name</th>
+                    <th>Delay Remarks</th>
+                </tr>
+            </thead>
+            <tbody id="reportTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    let globalData = [];
+
+    $(document).ready(function() {
+        const now = new Date();
+        const currentYear = now.getFullYear();
+        const currentMonth = String(now.getMonth() + 1).padStart(2, '0');
+        $("#monthPicker").val(`${currentYear}-${currentMonth}`);
+    });
+
+    document.getElementById("searchBtn").addEventListener("click", () => {
+        const pickerValue = document.getElementById("monthPicker").value; 
+        if (!pickerValue) {
+            alert("⚠️ Please select a month and year.");
+            return;
+        }
+
+        const parts = pickerValue.split("-");
+        const concatenatedString = `${parts[1]}-${parts[0]}`; // MM-YYYY format
+
+        const loadingEl = document.getElementById("loading");
+        const noDataEl = document.getElementById("noDataMsg");
+        const reportContainer = document.getElementById("reportContainer");
+        const tableBody = document.getElementById("reportTableBody");
+
+        loadingEl.style.display = "block";
+        noDataEl.style.display = "none";
+        reportContainer.style.display = "none";
+        tableBody.innerHTML = "";
+
+        if ($.fn.dataTable.isDataTable('#assetTable')) {
+            $('#assetTable').DataTable().clear().destroy();
+        }
+
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST",
+            contentType: "application/json",
+            data: JSON.stringify({ 
+                flag: 8, 
+                indata: encryptAES(concatenatedString), 
+                employeeId: "", 
+                branch: "" 
+            }),
+            success: function(res) {
+                try {
+                    const decrypted = decryptAES(res);
+                    const responseObj = JSON.parse(decrypted);
+                    let data = [];
+                    if (responseObj.outdata) {
+                        const innerData = JSON.parse(responseObj.outdata);
+                        data = innerData.Table || [];
+                    }
+
+                    if (data && data.length > 0) {
+                        globalData = data;
+                        data.forEach(item => {
+                            const row = `<tr>
+                                <td>${item.BRANCH_NAME ?? ""}</td>
+                                <td>${item.REGION_NAME ?? ""}</td>
+                                <td>${item.PLEDGE_NO ?? ""}</td>
+                                <td>${item.CUSTOMER_NAME ?? ""}</td>
+                                <td>${item.CUSTOMER_ID ?? ""}</td>
+                                <td>${item.IRREGULARITY_DATE ? item.IRREGULARITY_DATE.split('T')[0] : ""}</td>
+                                <td>${item.CNR_NUMBER ?? ""}</td>
+                                <td>${item.TIMELINE_DATE ? item.TIMELINE_DATE.split('T')[0] : ""}</td>
+                                <td>${item.ADVOCATE_NAME ?? ""}</td>
+                                <td>${item.COURT_NAME ?? ""}</td>
+                                <td>${item.DELAY_REMARKS ?? ""}</td>
+                            </tr>`;
+                            tableBody.insertAdjacentHTML('beforeend', row);
+                        });
+
+                        reportContainer.style.display = "block";
+
+                        // Initialize DataTable with Gap-Fix settings
+                        $('#assetTable').DataTable({
+                            paging: true,
+                            searching: true,
+                            ordering: true,
+                            info: true,
+                            autoWidth: false, 
+                            scrollY: '400px', 
+                            scrollX: true,    
+                            scrollCollapse: true,
+                            fixedHeader: false // Disabled because scrollY handles header locking natively
+                        });
+
+                    } else {
+                        noDataEl.style.display = "block";
+                        reportContainer.style.display = "none";
+                    }
+                } catch (e) {
+                    console.error("Crash:", e);
+                    alert("❌ Error processing data.");
+                }
+            },
+            error: function(err) {
+                alert("❌ API Error.");
+            },
+            complete: function() {
+                loadingEl.style.display = "none";
+            }
+        });
+    });
+
+    document.getElementById("download").addEventListener("click", () => {
+        if (!globalData.length) { 
+            alert("⚠️ No data available to export."); 
+            return; 
+        }
+        const ws = XLSX.utils.json_to_sheet(globalData);
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "Legal Report");
+        XLSX.writeFile(wb, "Legal_Pledge_Report.xlsx");
+    });
+</script>
+</body>
+</html>
