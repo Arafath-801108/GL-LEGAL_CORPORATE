@@ -7,6 +7,8 @@ wwwroot\css\ChequeCollection\ChequeReport.css
 wwwroot\css\ChequeCollection\ChequeStatusVerification.css
 wwwroot\css\ChequeCollection\ChequeUpdation.css
 wwwroot\css\ChequeCollection\ChequeVerification.css
+wwwroot\css\ExplainationModule\ExplainationModule.css
+wwwroot\css\ExplainationModule\ExplStyle.css
 wwwroot\css\font.css
 wwwroot\css\font1.css
 wwwroot\css\GoldSuiteFile\RemovalSuitApproval.css
@@ -114,6 +116,9 @@ wwwroot\js\ChequeCollection\ChequeStatusVerification.js
 wwwroot\js\ChequeCollection\ChequeUpdation.js
 wwwroot\js\ChequeCollection\ChequeVerification.js
 wwwroot\js\ChequeCollection\demo.js
+wwwroot\js\ExplainationUpdation\ExplainationUpdate.js
+wwwroot\js\ExplainationUpdation\ExplReport.js
+wwwroot\js\ExplainationUpdation\Validation.js
 wwwroot\js\GoldSuiteFileJs\SuitFileClassify.js
 wwwroot\js\GoldSuiteFileJs\SuitFileLO.js
 wwwroot\js\GoldSuiteFileJs\SuitfileReport.js

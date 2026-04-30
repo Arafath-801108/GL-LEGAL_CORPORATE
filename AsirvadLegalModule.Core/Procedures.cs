@@ -27,6 +27,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+using static AsirvadLegalModule.DTO.ExplainationModule.Response.ExplainationResponse;
 using static AsirvadLegalModule.DTO.GoldSuitFIle.Response.getPledgeListResponse;
 
 namespace AsirvadLegalModule.Core
@@ -1936,6 +1937,148 @@ namespace AsirvadLegalModule.Core
             response.Error_msg = parameters[5].Value?.ToString() ?? "Success";
 
             return response;
+        }
+
+        public static List<BranchLoadRes> ExplainationUpdate(string inData, string flag)
+        {
+            List<BranchLoadRes> branches = new List<BranchLoadRes>();
+            try
+            {
+                OracleParameter[] parameter = new OracleParameter[3];
+                parameter[0] = new OracleParameter("p_flag", OracleDbType.Varchar2, flag, ParameterDirection.Input);
+                parameter[1] = new OracleParameter("data", OracleDbType.Varchar2, inData, ParameterDirection.Input);
+                parameter[2] = new OracleParameter("qry_result", OracleDbType.RefCursor, ParameterDirection.Output);
+
+                DataSet ds = new OracleHelper().ExecuteDataSet("PROC_irregularity_explanation", parameter);
+
+                if (ds != null && ds.Tables.Count > 0)
+                {
+                    foreach (DataRow row in ds.Tables[0].Rows)
+                    {
+                        branches.Add(new BranchLoadRes
+                        {
+                            BRANCH_ID = row["BRANCH_ID"].ToString(),
+                            BRANCH_NAME = row["BRANCH_NAME"].ToString()
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error fetching branches", ex);
+            }
+            return branches;
+        }
+
+        public static List<CustomerRes> GetIrrCodes(string branchId, string flag)
+        {
+            List<CustomerRes> irrCodes = new List<CustomerRes>();
+
+            OracleParameter[] parameter = new OracleParameter[3];
+            parameter[0] = new OracleParameter("p_flag", OracleDbType.Varchar2, flag, ParameterDirection.Input);
+            parameter[1] = new OracleParameter("data", OracleDbType.Varchar2, branchId, ParameterDirection.Input);
+            parameter[2] = new OracleParameter("qry_result", OracleDbType.RefCursor, ParameterDirection.Output);
+
+            DataSet ds = new OracleHelper().ExecuteDataSet("PROC_irregularity_explanation", parameter);
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    irrCodes.Add(new CustomerRes
+                    {
+                        IRR_CODE = row["IRR_CODE"].ToString()
+                    });
+                }
+            }
+
+            return irrCodes;
+        }
+
+
+        public static List<IrrCustomerRes> GetIrrCustomerDetails(string irrCode, string flag)
+        {
+            List<IrrCustomerRes> customers = new List<IrrCustomerRes>();
+
+            OracleParameter[] parameter = new OracleParameter[3];
+            parameter[0] = new OracleParameter("p_flag", OracleDbType.Varchar2, flag, ParameterDirection.Input);
+            parameter[1] = new OracleParameter("data", OracleDbType.Varchar2, irrCode, ParameterDirection.Input);
+            parameter[2] = new OracleParameter("qry_result", OracleDbType.RefCursor, ParameterDirection.Output);
+
+            DataSet ds = new OracleHelper().ExecuteDataSet("PROC_irregularity_explanation", parameter);
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    customers.Add(new IrrCustomerRes
+                    {
+                        cust_id = row["CUST_ID"].ToString(),
+                        cust_name = row["CUST_NAME"].ToString(),
+                        pledge_no = row["PLEDGE_NO"].ToString(),
+                        status = row["STATUS"].ToString()
+                    });
+                }
+            }
+
+            return customers;
+        }
+
+        public static string InsertExplaination(string requestData, string flag, byte[] fileBytes)
+        {
+            OracleParameter[] parameter = new OracleParameter[4];
+            parameter[0] = new OracleParameter("p_flag", OracleDbType.Int32, flag, ParameterDirection.Input);
+            parameter[1] = new OracleParameter("data", OracleDbType.Varchar2, requestData, ParameterDirection.Input);
+            parameter[2] = new OracleParameter("p_document", OracleDbType.Blob, fileBytes, ParameterDirection.Input);
+            parameter[3] = new OracleParameter("qry_result", OracleDbType.RefCursor, ParameterDirection.Output);
+
+            DataSet ds = new OracleHelper().ExecuteDataSet("PROC_irregularity_explanation", parameter);
+
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+            {
+                return ds.Tables[0].Rows[0]["result"].ToString();
+            }
+            return "FAILED";
+        }
+
+        public static List<ReportRes> GetExplRpt(string data, string flag)
+        {
+            List<ReportRes> customers = new List<ReportRes>();
+
+            OracleParameter[] parameter = new OracleParameter[3];
+            parameter[0] = new OracleParameter("p_flag", OracleDbType.Varchar2, flag, ParameterDirection.Input);
+            parameter[1] = new OracleParameter("data", OracleDbType.Varchar2, data, ParameterDirection.Input);
+            parameter[2] = new OracleParameter("qry_result", OracleDbType.RefCursor, ParameterDirection.Output);
+
+            DataSet ds = new OracleHelper().ExecuteDataSet("PROC_irregularity_explanation", parameter);
+
+            if (ds != null && ds.Tables.Count > 0)
+            {
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    string base64Doc = string.Empty;
+
+                    if (row["document"] != DBNull.Value)
+                    {
+                        byte[] imageBytes = (byte[])row["document"];
+                        base64Doc = Convert.ToBase64String(imageBytes);
+                    }
+
+                    customers.Add(new ReportRes
+                    {
+                        cust_id = row["Customer ID"].ToString(),
+                        cust_name = row["Customer Name"].ToString(),
+                        branch_name = row["Branch Name"].ToString(),
+                        div_name = row["Region Name"].ToString(),
+                        area_name = row["Area Name"].ToString(),
+                        doc_type = row["document_type"].ToString(),
+                        document = base64Doc,
+                        rm_date = row["RM Updated Date"].ToString(),
+                    });
+                }
+            }
+
+            return customers;
         }
     }
 }

@@ -1,0 +1,254 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Explanation Updating Module";
+}
+
+<link rel="stylesheet" href="~/css/ExplainationModule/ExplainationModule.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<script src="~/js/jquerymin.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/popper.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/sweet-alert/sweet-alert2.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/4.2.0-crypto-js.min.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/lib/aes/aes.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/alertutils.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+<script src="~/js/utilitiesjs/commonmethod.js" nonce="5d67de6751aa4e158c33dfd828fc144b"></script>
+
+
+<div class="pm-wrapper">
+    <div class="pm-container">
+
+        <!-- Page Header -->
+        <div class="pm-page-header">
+            <div class="pm-header-left">
+                @* <div class="pm-header-icon"> *@
+                @*     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"> *@
+                @*         <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /> *@
+                @*     </svg> *@
+                @* </div> *@
+                <div>
+                    @* <p class="pm-eyebrow">Compliance &amp; Risk</p> *@
+                    <h1 class="pm-title">@ViewData["Title"]</h1>
+                </div>
+            </div>
+            @* <span class="pm-badge"> *@
+            @*     <svg width="7" height="7" viewBox="0 0 8 8" fill="currentColor"><circle cx="4" cy="4" r="4" /></svg> *@
+            @*     Secure Form *@
+            @* </span> *@
+        </div>
+
+        <!-- Form Card -->
+        <div class="pm-card">
+            <form id="explainationForm" method="post" asp-action="UpdateModule" enctype="multipart/form-data">
+
+                <!-- Section 1: Selection -->
+                <div class="pm-section">
+                    @* <p class="pm-section-title"> *@
+                    @*     <span class="pm-section-num">01</span>Selection *@
+                    @* </p> *@
+                    <div class="pm-row-2">
+
+                        <div class="pm-field">
+                            <label class="pm-label" for="branchId">Branch</label>
+                            <div class="pm-select-wrap">
+                                <select id="branchId" name="branchId" class="pm-select">
+                                    <option value="">— Select Branch —</option>
+                                </select>
+                                <span class="pm-chevron">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pm-field">
+                            <label class="pm-label" for="irregularityCode">Irregularity Code</label>
+                            <div class="pm-select-wrap">
+                                <select id="irrCode" name="irregularityCode" class="pm-select">
+                                    <option value="">— Select Code —</option>
+                                </select>
+                                <span class="pm-chevron">
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path d="M2 4l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pm-divider"></div>
+
+                <!-- Section 2: Pledge Details — 4 equal read-only fields -->
+                <div class="pm-section">
+                    @* <p class="pm-section-title"> *@
+                    @*     <span class="pm-section-num">02</span>Pledge Details *@
+                    @* </p> *@
+                    <div class="pm-row-4">
+
+                        <div class="pm-field">
+                            <label class="pm-label" for="customerName">Customer Name</label>
+                            <div class="pm-input-wrap">
+                                <input type="text" id="customerName" name="customerName"
+                                       class="pm-input pm-readonly" readonly />
+                                <span class="pm-lock-icon">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="11" width="14" height="10" rx="2" />
+                                        <path d="M8 11V7a4 4 0 018 0v4" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pm-field">
+                            <label class="pm-label" for="customerId">Customer ID</label>
+                            <div class="pm-input-wrap">
+                                <input type="text" id="customerId" name="customerId"
+                                       class="pm-input pm-readonly" readonly />
+                                <span class="pm-lock-icon">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="11" width="14" height="10" rx="2" />
+                                        <path d="M8 11V7a4 4 0 018 0v4" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pm-field">
+                            <label class="pm-label" for="pledgeNumber">Pledge Number</label>
+                            <div class="pm-input-wrap">
+                                <input type="text" id="pledgeNumber" name="pledgeNumber"
+                                       class="pm-input pm-readonly" readonly />
+                                <span class="pm-lock-icon">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="11" width="14" height="10" rx="2" />
+                                        <path d="M8 11V7a4 4 0 018 0v4" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="pm-field">
+                            <label class="pm-label" for="irregularityStatus">Irregularity Status</label>
+                            <div class="pm-input-wrap">
+                                <input type="text" id="irregularityStatus" name="irregularityStatus"
+                                       class="pm-input pm-readonly" readonly />
+                                <span class="pm-lock-icon">
+                                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="5" y="11" width="14" height="10" rx="2" />
+                                        <path d="M8 11V7a4 4 0 018 0v4" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="pm-divider"></div>
+
+                <!-- Section 3: Remarks & Documents -->
+                <div class="pm-section">
+                    @* <p class="pm-section-title"> *@
+                    @*     <span class="pm-section-num">03</span>Remarks &amp; Documents *@
+                    @* </p> *@
+
+                    <div class="pm-field pm-mb">
+                        <label class="pm-label" for="remark">Remark</label>
+                        <textarea id="remark" name="remark" class="pm-textarea" rows="3"
+                                  placeholder="Enter any remarks regarding this irregularity…"></textarea>
+                    </div>
+
+                    <div class="pm-field">
+                        <label class="pm-label">Upload Documents</label>
+                        <div class="pm-upload-zone" id="uploadZone">
+                            <input type="file" id="documents" name="documents"
+                                   class="pm-file-input" accept=".jpg,.jpeg,.png,.pdf"/>
+                            <div class="pm-upload-body">
+                                <div class="pm-upload-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7">
+                                        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M17 8l-5-5-5 5M12 3v12" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="pm-upload-text">Drop files here or <span class="pm-upload-link">browse</span></p>
+                                    <p class="pm-upload-hint">JPG, PNG, PDF &nbsp;·&nbsp; Multiple files not supported</p>
+                                </div>
+                            </div>
+                            <div class="pm-file-list" id="fileList"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="pm-footer">
+                    <button type="reset" id="clear" class="pm-btn-ghost">Clear Form</button>
+                    <button id="submitBtn" type="submit" class="pm-btn-primary">
+                        Submit Record
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+        <p class="pm-footnote">
+            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="11" width="14" height="10" rx="2" />
+                <path d="M8 11V7a4 4 0 018 0v4" />
+            </svg>
+            All submissions are encrypted and logged for audit compliance.
+        </p>
+
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/ExplainationUpdation/ExplainationUpdate.js"></script>
+    @* <script src="~/js/ExplainationUpdation/Validation.js"></script> *@
+}
+
+<script>
+    const input    = document.getElementById('documents');
+    const fileList = document.getElementById('fileList');
+    const zone     = document.getElementById('uploadZone');
+    const formClear = document.getElementById('clear');
+
+    input.addEventListener('change', renderFiles);
+    zone.addEventListener('dragover',  e => { e.preventDefault(); zone.classList.add('pm-drag-active'); });
+    zone.addEventListener('dragleave', ()  => zone.classList.remove('pm-drag-active'));
+    zone.addEventListener('drop', e => {
+        e.preventDefault();
+        zone.classList.remove('pm-drag-active');
+        input.files = e.dataTransfer.files;
+        renderFiles();
+    });
+
+    formClear.addEventListener('click',() =>
+    {
+        console.log("Htting..!!");
+        fileList.value = "";
+        fileList.innerHTML = "";
+    })
+
+    function renderFiles() {
+        fileList.innerHTML = '';
+        if (!input.files.length) return;
+        [...input.files].forEach(f => {
+            const el = document.createElement('div');
+            el.className = 'pm-file-chip';
+            const isPdf = f.type.includes('pdf');
+            el.innerHTML = `
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                    <polyline points="14 2 14 8 20 8"/>
+                </svg>
+                <span class="pm-chip-name">${f.name}</span>
+                <span class="pm-chip-size">${(f.size / 1024).toFixed(0)} KB</span>`;
+            fileList.appendChild(el);
+        });
+    }
+</script>

@@ -94,3 +94,16 @@ C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.deps.json
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.sourcelink.json
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\refint\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Release\net8.0\ref\AsirvadLegalModule.Utilities.dll

@@ -155,3 +155,16 @@ D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debu
 D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\refint\AsirvadLegalModule.Utilities.dll
 D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.pdb
 D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\ref\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\bin\Debug\net8.0\AsirvadLegalModule.Utilities.deps.json
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\bin\Debug\net8.0\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\bin\Debug\net8.0\AsirvadLegalModule.Utilities.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.csproj.AssemblyReference.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.AssemblyInfoInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.AssemblyInfo.cs
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.csproj.CoreCompileInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.sourcelink.json
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\refint\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\AsirvadLegalModule.Utilities.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Utilities\obj\Debug\net8.0\ref\AsirvadLegalModule.Utilities.dll

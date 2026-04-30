@@ -155,3 +155,16 @@ D:\New Bussiness Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAc
 D:\New Bussiness Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\refint\DBAccessLibrary.dll
 D:\New Bussiness Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.pdb
 D:\New Bussiness Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\ref\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\bin\Debug\net8.0\DBAccessLibrary.deps.json
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\bin\Debug\net8.0\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\bin\Debug\net8.0\DBAccessLibrary.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.AssemblyInfo.cs
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.sourcelink.json
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\refint\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\DBAccessLibrary.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Debug\net8.0\ref\DBAccessLibrary.dll

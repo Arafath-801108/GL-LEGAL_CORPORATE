@@ -1,8 +1,67 @@
 ﻿$(document).ready(async function () {
-
+    
     checkAccess("16");
 
+    togglePanelVisibility();
+    clearFields();
 
+});
+$(document).on('change', 'input[name="pageSelection"]', function () {
+    togglePanelVisibility();
+    clearFields();
+
+    if ($(this).val() === 'branch') {
+        Doc.zoneload($(this).val());
+    }
+});
+// Pledge Wise - Pledge Number field
+$(document).on('input', '#pledgeNumber', function () {
+    this.value = this.value.replace(/\D/g, '');
+});
+
+$(document).on('change', '#pledgeNumber', function () {
+    Doc.pledgeDetails(this.value);
+});
+
+// Branch Wise cascading dropdowns
+$(document).on('change', '#zone_drp', function () {
+    Doc.regload(this.value);
+});
+
+$(document).on('change', '#reg_drp', function () {
+    Doc.areaload(this.value);
+});
+
+$(document).on('change', '#area_drp', function () {
+    Doc.branchload(this.value);
+});
+
+$(document).on('change', '#br_drp', function () {
+    Doc.branchVal(this.value);
+});
+
+// Date validation in Branch Wise
+$(document).on('change', '#from_dt,#to_dt', function () {
+    validateDateSelection();
+});
+
+// Select Pledge button (Branch Wise)
+$(document).on('click', '#pld_button', function () {
+    Doc.loadpledge();               // or Doc.loadpledge(this.value); if your function expects it
+});
+
+// Pledge dropdown change (Branch Wise)
+$(document).on('change', '#pld_drp', function () {
+    Doc.loadcus(this.value);
+});
+
+// Main View & Exit buttons
+$(document).on('click', '#btnSubmit', function () {
+    Doc.viewdocment1();              // keep exact function name you already have
+});
+
+$(document).on('click', '#btnExit', function () {
+    redirectToDashboard();
 });
 
 var Doc = {
@@ -18,10 +77,11 @@ var Doc = {
             const requestData = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
-                Indata: pledgeNo,
+                Indata: encryptAES(pledgeNo),
                 Flag: "8"
             };
             var Res = await fetch("/PledgeLoad1", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
           
             if (responseData.err_code === "1") {
@@ -56,7 +116,8 @@ var Doc = {
                 Indata: "",
                 Flag: "9"
             };
-            var Res = await fetch("/PledgeLoad1", "POST", requestData);
+                var Res = await fetch("/PledgeLoad1", "POST", requestData);
+                Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
           
             if (responseData.err_code === "1") {
@@ -95,17 +156,23 @@ var Doc = {
         document.getElementById("cus_name").value = "";
         const zone = document.getElementById("zone_drp").value;
         if (zone === "-1") {
-            await showAlert("Alert!", "Please select a Zone.", "warning");
-            return;
+            document.getElementById("pld_drp").innerHTML = "";
+            document.getElementById("br_drp").innerHTML = "";
+            document.getElementById("area_drp").innerHTML = "";
+            document.getElementById("reg_drp").innerHTML = "";
+
+
+
         }
         try {
             const requestData = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
-                Indata: zone,
+                Indata: encryptAES(zone),
                 Flag: "10"
             };
             var Res = await fetch("/PledgeLoad1", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             
             if (responseData.err_code === "1") {
@@ -143,17 +210,19 @@ var Doc = {
         document.getElementById("cus_name").value = "";
         const region = document.getElementById("reg_drp").value;
         if (region === "-1") {
-            await showAlert("Alert!", "Please select a Region.", "warning");
-            return;
+            document.getElementById("pld_drp").innerHTML = "";
+            document.getElementById("br_drp").innerHTML = "";
+            document.getElementById("area_drp").innerHTML = "";
         }
         try {
             const requestData = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
-                Indata: region,
+                Indata: encryptAES(region),
                 Flag: "11"
             };
             var Res = await fetch("/PledgeLoad1", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
            
             if (responseData.err_code === "1") {
@@ -190,17 +259,18 @@ var Doc = {
         document.getElementById("cus_name").value = "";
         const area = document.getElementById("area_drp").value;
         if (area === "-1") {
-            await showAlert("Alert!", "Please select a Area.", "warning");
-            return;
+            document.getElementById("pld_drp").innerHTML = "";
+            document.getElementById("br_drp").innerHTML = "";
         }
         try {
             const requestData = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
-                Indata: area,
+                Indata: encryptAES(area),
                 Flag: "12"
             };
             var Res = await fetch("/PledgeLoad1", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
            
             if (responseData.err_code === "1") {
@@ -265,10 +335,11 @@ var Doc = {
             const requestData = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
-                Indata: br_id + "~" + formattedFromDate + "~" +formattedToDate,
+                Indata: encryptAES(br_id + "~" + formattedFromDate + "~" +formattedToDate),
                 Flag: "13"
             };
             var Res = await fetch("/PledgeLoad1", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
            
             if (responseData.err_code === "1") {
@@ -315,10 +386,11 @@ var Doc = {
             const requestData = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
-                Indata: pldg_no,
+                Indata: encryptAES(pldg_no),
                 Flag: "14"
             };
             var Res = await fetch("/PledgeLoad1", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
          
             if (responseData.err_code === "1") {
@@ -336,7 +408,7 @@ var Doc = {
         }
 
     },
-    viewdocment: async function () {
+    viewdocment1: async function () {
         const pledgeRadio = document.getElementById('pldg_btn');
         const branchRadio = document.getElementById('br_btn');
         const docViewDiv = document.getElementById('docview');
@@ -349,16 +421,17 @@ var Doc = {
                 await showAlert("Please enter a Pledge Number.");
                 return;
             }
-
+            debugger;
            
             try {
                 const requestData = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
-                    Indata: pledgeNo,
+                    Indata: encryptAES(pledgeNo),
                     Flag: "15"
                 };
                 var Res = await fetch("/PledgeLoad1", "POST", requestData);
+                Res = decryptAES(Res);
                 const responseData = JSON.parse(Res);
                
                 if (responseData.err_code === "1") {
@@ -370,7 +443,7 @@ var Doc = {
                         return new Promise(async (resolve, reject) => {
                             if (!base64String || base64String.trim() === "" || base64String === "AA==") {
                                 await showAlert("Error!", "No document available.", "error");
-                                resolve();
+                                resolve(); // Resolve to indicate completion, even on error
                                 return;
                             }
                             if (!fileTypeCode || ![1, 2, 3, 4].includes(fileTypeCode)) {
@@ -381,57 +454,20 @@ var Doc = {
 
                             try {
                                 const byteCharacters = atob(base64String);
-                                const byteNumbers = new Array(byteCharacters.length);
-                                for (let i = 0; i < byteCharacters.length; i++) {
-                                    byteNumbers[i] = byteCharacters.charCodeAt(i);
-                                }
-                                const byteArray = new Uint8Array(byteNumbers);
 
-                                let mimeType;
-                                switch (fileTypeCode) {
-                                    case 1:
-                                        mimeType = "image/jpeg";
-                                        break;
-                                    case 2:
-                                        mimeType = "application/pdf";
-                                        break;
-                                    case 3:
-                                        mimeType = "application/msword";
-                                        break;
-                                    case 4:
-                                        mimeType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-                                        break;
-                                    default:
-                                        await showAlert("Error!", `Unsupported file type code: ${fileTypeCode}`, "error");
-                                        resolve();
-                                        return;
-                                }
 
-                                const blob = new Blob([byteArray], { type: mimeType });
-                                const url = URL.createObjectURL(blob);
+                                const mimeType1 = detectMimeType(base64String);
+                                const blob1 = base64ToBlob(base64String, mimeType1);
+                                currentDocUrl = URL.createObjectURL(blob1);
 
-                                if (mimeType === "application/pdf" || mimeType === "image/jpeg") {
-                                    // Open PDF or image in a new tab/window for viewing
-                                    window.open(url, "_blank");
-                                } else {
-                                    // For unsupported viewable types (e.g., doc, docx), fallback to download
-                                    const extension = mimeType === "application/msword" ? "doc" : "docx";
-                                    const filename = `${filenamePrefix}.${extension}`;
-                                    const link = document.createElement("a");
-                                    link.href = url;
-                                    link.download = filename;
-                                    document.body.appendChild(link);
-                                    link.click();
-                                    document.body.removeChild(link);
-                                    await showAlert("Warning!", "This file type cannot be viewed in the browser and will be downloaded instead.", "warning");
-                                }
+                                viewDocument(currentDocUrl, mimeType1);
 
-                                setTimeout(() => URL.revokeObjectURL(url), 1000);
-                                resolve();
+
                             } catch (error) {
                                 await showAlert("Error!", "Error processing document. It might be corrupted or in an unsupported format.", "error");
-                                reject(error);
+                                reject(error); // Reject on error for proper error handling
                             }
+
                         });
                     }
 
@@ -444,7 +480,8 @@ var Doc = {
                     document.getElementById("viewSeiz").addEventListener("click", () => handleFileView(data.SEIZURE_ATT, 2, "Seizure_Document"));
                     document.getElementById("viewCon").addEventListener("click", () => handleFileView(data.CONFESS_STATEMENT, 2, "Confession_Statement"));
                     document.getElementById("viewLO9").addEventListener("click", () => handleFileView(data.LO9_ATT, data.LO9_STATUS, "LO9_Document"));
-                    document.getElementById("viewCheat").addEventListener("click", () => handleFileView(data.CUSCMPLNT_ATT, "CheatingComplaintEntry_Document"));
+                    document.getElementById("viewRec").addEventListener("click", () => handleFileView(data.COMPLNT_RECEIPT, data.COMPLNT_RECEIPT_EXT, "Cheating_Complaint_Receipt"));
+                    document.getElementById("viewDra").addEventListener("click", () => handleFileView(data.COMPLNT_DRAFT, data.COMPLNT_DRAFT_EXT, "Cheating_Complaint_Signed_Draft"));
 
 
                 } else {
@@ -483,7 +520,7 @@ var Doc = {
                 return;
             }
             if (!fromdt || !todt) {
-                await showAlert(" Please select both dates before Submit.");
+                await showAlert("Alert!", " Please select both dates before Submit.", "warning");
                 return;
             }
    
@@ -500,10 +537,11 @@ var Doc = {
                 const requestData = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
-                    Indata: pldg_no,
+                    Indata: encryptAES(pldg_no),
                     Flag: "15"
                 };
                 var Res = await fetch("/PledgeLoad1", "POST", requestData);
+                Res = decryptAES(Res);
                 const responseData = JSON.parse(Res);
             
                 if (responseData.err_code === "1") {
@@ -515,7 +553,7 @@ var Doc = {
                         return new Promise(async (resolve, reject) => {
                             if (!base64String || base64String.trim() === "" || base64String === "AA==") {
                                 await showAlert("Error!", "No document available.", "error");
-                                resolve();
+                                resolve(); // Resolve to indicate completion, even on error
                                 return;
                             }
                             if (!fileTypeCode || ![1, 2, 3, 4].includes(fileTypeCode)) {
@@ -526,57 +564,20 @@ var Doc = {
 
                             try {
                                 const byteCharacters = atob(base64String);
-                                const byteNumbers = new Array(byteCharacters.length);
-                                for (let i = 0; i < byteCharacters.length; i++) {
-                                    byteNumbers[i] = byteCharacters.charCodeAt(i);
-                                }
-                                const byteArray = new Uint8Array(byteNumbers);
+                               
 
-                                let mimeType;
-                                switch (fileTypeCode) {
-                                    case 1:
-                                        mimeType = "image/jpeg";
-                                        break;
-                                    case 2:
-                                        mimeType = "application/pdf";
-                                        break;
-                                    case 3:
-                                        mimeType = "application/msword";
-                                        break;
-                                    case 4:
-                                        mimeType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-                                        break;
-                                    default:
-                                        await showAlert("Error!", `Unsupported file type code: ${fileTypeCode}`, "error");
-                                        resolve();
-                                        return;
-                                }
+                                const mimeType1 = detectMimeType(base64String);
+                                const blob1 = base64ToBlob(base64String, mimeType1);
+                                currentDocUrl = URL.createObjectURL(blob1);
 
-                                const blob = new Blob([byteArray], { type: mimeType });
-                                const url = URL.createObjectURL(blob);
+                                viewDocument(currentDocUrl, mimeType1);
 
-                                if (mimeType === "application/pdf" || mimeType === "image/jpeg") {
-                                    // Open PDF or image in a new tab/window for viewing
-                                    window.open(url, "_blank");
-                                } else {
-                                    // For unsupported viewable types (e.g., doc, docx), fallback to download
-                                    const extension = mimeType === "application/msword" ? "doc" : "docx";
-                                    const filename = `${filenamePrefix}.${extension}`;
-                                    const link = document.createElement("a");
-                                    link.href = url;
-                                    link.download = filename;
-                                    document.body.appendChild(link);
-                                    link.click();
-                                    document.body.removeChild(link);
-                                    await showAlert("Warning!", "This file type cannot be viewed in the browser and will be downloaded instead.", "warning");
-                                }
 
-                                setTimeout(() => URL.revokeObjectURL(url), 1000);
-                                resolve();
                             } catch (error) {
                                 await showAlert("Error!", "Error processing document. It might be corrupted or in an unsupported format.", "error");
-                                reject(error);
+                                reject(error); // Reject on error for proper error handling
                             }
+
                         });
                     }
 
@@ -589,7 +590,8 @@ var Doc = {
                     document.getElementById("viewSeiz").addEventListener("click", () => handleFileView(data.SEIZURE_ATT, 2, "Seizure_Document"));
                     document.getElementById("viewCon").addEventListener("click", () => handleFileView(data.CONFESS_STATEMENT, 2, "Confession_Statement"));
                     document.getElementById("viewLO9").addEventListener("click", () => handleFileView(data.LO9_ATT, data.LO9_STATUS, "LO9_Document"));
-                    document.getElementById("viewCheat").addEventListener("click", () => handleFileView(data.CUSCMPLNT_ATT, "CheatingComplaintEntry_Document"));
+                    document.getElementById("viewRec").addEventListener("click", () => handleFileView(data.COMPLNT_RECEIPT, data.COMPLNT_RECEIPT_EXT, "Cheating_Complaint_Receipt"));
+                    document.getElementById("viewDra").addEventListener("click", () => handleFileView(data.COMPLNT_DRAFT, data.COMPLNT_DRAFT_EXT, "Cheating_Complaint_Signed_Draft"));
 
 
                 } else {
@@ -639,24 +641,29 @@ function togglePanelVisibility() {
 }
 
 async function validateDateSelection() {
-    const fromdt = document.getElementById("from_dt").value;
-    const todt = document.getElementById("to_dt").value;
 
-   
+
+    const fromdtElement = document.getElementById("from_dt");
+    const todtElement = document.getElementById("to_dt");
+
+    const fromdt = fromdtElement.value;
+    const todt = todtElement.value;
 
     const fromDate = new Date(fromdt);
     const toDate = new Date(todt);
     const today = new Date();
 
+    // Ensure "From Date" and "To Date" are not in the future
     if (fromDate > today || toDate > today) {
-        await showAlert("Future dates are not allowed.");
+        await showAlert("Alert!", "Future dates are not allowed.", "warning");
         fromdtElement.value = "";
         todtElement.value = "";
         return false;
     }
+
     // Ensure "To Date" is not earlier than "From Date"
     if (toDate < fromDate) {
-        await showAlert("To Date cannot be earlier than From Date.");
+        await showAlert("Alert!", "To Date cannot be earlier than From Date.", "warning");
         todtElement.value = "";
         return false;
     }
@@ -679,5 +686,64 @@ function clearFields() {
     document.getElementById("pld_drp").selectedIndex = 0;
     document.getElementById("cus_name").value = "";
 }
+function detectMimeType(base64String) {
+    debugger;
+    const header = base64String.substring(0, 50); // read more bytes for DOC/DOCX
+
+    if (header.indexOf('/9j/') === 0) return 'image/jpeg';
+    if (header.indexOf('iVBORw0KG') === 0) return 'image/png';
+    if (header.indexOf('JVBERi0') === 0) return 'application/pdf';
+    if (header.indexOf('R0lGODl') === 0) return 'image/gif';
+
+    // DOC files (binary OLE compound) usually start with D0 CF 11 E0
+    if (base64String.startsWith('0M8R4KGx')) return 'application/msword';
+
+    // DOCX files are ZIP archives, so they start with PK
+    if (base64String.startsWith('UEsDB')) return 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
+
+    // Default to PDF for documents
+    return 'application/pdf';
+}
+
+function base64ToBlob(base64String, mimeType1) {
+    debugger;
+    const byteCharacters = atob(base64String);
+    const byteNumbers = new Array(byteCharacters.length);
+    for (let i = 0; i < byteCharacters.length; i++) {
+        byteNumbers[i] = byteCharacters.charCodeAt(i);
+    }
+    const byteArray = new Uint8Array(byteNumbers);
+    return new Blob([byteArray], { type: mimeType1 });
+}
+function viewDocument(url, mimeType1) {
+    debugger;
+    $('#documentModal').show();
+
+    // For PDF or unknown, use iframe (note: iframe may not work perfectly for all PDFs in all browsers)
+    $('#docViewer').attr('src', url).show();
+    $('#imgViewer').hide();
 
 
+}
+
+$(document).on('click', '.close', function () {
+    $('#documentModal').hide();
+    $('#docViewer').attr('src', '');
+    $('#imgViewer').attr('src', '').hide();
+    $('#downloadDocBtn').hide(); // Hide download button
+    if (currentDocUrl && currentDocUrl.startsWith('blob:')) {
+        URL.revokeObjectURL(currentDocUrl);
+    }
+    currentDocUrl = null;
+});
+$(document).on('click', '#documentModal', function (e) {
+    if (e.target === this) {
+        $(this).hide();
+        $('#docViewer').attr('src', '');
+        $('#imgViewer').attr('src', '').hide();
+        if (currentDocUrl && currentDocUrl.startsWith('blob:')) {
+            URL.revokeObjectURL(currentDocUrl);
+        }
+        currentDocUrl = null;
+    }
+});

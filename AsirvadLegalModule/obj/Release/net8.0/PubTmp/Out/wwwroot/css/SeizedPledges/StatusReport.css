@@ -1,9 +1,8 @@
 ﻿.container-fluid {
     padding: 20px;
     background: #f8f9fa;
-   /* margin-top: 60px;*/
+    /* margin-top: 60px; */
 }
-
 
 .card {
     border: none;
@@ -31,8 +30,9 @@
 .card-body {
     padding: 30px;
 }
+
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 10px; /* Reduced from 15px */
 }
 
 .form-label {
@@ -45,11 +45,11 @@
 
 .form-control {
     border-radius: 6px;
-    padding: 10px;
+    padding: 6px; /* Reduced from 10px */
     font-size: 0.95rem;
     border: 1px solid #ced4da;
     transition: border-color 0.2s, box-shadow 0.2s;
-    width: 100%;
+    width: 95%; /* Adjusted from 90% to fit within form-group */
 }
 
     .form-control:focus {
@@ -64,7 +64,7 @@ h5.section-title {
     font-weight: 500;
     padding-bottom: 8px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #ffd700;
+    border-bottom: 2px solid blue;
 }
 
 .text-center.mt-5 {
@@ -74,7 +74,6 @@ h5.section-title {
     align-items: center;
     gap: 15px;
 }
-
 
 .btn-primary {
     min-width: 120px;
@@ -88,6 +87,22 @@ h5.section-title {
 }
 
     .btn-primary:hover {
+        background-color: #e03e00;
+        border-color: #e03e00;
+    }
+
+.btn-primary1 {
+    min-width: 120px;
+    text-align: center;
+    background-color: #6c757d;
+    border-color: green;
+    font-weight: 500;
+    padding: 10px 25px;
+    border-radius: 6px;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+    .btn-primary1:hover {
         background-color: #e03e00;
         border-color: #e03e00;
     }
@@ -109,12 +124,17 @@ h5.section-title {
         border-color: #5a6268;
     }
 
-/* Section Row for Form Fields */
-.section-row {
+select.form-control {
+    appearance: none; /* Removes default browser styling */
+    background-color: #fff;
+    cursor: pointer;
+}
+    /* Section Row for Form Fields */
+    .section-row {
     display: flex;
     flex-wrap: nowrap;
-    gap: 15px;
-    margin-bottom: 15px;
+    gap: 10px; /* Reduced from 15px */
+    margin-bottom: 10px; /* Reduced from 15px */
 }
 
     .section-row .form-group {
@@ -150,7 +170,6 @@ h5.section-title {
         padding: 12px 15px;
         font-weight: 500;
         text-align: left;
-        border-bottom: 2px solid #e03e00;
     }
 
     .report-table tbody tr {
@@ -187,7 +206,7 @@ h5.section-title {
     }
 
     .form-group {
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
 
     .btn-primary, .btn-secondary {
@@ -197,12 +216,17 @@ h5.section-title {
 
     .section-row {
         flex-wrap: wrap;
+        gap: 8px; /* Reduced from 10px */
     }
 
         .section-row .form-group {
             flex: 1 1 100%;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
+
+    .form-control {
+        padding: 5px; /* Further reduced padding */
+    }
 
     .report-table {
         font-size: 0.9rem;
@@ -229,11 +253,16 @@ h5.section-title {
 
     .form-control {
         font-size: 0.9rem;
+        padding: 4px; /* Further reduced padding */
     }
 
-    .section-row .form-group {
-        flex: 1 1 100%;
+    .section-row {
+        gap: 6px; /* Further reduced gap */
     }
+
+        .section-row .form-group {
+            flex: 1 1 100%;
+        }
 
     .report-table {
         font-size: 0.85rem;

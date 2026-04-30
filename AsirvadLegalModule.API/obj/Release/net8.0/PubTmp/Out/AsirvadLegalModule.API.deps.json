@@ -665,7 +665,7 @@
         },
         "runtime": {
           "AsirvadLegalModule.Core.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -681,7 +681,7 @@
         },
         "runtime": {
           "AsirvadLegalModule.DTO.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -696,7 +696,7 @@
         },
         "runtime": {
           "AsirvadLegalModule.Utilities.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
@@ -716,7 +716,7 @@
         },
         "runtime": {
           "DBAccessLibrary.dll": {
-            "assemblyVersion": "1.0.0.0",
+            "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
         }

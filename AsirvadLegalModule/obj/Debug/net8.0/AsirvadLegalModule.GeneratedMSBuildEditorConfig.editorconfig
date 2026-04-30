@@ -9,273 +9,293 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AsirvadLegalModule
 build_property.RootNamespace = AsirvadLegalModule
-build_property.ProjectDir = D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule\
+build_property.ProjectDir = E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\New Bussiness Module\GL-LEGAL_CORPORATE\AsirvadLegalModule
+build_property.MSBuildProjectDirectory = E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelemnetApprove.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelemnetApprove.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2b2NhdGVFbXBhbmVsbWVudFxFbXBhbmVsZW1uZXRBcHByb3ZlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmentLetter.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmentLetter.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2b2NhdGVFbXBhbmVsbWVudFxFbXBhbmVsbWVudExldHRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmentReportView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmentReportView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2b2NhdGVFbXBhbmVsbWVudFxFbXBhbmVsbWVudFJlcG9ydFZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmentRequestView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmentRequestView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2b2NhdGVFbXBhbmVsbWVudFxFbXBhbmVsbWVudFJlcXVlc3RWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmetChargeDetails.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/AdvocateEmpanelment/EmpanelmetChargeDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWR2b2NhdGVFbXBhbmVsbWVudFxFbXBhbmVsbWV0Q2hhcmdlRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/Challan_Ah.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/Challan_Ah.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGFsbGFuX0FoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/Challan_bh.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/Challan_bh.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGFsbGFuX2JoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeReport.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGVxdWVSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeStatusVerification.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeStatusVerification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGVxdWVTdGF0dXNWZXJpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeUpdation.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeUpdation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGVxdWVVcGRhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeVerification.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/ChequeVerification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGVxdWVWZXJpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/Cheque_status_up.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ChequeCollection/Cheque_status_up.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hlcXVlQ29sbGVjdGlvblxDaGVxdWVfc3RhdHVzX3VwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/DailyIrregularityReport/Index.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ComplaintTracking/PoliceComplaintUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGxhaW50VHJhY2tpbmdcUG9saWNlQ29tcGxhaW50VXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/DailyIrregularityReport/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFpbHlJcnJlZ3VsYXJpdHlSZXBvcnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/RemovalSuitApproval.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Explaination_Report/ExplainationReport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwbGFpbmF0aW9uX1JlcG9ydFxFeHBsYWluYXRpb25SZXBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Explaination_Updation/ExplainationModule.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhwbGFpbmF0aW9uX1VwZGF0aW9uXEV4cGxhaW5hdGlvbk1vZHVsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/RemovalSuitApproval.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFJlbW92YWxTdWl0QXBwcm92YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/RemovalSuitRequest.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/RemovalSuitRequest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFJlbW92YWxTdWl0UmVxdWVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileApprove.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileApprove.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFN1aXRGaWxlQXBwcm92ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileClassify.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileClassify.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFN1aXRGaWxlQ2xhc3NpZnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileLCHead.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileLCHead.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFN1aXRGaWxlTENIZWFkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileLO.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileLO.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFN1aXRGaWxlTE8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileReport.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/GoldSuitFIle/SuitFileReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR29sZFN1aXRGSWxlXFN1aXRGaWxlUmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Home/Index.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Home/Privacy.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityAssignHome.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityAssignHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXJyZWd1bGFyaXR5UmVjQ2FsbFxJcnJlZ3VsYXJpdHlBc3NpZ25Ib21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityCallRpt.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityCallRpt.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXJyZWd1bGFyaXR5UmVjQ2FsbFxJcnJlZ3VsYXJpdHlDYWxsUnB0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityCall_Details.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityCall_Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXJyZWd1bGFyaXR5UmVjQ2FsbFxJcnJlZ3VsYXJpdHlDYWxsX0RldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityVerification.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/IrregularityRecCall/IrregularityVerification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXJyZWd1bGFyaXR5UmVjQ2FsbFxJcnJlZ3VsYXJpdHlWZXJpZmljYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalAction/Index.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalAction/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxBY3Rpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/ChargeDetailsView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/ChargeDetailsView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcQ2hhcmdlRGV0YWlsc1ZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/FIRChargesheetView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/FIRChargesheetView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcRklSQ2hhcmdlc2hlZXRWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/FIRRegisrtaionView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/FIRRegisrtaionView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcRklSUmVnaXNydGFpb25WaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/Legal_FIR_Report.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/Legal_FIR_Report.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcTGVnYWxfRklSX1JlcG9ydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/PoliceComplaintEntryView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/PoliceComplaintEntryView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcUG9saWNlQ29tcGxhaW50RW50cnlWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/SpComplaintUpdationView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/SpComplaintUpdationView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcU3BDb21wbGFpbnRVcGRhdGlvblZpZXcuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/SpPoliceComplaintView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalFIR/SpPoliceComplaintView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxGSVJcU3BQb2xpY2VDb21wbGFpbnRWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalAh_recommend.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalAh_recommend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxOb3RpY2VcTGVnYWxBaF9yZWNvbW1lbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalLh_recommend.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalLh_recommend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxOb3RpY2VcTGVnYWxMaF9yZWNvbW1lbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalLm_recommend.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalLm_recommend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxOb3RpY2VcTGVnYWxMbV9yZWNvbW1lbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalRequest.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalRequest.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxOb3RpY2VcTGVnYWxSZXF1ZXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalRiimh_recommend.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/LegalRiimh_recommend.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxOb3RpY2VcTGVnYWxSaWltaF9yZWNvbW1lbmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/Legal_Report.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalNotice/Legal_Report.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxOb3RpY2VcTGVnYWxfUmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/AssignHomeVisit.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalProcedingsSPOffice/LegalProcedingsSPOffice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxQcm9jZWRpbmdzU1BPZmZpY2VcTGVnYWxQcm9jZWRpbmdzU1BPZmZpY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/AssignHomeVisit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcQXNzaWduSG9tZVZpc2l0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/HomeVerify.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/HomeVerify.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcSG9tZVZlcmlmeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/HomeVisit.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/HomeVisit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcSG9tZVZpc2l0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/RecoveryCallDetail.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/RecoveryCallDetail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcUmVjb3ZlcnlDYWxsRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/RecoveryCallHO.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/RecoveryCallHO.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcUmVjb3ZlcnlDYWxsSE8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/RecoveryEmpReport.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/RecoveryEmpReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcUmVjb3ZlcnlFbXBSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/StaffBalanceRecovery.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/LegalRecoveryCall/StaffBalanceRecovery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxSZWNvdmVyeUNhbGxcU3RhZmZCYWxhbmNlUmVjb3ZlcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Legal_Recovery/RecoveryStatus_Report.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Legal_Recovery/RecoveryStatus_Report.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVnYWxfUmVjb3ZlcnlcUmVjb3ZlcnlTdGF0dXNfUmVwb3J0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Login/Dashboard.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Login/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Login/Login.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Login/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/PropertyIdentity/AH_AMS_Dashboard.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/PropertyIdentity/AH_AMS_Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlJZGVudGl0eVxBSF9BTVNfRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/PropertyIdentity/BH_ABH_Dashboard.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/PropertyIdentity/BH_ABH_Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlJZGVudGl0eVxCSF9BQkhfRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/PropertyIdentity/HO_Dashboard.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/PropertyIdentity/HO_Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlJZGVudGl0eVxIT19EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/LO9Updation.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/ReportGeneration/ReportGeneration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0R2VuZXJhdGlvblxSZXBvcnRHZW5lcmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/LO9Updation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xMTzlVcGRhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/SeizedClassification.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/SeizedClassification.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xTZWl6ZWRDbGFzc2lmaWNhdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/SeizedSettlement.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/SeizedSettlement.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xTZWl6ZWRTZXR0bGVtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/Seized_RM_LM_Recmd.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/Seized_RM_LM_Recmd.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xTZWl6ZWRfUk1fTE1fUmVjbWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/Seized_ZM_OP_Auction.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/Seized_ZM_OP_Auction.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xTZWl6ZWRfWk1fT1BfQXVjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/StatusReport.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/StatusReport.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xTdGF0dXNSZXBvcnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/StolenDocView.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/SeizedPledges/StolenDocView.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VpemVkUGxlZGdlc1xTdG9sZW5Eb2NWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Shared/Error.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Shared/_ValidationScriptsPartial.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/_ViewImports.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/_ViewStart.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/New Bussiness Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Shared/_Layout.cshtml]
+[E:/Legal Module/GL-LEGAL_CORPORATE/AsirvadLegalModule/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ezih7a7bn2

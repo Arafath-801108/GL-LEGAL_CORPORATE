@@ -29,7 +29,7 @@ function showSuccessAlert(title, text, href) {
     }).then((result) => {
         if (result.isConfirmed) {
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
             window.location.href = liveurl + href;
         }
     });
@@ -40,7 +40,7 @@ $(document).on('change', '#DropDownList2', function () {
     _approve.noticetype(this.value);
 });
 
-$(document).on('change', '#DropDownList2', function () {
+$(document).on('change', '#TextBox1', function () {
     _approve.validateDate();
 });
 $(document).on('change', '#FileUpload2', function () {
@@ -259,7 +259,7 @@ var _approve = { //main class
             }
            indata= document.getElementById("DropDownList2").selectedOptions[0].text + "~" + document.getElementById("DropDownList3").selectedOptions[0].text + "~" + $("#Text1").val() + "~" + $("#Text2").val() + "~" + $("#TextArea2").val() + "~" + $("#TextBox1").val()
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
             var data = {
                 "indata": encryptAES(indata),
                 "employeeId": sessionStorage.getItem("EmployeeId"),
@@ -393,7 +393,7 @@ var _approve = { //main class
             }).then((result) => {
                 if (result.isConfirmed) {
                     const isDevelopment = window.location.hostname === 'localhost';
-                    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+                    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
                     // Redirect to demo1.chtml
                     window.location.href = liveurl+"/LegalNotice/LegalRequest";
                 }

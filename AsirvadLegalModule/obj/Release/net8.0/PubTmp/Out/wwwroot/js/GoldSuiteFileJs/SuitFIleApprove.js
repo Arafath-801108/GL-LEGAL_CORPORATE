@@ -47,7 +47,7 @@ $(document).on('input', '#txt_rm', function () {
 var _approve = { //main class
     checkPost: async function () {
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         $.ajax({
             url: liveurl + "/getPostCheck",
@@ -82,7 +82,7 @@ var _approve = { //main class
     },
     checkBranch: async function () {
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         $.ajax({
             url: liveurl + "/getBranchCheck",
@@ -123,7 +123,7 @@ var _approve = { //main class
     checkComplaint: async function () {
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         if ($("#drp_branch").val() !== "-1") {
             var data = {
@@ -173,7 +173,7 @@ var _approve = { //main class
     legalDetails: async function () {
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         if ($("#drp_complaint").val() !== "-1") {
             var data = {
@@ -202,7 +202,7 @@ var _approve = { //main class
     },
     legalDetailsComplete: async function (response) {
         console.log(response);
-
+        response = decryptAES(response);
         if (JSON.parse(response).status === "True") {
             let rowData = JSON.parse(response).legaldata.trim();
             let values = rowData.includes("|") ? rowData.split("|") : [rowData]; // Ensure correct splitting
@@ -317,7 +317,7 @@ var _approve = { //main class
     showPledge: async function () {
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         if ($("#drp_complaint").val() !== "-1") {
             var data = {
@@ -341,7 +341,7 @@ var _approve = { //main class
 
     },
     showPledgeComplete: async function (response) {
-
+        response = decryptAES(response);
         if (JSON.parse(response).status === "True") {
             div_grid.style.display = "flex";
             let parsedResponse = JSON.parse(response);
@@ -415,7 +415,7 @@ var _approve = { //main class
         //    return;
         //}
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         var data = {
             "employeeId": sessionStorage.getItem("EmployeeId"),
@@ -491,7 +491,7 @@ var _approve = { //main class
         }
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
         var data = {
             "employeeId": sessionStorage.getItem("EmployeeId"),

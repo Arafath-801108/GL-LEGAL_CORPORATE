@@ -4,6 +4,43 @@
 
 
 });
+
+$(document).on('change', '#DrpIrr', function () {
+    validateirrgularity(); clearAllFields();  Verify.VeriIrrSelect(this.value);
+});
+
+$(document).on('change', '#DrpPledgeEmp', function () {
+    Verify.Datafetch(this.value); cleardiv();
+});
+
+$(document).on('change', '#DrpPledgeCust', function () {
+    Verify.Datafetch(this.value); cleardiv();
+});
+
+$(document).on('input', '#emp_rmk', function () {
+    this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '');
+});
+
+$(document).on('input', '#cus_rmk', function () {
+    this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '');
+});
+
+$(document).on('click', '#btnsubmit', function () {
+    Verify.VerifySubmit(this.value);
+});
+
+$(document).on('click', '#btnreject', function () {
+    Verify.VerifyReject(this.value);
+});
+
+$(document).on('click', '#btnexit', function () {
+    redirectToDashboard();
+});
+
+$(document).on('change', '#chdt2', function () {
+    validateCusChequeDate();
+});
+
 var Verify = {
     VeriIrrSelect: async function () {
         try {
@@ -13,7 +50,7 @@ var Verify = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
                 Indata: encryptAES(irrdrp),
-                Flag: encryptAES(4)
+                Flag:4
             };
 
             var Res = await fetch("/IrrSelect", "POST", requestData);
@@ -172,7 +209,7 @@ var Verify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(pledgeValue + " ~ " + irrValue),
-                    Flag: encryptAES(5)
+                    Flag:5
                 };
                 var Res = await fetch("/IrrSelection", "POST", requestData);
                 Res = decryptAES(Res);
@@ -246,7 +283,7 @@ var Verify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(EmpValue + " ~ " + EmpRmk),
-                    Flag: encryptAES(26)
+                    Flag:26
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);
@@ -284,8 +321,8 @@ var Verify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(pledgeValue + " ~ " + CusRmk),
-                    Flag: encryptAES(7)
-                };
+                    Flag:7
+                }
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);
 
@@ -338,7 +375,7 @@ var Verify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(EmpValue + " ~ " + EmpRmk),
-                    Flag: encryptAES(25)
+                    Flag:25
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);
@@ -377,7 +414,7 @@ var Verify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(pledgeValue + " ~ " + CusRmk),
-                    Flag: encryptAES(6)
+                    Flag: 6
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);

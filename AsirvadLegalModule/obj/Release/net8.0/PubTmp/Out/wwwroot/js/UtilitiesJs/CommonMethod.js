@@ -26,7 +26,7 @@ async function clearSessionStorage() {
 async function fetch(url, type, data) {
     debugger;
     const isDevelopment = window.location.hostname === 'localhost';
-    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_vapt'; 
+    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
     return $.ajax({
         url: liveurl+url,
         type: type,
@@ -43,7 +43,7 @@ async function fetch(url, type, data) {
 async function xhrstatus(status) {
     
     const isDevelopment = window.location.hostname === 'localhost';
-    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_vapt'; 
+    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
     
     switch (status) {
 
@@ -67,14 +67,14 @@ async function xhrstatus(status) {
 async function redirectToDashboard()
 {
     const isDevelopment = window.location.hostname === 'localhost';
-    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
     window.location.href = liveurl + '/Login/Dashboard';
 }
   
 async function fetchEmployee(url, type, data) {
     
     const isDevelopment = window.location.hostname === 'localhost';
-    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+    const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
     return $.ajax({
         url: liveurl + url,
@@ -124,7 +124,8 @@ async function checkAccess(flag) {
 async function UploadFN  (inputElement) {
     debugger;
 
-    const validTypes = ['application/pdf','image/jpeg', 'image/png'];
+    const validTypes = ['application/pdf', 'image/jpeg', 'image/png','application/vnd.ms-excel', // for .xls files
+        'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'];
     const file = inputElement.files[0];
 
 
@@ -213,6 +214,22 @@ async function checkForMaliciousContent(file) {
                     resolve(false); // Invalid image
                 };
                 img.src = URL.createObjectURL(file);
+            }
+            else if (fileType === 'application/vnd.ms-excel' ||
+                fileType === 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet') {
+                const arrayBuffer = await file.arrayBuffer();
+                const workbook = XLSX.read(arrayBuffer, { type: 'array' });
+
+                // Basic check: ensure workbook has at least one sheet
+                const sheetNames = workbook.SheetNames;
+                if (sheetNames.length > 0) {
+                    const firstSheet = workbook.Sheets[sheetNames[0]];
+                    const data = XLSX.utils.sheet_to_json(firstSheet, { header: 1 });
+
+                    // Optional: check for suspicious content or empty file
+                    const hasContent = data.length > 0 && data.some(row => row.length > 0);
+                    resolve(hasContent);
+                }
             }
 
             // ❌ Unsupported File Type

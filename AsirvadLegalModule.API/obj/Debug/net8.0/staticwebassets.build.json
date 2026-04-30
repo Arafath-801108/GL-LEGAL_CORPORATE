@@ -1,1 +1,12 @@
-{"Version":1,"Hash":"K7pKi8Q2W51n44GNfIBWblnU+unFVfBrCAz1uzXmKOg=","Source":"AsirvadLegalModule.API","BasePath":"_content/AsirvadLegalModule.API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[{"Name":"AsirvadLegalModule.API\\wwwroot","Source":"AsirvadLegalModule.API","ContentRoot":"D:\\New Bussiness Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.API\\wwwroot\\","BasePath":"_content/AsirvadLegalModule.API","Pattern":"**"}],"Assets":[],"Endpoints":[]}
+{
+  "Version": 1,
+  "Hash": "VbmUWqNSJpIRUjEHNtvEMPkjl9Y070ep2QgqQyFOCJ0=",
+  "Source": "AsirvadLegalModule.API",
+  "BasePath": "_content/AsirvadLegalModule.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

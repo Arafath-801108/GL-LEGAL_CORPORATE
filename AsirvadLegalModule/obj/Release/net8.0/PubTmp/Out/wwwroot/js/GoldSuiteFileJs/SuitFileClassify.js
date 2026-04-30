@@ -16,17 +16,13 @@ $(document).on('click', '#btnexit', function () {
 $(document).on('input', '#txt_cmp', function () {
     this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '');
 });
-$(document).on('click', '#btnexit', function () {
-    redirectToDashboard();
+$(document).on('click', '#btn_submit', function () {
+    _classify.btnSubmitClick();
 });
 
 $(document).on('input', '#txt_pledge', function () {
     this.value = this.value.replace(/[^0-9\s()]/g, '');
 });
-
-
-
-
 
 $(document).on('click', '#btnaddpledge', function () {
     _classify.showPledge();
@@ -45,12 +41,12 @@ $(document).on('input', '#txt_police', function () {
 });
 
 $(document).on('change', '#fileSeize', function () {
-    _classify.validateFile1();
+    //_classify.validateFile1();
     UploadFN(this);
 });
 
 $(document).on('change', '#fileInput', function () {
-    _classify.validateFile();
+    //_classify.validateFile();
     UploadFN(this);
 });
 
@@ -70,7 +66,7 @@ var _classify = { //main class
         
        
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
         $.ajax({
             url: liveurl+"/ComplaintType",
             type: "POST",
@@ -124,7 +120,7 @@ var _classify = { //main class
     },
     getType: async function (event) {
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
         var data = {
             "cmpType":encryptAES($("#drp_cmp").val()),
             "employeeId": sessionStorage.getItem("EmployeeId"),
@@ -155,9 +151,9 @@ var _classify = { //main class
         }
         else {
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
             var data = {
-                "plno": encryptAES(("#txt_pledge").val()),
+                "plno": encryptAES($("#txt_pledge").val()),
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
                 "branchId": sessionStorage.getItem("BranchId")
@@ -223,7 +219,7 @@ var _classify = { //main class
          } else if (selectedValue === "1") {
              debugger; 
              const isDevelopment = window.location.hostname === 'localhost';
-             const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+             const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
              var data = {
                  "branch": sessionStorage.getItem("BranchId"),
                  "employeeId": sessionStorage.getItem("EmployeeId"),
@@ -305,9 +301,9 @@ var _classify = { //main class
         const requestData = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
-            branch: encryptAES(""),
-            p_indata: encryptAES(document.getElementById("txt_cmp").value),
-            as_optflag: encryptAES("17")
+            branch: "",
+            p_indata: document.getElementById("txt_cmp").value,
+            as_optflag:"17"
         };
 
         var Res = await fetch("/GetDetailsLegalHead", "POST", requestData);
@@ -373,7 +369,7 @@ var _classify = { //main class
         else if (document.getElementById('drp_place').value == "1") {
             if (document.getElementById('File1').value == "" || document.getElementById('File2').value == "") {
                 await showAlert("Alert!", "Please Insert Both Side Photos...!", "warning");
-
+                return;
             }
             else {
                 const fileInput112 = document.getElementById("File1");
@@ -416,14 +412,14 @@ var _classify = { //main class
                     const allowedTypes = ["image/jpeg", "image/png"];
                     if (!allowedTypes.includes(fileType)) {
                         await showAlert("Alert!", "Only images (JPEG, PNG) are allowed.", "warning");
-                        fileInput1.value = ""; // Reset the input
+                        fileInput111.value = ""; // Reset the input
                         return;
                     }
 
                     // Ensure file size is below 2MB
                     if (fileSize > maxSize) {
                         await showAlert("Alert!", "File size must be below 1MB.", "warning");
-                        fileInput1.value = ""; // Reset the input
+                        fileInput111.value = ""; // Reset the input
                         return;
                     }
                 } else {
@@ -454,6 +450,33 @@ var _classify = { //main class
                 $('#fileSeize').addClass('border-danger');
                 return;
             } 
+
+            const fileInput000 = document.getElementById("fileSeize");
+
+            if (fileInput000.files.length > 0) {
+                const file = fileInput000.files[0];
+                const fileSize = file.size; // File size in bytes
+                const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+                const fileType = file.type;
+
+                // Ensure file is an image (JPEG, PNG, or GIF)
+                const allowedTypes = ["application/pdf"];
+                if (!allowedTypes.includes(fileType)) {
+                    await showAlert("Alert!", "Only Pdf are allowed.", "warning");
+                    fileInput000.value = ""; // Reset the input
+                    return;
+                }
+
+                // Ensure file size is below 2MB
+                if (fileSize > maxSize) {
+                    await showAlert("Alert!", "File size must be below 2MB.", "warning");
+                    fileInput000.value = ""; // Reset the input
+                    return;
+                }
+            } else {
+                showAlert("Alert", "Please select a Pdf file in Seizer Mahzor document.", "warning");
+                return;
+            }
         }
         else if (document.getElementById('drp_place').value == "3") {
             if ((document.getElementById('drp_another').value == "") || (document.getElementById('drp_another').value == "---Select---") || (document.getElementById('drp_another').value == "0")) {
@@ -474,15 +497,31 @@ var _classify = { //main class
             return;
         }
 
-        var fp = document.getElementById('fileInput').value;
-        var fileExtension = fp.trim().toLowerCase().split('.').pop();
+        var fp = document.getElementById('fileInput');
+        if (fp.files.length > 0) {
+            const file = fp.files[0];
+            const fileSize = file.size; // File size in bytes
+            const maxSize = 2 * 1024 * 1024; // 2MB in bytes
+            const fileType = file.type;
 
-        if (fileExtension !== "pdf") {
-            await showAlert("Alert!", "Only PDF files are allowed for uploading in Complaint Related Document.", "warning");
-            $('#fileInput').addClass('border-danger');
+            // Ensure file is an image (JPEG, PNG, or GIF)
+            const allowedTypes = ["application/pdf"];
+            if (!allowedTypes.includes(fileType)) {
+                await showAlert("Alert!", "Only Pdf are allowed.", "warning");
+                fp.value = ""; // Reset the input
+                return;
+            }
+
+            // Ensure file size is below 2MB
+            if (fileSize > maxSize) {
+                await showAlert("Alert!", "File size must be below 2MB.", "warning");
+                fp.value = ""; // Reset the input
+                return;
+            }
+        } else {
+            showAlert("Alert", "Please select a Pdf file in Complaint Related Document.", "warning");
             return;
         }
-
 
         
 
@@ -521,7 +560,7 @@ var _classify = { //main class
 
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
 
         var data = {            
             "employeeId": sessionStorage.getItem("EmployeeId"),
@@ -590,7 +629,7 @@ var _classify = { //main class
                     const complaint = parsedResponse.status;
                     const requestData = {
                         indata: encryptAES(fileName1 + "~" + complaint),
-                        flag: encryptAES("5"),
+                        flag: "5",
                         img2: img1,
                         empId: sessionStorage.getItem("EmployeeId"),
                         token: sessionStorage.getItem("Token"),                

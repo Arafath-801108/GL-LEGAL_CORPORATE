@@ -94,3 +94,16 @@ C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Re
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Release\net8.0\refint\API.Handler.dll
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Release\net8.0\API.Handler.pdb
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\API.Handler\obj\Release\net8.0\ref\API.Handler.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\bin\Release\net8.0\API.Handler.deps.json
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\bin\Release\net8.0\API.Handler.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\bin\Release\net8.0\API.Handler.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.csproj.AssemblyReference.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.GeneratedMSBuildEditorConfig.editorconfig
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.AssemblyInfoInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.AssemblyInfo.cs
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.csproj.CoreCompileInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.sourcelink.json
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\refint\API.Handler.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\API.Handler.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\API.Handler\obj\Release\net8.0\ref\API.Handler.dll

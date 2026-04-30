@@ -3,8 +3,8 @@
     _verify.LoadEmployee();
 });
 
-$(document).on('change', '#drp_near', function () {
-    _assign.LoadOtherBranchDetails(this);
+$(document).on('change', '#employeeCode', function () {
+    _verify.LoadEmployeeDetails(this);
 });
 
 $(document).on('click', '#btnsubmit', function () {
@@ -26,7 +26,7 @@ var _verify = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: "",
+                p_indata: encryptAES(""),
                 as_optflag: encryptAES("15")
             };
 
@@ -52,6 +52,7 @@ var _verify = {
             }
             else {
                 await showAlert("Alert!", "Unable to load the Employee List.", "warning");
+
             }
         }
         catch
@@ -68,7 +69,7 @@ var _verify = {
         }
         else {
             try {
-
+                var imgphoto= "";
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
@@ -100,7 +101,7 @@ var _verify = {
                         document.getElementById("date").value = data.VISIT_DT;
                         document.getElementById("rentOwn").value = data.RENTOROWN;
                         document.getElementById("remarks").value = data.VISIT_RMK;
-
+                        
                         const tableBody = document.getElementById("gridview1")?.querySelector("tbody");
                         if (tableBody) {
                             tableBody.innerHTML = "";
@@ -126,7 +127,7 @@ var _verify = {
                         async function handleFileDownload(base64String, filename) {
                             
                             // Validate input
-                            if (!base64String || base64String.trim() === "" || base64String === "AA==") {
+                            if (!base64String || base64String.trim().length < 50) {
                                 await showAlert("No document available.");
                                 return;
                             }
@@ -178,16 +179,18 @@ var _verify = {
                                 // Clean up
                                 document.body.removeChild(a);
                                 URL.revokeObjectURL(url);
+
                             } catch (error) {
                               
                                 await showAlert("Error processing image. It might be corrupted or in an unsupported format (only JPEG and PNG are supported).");
+                                return;
                             }
                         }
 
                         async function showImageModal(base64String, filename) {
                             
                             // Validate input
-                            if (!base64String || base64String.trim() === "" || base64String === "AA==") {
+                            if (!base64String || base64String.trim().length < 50) {
                                 await showAlert("No image available.");
                                 return;
                             }
@@ -220,19 +223,23 @@ var _verify = {
                             } catch (error) {
                                
                                 await showAlert("Error displaying image. It might be corrupted or in an unsupported format.");
+                                return;
                             }
                         }
 
                         // Attach event listener
-                        document.getElementById("btn_dwn").addEventListener("click", () => {
-                            handleFileDownload(data.VISIT_PHOTO, "Visit_Doc");
-                        });
-                        document.getElementById("btn_photo").addEventListener("click", () => {
-                            showImageModal(data.VISIT_PHOTO, "Visit_Doc");
-                        });
+                        document.getElementById("btn_dwn").onclick = () => {
+                            imgphoto = data.VISIT_PHOTO;
+                            handleFileDownload(imgphoto, "Visit_Doc");
+                        };
+                        document.getElementById("btn_photo").onclick = () => {
+                            imgphoto = data.VISIT_PHOTO;
+                            showImageModal(imgphoto, "Visit_Doc");
+                        };
                     }
                     else {
                         await showAlert("Alert!", "Unable to load the Details.", "warning");
+                        return;
                     }
                 }
             }
@@ -270,17 +277,17 @@ var _verify = {
 
                 if ((responseData).err_sts == "111") {
                     await showLoadAlert("Success!", "Confirmed Successfully", "success");
-
+                    return;
                 }
                 else {
                     await showLoadAlert("Alert!", "Failed..", "warning");
-
+                    return;
                 }
             }
         }
         catch {
             await showLoadAlert("Alert!", "Error occured..Please try again..", "warning");
-
+            return;
         }
 
     },
@@ -310,17 +317,17 @@ var _verify = {
 
                 if ((responseData).err_sts == "111") {
                     await showLoadAlert("Success!", "Rejected Successfully", "success");
-
+                    return;
                 }
                 else {
                     await showLoadAlert("Alert!", "Failed..", "warning");
-
+                    return;
                 }
             }
         }
         catch {
             await showLoadAlert("Alert!", "Error occured..Please try again..", "warning");
-
+            return;
         }
 
     },

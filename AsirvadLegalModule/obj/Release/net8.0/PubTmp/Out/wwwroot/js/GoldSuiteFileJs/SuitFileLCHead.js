@@ -11,7 +11,7 @@ $(document).on('change', '#cmbBranch', function () {
 });
 
 $(document).on('click', '#btnShowPledge', function () {
-    Result.ShowPledgeList();
+    _Result.ShowPledgeList();
 });
 
 $(document).on('change', '#cmbComplaintNo', function () {
@@ -55,14 +55,14 @@ $(document).on('input', '#txt_rm', function () {
 var _Result = {
 
     async LoadbranchDropdown() {
-       
+
         try {
             const requestData = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
-                branch: encryptAES(""),
-                p_indata: encryptAES(""),
-                as_optflag: encryptAES("11")
+                branch: "",
+                p_indata:"",
+                as_optflag:"11"
             };
 
             var Res = await fetch("/GetDetailsLegalHead", "POST", requestData);
@@ -89,12 +89,12 @@ var _Result = {
         }
         catch {
             await showAlert("Alert!", "Error occured..Please try again..", "warning");
-           
+
         }
     },
     async complaintDropdown() {
 
-       
+
         if (document.getElementById("cmbBranch").value == "-1") {
             document.getElementById("cmbComplaintNo").innerHTML = "";
             _Result.allClear();
@@ -104,9 +104,9 @@ var _Result = {
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
-                    branch: encryptAES(""),
-                    p_indata: encryptAES(document.getElementById("cmbBranch").value),
-                    as_optflag: encryptAES("12")
+                    branch: "",
+                    p_indata:document.getElementById("cmbBranch").value,
+                    as_optflag:"12"
                 };
 
                 var Res = await fetch("/GetDetailsLegalHead", "POST", requestData);
@@ -126,7 +126,7 @@ var _Result = {
                         });
 
                     }
-                    
+
                 }
                 else {
                     await showAlert("Alert!", "Unable to load the Comlaint List..", "warning");
@@ -136,12 +136,12 @@ var _Result = {
             }
             catch {
                 await showLoadAlert("Alert!", "Error occured..Please try again..", "warning");
-               
+
             }
         }
     },
     async GetcomplaintDeatails() {
-        
+
         if (document.getElementById("cmbComplaintNo").value == "-1") {
             _Result.allClear();
         }
@@ -150,9 +150,9 @@ var _Result = {
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
-                    branch: encryptAES(""),
-                    p_indata: encryptAES( $("#cmbComplaintNo option:selected").val()),
-                    as_optflag: encryptAES("13")
+                    branch:"",
+                    p_indata:$("#cmbComplaintNo option:selected").val(),
+                    as_optflag:"13"
                 };
 
                 var Res = await fetch("/GetDetailsLegalHead", "POST", requestData);
@@ -160,7 +160,7 @@ var _Result = {
                 Res = decryptAES(Res);
                 const responseData = JSON.parse(Res);
                 if (responseData.err_code === "1") {
-                   
+
                     const parsedOutdata = JSON.parse(responseData.outdata);
                     const data = parsedOutdata.Table[0];
 
@@ -220,7 +220,7 @@ var _Result = {
                     else {
                         document.getElementById("TextBox1").value = data.GOLD_AVL_PLACE;
                     }
-                    
+
                     if (data.GOLD_AVL_PLACE == "Police Station") {
                         document.getElementById("TextBox3").value = data.POLICESTAT_NAME;
                         document.getElementById("TextBox2").value = data.SEIZER_MAHAR_NME;
@@ -310,11 +310,11 @@ var _Result = {
             }
             catch {
                 await showLoadAlert("Alert!", "Error occured..Please try again..", "warning");
-                
+
             }
         }
     },
-async ShowPledgeList() {
+    async ShowPledgeList() {
         debugger;
         if (document.getElementById("cmbComplaintNo") == "-1") {
             await showAlert("Alert!", "Please select the complaint id..", "warning");
@@ -324,9 +324,9 @@ async ShowPledgeList() {
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
-                    branch: encryptAES(""),
-                    p_indata: encryptAES($("#cmbComplaintNo option:selected").val()),
-                    as_optflag: encryptAES("16")
+                    branch:"",
+                    p_indata:$("#cmbComplaintNo option:selected").val(),
+                    as_optflag:"16"
                 };
 
                 var Res = await fetch("/GetDetailsLegalHead", "POST", requestData);
@@ -358,7 +358,7 @@ async ShowPledgeList() {
             }
             catch {
                 await showLoadAlert("Alert!", "Error occured..Please try again..", "warning");
-               
+
             }
         }
     },
@@ -397,7 +397,7 @@ async ShowPledgeList() {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: encryptAES(""),
-                p_indata: encryptAES(document.getElementById('cmbComplaintNo').value + "!" + sessionStorage.getItem("EmployeeId") + "!" + sessionStorage.getItem("BranchId") + "!" + casetype + "!" + "AGM" + "!" + combinedValue + "!" + document.getElementById("txt_rm").value) ,
+                p_indata: encryptAES(document.getElementById('cmbComplaintNo').value + "!" + sessionStorage.getItem("EmployeeId") + "!" + sessionStorage.getItem("BranchId") + "!" + casetype + "!" + "AGM" + "!" + combinedValue + "!" + document.getElementById("txt_rm").value),
                 as_optflag: encryptAES("2")
             };
 
@@ -409,9 +409,9 @@ async ShowPledgeList() {
             debugger;
             if ((responseData).status == "True") {
                 await showLoadAlert("Success!", "Approved Successfully", "success");
-               //_Result.allClear();
-               //_Result.LoadbranchDropdown();
-               // return;
+                //_Result.allClear();
+                //_Result.LoadbranchDropdown();
+                // return;
             }
             else {
                 await showLoadAlert("Alert!", "Error Occured Please try again!!", "warning");
@@ -422,7 +422,7 @@ async ShowPledgeList() {
         }
         catch {
             await showLoadAlert("Alert!", "Error occured..Please try again..", "warning");
-            
+
         }
 
     },
@@ -441,7 +441,7 @@ async ShowPledgeList() {
             await showAlert("Alert!", "Please check the pledge list..", "warning");
             return;
         }
-     if (document.getElementById("txt_rm").value == "") {
+        if (document.getElementById("txt_rm").value == "") {
             await showAlert("Alert!", "Please enter remarks..", "warning");
             $('#txt_rm').addClass('border-danger');
             return;
@@ -464,9 +464,12 @@ async ShowPledgeList() {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: encryptAES(""),
-                p_indata: encryptAES(document.getElementById('cmbComplaintNo').value + "!" + sessionStorage.getItem("EmployeeId") + "!" + sessionStorage.getItem("BranchId") + "!" + casetype + "!" + "AGM" + "!^" + combinedValue + "!" + document.getElementById("txt_rm").value,
-                as_optflag: encryptAES("5"),
-               
+                p_indata: encryptAES(document.getElementById('cmbComplaintNo').value + "!" + sessionStorage.getItem("EmployeeId") + "!" + sessionStorage.getItem("BranchId") + "!" + casetype + "!" + "AGM" + "!^" + combinedValue + "!" + document.getElementById("txt_rm").value),
+                as_optflag: encryptAES("5"), 
+                //p_indata: document.getElementById('cmbComplaintNo').value + "!" + sessionStorage.getItem("EmployeeId") + "!" + sessionStorage.getItem("BranchId") + "!" + casetype + "!" + "AGM" + "!^" + combinedValue + "!" + document.getElementById("txt_rm").value,
+                //as_optflag: "5"
+
+                
             };
 
 
@@ -499,7 +502,7 @@ async ShowPledgeList() {
     },
     allClear: async function () {
 
-       
+
         document.querySelector(".gridview tbody").innerHTML = "";
         document.getElementById("txtcomplaint").value = "";
         document.getElementById("txtCompDoc").value = "";
@@ -514,7 +517,7 @@ async ShowPledgeList() {
         document.getElementById("TextBox1").value = "";
         document.getElementById("TextBox7").value = "";
         document.getElementById("TextBox8").value = "";
-        document.getElementById("TextBox9").value = "";      
+        document.getElementById("TextBox9").value = "";
         div_ps.style.display = "none";
         div_ps1.style.display = "none";
         div_br.style.display = "none";

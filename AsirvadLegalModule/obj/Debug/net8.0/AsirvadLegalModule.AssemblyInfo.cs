@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AsirvadLegalModule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4e1186127f52c0d1bf0df9a94ca919bc5e14a8ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6aca1bc9322f56c403872907e6f4383203a393bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("AsirvadLegalModule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AsirvadLegalModule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

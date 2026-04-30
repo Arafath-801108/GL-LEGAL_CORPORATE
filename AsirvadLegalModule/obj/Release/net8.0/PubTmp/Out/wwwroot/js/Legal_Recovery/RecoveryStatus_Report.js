@@ -39,7 +39,7 @@ function showSuccessAlert(title, text, href) {
     }).then((result) => {
         if (result.isConfirmed) {
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
             window.location.href = liveurl + href;
         }
     });
@@ -69,19 +69,19 @@ var _report = {
             const requestData = {
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
-                "indata": encryptAES(txtData),
+                "indata": txtData,
                 "BranchId": sessionStorage.getItem("BranchId"),
                 "Encrypted_data": sessionStorage.getItem("BranchId"),
-                "flag": encryptAES("4")
+                "flag": "4"
 
             };
 
 
 
-            const response = await fetch("/report", "POST", requestData);
+            var response = await fetch("/report", "POST", requestData);
            
         response = decryptAES(response);
-            const data = JSON.parse(response); // Ensure JSON parsing
+            var data = JSON.parse(response); // Ensure JSON parsing
            
 
             if (!Array.isArray(data) || data.length === 0) {
@@ -132,19 +132,19 @@ var _report = {
             const requestData1 = {
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
-                "indata": encryptAES(txtData),
+                "indata": txtData,
                 "BranchId": sessionStorage.getItem("BranchId"),
                 "Encrypted_data": sessionStorage.getItem("BranchId"),
-                "flag": encryptAES("5")
+                "flag": "5"
             };
 
 
 
-            const response1 = await fetch("/report", "POST", requestData1);
+            var response1 = await fetch("/report", "POST", requestData1);
           
 
             response1 = decryptAES(response1);
-            const data1 = JSON.parse(response1); // Ensure JSON parsing
+            var data1 = JSON.parse(response1); // Ensure JSON parsing
           
 
 
@@ -576,7 +576,7 @@ var _report = {
                 "Encrypted_data": sessionStorage.getItem("BranchId"),
                 "Token": sessionStorage.getItem("Token"),
                 "Indata": encryptAES(legilId),
-                "Flag": "44"
+                "Flag": encryptAES("44")
 
             };
 
