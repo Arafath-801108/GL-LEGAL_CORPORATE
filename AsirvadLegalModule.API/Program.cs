@@ -22,6 +22,16 @@ builder.Services.Configure<Microsoft.AspNetCore.Http.Json.JsonOptions>(options =
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 var key = Encoding.UTF8.GetBytes(jwtSettings["Key"]);
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin() // Allows all origins
+                   .AllowAnyMethod() // Allows all HTTP methods
+                   .AllowAnyHeader(); // Allows all headers
+        });
+});
 
 // Configure Authentication with JWT
 builder.Services.AddAuthentication(options =>
@@ -147,8 +157,9 @@ var app = builder.Build();
 //});
 app.UseSwagger();
 app.UseSwaggerUI();
+app.UseCors("AllowAll");
+//app.UseHttpsRedirection();
 
-app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 //app.UseMiddleware<RateLimitHander>();

@@ -1,0 +1,584 @@
+﻿@{
+    ViewData["Title"] = "Police Complaint Updates";
+    Layout = "_Layout";
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+<style>
+    /* Scope everything to prevent breaking the Sidebar/Layout */
+    .portal-content-container {
+        padding: 25px;
+        background-color: #f8f9fa;
+        min-height: calc(100vh - 100px); /* Adjust for footer/header height */
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    /* Action Bar for the Dashboard Button */
+    .action-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #eaecf0;
+    }
+
+    .btn-exit {
+        display: inline-flex;
+        align-items: center;
+        background: #fff;
+        color: #444;
+        border: 1px solid #d0d5dd;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.2s;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    }
+
+        .btn-exit:hover {
+            background: #f9fafb;
+            color: #d92d20; /* Red tint on hover to signify 'Exit' */
+            border-color: #fda29b;
+        }
+
+    /* Cards and Layout */
+    .registry-card {
+        background: #ffffff;
+        border-radius: 10px;
+        border: 1px solid #e4e7eb;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .metrics-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+
+    .metric-item {
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #0052ea;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .metric-label {
+        font-size: 11px;
+        font-weight: 700;
+        color: #667085;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .metric-value {
+        font-size: 22px;
+        font-weight: 800;
+        color: #101828;
+        display: block;
+        margin-top: 4px;
+    }
+
+    /* Form Styles */
+    .form-split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    @@media (max-width: 992px) {
+        .form-split {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .input-box {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #d0d5dd;
+        border-radius: 8px;
+        font-size: 14px;
+        margin-top: 6px;
+        box-sizing: border-box;
+    }
+
+        .input-box:focus {
+            border-color: #0052ea;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 82, 234, 0.1);
+        }
+
+    .btn-submit-main {
+        background: #0052ea;
+        color: white;
+        border: none;
+        padding: 14px 40px;
+        border-radius: 8px;
+        font-weight: 700;
+        cursor: pointer;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    #page-loader {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255,255,255,0.8);
+        z-index: 9999;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<div id="page-loader">
+    <div class="spinner-border text-primary" role="status"></div>
+</div>
+
+<div class="portal-content-container">
+
+    <div class="action-header">
+        <div>
+            <h2 style="margin:0; font-weight: 800; color: #101828;">Police Complaint Update</h2>
+            <p style="margin:0; color: #667085; font-size: 14px;">Manage and track legal complaint statuses</p>
+        </div>
+        <a href="@Url.Action("toDashboard", "Home")" class="btn-exit">
+            <i class="bi bi-box-arrow-left me-2"></i> Exit to Dashboard
+        </a>
+    </div>
+
+    <div class="registry-card">
+        <label style="font-weight: 600; font-size: 14px; color: #344054;">System ID Retrieval</label>
+        <div style="display: flex; gap: 12px; margin-top: 8px;">
+            <select id="sopDropdown" class="input-box" style="flex: 1;" onchange="autoFetch(this.value)">
+                <option value="" disabled selected>Search System ID...</option>
+            </select>
+            <button onclick="location.reload()" style="padding: 10px 20px; background: #f2f4f7; border: 1px solid #d0d5dd; border-radius: 8px; cursor: pointer;">Reset</button>
+        </div>
+    </div>
+
+    <div id="noDataView" style="text-align: center; padding: 60px; background: #fff; border-radius: 10px; border: 2px dashed #eaecf0;">
+        <i class="bi bi-search" style="font-size: 48px; color: #d0d5dd;"></i>
+        <h4 style="color: #667085; margin-top: 15px;">Select a System ID to begin update process</h4>
+    </div>
+
+    <div id="contentView" style="display:none;">
+        <div class="metrics-grid">
+            <div class="metric-item">
+                <span class="metric-label">Pledge Count</span>
+                <span id="lblPledgeCount" class="metric-value">0</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-label">Customer Count</span>
+                <span id="lblCustCount" class="metric-value">0</span>
+            </div>
+            <div class="metric-item" style="border-left-color: #12b76a;">
+                <span class="metric-label">Loss Amount</span>
+                <span id="lblLoss" class="metric-value" style="color: #027a48;">₹0.00</span>
+            </div>
+            <div class="metric-item" style="border-left-color: #f79009;">
+                <span class="metric-label">Reported Date</span>
+                <span id="lblReportedDate" class="metric-value" style="color: #b54708;">--</span>
+            </div>
+        </div>
+
+        <div class="registry-card">
+            <div class="form-split">
+                <div>
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-weight: 600; color: #344054;">FIR Registration Status</label>
+                        <select id="firStatus" class="input-box" onchange="toggleStatusView()">
+                            <option value="" disabled selected>Select Current Status</option>
+                            <option value="1">REGISTERED (FIR FILED)</option>
+                            <option value="2">NOT REGISTERED (PENDING)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-weight: 600; color: #344054;">Complaint Observations / Remarks</label>
+                        <textarea id="txtComments" class="input-box" rows="8" placeholder="Enter detailed case notes here..."></textarea>
+                    </div>
+                </div>
+
+                <div id="dynamicPanel" style="background: #f9fafb; border-radius: 8px; padding: 20px; border: 1px solid #eaecf0;">
+                    <div id="notRegisteredSection" style="display:none;">
+                        <h4 style="margin-top:0; font-size: 16px; border-bottom: 1px solid #eaecf0; padding-bottom: 10px;">Timeline Details</h4>
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-size: 13px; color: #475467;">Police Complaint Date</label>
+                            <input type="date" id="policeDate" class="input-box">
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <label style="font-size: 13px; color: #475467;">SP Office Complaint Date</label>
+                            <input type="date" id="spDate" class="input-box">
+                        </div>
+                        <div>
+                            <label style="font-size: 13px; color: #475467;">Timeline Compliance</label>
+                            <select id="timelineRemarks" class="input-box">
+                                <option value="Within Time">Within Time (Compliant)</option>
+                                <option value="Delayed">Delayed (Non-Compliant)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="statusPlaceholder" style="text-align:center; padding-top: 40px; color: #98a2b3;">
+                        <i class="bi bi-info-circle" style="font-size: 32px;"></i>
+                        <p>Select FIR status to enable <br>relevant data fields.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; border-top: 1px solid #eaecf0; padding-top: 30px;">
+                <button type="button" class="btn-submit-main" onclick="submitStatusUpdate()">
+                    <i class="bi bi-check-circle-fill me-2"></i> SUBMIT TO REGISTRY
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    let GLOBAL_REPORT_DATE = "";
+
+    $(document).ready(function() {
+
+        $.ajax({
+
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+
+            type: "POST",
+
+            contentType: "application/json",
+
+            data: JSON.stringify({ flag: 5, indata: "ALL", employeeId: "", branch: "" }),
+
+            success: function(res) {
+
+                const rawData = JSON.parse(decryptAES(res));
+
+                const data = JSON.parse(rawData.outdata).Table;
+
+                data.forEach(x => {
+
+                    $('#sopDropdown').append(`<option value="${x.SYSTEM_ID_NO}">${x.SYSTEM_ID_NO}</option>`);
+
+                });
+
+            }
+
+        });
+
+    });
+
+    function autoFetch(id) {
+
+        if(!id) return;
+
+        $('#loader').css('display', 'flex');
+
+        $.ajax({
+
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+
+            type: "POST",
+
+            contentType: "application/json",
+
+            data: JSON.stringify({ flag: 3, indata: encryptAES(id), employeeId: "", branch: "" }),
+
+            success: function(res) {
+
+                const rawData = JSON.parse(decryptAES(res));
+
+                const data = JSON.parse(rawData.outdata).Table[0];
+
+                if(data) {
+
+                    $('#displaySopId').text(id);
+
+
+                    $('#lblPledgeCount').text(data.TOTAL_PLEDGE_COUNT || 0);
+
+
+
+                    $('#lblCustCount').text(data.CUSTOMER_COUNT || 0);
+
+
+
+                    $('#lblLoss').text("₹" + Number(data.LOSS_AMOUNT || 0).toLocaleString('en-IN'));
+
+
+
+                    $('#lblReportedDate').text(data.REPORTED_DATE || "--");
+
+
+
+                    GLOBAL_REPORT_DATE = data.REPORTED_DATE;
+
+
+                    $('#loader').hide();
+
+
+
+                    $('#noDataView').hide();
+
+
+
+                    $('#contentView').fadeIn(400);
+
+
+
+                    $('#firStatus').val('');
+
+
+
+                    toggleStatusView();
+
+
+
+                }
+
+
+
+            },
+
+
+
+            error: function() {
+
+
+
+                $('#loader').hide();
+
+
+
+                Swal.fire('Error', 'Unable to retrieve registry data.', 'error');
+
+
+
+            }
+
+
+
+        });
+
+
+
+    }
+
+    function toggleStatusView() {
+
+
+
+        const status = $('#firStatus').val();
+
+
+
+        if (status === "2") {
+
+
+
+            $('#statusPlaceholder').hide();
+
+
+
+            $('#notRegisteredSection').show();
+
+
+
+        } else {
+
+
+
+            $('#notRegisteredSection').hide();
+
+
+
+            $('#statusPlaceholder').show();
+
+
+
+        }
+
+
+
+    }
+
+    function submitStatusUpdate() {
+
+        const sopId = $('#sopDropdown').val();
+
+        const status = $('#firStatus').val();
+
+
+        if(!status) return Swal.fire('Warning', 'Please select an FIR status.', 'warning');
+
+        Swal.fire({
+
+
+
+            title: 'Authorize Update?',
+
+
+
+            text: `Updating status for ID: ${sopId}`,
+
+
+
+            icon: 'info',
+
+
+
+            showCancelButton: true,
+
+
+
+            confirmButtonColor: '#0061f2',
+
+
+
+            confirmButtonText: 'Yes, Authorize'
+
+
+
+        }).then((result) => {
+
+
+
+            if (result.isConfirmed) {
+
+
+
+                $('#loader').css('display', 'flex');
+
+
+
+                const payload = {
+
+
+
+                    sop_id: sopId,
+
+
+
+                    fir_status: status,
+
+
+
+                    police_date: $('#policeDate').val(),
+
+
+
+                    sp_date: $('#spDate').val(),
+
+
+
+                    timeline: $('#timelineRemarks').val(),
+
+
+
+                    comments: $('#txtComments').val()
+
+
+
+                };
+
+
+
+                $.ajax({
+
+
+
+                    url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+
+
+
+                    type: "POST",
+
+
+
+                    contentType: "application/json",
+
+
+
+                    data: JSON.stringify({
+
+
+
+                        flag: 9,
+
+
+
+                        indata: encryptAES(JSON.stringify(payload)),
+
+
+
+                        employeeId: encryptAES(sopId)
+
+
+
+                    }),
+
+                    success: function() {
+
+
+
+                        $('#loader').hide();
+
+
+
+                        Swal.fire('Success', 'Registry updated.', 'success').then(() => {
+
+
+
+                             location.href = "../ComplaintTracking/PoliceComplaintUpdate";
+
+
+
+                        });
+
+
+
+                    },
+
+
+
+                    error: function() {
+
+
+
+                        $('#loader').hide();
+
+
+
+                        Swal.fire('Error', 'Update failed.', 'error');
+
+
+
+                    }
+
+
+
+                });
+
+
+
+            }
+
+
+
+        });
+
+
+
+    }
+
+</script>

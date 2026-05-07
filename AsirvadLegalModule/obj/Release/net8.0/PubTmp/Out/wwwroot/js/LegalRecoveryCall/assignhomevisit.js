@@ -11,13 +11,22 @@ $(document).on('click', '#drp_near', function () {
 $(document).on('change', '#DropDownList2', function () {
     Challan_Ah.getPledgeDetails();
 });
-$(document).on('click', '#drp_emp', function () {
+$(document).on('change', '#drp_emp', function () {
     _assign.LoadEmployeeDetails(this);
 });
 
 $(document).on('change', '#DropDownList2', function () {
     Challan_Ah.getPledgeDetails();
 });
+
+$(document).on('click', '#btnsubmit', function () {
+    _assign.btnSubmitClick();
+});
+
+$(document).on('click', '#btnexit', function () {
+    redirectToDashboard();
+});
+
 
 var _assign = {
 
@@ -29,7 +38,7 @@ var _assign = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: "",
+                p_indata: encryptAES(""),
                 as_optflag: encryptAES("8")
             };
 
@@ -130,7 +139,7 @@ var _assign = {
                             employeeId: sessionStorage.getItem("EmployeeId"),
                             token: sessionStorage.getItem("Token"),
                             branch: sessionStorage.getItem("BranchId"),
-                            p_indata: "",
+                            p_indata: encryptAES(""),
                             as_optflag: encryptAES("10")
                         };
 

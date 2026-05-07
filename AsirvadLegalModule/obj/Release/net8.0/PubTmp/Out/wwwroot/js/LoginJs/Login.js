@@ -29,7 +29,7 @@ $(document).on("input", "#txt_user", function () {
 });
 
 $(document).on("paste", "#txt_user", function () {
-    d
+    
      return false;
 
 });
@@ -157,7 +157,7 @@ var _login = {
 
         ctx.clearRect(0, 0, width, height);
 
-        const chars = "abcdefghjkmnpqrstuvwxyz23456789ABCDEFGHJKMNPQRSTUVWXYZ";
+        const chars = "123456789ABCDEFGHJKMNPQRSTUVWXYZ";
         captchaCode = Array.from({ length: 6 }, () => chars[Math.floor(Math.random() * chars.length)]).join("");
 
         // Gradient background
@@ -262,13 +262,15 @@ var _login = {
             await showAlert("Alert!", "Invalid CAPTCHA. Please try again..!", "warning");
             _login.generateCaptcha();
             document.getElementById("txt_pass").type = "text"; // Reset to text
-            realPassword = '';
+            //document.getElementById("txt_pass").value = "";
+
+            //realPassword = '';
             return;
         }
         else {
             document.getElementById("loader").style.display = "flex";
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
 
             var selectedValue = document.getElementById('drp_branch').value;
             if (selectedValue && selectedValue !== "-1") {
@@ -329,7 +331,7 @@ var _login = {
         const diffMinutes = Math.floor(diffSeconds / 60);
         const diffHours = Math.floor(diffMinutes / 60);
         console.log(`Difference: ${diffSeconds} seconds, ${diffMinutes} minutes, ${diffHours} hours`);
-        if (diffSeconds > 2) {
+        if (diffSeconds > 20000) {
             $("#loader").hide();
             await showLoadAlert("Alert!", "Login   failed..Please Login Again..", "warning");
             return;
@@ -345,7 +347,7 @@ var _login = {
 
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
         $.ajax({
             url: liveurl + "/Dashboard",
             type: "POST",
@@ -365,9 +367,9 @@ var _login = {
     DashboardSuccess: async function (response) {
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
         if (response.status === "True") {
-
+            sessionStorage.setItem("showPendingAlerts", "true");
             window.location.href = liveurl + "/Login/Dashboard";
             $("#loader").hide();
             document.getElementById("loader").style.display = "none";
@@ -406,7 +408,7 @@ var _login = {
         //}
 
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
         // Perform AJAX request
         $.ajax({
             url: liveurl + "/getBranchs",
@@ -426,6 +428,7 @@ var _login = {
         $('#drp_branch').empty();
         $("#loader").hide();
         response = decryptAES(response);
+       // alert(response);
         if (JSON.parse(response).status === "SUCCESS" && JSON.parse(response).Data.isDataAvailable === "true") {
             var branchSelect = $('#drp_branch'); // Reference the select element
             var branchDropdown = $('#BranchDropdown'); // Reference the div wrapper
@@ -461,7 +464,9 @@ var _login = {
     }
 
 
-}
+    }
+
+   
 
 async function xhrstatus(status) {
     $("#loader").hide();

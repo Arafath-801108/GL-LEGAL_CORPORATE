@@ -13,8 +13,8 @@ body {
     justify-content: center; /* Centers items vertically */
     height: auto; /* Full view height */
     margin: 0;
-    background-image: url('/images/legal.jpg');
-    /*background-image: url('/AsirvadGoldloan/legalcorporate/images/legal.jpg');*/
+    /*background-image: url('/images/legal.jpg');*/
+    background-image: url('/AsirvadGoldloan/legalcorporate/images/legal.jpg');
     background-size: cover; /* Optional: Adjusts image to cover the container */
     background-position: center; /* Optional: Centers the image */
     background-repeat: no-repeat;

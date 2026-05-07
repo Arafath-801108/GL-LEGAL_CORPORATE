@@ -25,7 +25,7 @@ function showSuccessAlert(title, text, href) {
     }).then((result) => {
         if (result.isConfirmed) {
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
             window.location.href = liveurl + href;
         }
     });
@@ -71,13 +71,13 @@ var _approve = {
             const requestData = {
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
-                "indata": "1",
+                "indata": encryptAES("1"),
                 "BranchId": sessionStorage.getItem("BranchId"),
                 "enindata": sessionStorage.getItem("BranchId"),
-                "flag": "7"
+                "flag": encryptAES("7")
             };
             var Res = await fetch("/TypeDropdown", "POST", requestData);
-          
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             const selectElement1 = document.getElementById('branch');
 
@@ -103,13 +103,13 @@ var _approve = {
             const requestData = {
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
-                "indata": $("#branch").val() + "~" + "1",
+                "indata": encryptAES($("#branch").val() + "~" + "1"),
                 "BranchId": sessionStorage.getItem("BranchId"),
                 "enindata": sessionStorage.getItem("BranchId"),
-                "flag": "8"
+                "flag": encryptAES("8")
             };
             var Res = await fetch("/TypeDropdown", "POST", requestData);
-           
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             const selectElement1 = document.getElementById('noticeType');
 
@@ -131,13 +131,13 @@ var _approve = {
         const requestData = {
             "employeeId": sessionStorage.getItem("EmployeeId"),
             "token": sessionStorage.getItem("Token"),
-            "indata": $("#noticeType").val(),
+            "indata": encryptAES($("#noticeType").val()),
             "BranchId": sessionStorage.getItem("BranchId"),
             "enindata": sessionStorage.getItem("BranchId"),
-            "flag": "11"
+            "flag": encryptAES("11")
         };
         var Res = await fetch("/LegalFetch", "POST", requestData);
-       
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
 
         const dataString = JSON.parse(Res).data1;  // Assuming StateData is a string
@@ -158,13 +158,13 @@ var _approve = {
             const requestData = {
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
-                "indata": $("#noticeType").val(),
+                "indata": encryptAES($("#noticeType").val()),
                 "BranchId": sessionStorage.getItem("BranchId"),
                 "enindata": sessionStorage.getItem("BranchId"),
-                "flag": "17"
+                "flag": encryptAES("17")
             };
             var Res = await fetch("/pdfview", "POST", requestData);
-
+            Res = decryptAES(Res);
             let data = JSON.parse(Res).outdata;
             if (!data || data.length === 0) {
                
@@ -237,18 +237,18 @@ var _approve = {
                 return;
             }
             var data = {
-                "indata": $("#noticeType").val() + "~" + $("#lmRemarks").val(),
+                "indata": encryptAES($("#noticeType").val() + "~" + $("#lmRemarks").val()),
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
                 "BranchId": sessionStorage.getItem("BranchId"),
-                "flag": "9",
+                "flag": encryptAES("9"),
 
             };
           
            
 
             var Res = await fetch("/LegalRequestSubmit", "POST", data);
-
+            Res = decryptAES(Res);
             let data2 = JSON.parse(Res);
             if (data2.status == "True") {
                 await showSuccessAlert("success!", "Successfully Updated", "/LegalNotice/LegalLm_recommend");
@@ -288,17 +288,17 @@ var _approve = {
             }
 
             var data = {
-                "indata": $("#noticeType").val() + "~" + $("#lmRemarks").val()+"~"+"3",
+                "indata": encryptAES($("#noticeType").val() + "~" + $("#lmRemarks").val()+"~"+"3"),
                 "employeeId": sessionStorage.getItem("EmployeeId"),
                 "token": sessionStorage.getItem("Token"),
                 "BranchId": sessionStorage.getItem("BranchId"),
-                "flag": "15",
+                "flag": encryptAES("15"),
 
             };
            
 
             var Res = await fetch("/LegalRequestSubmit", "POST", data);
-
+            Res = decryptAES(Res);
             let data2 = JSON.parse(Res);
             if (data2.status == "True") {
                 await showSuccessAlert("success!", "Successfully Returned", "/LegalNotice/LegalLm_recommend");

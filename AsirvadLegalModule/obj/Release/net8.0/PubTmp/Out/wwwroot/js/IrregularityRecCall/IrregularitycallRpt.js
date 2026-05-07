@@ -3,6 +3,29 @@
     checkAccess("36");
     
 });
+
+
+$(document).on('change', '#fmDate', function () {
+    validateDates();
+});
+
+$(document).on('change', '#toDate', function () {
+    validateDates();
+});
+
+$(document).on('click', '#generateReport', function () {
+    _Report.IrregularityCallDetails();
+});
+
+$(document).on('click', '#excelReport', function () {
+    _Report.excelconvertreport();
+});
+
+$(document).on('click', '#exitButton', function () {
+    redirectToDashboard();
+});
+
+
 var _Report = {
     async IrregularityCallDetails() {
         try {
@@ -19,12 +42,13 @@ var _Report = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: formattedFromDate + " ~ " + formattedToDate,
-                as_optflag: "11"
+                p_indata: encryptAES(formattedFromDate + " ~ " + formattedToDate),
+                as_optflag: encryptAES("11")
             };
 
 
             var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             console.log(responseData);
             debugger;
@@ -39,30 +63,39 @@ var _Report = {
                 if (outdata && outdata.Table && Array.isArray(outdata.Table) && outdata.Table.length > 0) {
                     outdata.Table.forEach(data => {
                         const row = document.createElement("tr");
-                        row.innerHTML = `
-                            <td>${data.REC_ID || '-'}</td>
-                            <td>${data.ZONAL_NAME || '-'}</td>
-                            <td>${data.AREA_NAME || '-'}</td>
-                            <td>${data.BRANCH_ID || '-'}</td>
-                            <td>${data.CUST_ID || '-'}</td>
-                            <td>${data.CUST_NAME || '-'}</td>
-                            <td>${data.PLEDGE_NO || '-'}</td>
-                            <td>${data.AMOUNT || '-'}</td>
-                            <td>${data.FIRST_DATE || '-'}</td>
-                            <td>${data.FIRST_RMK || '-'}</td>
-                            <td>${data.SECOND_DATE || '-'}</td>
-                            <td>${data.SECOND_RMK || '-'}</td>
-                            <td>${data.HOME_DATE || '-'}</td>
-                            <td>${data.HOME_RMK || '-'}</td>
-                            <td>${data.CUS_STATUS || '-'}</td>
-                            <td>${data.PLEDGESTS || '-'}</td>
-                            <td><button type="button" onclick=" _Report.firstFunction('${data.REC_ID}','${data.CUST_ID}')">Click Here</button></td>
-                            <td><button type="button" onclick=" _Report.secondFunction('${data.REC_ID}','${data.CUST_ID}')">Click Here</button></td>
-                           
-                            
-                        `;
+
+                        const fields = [
+                            'REC_ID', 'ZONAL_NAME', 'AREA_NAME', 'BRANCH_ID', 'CUST_ID', 'CUST_NAME',
+                            'PLEDGE_NO', 'AMOUNT', 'FIRST_DATE', 'FIRST_RMK', 'SECOND_DATE', 'SECOND_RMK',
+                            'HOME_DATE', 'HOME_RMK', 'CUS_STATUS', 'PLEDGESTS'
+                        ];
+
+                        // Create data cells
+                        fields.forEach(field => {
+                            const cell = document.createElement("td");
+                            cell.textContent = data[field] || '-';
+                            row.appendChild(cell);
+                        });
+
+                        // Create action buttons
+                        const actions = [
+                            { handler: _Report.firstFunction, label: 'Click Here' },
+                            { handler: _Report.secondFunction, label: 'Click Here' }
+                        ];
+
+                        actions.forEach(action => {
+                            const cell = document.createElement("td");
+                            const button = document.createElement("button");
+                            button.type = "button";
+                            button.textContent = action.label;
+                            button.addEventListener("click", () => action.handler(data.REC_ID, data.CUST_ID));
+                            cell.appendChild(button);
+                            row.appendChild(cell);
+                        });
+
                         tbody.appendChild(row);
                     });
+
                 } else {
                     const row = document.createElement("tr");
                     row.innerHTML = `<td colspan="12" style="text-align: center; font-size: 1.5em; font-weight: bold; color: #333; padding: 20px;">No data available</td>`;
@@ -110,13 +143,14 @@ var _Report = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: input,
-                as_optflag: "46"
+                p_indata: encryptAES(input),
+                as_optflag: encryptAES("46")
 
             };
 
             /* pdfview was written in LegalNotice Controller*/
             var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
+            Res = decryptAES(Res);
             let data = JSON.parse(Res).outdata;
             const parsedData = JSON.parse(data);
             const table = parsedData.Table?.[0];
@@ -174,13 +208,14 @@ var _Report = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: input,
-                as_optflag: "47"
+                p_indata: encryptAES(input),
+                as_optflag: encryptAES("47")
 
             };
 
             /* pdfview was written in LegalNotice Controller*/
             var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
+            Res = decryptAES(Res);
             let data = JSON.parse(Res).outdata;
             const parsedData = JSON.parse(data);
             const table = parsedData.Table?.[0];

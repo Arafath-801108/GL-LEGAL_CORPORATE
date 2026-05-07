@@ -1,0 +1,332 @@
+﻿@{
+    ViewData["Title"] = "Legal Audit Master";
+    Layout = "_Layout";
+}
+
+@* 1. STYLES & VISUAL FEEDBACK *@
+<style>
+    :root {
+        --primary-blue: #0061f2;
+        --success-green: #00ac69;
+        --danger-red: #dc3545;
+        --bg-body: #f2f6fc;
+        --card-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 40, 0.12);
+    }
+
+    /* Layout Helpers */
+    .container-fluid { padding: 20px; font-family: 'Segoe UI', sans-serif; background-color: var(--bg-body); }
+    .row { display: flex; flex-wrap: wrap; margin: 0 -10px; }
+    .col-md-3 { flex: 0 0 25%; padding: 0 10px; box-sizing: border-box; }
+    .col-lg-8 { flex: 0 0 66.66%; padding: 0 10px; box-sizing: border-box; }
+    .col-lg-4 { flex: 0 0 33.33%; padding: 0 10px; box-sizing: border-box; }
+    .mb-4 { margin-bottom: 1.5rem; }
+
+    /* Visual Feedback for Validation */
+    .is-invalid {
+        border: 2px solid var(--danger-red) !important;
+        background-color: #fff8f8 !important;
+    }
+
+    .app-header { background: white; padding: 1rem 2rem; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .brand-box { font-weight: 800; font-size: 1.2rem; color: var(--primary-blue); display: flex; align-items: center; }
+    
+    .filter-section { background: white; border-radius: 0.75rem; padding: 1.5rem; border: 1px solid #dee2e6; box-shadow: var(--card-shadow); margin-bottom: 20px; }
+    .search-input-grp { background: #f8f9fa; border: 1px solid #c5ccd6; border-radius: 0.5rem; display: flex; overflow: hidden; }
+    .search-input-grp select { border: none; background: transparent; flex: 1; padding: 12px; outline: none; font-weight: 600; cursor: pointer; width: 100%; }
+
+    .stat-card { background: white; border-radius: 0.5rem; padding: 1.25rem; border-left: 0.4rem solid var(--primary-blue); box-shadow: 0 0.15rem 1rem rgba(0,0,0,0.05); height: 100%; box-sizing: border-box;}
+    .stat-label { font-size: 0.75rem; font-weight: 700; color: #69707a; text-transform: uppercase; display: block; }
+    .stat-value { font-size: 1.25rem; font-weight: 800; display: block; margin-top: 5px; }
+
+    .data-grid-container { background: white; border-radius: 0.5rem; border: 1px solid #dee2e6; box-shadow: var(--card-shadow); overflow: hidden; }
+    .grid-header { background: #f8f9fa; padding: 1rem; border-bottom: 1px solid #dee2e6; display: flex; justify-content: space-between; align-items: center; }
+    .table { width: 100%; border-collapse: collapse; }
+    .table th { background: #eff2f5; text-align: left; padding: 12px; font-size: 0.75rem; color: #495057; text-transform: uppercase; }
+    .table td { padding: 12px; border-bottom: 1px solid #eee; vertical-align: middle; }
+
+    .form-control, .form-select { width: 100%; padding: 8px 12px; border: 1px solid #ced4da; border-radius: 0.35rem; box-sizing: border-box; }
+    .btn { padding: 8px 16px; border-radius: 0.35rem; border: none; cursor: pointer; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; }
+    .btn-primary { background: var(--primary-blue); color: white; }
+    .btn-success { background: var(--success-green); color: white; }
+    .btn-dashboard { background: #f8f9fa; border: 1px solid #c5ccd6; color: #495057; }
+
+    .loading-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); z-index: 9999; justify-content: center; align-items: center; }
+    .spinner { width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid var(--primary-blue); border-radius: 50%; animation: spin 1s linear infinite; }
+    @@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+
+<div class="loading-overlay" id="loader">
+    <div class="spinner"></div>
+</div>
+
+<div class="app-header">
+    <div class="brand-box">
+        <i class="fas fa-shield-alt mr-2" style="font-size: 1.5rem; margin-right: 10px;"></i> LEGAL AUDIT PORTAL
+    </div>
+    <div>
+        <a href="@Url.Action("toDashboard", "Home")" class="btn btn-dashboard btn-sm">
+            <i class="fas fa-th mr-2"></i> BACK TO DASHBOARD
+        </a>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="filter-section">
+        <p style="font-size: 0.8rem; font-weight: bold; color: #6c757d; margin-bottom: 8px;">SYSTEM RETRIEVAL</p>
+        <div class="search-input-grp">
+            <span style="padding: 12px;"><i class="fas fa-search text-muted"></i></span>
+            <select id="sopDropdown" onchange="autoFetch(this.value)">
+                <option value="" disabled selected>Select System ID (Auto-Loading)...</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="noDataView" style="text-align: center; padding: 100px 0;">
+        <i class="fas fa-search" style="font-size: 4rem; color: #dee2e6;"></i>
+        <h5 style="color: #6c757d; mt-3">Select an ID from the dropdown to automatically load audit details.</h5>
+    </div>
+
+    <div id="contentView" style="display:none;">
+        <div class="row mb-4">
+            <div class="col-md-3"><div class="stat-card"><span class="stat-label">Pledge Count</span><span id="lblPledgeCount" class="stat-value">0</span></div></div>
+            <div class="col-md-3"><div class="stat-card"><span class="stat-label">Customers</span><span id="lblCustCount" class="stat-value">0</span></div></div>
+            <div class="col-md-3"><div class="stat-card" style="border-left-color: var(--success-green);"><span class="stat-label">Total Loss</span><span id="lblLoss" class="stat-value" style="color:var(--success-green)">₹0.00</span></div></div>
+            <div class="col-md-3"><div class="stat-card" style="border-left-color: #f4a100;"><span class="stat-label">Reported Date</span><span id="lblReportedDate" class="stat-value" style="color:#f4a100">--</span></div></div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="data-grid-container">
+                    <div class="grid-header">
+                        <h6 style="margin:0; font-weight:bold;">ACCUSED PARTIES</h6>
+                        <button class="btn btn-primary btn-sm" onclick="addRow()">
+                            <i class="fas fa-plus mr-1"></i> ADD ENTITY
+                        </button>
+                    </div>
+                    <div style="overflow-x: auto;">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Entity Name</th>
+                                    <th>Category</th>
+                                    <th>Remarks</th>
+                                    <th style="text-align:center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="accusedBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="filter-section">
+                    <h6 style="color:var(--primary-blue); font-weight:bold; border-bottom:1px solid #eee; padding-bottom:10px; margin-top:0">
+                        <i class="fas fa-file-invoice mr-2"></i> LEGAL FILING
+                    </h6>
+                    
+                    <div class="mb-4">
+                        <label style="font-size:0.8rem; font-weight:bold; color:#6c757d; display:block; margin-bottom:5px">Police Complaint Date</label>
+                        <input type="date" id="txtPoliceDt" class="form-control" onchange="calculateSLA()">
+                    </div>
+
+                    <div class="mb-4">
+                        <label style="font-size:0.8rem; font-weight:bold; color:#6c757d; display:block; margin-bottom:5px">Court CNR Number (16-char)</label>
+                        <input type="text" id="txtCNR" class="form-control" maxlength="16" placeholder="Alphanumeric Only">
+                    </div>
+
+                    <div style="padding:15px; background:#f8f9fa; border-radius:8px; border:1px solid #ddd; margin-bottom:20px">
+                        <span style="font-size:0.7rem; font-weight:bold; color:#6c757d; display:block; margin-bottom:5px">SLA COMPLIANCE</span>
+                        <div id="slaBadge" style="font-weight:bold; font-size:1rem; color:#6c757d">AWAITING DATE...</div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label style="font-size:0.8rem; font-weight:bold; color:#6c757d; display:block; margin-bottom:5px;">Audit Remarks</label>
+                        <textarea id="txtGeneralRemarks" class="form-control" rows="3" maxlength="250" placeholder="General observations..."></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100" style="padding:15px;" onclick="finalSubmit()">
+                        <i class="fas fa-save mr-2"></i> AUTHORIZE & SAVE
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let GLOBAL_REPORT_DATE = "";
+
+    $(document).ready(function() {
+        // Initial Dropdown Load
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", 
+            contentType: "application/json",
+            data: JSON.stringify({ flag: 5, indata: "ALL", employeeId: "", branch: "" }),
+            success: function(res) {
+                const dec = decryptAES(res);
+                if(dec){
+                   const data = JSON.parse(JSON.parse(dec).outdata).Table;
+                   data.forEach(x => $('#sopDropdown').append(`<option value="${x.SYSTEM_ID_NO}">${x.SYSTEM_ID_NO}</option>`));
+                }
+            }
+        });
+
+        // Real-time Visual Feedback: Remove red highlight when user starts typing
+        $(document).on('keyup', '.accused-name', function() {
+            if($(this).val().trim() !== "") {
+                $(this).removeClass('is-invalid');
+            }
+        });
+    });
+
+    function autoFetch(id) {
+        if(!id) return;
+        $('#loader').css('display', 'flex');
+        
+        $.ajax({
+            url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+            type: "POST", 
+            contentType: "application/json",
+            data: JSON.stringify({ flag: 3, indata: encryptAES(id), employeeId: "", branch: "" }),
+            success: function(res) {
+                const dec = decryptAES(res);
+                const data = JSON.parse(JSON.parse(dec).outdata).Table[0];
+                if(data) {
+                    $('#lblPledgeCount').text(data.TOTAL_PLEDGE_COUNT);
+                    $('#lblCustCount').text(data.CUSTOMER_COUNT);
+                    $('#lblLoss').text("₹" + Number(data.LOSS_AMOUNT).toLocaleString('en-IN'));
+                    $('#lblReportedDate').text(data.REPORTED_DATE);
+                    GLOBAL_REPORT_DATE = data.REPORTED_DATE;
+                    
+                    $('#loader').hide();
+                    $('#noDataView').hide();
+                    $('#contentView').show();
+                    calculateSLA();
+                }
+            },
+            error: function() { $('#loader').hide(); }
+        });
+    }
+
+    function addRow() {
+        $('#accusedBody').append(`<tr>
+            <td><input type="text" class="form-control accused-name" placeholder="Entity Name"></td>
+            <td><select class="form-select accused-type"><option value="CUSTOMER">CUSTOMER</option><option value="EMPLOYEE">EMPLOYEE</option></select></td>
+            <td><input type="text" class="form-control accused-remarks" placeholder="Notes" maxlength="200"></td>
+            <td style="text-align:center"><i class="fas fa-trash text-danger" style="cursor:pointer" onclick="$(this).closest('tr').remove()"></i></td>
+        </tr>`);
+    }
+
+    function calculateSLA() {
+        const filedVal = $('#txtPoliceDt').val();
+        if(!filedVal || !GLOBAL_REPORT_DATE) return;
+        
+        // 1. Logical Date Sequence Check
+        const parts = GLOBAL_REPORT_DATE.split('-'); 
+        const reportedDate = new Date(parts[2], parts[1]-1, parts[0]);
+        const complaintDate = new Date(filedVal);
+        const today = new Date();
+        today.setHours(0,0,0,0);
+
+        // if (complaintDate > today) {
+        //     Swal.fire('Logical Error', 'Complaint date cannot be in the future.', 'error');
+        //     $('#txtPoliceDt').val('');
+        //     return;
+        // }
+
+        if (complaintDate < reportedDate) {
+            Swal.fire('Logical Error', 'Complaint date cannot be earlier than Reported Date ('+GLOBAL_REPORT_DATE+').', 'warning');
+            $('#txtPoliceDt').val('');
+            return;
+        }
+        
+        const diff = Math.ceil((complaintDate - reportedDate) / (1000 * 60 * 60 * 24));
+        
+        if(diff <= 7) {
+            $('#slaBadge').text("COMPLIANT ("+diff+" Days)").css('color', 'var(--success-green)');
+        } else {
+            $('#slaBadge').text("DELAYED BY " + diff + " DAYS").css('color', 'var(--danger-red)');
+        }
+    }
+
+    function finalSubmit() {
+        const cnr = $('#txtCNR').val().trim();
+        const policeDate = $('#txtPoliceDt').val();
+        const mainRemark = $('#txtGeneralRemarks').val().trim();
+        
+        // 2. Field Sanitization (Remove script-sensitive characters)
+        const sanitize = (str) => str.replace(/[<>%/\\;]/g, "");
+
+        // 3. CNR Format Check (16 alphanumeric)
+        const cnrRegex = /^[a-zA-Z0-9]{16}$/;
+        if(!cnrRegex.test(cnr)) {
+            return Swal.fire('Format Error', 'A CNR consisting of alphanumeric characters is required.', 'warning');
+        }
+
+        if(!policeDate) return Swal.fire('Required', 'Police Complaint Date is required.', 'warning');
+        if(!mainRemark) return Swal.fire('Required', 'General Remark is required.', 'warning');
+
+        // 4. Entity List Validation & Red Highlighting
+        const accusedList = [];
+        let isEntityValid = true;
+        const rows = $('#accusedBody tr');
+
+        if(rows.length === 0) return Swal.fire('Required', 'At least one accused entity must be added.', 'warning');
+
+        rows.each(function() {
+            const nameField = $(this).find('.accused-name');
+            const nameVal = nameField.val().trim();
+
+            if(nameVal === "") {
+                nameField.addClass('is-invalid'); // Visual feedback in red
+                isEntityValid = false;
+            } else {
+                nameField.removeClass('is-invalid');
+                accusedList.push({
+                    name: sanitize(nameVal),
+                    type: $(this).find('.accused-type').val(),
+                    remarks: sanitize($(this).find('.accused-remarks').val())
+                });
+            }
+        });
+
+        if(!isEntityValid) {
+            return Swal.fire('Missing Information', 'Entity Name cannot be blank for active rows.', 'error');
+        }
+
+        const payload = {
+            system_id: $('#sopDropdown').val(),
+            police_date: policeDate,
+            cnr_no: cnr,
+            accused: accusedList,
+            audit_remarks: sanitize(mainRemark)
+        };
+
+        Swal.fire({
+            title: 'Authorize Submission?',
+            text: "This record will be finalized in the legal registry.",
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, Save'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url: "https://localhost:7161/api/LegalAudit/Proc_new_RIIM_Legal_Details",
+                    type: "POST", contentType: "application/json",
+                    data: JSON.stringify({ 
+                        flag: 4, 
+                        indata: encryptAES(JSON.stringify(payload)), 
+                        employeeId: encryptAES(sessionStorage.getItem("EmployeeId") || "") 
+                    }),
+                    success: function(res) {
+                        Swal.fire('Success', 'Legal Registry Updated.', 'success').then(() => {
+                            location.href = "@Url.Action("Index", "LegalAction")";
+                        });
+                    }
+                });
+            }
+        });
+    }
+</script>

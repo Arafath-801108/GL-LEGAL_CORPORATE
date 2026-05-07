@@ -131,3 +131,23 @@ C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Core\obj\Release\net8.0\refint\AsirvadLegalModule.Core.dll
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.pdb
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\AsirvadLegalModule.Core\obj\Release\net8.0\ref\AsirvadLegalModule.Core.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.Core.deps.json
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.Core.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.Core.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.DTO.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.Utilities.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.DTO.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\AsirvadLegalModule.Utilities.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\bin\Release\net8.0\DBAccessLibrary.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.csproj.AssemblyReference.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.AssemblyInfoInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.AssemblyInfo.cs
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.csproj.CoreCompileInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.sourcelink.json
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadL.1A39FE6C.Up2Date
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\refint\AsirvadLegalModule.Core.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\AsirvadLegalModule.Core.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\AsirvadLegalModule.Core\obj\Release\net8.0\ref\AsirvadLegalModule.Core.dll

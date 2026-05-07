@@ -256,7 +256,7 @@ var _Recovery = {
             const br = document.getElementById('drp_branch').value;
             const call = document.getElementById('drp_callType').value;
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
             window.location.href = liveurl + `/RecoveryCallDetail/RecoveryCallDetail?branch=${encodeURIComponent(br)}&call=${encodeURIComponent(call)}`;
 
         }

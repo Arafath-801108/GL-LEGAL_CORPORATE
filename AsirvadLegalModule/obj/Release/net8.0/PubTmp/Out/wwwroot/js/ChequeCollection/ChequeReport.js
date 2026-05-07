@@ -54,7 +54,7 @@ var ChReport = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
                 Indata: encryptAES(formattedFromDate + " ~ " + formattedToDate + " ~ " + Irr),
-                Flag: encryptAES(37)
+                Flag: 37
             };
             var Res = await fetch("/ChequeReportDetails", "POST", requestData);
             Res = decryptAES(Res);
@@ -72,52 +72,51 @@ var ChReport = {
                     const tbody = document.getElementById("EmpReportTableBody");
                     tbody.innerHTML = ''; // Clear previous content
 
+                   /* const tbody = document.getElementById("tbody");*/
+
                     if (outdata && outdata.Table && Array.isArray(outdata.Table) && outdata.Table.length > 0) {
                         outdata.Table.forEach(data => {
                             const row = document.createElement("tr");
-                            row.innerHTML = `
-                            <td>${data.ZONAL_NAME || '-'}</td>
-                            <td>${data.REG_NAME || '-'}</td>
-                            <td>${data.AREA_NAME || '-'}</td>
-                            <td>${data.BRANCH_NAME || '-'}</td>
-                            <td>${data.BRANCH_ID || '-'}</td>
-                            <td>${data.EMP_CODE || '-'}</td>
-                            <td>${data.EMP_NAME || '-'}</td>
-                            <td>${data.DESIGNATION || '-'}</td>
-                            <td>${data.AMOUNT || '-'}</td>
-                            <td>${data.DISCONT_DT || '-'}</td>
-                            <td>${data.IRREGULARITY_TYPE || '-'}</td>
-                            <td>${data.IRREGULARITY_STATUS || '-'}</td>
-                            <td>${data.CHEQUE_STATUS || '-'}</td>
-                            <td>${data.CHEQUE_REASON || '-'}</td>
-                             <td>${data.CHEQUE_DT || '-'}</td>
-                            <td>${data.ENTERED_DT || '-'}</td>
-                            <td>${data.ENTERED_BY || '-'}</td>
-                           <td>${data.STATUS || '-'}</td>
-                           <td>${data.AMRH_EMP || '-'}</td>
-                            <td>${data.AMRH_DT || '-'}</td>
-                            <td>${data.CHALLAN_UPD_BY || '-'}</td>
-                            <td>${data.CHALLAN_UPD_DT || '-'}</td>
-                            <td>${data.CHALLAN_DT || '-'}</td>
-                            <td>${data.CHALLAN_VER_BY || '-'}</td>
-                            <td>${data.CHALLAN_VER_DT || '-'}</td>
-                            <td>${data.CHEQ_STS_UPD_BY || '-'}</td>
-                            <td>${data.CHEQ_STS_UPD_DT || '-'}</td>
-                            <td>${data.CHEQ_STS || '-'}</td>
-                            <td>${data.CHEQ_STS_VER_BY || '-'}</td>
-                            <td>${data.CHEQ_STS_VER_DT || '-'}</td>
-                            <td><button onclick="handleFileDownload('${data.CHEQUE_DOC || ''}', 'cheque.pdf')" class="btn btn-link">Download</button></td>
-                            <td><button onclick="handleFileDownload('${data.CHALLAN_DOC || ''}', 'challan.pdf')" class="btn btn-link">Download</button></td>
-                            <td><button onclick="handleFileDownload('${data.BOUNCE_CHE_DOC || ''}', 'bounce.pdf')" class="btn btn-link">Download</button></td>
-                            <td><button onclick="handleFileDownload('${data.STATEMENT_DOC || ''}', 'return.pdf')" class="btn btn-link">Download</button></td>
 
-                        `;
-                            /*//    ENTERED_BY ? new Date(data.SEIZURED_DATE).toLocaleDateString() : '-'}</td>*/
+                            // List of fields to display as text cells
+                            const fields = [
+                                'ZONAL_NAME', 'REG_NAME', 'AREA_NAME', 'BRANCH_NAME', 'BRANCH_ID', 'EMP_CODE', 'EMP_NAME',
+                                'DESIGNATION', 'AMOUNT', 'DISCONT_DT', 'IRREGULARITY_TYPE', 'IRREGULARITY_STATUS',
+                                'CHEQUE_STATUS', 'CHEQUE_REASON', 'CHEQUE_DT', 'ENTERED_DT', 'ENTERED_BY', 'STATUS',
+                                'AMRH_EMP', 'AMRH_DT', 'CHALLAN_UPD_BY', 'CHALLAN_UPD_DT', 'CHALLAN_DT', 'CHALLAN_VER_BY',
+                                'CHALLAN_VER_DT', 'CHEQ_STS_UPD_BY', 'CHEQ_STS_UPD_DT', 'CHEQ_STS', 'CHEQ_STS_VER_BY',
+                                'CHEQ_STS_VER_DT'
+                            ];
+
+                            // Create and append text cells
+                            fields.forEach(field => {
+                                const cell = document.createElement("td");
+                                cell.textContent = data[field] || '-';
+                                row.appendChild(cell);
+                            });
+
+                            // Download buttons with label and file path
+                            const fileButtons = [
+                                { field: 'CHEQUE_DOC', label: 'Cheque_doc' },
+                                { field: 'CHALLAN_DOC', label: 'Challan_doc' },
+                                { field: 'BOUNCE_CHE_DOC', label: 'Bounce_doc' },
+                                { field: 'STATEMENT_DOC', label: 'Statement_doc' }
+                            ];
+
+                            fileButtons.forEach(btn => {
+                                const cell = document.createElement("td");
+                                const button = document.createElement("button");
+                                button.textContent = 'Download';
+                                button.className = "btn btn-link";
+                                button.onclick = () => handleFileDownload(data[btn.field] || '', btn.label);
+                                cell.appendChild(button);
+                                row.appendChild(cell);
+                            });
+
                             tbody.appendChild(row);
                         });
-
-
-                    } else {
+                    }
+                     else {
                        
                         document.getElementById("EmpReport").style.display = "none";
                         await showAlert("No data available for the selected criteria.");
@@ -136,53 +135,51 @@ var ChReport = {
                     // Populate table
                     const tbody = document.getElementById("CusReportTableBody");
                     tbody.innerHTML = ''; // Clear previous content
+                    /*const tbody = document.getElementById("tbody");*/
 
                     if (outdata && outdata.Table && Array.isArray(outdata.Table) && outdata.Table.length > 0) {
                         outdata.Table.forEach(data => {
                             const row = document.createElement("tr");
-                            row.innerHTML = `
-                            <td>${data.ZONAL_NAME || '-'}</td>
-                            <td>${data.REG_NAME || '-'}</td>
-                            <td>${data.AREA_NAME || '-'}</td>
-                            <td>${data.BRANCH_NAME || '-'}</td>
-                            <td>${data.BRANCH_ID || '-'}</td>
-                            <td>${data.CUST_ID || '-'}</td>
-                            <td>${data.CUST_NAME || '-'}</td>
-                            <td>${data.PLEDGE_NO || '-'}</td>
-                            <td>${data.IRREGULARITY_TYPE || '-'}</td>
-                            <td>${data.STATUS || '-'}</td>
-                            <td>${data.INVOICE_DT || '-'}</td>
-                             <td>${data.ACT_WEIGHT || '-'}</td>
-                              <td>${data.ACTUAL_LOSS || '-'}</td>
-                            <td>${data.CHEQUE_STATUS || '-'}</td>
-                            <td>${data.CHEQUE_REASON || '-'}</td>
-                             <td>${data.CHEQUE_DT || '-'}</td>
-                            <td>${data.ENTERED_DT || '-'}</td>
-                            <td>${data.ENTERED_BY || '-'}</td>
-                           <td>${data.STATUS1 || '-'}</td>
-                           <td>${data.AMRH_EMP || '-'}</td>
-                            <td>${data.AMRH_DT || '-'}</td>
-                            <td>${data.CHALLAN_UPD_BY || '-'}</td>
-                            <td>${data.CHALLAN_UPD_DT || '-'}</td>
-                            <td>${data.CHALLAN_DT || '-'}</td>
-                            <td>${data.CHALLAN_VER_BY || '-'}</td>
-                            <td>${data.CHALLAN_VER_DT || '-'}</td>
-                            <td>${data.CHEQ_STS_UPD_BY || '-'}</td>
-                            <td>${data.CHEQ_STS_UPD_DT || '-'}</td>
-                            <td>${data.CHEQ_STS || '-'}</td>
-                            <td>${data.CHEQ_STS_VER_BY || '-'}</td>
-                            <td>${data.CHEQ_STS_VER_DT || '-'}</td>
-                             <td><button onclick="handleFileDownload('${data.CHEQUE_DOC || ''}', 'cheque.pdf')" class="btn btn-link">Download</button></td>
-                            <td><button onclick="handleFileDownload('${data.CHALLAN_DOC || ''}', 'challan.pdf')" class="btn btn-link">Download</button></td>
-                            <td><button onclick="handleFileDownload('${data.BOUNCE_CHE_DOC || ''}', 'bounce.pdf')" class="btn btn-link">Download</button></td>
-                            <td><button onclick="handleFileDownload('${data.STATEMENT_DOC || ''}', 'return.pdf')" class="btn btn-link">Download</button></td>
-                        `;
-                            /*//    ENTERED_BY ? new Date(data.SEIZURED_DATE).toLocaleDateString() : '-'}</td>*/
+
+                            // List of fields to display as text cells
+                            const fields = [
+                                'ZONAL_NAME', 'REG_NAME', 'AREA_NAME', 'BRANCH_NAME', 'BRANCH_ID', 'CUST_ID', 'CUST_NAME',
+                                'PLEDGE_NO', 'IRREGULARITY_TYPE', 'STATUS', 'INVOICE_DT', 'ACT_WEIGHT', 'ACTUAL_LOSS',
+                                'CHEQUE_STATUS', 'CHEQUE_REASON', 'CHEQUE_DT', 'ENTERED_DT', 'ENTERED_BY', 'STATUS1',
+                                'AMRH_EMP', 'AMRH_DT', 'CHALLAN_UPD_BY', 'CHALLAN_UPD_DT', 'CHALLAN_DT', 'CHALLAN_VER_BY',
+                                'CHALLAN_VER_DT', 'CHEQ_STS_UPD_BY', 'CHEQ_STS_UPD_DT', 'CHEQ_STS', 'CHEQ_STS_VER_BY',
+                                'CHEQ_STS_VER_DT'
+                            ];
+
+                            // Create and append text cells
+                            fields.forEach(field => {
+                                const cell = document.createElement("td");
+                                cell.textContent = data[field] || '-';
+                                row.appendChild(cell);
+                            });
+
+                            // Download buttons with label and file path
+                            const fileButtons = [
+                                { field: 'CHEQUE_DOC', label: 'Cheque_doc' },
+                                { field: 'CHALLAN_DOC', label: 'Challan_doc' },
+                                { field: 'BOUNCE_CHE_DOC', label: 'Bounce_doc' },
+                                { field: 'STATEMENT_DOC', label: 'Statement_doc' }
+                            ];
+
+                            fileButtons.forEach(btn => {
+                                const cell = document.createElement("td");
+                                const button = document.createElement("button");
+                                button.textContent = 'Download';
+                                button.className = "btn btn-link";
+                                button.onclick = () => handleFileDownload(data[btn.field] || '', btn.label);
+                                cell.appendChild(button);
+                                row.appendChild(cell);
+                            });
+
                             tbody.appendChild(row);
                         });
-
-
                     }
+
                     else {
                         document.getElementById("CusReport").style.display = "none";
                         await showAlert("No data available for the selected criteria.");
@@ -230,7 +227,7 @@ var ChReport = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
                 Indata: encryptAES(formattedFromDate + " ~ " + formattedToDate + " ~ " + Irr),
-                Flag: encryptAES(37)
+                Flag: 37
             };
             var Res = await fetch("/ChequeReportDetails", "POST", requestData);
             Res = decryptAES(Res);

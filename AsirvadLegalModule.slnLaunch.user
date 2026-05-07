@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "AsirvadLegalModule\\AsirvadLegalModule.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "AsirvadLegalModule.API\\AsirvadLegalModule.API.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -5,17 +5,70 @@ $(document).ready(async function () {
     _irr.getCallReasons();
     
 });
+
+$(document).on('change', '#cmb_category1', function () {
+    _irr.getcategoryDetails();
+});
+
+$(document).on('change', '#cmb_call1', function () {
+    _irr.getCallDetails();
+});
+
+$(document).on('change', '#cmb_custid1', function () {
+    _irr.getCustomerDetails();
+});
+
+$(document).on('click', '#rad_yes', function () {
+    _irr.callradioclick();
+});
+
+$(document).on('click', '#rad_no', function () {
+    _irr.callradioclick();
+});
+
+$(document).on('click', '#btn_exit', function () {
+    redirectToDashboard();
+});
+
+$(document).on('click', '#btn_Confirm', function () {
+    _irr.btnSubmitclick();
+});
+
+$(document).on('change', '#txt_date', function () {
+    _irr.validateDates();
+});
+
+$(document).on('input', '#txt_amt', function () {
+    this.value = this.value.replace(/[^0-9\s()]/g, '');
+});
+
+$(document).on('input', '#txt_cust_ph2', function () {
+    this.value = this.value.replace(/[^0-9\s()]/g, '');
+});
+
+$(document).on('input', '#txt_cust_ph1', function () {
+    this.value = this.value.replace(/[^0-9\s()]/g, '');
+});
+
+$(document).on('change', '#fileInput1', function () {
+    UploadFN(this);
+});
+
+$(document).on('change', '#FileUpload2', function () {
+    UploadFN(this);
+});
+
 var _irr = {
     async getCallReasons() {
         const requestData = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: "",
-            as_optflag: "1"
+            p_indata: encryptAES(""),
+            as_optflag: encryptAES("1")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_attended_sts1');
@@ -93,11 +146,11 @@ var _irr = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "2"
+            p_indata: encryptAES(input_value),
+            as_optflag: encryptAES("2")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_custid1');
@@ -139,11 +192,11 @@ var _irr = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: input_value,
-                as_optflag: "3"
+                p_indata: encryptAES(input_value),
+                as_optflag: encryptAES("3")
             };
             var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             if (responseData.err_code === "1") {
 
@@ -377,10 +430,11 @@ var _irr = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2,
-                as_optflag: flag
+                p_indata: encryptAES(inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2),
+                as_optflag: encryptAES(flag)
             };
             var Res = await fetch("/IrregularityConfirmDetails", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             
             if ((responseData).err_code == "1") {

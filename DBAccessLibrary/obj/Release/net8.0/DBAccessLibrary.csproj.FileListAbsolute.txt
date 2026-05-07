@@ -82,3 +82,16 @@ C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\ob
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
 C:\Users\101264\Desktop\legal_vapt\legal_vapt\legal_corporate\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.deps.json
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\bin\Release\net8.0\DBAccessLibrary.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.AssemblyReference.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.GeneratedMSBuildEditorConfig.editorconfig
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfoInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.AssemblyInfo.cs
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.csproj.CoreCompileInputs.cache
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.sourcelink.json
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\refint\DBAccessLibrary.dll
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\DBAccessLibrary.pdb
+E:\Legal Module\GL-LEGAL_CORPORATE\DBAccessLibrary\obj\Release\net8.0\ref\DBAccessLibrary.dll

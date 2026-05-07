@@ -2,6 +2,11 @@
     _Logout.LogoutSession();
 });
 
+//$(document).on('click', '#idlogout', function () {
+//    _Logout.confirmLogout();
+//});
+
+
 var _Logout = {
     confirmLogout: async function () {
         return Swal.fire({
@@ -19,7 +24,7 @@ var _Logout = {
     LogoutSession: async function () {
         try {
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt'; 
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate'; 
             const isConfirmed = await _Logout.confirmLogout();
             if (!isConfirmed) {
                 return;

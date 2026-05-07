@@ -38,7 +38,7 @@ var Stverify = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
                 Indata: encryptAES(irrdrp),
-                Flag: encryptAES(18)
+                Flag:18
             };
 
             var Res = await fetch("/IrrSelect1", "POST", requestData);
@@ -138,7 +138,7 @@ var Stverify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(EmpValue + " ~ " + irrValue),
-                    Flag: encryptAES(34)
+                    Flag:34
                 };
                 var Res = await fetch("/IrrSelection", "POST", requestData);
                 Res = decryptAES(Res);
@@ -193,7 +193,7 @@ var Stverify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(pledgeValue + " ~ " + irrValue),
-                    Flag: encryptAES(19)
+                    Flag:19
                 };
                 var Res = await fetch("/IrrSelection", "POST", requestData);
                 Res = decryptAES(Res);
@@ -267,7 +267,7 @@ var Stverify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(EmpValue + " ~ " + EmpRmk),
-                    Flag: encryptAES(35)
+                    Flag: 35
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);
@@ -306,7 +306,7 @@ var Stverify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(pledgeValue + " ~ " + CusRmk),
-                    Flag: encryptAES(21)
+                    Flag: 21
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);
@@ -360,7 +360,7 @@ var Stverify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(EmpValue + " ~ " + EmpRmk),
-                    Flag: encryptAES(36)
+                    Flag: 36
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);
@@ -399,7 +399,7 @@ var Stverify = {
                     Emp_id: sessionStorage.getItem("EmployeeId"),
                     Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(pledgeValue + " ~ " + CusRmk),
-                    Flag: encryptAES(20)
+                    Flag:20
                 };
 
                 var Res = await fetch("/IrrSelect", "POST", requestData);

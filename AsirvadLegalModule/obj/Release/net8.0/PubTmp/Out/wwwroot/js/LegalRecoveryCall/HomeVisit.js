@@ -20,9 +20,9 @@ $(document).on('change', '#FileUpload1', function () {
     UploadFN(this);
 });
 
-$(document).on('change', '#FileUpload1', function () {
-    _visit.validateFile();
-});
+//$(document).on('change', '#FileUpload1', function () {
+//    _visit.validateFile();
+//});
 
 $(document).on('click', '#btn_Confirm', function () {
     _visit.buttonSubmitClick(this);
@@ -81,7 +81,7 @@ var _visit = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: "",
+                p_indata: encryptAES(""),
                 as_optflag: encryptAES("12")
             };
 
@@ -151,6 +151,7 @@ var _visit = {
                     }
                     else {
                         await showAlert("Alert!", "Unable to load the Details.", "warning");
+                        return;
                     }
                 }
             }
@@ -223,12 +224,14 @@ var _visit = {
                     document.getElementById("txt_vis").value = "";
                     document.getElementById("txt_vis_per").value = "";
                     await showAlert("Alert!", "Unable to load the employee name!!.", "warning");
+                    return;
                 }
             }
             else {
                 document.getElementById("txt_vis").value = "";
                 document.getElementById("txt_vis_per").value = "";
                 await showAlert("Alert!", "Please check the employee code!!.", "warning");
+                return;
             }
         }
         catch {
@@ -236,6 +239,7 @@ var _visit = {
             document.getElementById("txt_vis_per").value = "";
             await showAlert("Alert!", "Error occured..Please try again..", "warning");
             return;
+            
         }
     },
     async fromDateChanged1()
@@ -415,10 +419,10 @@ var _visit = {
                 const custId = document.getElementById("cmb_custid").value;
                 const requestData = {
                     indata: encryptAES(custId),
-                    flag: encryptAES("15"),
+                    flag:"15",
                     img2: img1,
                     empId: sessionStorage.getItem("EmployeeId"),
-                    token: sessionStorage.getItem("Token"),
+                    token: sessionStorage.getItem("Token")
                 };
 
                 var Res = await fetch("/PdfUpload1", "POST", requestData);
@@ -427,17 +431,17 @@ var _visit = {
                 
                 if (responseData1.status === "True") {
                     await showLoadAlert("Success!", "Home Visit Completed Successfully", "success");
-
+                    return;
                 }
                 else {
                     await showLoadAlert("Alert!", "Home Visit Failed!!!", "warning");
-
+                    return;
                 }
 
             }
             else {
                 await showLoadAlert("Alert!", "Error Occured Please try again!!", "warning");
-
+                return;
             }
         }
        

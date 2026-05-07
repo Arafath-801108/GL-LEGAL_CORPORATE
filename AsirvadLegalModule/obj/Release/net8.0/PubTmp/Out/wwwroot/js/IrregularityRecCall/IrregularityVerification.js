@@ -2,6 +2,32 @@
 
     checkAccess("34");
 });
+
+
+$(document).on('change', '#cmb_category', function () {
+    _verify.getBranchDetails();
+});
+
+$(document).on('change', '#cmb_branchid', function () {
+    _verify.getCustomerDetails();
+});
+
+$(document).on('change', '#cmb_custid', function () {
+    _verify.getallDetails();
+});
+
+$(document).on('click', '#btn_confirm', function () {
+    _verify.btnConfirmClick();
+});
+
+$(document).on('click', '#btn_exit', function () {
+    redirectToDashboard();
+});
+
+$(document).on('click', '#btn_reject', function () {
+    _verify.btnRejectClick();
+});
+
 var _verify = {
     async getBranchDetails() {
 
@@ -15,11 +41,11 @@ var _verify = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "8"
+            p_indata: encryptAES(input_value),
+            as_optflag: encryptAES("8")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_branchid');
@@ -51,11 +77,11 @@ var _verify = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "9"
+            p_indata: encryptAES(input_value),
+            as_optflag: encryptAES("9")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_custid');
@@ -90,11 +116,11 @@ var _verify = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "10"
+            p_indata: encryptAES(input_value),
+            as_optflag: encryptAES("10")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
 
@@ -139,7 +165,7 @@ var _verify = {
                 function downloadBase64File(base64Data, fileNameWithoutExt, mimeType, fileExtension) {
                     debugger;
                     if (!base64Data) {
-                        alert("No file available to download.");
+                        showAlert("No file available to download.");
                         return;
                     }
 
@@ -222,11 +248,12 @@ var _verify = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2,
-                as_optflag: "4"
+                p_indata: encryptAES(inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2),
+                as_optflag: encryptAES("4")
             };
 
             var Res = await fetch("/IrregularityConfirmDetails", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
 
             if ((responseData).err_code == "1") {
@@ -276,11 +303,12 @@ var _verify = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2,
-                as_optflag: "5"
+                p_indata: encryptAES(inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2),
+                as_optflag:encryptAES("5")
             };
 
             var Res = await fetch("/IrregularityConfirmDetails", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
 
             if ((responseData).err_code == "1") {

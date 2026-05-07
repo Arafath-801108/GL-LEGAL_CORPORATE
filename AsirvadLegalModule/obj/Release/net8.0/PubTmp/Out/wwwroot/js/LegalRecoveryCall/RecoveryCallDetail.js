@@ -16,7 +16,11 @@ $(document).on('change', '#employee-id', function () {
     _employee.LoadEmployeeDetails(this);
 });
 
-$(document).on('click', '#call-attended', function () {
+$(document).on('click', '#radioyes', function () {
+    _employee.toggleSections();
+});
+
+$(document).on('click', '#radiono', function () {
     _employee.toggleSections();
 });
 
@@ -259,7 +263,7 @@ var _employee = {
 
     async ExitClick() {
         const isDevelopment = window.location.hostname === 'localhost';
-        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+        const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
         window.location.href = liveurl + '/RecoveryCallHO/RecoveryCallHO';
     }
     

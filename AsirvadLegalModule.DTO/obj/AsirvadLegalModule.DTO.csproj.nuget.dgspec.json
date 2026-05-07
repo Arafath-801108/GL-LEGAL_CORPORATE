@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj": {}
+    "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj": {}
   },
   "projects": {
-    "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj": {
+    "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj",
+        "projectUniqueName": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj",
         "projectName": "AsirvadLegalModule.DTO",
-        "projectPath": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj",
-        "packagesPath": "C:\\Users\\101264\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.DTO\\obj\\",
+        "projectPath": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.DTO\\AsirvadLegalModule.DTO.csproj",
+        "packagesPath": "C:\\Users\\101018\\.nuget\\packages\\",
+        "outputPath": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.DTO\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\101264\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\101018\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,15 +27,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj": {
-                "projectPath": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj"
+              "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj": {
+                "projectPath": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj"
               }
             }
           }
@@ -49,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -92,24 +92,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj": {
+    "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj",
+        "projectUniqueName": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj",
         "projectName": "AsirvadLegalModule.Utilities",
-        "projectPath": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj",
-        "packagesPath": "C:\\Users\\101264\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule.Utilities\\obj\\",
+        "projectPath": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.Utilities\\AsirvadLegalModule.Utilities.csproj",
+        "packagesPath": "C:\\Users\\101018\\.nuget\\packages\\",
+        "outputPath": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\101264\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\101018\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -118,7 +119,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -137,7 +137,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -180,7 +180,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

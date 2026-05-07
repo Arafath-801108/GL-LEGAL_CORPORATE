@@ -36,24 +36,25 @@ $(document).on('click', '#btnExits', function () {
 });
 
 $(document).on('input', '#txt_rm', function () {
-    this.value = this.value.replace(/[^a-zA-Z0-9\s()]/g, '');
+    this.value.replace(/[^a-zA-Z0-9\s()/]/g, '');
 });
 
 $(document).on('click', '#btnConfirm', function () {
     _Legal.ButtonConfirmClick();
 });
 
-//$(document).on('input', '#txtLawyer', function () {
-//    this.value = this.value.replace(/[^a-zA-Z\s()]/g, '');
-//});
+$(document).on('input', '#txtLawyer', function () {
+    this.value = this.value.replace(/[^a-zA-Z\s()]/g, '');
+});
 
-//$(document).on('input', '#txt_rm', function () {
-//    this.value = this.value.replace(/[^a-zA-Z\s()]/g, '');
-//});
+$(document).on('input', '#txtCourt', function () {
+    this.value = this.value.replace(/[^a-zA-Z\s()]/g, '');
+});
 
-//$(document).on('input', '#txt_rm', function () {
-//    this.value = this.value.replace(/[^a-zA-Z\s()]/g, '');
-//});
+$(document).on('input', '#txtCase', function () {
+    this.value.replace(/[^a-zA-Z0-9\s()/]/g, '');
+
+});
 
 
 var _Legal = {
@@ -64,9 +65,9 @@ var _Legal = {
             const requestData = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
-                branch: encryptAES(""),
-                p_indata: encryptAES(""),
-                as_optflag: encryptAES("1")
+                branch:"",
+                p_indata:"",
+                as_optflag:"1"
             };
 
             var Res = await fetch("/GetBranchDetailsLO", "POST", requestData);
@@ -102,9 +103,9 @@ var _Legal = {
             const requestData = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
-                branch: encryptAES(""),
-                p_indata: encryptAES(""),
-                as_optflag: encryptAES("2")
+                branch:"",
+                p_indata:"",
+                as_optflag:"2"
             };
 
             var Res = await fetch("/GetBranchDetailsLO", "POST", requestData);
@@ -140,9 +141,9 @@ var _Legal = {
             const requestData = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
-                branch: encryptAES(""),
-                p_indata: encryptAES(""),
-                as_optflag: encryptAES("3")
+                branch:"",
+                p_indata:"",
+                as_optflag:"3"
             };
 
             var Res = await fetch("/GetBranchDetailsLO", "POST", requestData);
@@ -178,9 +179,9 @@ var _Legal = {
             const requestData = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
-                branch: encryptAES(""),
-                p_indata: encryptAES(""),
-                as_optflag: encryptAES("5")
+                branch: "",
+                p_indata:"",
+                as_optflag:"5"
             };
 
             var Res = await fetch("/GetBranchDetailsLO", "POST", requestData);
@@ -222,9 +223,9 @@ var _Legal = {
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
-                    branch: encryptAES(""),
-                    p_indata: encryptAES(document.getElementById('cmbBranch').value),
-                    as_optflag: encryptAES("4")
+                    branch: "",
+                    p_indata: document.getElementById('cmbBranch').value,
+                    as_optflag:"4"
                 };
 
                 var Res = await fetch("/GetComplaintDetailsLO", "POST", requestData);
@@ -271,9 +272,9 @@ var _Legal = {
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
-                    branch: encryptAES(""),
-                    p_indata: encryptAES( $("#cmbComplaintNo option:selected").val()),
-                    as_optflag: encryptAES("6")
+                    branch:"",
+                    p_indata:$("#cmbComplaintNo option:selected").val(),
+                    as_optflag:"6"
                 };
 
                 var Res = await fetch("/GetComplaintDetailsLO", "POST", requestData);
@@ -357,9 +358,9 @@ var _Legal = {
                         const requestData1 = {
                             employeeId: sessionStorage.getItem("EmployeeId"),
                             token: sessionStorage.getItem("Token"),
-                            branch: encryptAES(""),
-                            p_indata: encryptAES(data.CURRENT_BRANCH),
-                            as_optflag: encryptAES("7")
+                            branch:"",
+                            p_indata:data.CURRENT_BRANCH,
+                            as_optflag:"7"
                         };
 
                         var Res1 = await fetch("/GetComplaintDetailsLO", "POST", requestData1);
@@ -381,9 +382,9 @@ var _Legal = {
                         const requestData2 = {
                             employeeId: sessionStorage.getItem("EmployeeId"),
                             token: sessionStorage.getItem("Token"),
-                            branch: encryptAES(""),
-                            p_indata: encryptAES( data.OTHER_BRANCH_ID),
-                            as_optflag: encryptAES("8")
+                            branch:"",
+                            p_indata:data.OTHER_BRANCH_ID,
+                            as_optflag:"8"
                         };
 
                         var Res2 = await fetch("/GetComplaintDetailsLO", "POST", requestData2);
@@ -446,9 +447,9 @@ var _Legal = {
                 const requestData = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
-                    branch: encryptAES(""),
-                    p_indata: encryptAES($("#cmbComplaintNo option:selected").val()),
-                    as_optflag: encryptAES("9")
+                    branch:"",
+                    p_indata:$("#cmbComplaintNo option:selected").val(),
+                    as_optflag:"9"
                 };
 
                 var Res = await fetch("/GetComplaintDetailsLO", "POST", requestData);

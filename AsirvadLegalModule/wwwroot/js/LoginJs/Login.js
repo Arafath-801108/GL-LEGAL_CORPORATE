@@ -428,6 +428,7 @@ var _login = {
         $('#drp_branch').empty();
         $("#loader").hide();
         response = decryptAES(response);
+       // alert(response);
         if (JSON.parse(response).status === "SUCCESS" && JSON.parse(response).Data.isDataAvailable === "true") {
             var branchSelect = $('#drp_branch'); // Reference the select element
             var branchDropdown = $('#BranchDropdown'); // Reference the div wrapper
@@ -463,7 +464,9 @@ var _login = {
     }
 
 
-}
+    }
+
+   
 
 async function xhrstatus(status) {
     $("#loader").hide();

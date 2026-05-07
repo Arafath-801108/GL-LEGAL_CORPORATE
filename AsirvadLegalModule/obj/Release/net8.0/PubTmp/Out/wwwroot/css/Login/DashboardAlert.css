@@ -1,0 +1,191 @@
+﻿/* ==============================================================
+   PENDING ALERTS MODAL – Modern & Attractive
+   ============================================================== */
+
+:root {
+    --primary: #ff4500;
+    --primary-dark: #e03e00;
+    --gold: #ffb300;
+}
+
+/* Backdrop */
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.65);
+    backdrop-filter: blur(5px);
+    z-index: 1040;
+    transition: opacity .25s ease;
+}
+
+    .modal-backdrop.show {
+        display: block;
+        opacity: 1;
+    }
+
+/* Modal */
+.pending-alerts-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+    padding: 1rem;
+}
+
+    .pending-alerts-modal.show {
+        display: flex;
+    }
+
+.modal-dialog {
+    max-width: 520px;
+    width: 100%;
+    animation: modalZoom .3s ease-out;
+}
+
+@keyframes modalZoom {
+    from {
+        transform: scale(.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(0,0,0,.25);
+    border: none;
+}
+
+/* Header */
+.modal-header {
+    background: linear-gradient(135deg, var(--primary), var(--gold));
+    color: white;
+    padding: .1rem 1.5rem;
+    font-weight: 600;
+}
+
+.modal-title i.shake {
+    animation: bellRing 1.8s infinite;
+    margin-right: .5rem;
+}
+
+@keyframes bellRing {
+    0%,100% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(-12deg);
+    }
+
+    30% {
+        transform: rotate(12deg);
+    }
+
+    50% {
+        transform: rotate(-8deg);
+    }
+
+    70% {
+        transform: rotate(8deg);
+    }
+}
+
+/* Close */
+.modal-close {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+    .modal-close:hover {
+        opacity: .7;
+    }
+
+/* Body */
+.modal-body {
+    padding: 1.5rem;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.alerts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .alerts-list li {
+        background: #fff8e1;
+        border-left: 5px solid var(--primary);
+        padding: .8rem 1rem;
+        margin-bottom: .8rem;
+        border-radius: 10px;
+        font-size: .95rem;
+        color: #2c3e50;
+        box-shadow: 0 2px 6px rgba(0,0,0,.08);
+        transition: all .2s;
+        display: flex;
+        align-items: center;
+    }
+
+        .alerts-list li:hover {
+            background: #ffe0b2;
+            transform: translateX(5px);
+            box-shadow: 0 4px 12px rgba(255,69,0,.2);
+        }
+
+        .alerts-list li::before {
+            content: "⚡";
+            margin-right: .8rem;
+            font-size: 1.1rem;
+        }
+
+/* Footer */
+.modal-footer {
+    background: #f8f9fa;
+    padding: .8rem 1.5rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border: none;
+    color: white;
+    padding: .6rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: .2s;
+}
+
+    .btn-primary:hover {
+        background: var(--primary-dark);
+        transform: translateY(-2px);
+    }
+
+/* Scrollbar */
+.modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background: rgba(255,69,0,.5);
+    border-radius: 4px;
+}

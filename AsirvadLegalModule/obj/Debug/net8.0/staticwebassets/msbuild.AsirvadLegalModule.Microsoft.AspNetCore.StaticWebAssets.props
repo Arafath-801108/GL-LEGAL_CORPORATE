@@ -18,6 +18,60 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\AsirvadLegalModule.yrlczw8oxd.bundle.scp.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdvocateEmpanelment\Empanelmentcharge.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/AdvocateEmpanelment/Empanelmentcharge.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kuy4vgf6tl</Fingerprint>
+      <Integrity>bLhQhOjijkRyE+Vv5LvEwcmu/uQezF0OXU10KM8Jnqc=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdvocateEmpanelment\Empanelmentcharge.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdvocateEmpanelment\EmpanelmentRequest.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/AdvocateEmpanelment/EmpanelmentRequest.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kguv8a7ipu</Fingerprint>
+      <Integrity>DPRWMRkqPeC6NjnKaD/7Aw9Qw0yOqYS8oSwE2LbfSFg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdvocateEmpanelment\EmpanelmentRequest.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdvocateEmpanelment\Letter.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/AdvocateEmpanelment/Letter.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>uefjdcbfiy</Fingerprint>
+      <Integrity>Ot5/fw4+Mr/C4VACvU4u/YSFWcsVVt9oTgaH26yDciw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\AdvocateEmpanelment\Letter.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ChequeCollection\Challan_Ah.css'))">
       <SourceType>Package</SourceType>
       <SourceId>AsirvadLegalModule</SourceId>
@@ -125,6 +179,42 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ChequeCollection\ChequeVerification.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ExplainationModule\ExplainationModule.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/ExplainationModule/ExplainationModule.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>dcdzd70kpe</Fingerprint>
+      <Integrity>sygR/+6eosjdAXx4svEEv2Cxu6uwdlIRoNMDEbxmBSM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ExplainationModule\ExplainationModule.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ExplainationModule\ExplStyle.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/ExplainationModule/ExplStyle.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ibg8idbyqj</Fingerprint>
+      <Integrity>ntpNucqey08K49PBPZrWoO0tzh2dJ23RbF0gxPgWWYM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\ExplainationModule\ExplStyle.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\font.css'))">
       <SourceType>Package</SourceType>
@@ -359,6 +449,60 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\IrregularityRecCall\IrregularityVerification.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\jquery-ui.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/jquery-ui.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>c9fl36jehp</Fingerprint>
+      <Integrity>gKuGLrbyzJxOinVQFbVAXuIYVp+F9qGHQk4//OiPay4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\jquery-ui.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LegalFIR\Legal_FIR_Report.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/LegalFIR/Legal_FIR_Report.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yl6mlzjhff</Fingerprint>
+      <Integrity>9tuJg/ZSjJgu/AJq0ad4n6borf8hISFlzVrQvtL0NQ0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LegalFIR\Legal_FIR_Report.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LegalFIR\PoliceComplaint.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/LegalFIR/PoliceComplaint.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>caacydtu1w</Fingerprint>
+      <Integrity>FMXro1S4Ibk515QHbsh0XM5zKxQg6NqAMdkNN8cuUX0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LegalFIR\PoliceComplaint.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\LegalNotice\demo.css'))">
       <SourceType>Package</SourceType>
@@ -648,6 +792,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login\dasboardmedia.css'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login\DashboardAlert.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/Login/DashboardAlert.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>oavf6ur6oe</Fingerprint>
+      <Integrity>MHpgXKtpbTpFoLXWF6lkwaXrVxB+MnEb4inQyzi6rVg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login\DashboardAlert.css'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login\logmedia.css'))">
       <SourceType>Package</SourceType>
       <SourceId>AsirvadLegalModule</SourceId>
@@ -660,11 +822,65 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>2iagbhz3ro</Fingerprint>
-      <Integrity>1qeQY6C0CDXkICaZg307dR+CcPenOoiL5X14xb1LcTM=</Integrity>
+      <Fingerprint>26ai4e0h2t</Fingerprint>
+      <Integrity>BkAfrLIQz3abv903ynk1QDukbGZrTedeDsj8jwLzYm0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\Login\logmedia.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\PropertyIdentity\AH_AMS_Dashboard.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/PropertyIdentity/AH_AMS_Dashboard.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>t4jlcxvy14</Fingerprint>
+      <Integrity>HXSaLxCp9jETfdN8aT306hV8Wqs5AkBuSh1a5HZopTQ=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\PropertyIdentity\AH_AMS_Dashboard.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\PropertyIdentity\BH_ABH_Dashboard.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/PropertyIdentity/BH_ABH_Dashboard.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g0mlv7ips6</Fingerprint>
+      <Integrity>UELk9S7M9sHAdvw0wwFpmuvFxIqRfSvsQEeRBgbNTE8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\PropertyIdentity\BH_ABH_Dashboard.css'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\PropertyIdentity\HO_Dashboard.css'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>css/PropertyIdentity/HO_Dashboard.css</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>q2c5obmu0v</Fingerprint>
+      <Integrity>YtAixZdBM3ZqDbwgCN0iYVe2v4pBLbMqfehqqa4bfc4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\PropertyIdentity\HO_Dashboard.css'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\SeizedPledges\LO9Updation.css'))">
       <SourceType>Package</SourceType>
@@ -678,8 +894,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>lpz39b1xnt</Fingerprint>
-      <Integrity>idxuNgtIqKlVsGHCbknlxx9VBfreVgeSgOxBr/ZgVZE=</Integrity>
+      <Fingerprint>fd7s5rbkwv</Fingerprint>
+      <Integrity>rcoNy8hNXITl1mAMb1vXVZDyhDsOmTDdwS4FD95XKv4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\SeizedPledges\LO9Updation.css'))</OriginalItemSpec>
@@ -696,8 +912,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>t3qw3l6cm3</Fingerprint>
-      <Integrity>1/yUY/scvxzLfwQETMYnbL0hM6fKBfZP3WD/5vTEK1w=</Integrity>
+      <Fingerprint>kofjw490ss</Fingerprint>
+      <Integrity>3Om/JofYfSKd5wVCSXyQMMrBEtAh4CYCbVFonSKokRw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\SeizedPledges\SeizedClassification.css'))</OriginalItemSpec>
@@ -714,8 +930,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hb67leqwm4</Fingerprint>
-      <Integrity>veiZ4DB+Dt9NBAWPSAjcgPG+MGGiQ/BDOJolzuJKKXY=</Integrity>
+      <Fingerprint>tq4ljtyacm</Fingerprint>
+      <Integrity>u83S+O+BOG2M3MtOUY4tIiLLbytsYqzjja4zK1y+NWo=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\SeizedPledges\SeizedSettlement.css'))</OriginalItemSpec>
@@ -732,8 +948,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>z4ely33hi8</Fingerprint>
-      <Integrity>LQc4cBKXKv3+05JM8gFYIEp9046VKsWH+cPf7ApUXyI=</Integrity>
+      <Fingerprint>j9kkx4kdkj</Fingerprint>
+      <Integrity>aYuCadaElXeJ288VRgiPSRoQQPpBDPc8y9Xwky8LXxA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\SeizedPledges\StatusReport.css'))</OriginalItemSpec>
@@ -750,8 +966,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>bmrtkkdhyq</Fingerprint>
-      <Integrity>E6U6iO8fYnBKv+jfy0uQsHJV/UeIwrOPBme8bBphUsA=</Integrity>
+      <Fingerprint>z9wt3uy6xh</Fingerprint>
+      <Integrity>pwN8GdLk6MJDDOOhUO/+zvQwVFesYEeLpdTElQBoimc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\SeizedPledges\StolenDocView.css'))</OriginalItemSpec>
@@ -809,6 +1025,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\ApplicationForm.pdf'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>files/ApplicationForm.pdf</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>x6v6xfmrc6</Fingerprint>
+      <Integrity>aWByEGqC5ngTJq3MOoriTkdqtabXXPdhGoCshRAOQio=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\ApplicationForm.pdf'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\fonts-awesome\css\all.css'))">
       <SourceType>Package</SourceType>
@@ -1674,6 +1908,96 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\user-logout.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\AdvocateApprove.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/AdvocateEmpanelment/AdvocateApprove.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tacncgu7fa</Fingerprint>
+      <Integrity>BQoNjBqNXUhaMm/8AkxBuwfGesnt0bcttEaduuagzME=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\AdvocateApprove.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\EmpanelmentChargesheet.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/AdvocateEmpanelment/EmpanelmentChargesheet.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vci8zy7noa</Fingerprint>
+      <Integrity>EfZdVrv/NGebFrQAUnr7m0FPZt9yaQP3A1LX1zl6PLg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\EmpanelmentChargesheet.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\EmpanelmentRequest.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/AdvocateEmpanelment/EmpanelmentRequest.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>f4lpr2qdkd</Fingerprint>
+      <Integrity>L1o0rkiLw6BSes8rjt7k2uaLOyHg+4HNf627F5pQ1GE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\EmpanelmentRequest.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\Empanelment_Report.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/AdvocateEmpanelment/Empanelment_Report.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5149ib2s9u</Fingerprint>
+      <Integrity>VwWZ3tHlGWGvIRYVkDYCiis7nO/UTDeOtqM/jPmPXfI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\Empanelment_Report.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\RequestProffessional.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/AdvocateEmpanelment/RequestProffessional.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>31mpsy4p1p</Fingerprint>
+      <Integrity>OeBAfpbg7ISlWwyn4zUuHqBFPuPpmt5iFX3WRzG9JkA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\AdvocateEmpanelment\RequestProffessional.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\alertUtils.js'))">
       <SourceType>Package</SourceType>
       <SourceId>AsirvadLegalModule</SourceId>
@@ -1686,8 +2010,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f03qm0x275</Fingerprint>
-      <Integrity>v/cOjYTKNvNmArmBKruiRp05iGPVc2Uqq//giq+IYNc=</Integrity>
+      <Fingerprint>4y4fuay8qs</Fingerprint>
+      <Integrity>zCzyx/oTOm0xNEWKpwHO12HanQLLxm6c0VqPh6sV+Rs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\alertUtils.js'))</OriginalItemSpec>
@@ -1704,8 +2028,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r7onl1hedf</Fingerprint>
-      <Integrity>qbx569DZrs/8P0VuwhBTHG4z+X5TDAiobNjJ1IU3Cdk=</Integrity>
+      <Fingerprint>hw3c9rq1mc</Fingerprint>
+      <Integrity>wXPqLgCeic4UHW8Bn9ogClWJGqstDWIiCoAOWtfoeqs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\Challan_Ah.js'))</OriginalItemSpec>
@@ -1722,8 +2046,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0siwz9eao2</Fingerprint>
-      <Integrity>8LHGgXxOz4LU8kytA5saveVcvSOLK5NI2U3HrpoHwwc=</Integrity>
+      <Fingerprint>meavfpq6fg</Fingerprint>
+      <Integrity>btksOFZAUygwTCFQKokjSwpdByRXfJnAsep5vlW7ksQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\Challan_bh.js'))</OriginalItemSpec>
@@ -1740,8 +2064,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>y0vrav27ou</Fingerprint>
-      <Integrity>0tuPsj7t4A5MgkA2mw6dssNVm2XRlzlWXkUGBpgXvjA=</Integrity>
+      <Fingerprint>thhssa8mcy</Fingerprint>
+      <Integrity>kUuS2oDcZakqSOIhIfnMYpCMw9/EldgmK5XmmsBJ+Mc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\ChequeReport.js'))</OriginalItemSpec>
@@ -1758,8 +2082,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fb250q37dm</Fingerprint>
-      <Integrity>+zIOKCaXycYmXFR47gV4UErScBKT9TgIEvhLN5IIsOc=</Integrity>
+      <Fingerprint>uzfwjigop4</Fingerprint>
+      <Integrity>BmxyugASxL6kC8iGENCq/5l0JvMO6Hw0gOi0j2p95XM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\ChequeStatusVerification.js'))</OriginalItemSpec>
@@ -1776,8 +2100,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6xsvawk1cs</Fingerprint>
-      <Integrity>1hHttS5PYzGHzgtSPCUWRRLkJe74XEAragh8lAmq97c=</Integrity>
+      <Fingerprint>9xuzxpexvp</Fingerprint>
+      <Integrity>TWx9AVF6xRJ4m8LRx0/6o037jlRm5jmiLuR74QQenyE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\ChequeUpdation.js'))</OriginalItemSpec>
@@ -1794,8 +2118,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>c21n3gx3yf</Fingerprint>
-      <Integrity>3KfuGjKzzU+RAsM98YKIixGgm4wSX3ISdz2ExENNPWI=</Integrity>
+      <Fingerprint>53fj0p7zsy</Fingerprint>
+      <Integrity>IQd42CwfahI2WF/OefAaQQh62QpCKc20UFNB02vXY6w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\ChequeVerification.js'))</OriginalItemSpec>
@@ -1812,11 +2136,65 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>c3y6s7kbo9</Fingerprint>
-      <Integrity>6PUcRnuPtGWsE3pQeJv/MGwso5q+JImxo2d7KCbys6M=</Integrity>
+      <Fingerprint>kwn02wxl3w</Fingerprint>
+      <Integrity>/HRYjKoUqP+q3PUyo3uNDxznu++l+hoxclk5BgAHusA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ChequeCollection\demo.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ExplainationUpdation\ExplainationUpdate.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/ExplainationUpdation/ExplainationUpdate.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>otljqa6vdq</Fingerprint>
+      <Integrity>PNd7eaahURd5uGh4uEhtNbrRUcYOL49wAiHB1fMj/xg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ExplainationUpdation\ExplainationUpdate.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ExplainationUpdation\ExplReport.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/ExplainationUpdation/ExplReport.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>j2kuou5wna</Fingerprint>
+      <Integrity>G2HeOZqu9Hg3HjDMrjUjHk0O0yInHgIyOYfL48zpflg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ExplainationUpdation\ExplReport.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ExplainationUpdation\Validation.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/ExplainationUpdation/Validation.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u067lyuutj</Fingerprint>
+      <Integrity>woiOePAg7qfHN05EayqgEkK7StVmqqfwyEJ/2nM8gcw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ExplainationUpdation\Validation.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\GoldSuiteFileJs\SuitFileClassify.js'))">
       <SourceType>Package</SourceType>
@@ -1830,8 +2208,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>osxeebbynv</Fingerprint>
-      <Integrity>mKyTLlEGAINIJcvGEdEnBStf/QXZdNku2xddI3lsM+o=</Integrity>
+      <Fingerprint>x619lspzxp</Fingerprint>
+      <Integrity>txx1CAg2BK3vrjSe8vrlzwM4Zj0+RBr67AZarW7IN5U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\GoldSuiteFileJs\SuitFileClassify.js'))</OriginalItemSpec>
@@ -1848,8 +2226,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>nmlov3m93z</Fingerprint>
-      <Integrity>f45GhSIF5gdqN/iOUgvMw7+bi55zDQiU60i3VjxAACI=</Integrity>
+      <Fingerprint>vb3p5w26ip</Fingerprint>
+      <Integrity>5d1/bQvH0KmYhJ9i5eisnMwV3DRaD87s4ERKp5Zen30=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\GoldSuiteFileJs\SuitFileLO.js'))</OriginalItemSpec>
@@ -1866,8 +2244,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mhsryka3sm</Fingerprint>
-      <Integrity>+lqltj9255prjbH7ynpjLo+UqIOYeNaZGyXT3Z54vj4=</Integrity>
+      <Fingerprint>8jchjmgnk8</Fingerprint>
+      <Integrity>tCRKTbWZfHxPIKi5hYKoX0AwQ0H9eiHlItYhhCPD1HQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\GoldSuiteFileJs\SuitfileReport.js'))</OriginalItemSpec>
@@ -1902,8 +2280,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>eizr5o1kmj</Fingerprint>
-      <Integrity>en7+IIex8H2Qije51qnzhCsGA145CrPLlOA9weCjgCQ=</Integrity>
+      <Fingerprint>vjg4ojezbl</Fingerprint>
+      <Integrity>yxCJTnEdUiwxIsQfxMnSujHXFheGkrS1ytQq9YeeraM=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\IrregularityRecCall\IrregularitycallRpt.js'))</OriginalItemSpec>
@@ -1920,8 +2298,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>if0lzpf2g0</Fingerprint>
-      <Integrity>kpNnyrkpg5yQyvdS9KwC4e3Oe/XOtyFeL92sjBIGo+U=</Integrity>
+      <Fingerprint>ihhoy6z9fr</Fingerprint>
+      <Integrity>hhhzH3ZEgVMAd7fSlNcnf3IM9elZqaFyDOzeJ7QLVSk=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\IrregularityRecCall\irregularitycall_details.js'))</OriginalItemSpec>
@@ -1938,8 +2316,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ozqhuyjby1</Fingerprint>
-      <Integrity>HMcHoD11oVvpJm7mlH4AEQ6k5uTD5OyeR7VEA6DJWvI=</Integrity>
+      <Fingerprint>xxf13zqvhy</Fingerprint>
+      <Integrity>9bW85wE4zuNdj006bXfUBnqN5+6NH6TXYQ8qehT9+i0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\IrregularityRecCall\IrregularityVerification.js'))</OriginalItemSpec>
@@ -1962,6 +2340,150 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\jquerymin.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\legalAudit.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/legalAudit.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>3gegc8uu4s</Fingerprint>
+      <Integrity>I7kXQjyQ9qVFAI82cV7BZ4PVi8UdeErXm6fQoZk7Xhg=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\legalAudit.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\Chargedetails.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/Chargedetails.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>1fga7xg1ns</Fingerprint>
+      <Integrity>Y8MPAWaaAij60gygaHRv4frSURwGq5Bp0Ht5jeZz8yE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\Chargedetails.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\FIRChargedtls.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/FIRChargedtls.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hi48l0eg9k</Fingerprint>
+      <Integrity>JyIwakzGjLfzaVoOVnuAX5vyTfCyCJ+8GPTzieqczlM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\FIRChargedtls.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\FIRRegister.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/FIRRegister.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>zj6qem8dus</Fingerprint>
+      <Integrity>r0nzkIfe7U9WZU/0PuehzLNXwTAtcC/gQtUmVxH7D20=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\FIRRegister.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\Legal_FIR_Report.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/Legal_FIR_Report.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mzrd2scnhb</Fingerprint>
+      <Integrity>8oAgzfEG4cItHQ/QN/RUe7vFPHFHG7Pcw9ghBX0qF9M=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\Legal_FIR_Report.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\PoliceComplaintEntry.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/PoliceComplaintEntry.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z7kf6szre4</Fingerprint>
+      <Integrity>4UVzx5GCJ7yJUACarGEPGiARksXLbuUaxI7m4LNdISo=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\PoliceComplaintEntry.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\SpComplaint.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/SpComplaint.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kjt6hsogrt</Fingerprint>
+      <Integrity>8ANxFRuu1G3Ju9no5qXWEn79Wcre9NRhP7KBhoazYsE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\SpComplaint.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\SpComplaintUpdation.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LegalFIR/SpComplaintUpdation.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>g9wccoookj</Fingerprint>
+      <Integrity>rGWEmDmk4crK9UuSnvrgsEX17DRDFP0r7t69ty9UkQ4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalFIR\SpComplaintUpdation.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\Ah_approve.js'))">
       <SourceType>Package</SourceType>
       <SourceId>AsirvadLegalModule</SourceId>
@@ -1974,8 +2496,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ncs5r6h0u6</Fingerprint>
-      <Integrity>Of5BwysOb+Dyq7bsTVn7P439WQP6ANgyqy1VDG3SSAg=</Integrity>
+      <Fingerprint>ot3g8lh0zw</Fingerprint>
+      <Integrity>pPyEFqhG+VOXN3L1CsX/OfJp3ThnfY6O/evUq36kKYc=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\Ah_approve.js'))</OriginalItemSpec>
@@ -2064,8 +2586,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6twqia0tn3</Fingerprint>
-      <Integrity>Zt3ESeiPaILM8STIuodDAeCOWNoh7BKcjS+na0hKxhY=</Integrity>
+      <Fingerprint>1n9fvny1ml</Fingerprint>
+      <Integrity>jXnSm09pqu4P6Hg6F4uB7g2AaW/QUp/SsVg78MznZzE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\LegalRequest.js'))</OriginalItemSpec>
@@ -2082,8 +2604,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qnpccwhd2a</Fingerprint>
-      <Integrity>5mjUabQwDsIHL76Kjfu7viDhfSrK/6uCxkukVVP1ujQ=</Integrity>
+      <Fingerprint>7rqq81cghk</Fingerprint>
+      <Integrity>DYprXFROZemlGVR/ihTdOBlUmNFEFB2ugZZyZozRYlw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\Legal_Report.js'))</OriginalItemSpec>
@@ -2100,8 +2622,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>qpjhgkrm8u</Fingerprint>
-      <Integrity>Do57HTmwpBYWLE9WzSW3mocuoSO913022wbc1St4YU8=</Integrity>
+      <Fingerprint>8zmft8tl90</Fingerprint>
+      <Integrity>FI+wf0G+85IUZJqsFYJ0Qz33BH6Bvo4NVw5wHOx1SZI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\Lh_approve.js'))</OriginalItemSpec>
@@ -2118,8 +2640,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>udud5tby1x</Fingerprint>
-      <Integrity>7juiK005h+XYGXCV54EkiBOvdXRxBuQ1bwAqrZELBLY=</Integrity>
+      <Fingerprint>o3acn4a8r1</Fingerprint>
+      <Integrity>JGU4s3iLI8g6kRzQoQQrsI5wlAGjneSntoxzVJlkmgg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\Lm_approve.js'))</OriginalItemSpec>
@@ -2136,8 +2658,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hcqb1jll2f</Fingerprint>
-      <Integrity>IbdBLOhn82oWOwcCO6i6dcoditZxXIGoqs8xutMyuRU=</Integrity>
+      <Fingerprint>bg0h3lp31o</Fingerprint>
+      <Integrity>dTwTk0iLf1+fYR0CuyPvODsFOjvXGKoFG7K4QuM+tmQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalNotice\Riim_approve.js'))</OriginalItemSpec>
@@ -2172,8 +2694,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a5cs5k46st</Fingerprint>
-      <Integrity>fuG6lqgQLU1hFzYHkE9vRIiZOg20wkNaTMeOC9t7uI0=</Integrity>
+      <Fingerprint>9cehwdotca</Fingerprint>
+      <Integrity>J2l6W/c7CQWGcRiugRmBVg8iPceZzHW4SPl/Ud3cXYY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalRecoveryCall\assignhomevisit.js'))</OriginalItemSpec>
@@ -2190,8 +2712,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q9nsegdg27</Fingerprint>
-      <Integrity>Mr3UXbBoyHO94fc4aKGaFe3eLAt4Ym71ib3b28nnNoc=</Integrity>
+      <Fingerprint>46k26xgz20</Fingerprint>
+      <Integrity>ZIMvXjMI5t++EHklO+SBc9jHJS2CqSYMzPJBwNksdBI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalRecoveryCall\HomeVerify.js'))</OriginalItemSpec>
@@ -2208,8 +2730,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>q3tczyv6j9</Fingerprint>
-      <Integrity>VlkTQsSPd90gTD/whFBTx1tU5CuqydKbWJI8jlK5dD0=</Integrity>
+      <Fingerprint>dw1ji9kufp</Fingerprint>
+      <Integrity>o5lJ9bdXGPq+yi3iLTQdwaqOizGgknaYI0IPZzO8BT8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalRecoveryCall\HomeVisit.js'))</OriginalItemSpec>
@@ -2226,8 +2748,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>asdmqzpdmi</Fingerprint>
-      <Integrity>SoVOS3MG6QI+9x9AoqgdkGsgKnpzO+j1hqn7qDmHdJk=</Integrity>
+      <Fingerprint>o4gbsb82la</Fingerprint>
+      <Integrity>aM5c40tKFX1siB7Ekhr6mK7pUH2tpQa8UqkMCgASPc4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalRecoveryCall\RecoveryCallDetail.js'))</OriginalItemSpec>
@@ -2244,8 +2766,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>65w645b66u</Fingerprint>
-      <Integrity>xi+W8w4MEOyojNZr/2Mgnnl9yEwnJG7H4A4oscsQXUE=</Integrity>
+      <Fingerprint>zn6tqs700f</Fingerprint>
+      <Integrity>AX+x8YYEUq/5cCKL11hejKNK3+NyGAR8vaECwGD6kuI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalRecoveryCall\RecoveryCallHO.js'))</OriginalItemSpec>
@@ -2262,8 +2784,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>92tq5qhn92</Fingerprint>
-      <Integrity>obIAL9BARvA6RW0gi5ApE8XvKUkU+y6kypyxXIr3kPw=</Integrity>
+      <Fingerprint>mk8424rzgv</Fingerprint>
+      <Integrity>ZkYGhYzA0qd8v12KF3UKOukHoocHIBYtbl6wANLTHyE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LegalRecoveryCall\RecoveryEmpReport.js'))</OriginalItemSpec>
@@ -2298,11 +2820,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>vv9759f87h</Fingerprint>
-      <Integrity>ywaE67lh5yNufziu2t8c6f2q7OW6bWwUxbFIuihYR+w=</Integrity>
+      <Fingerprint>l71tfy2xa1</Fingerprint>
+      <Integrity>n73+RitzxYbru/zTcHtec6XpfDxcDFVFoHkXbtdJAOI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Legal_Recovery\RecoveryStatus_Report.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoginJs\Dashboard.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/LoginJs/Dashboard.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>z4qs3cnb7r</Fingerprint>
+      <Integrity>Uzbbs5mXY5N7IfP/3Vt1n6EBpQs8rbfFbTSqiv6AdeU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoginJs\Dashboard.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoginJs\Login.js'))">
       <SourceType>Package</SourceType>
@@ -2316,8 +2856,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pz83r6uusf</Fingerprint>
-      <Integrity>u3xiZgEyIKvhYBs4qDhISrmp6KRfYy2C8h1x1NGzP9I=</Integrity>
+      <Fingerprint>qduztnch5o</Fingerprint>
+      <Integrity>coJ+eJSFxrbkgXHG0dkyV0alCufRVkr9RH05WTN3fU8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoginJs\Login.js'))</OriginalItemSpec>
@@ -2334,8 +2874,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>da18njxta1</Fingerprint>
-      <Integrity>haspnnlJPXcAYI66UrcRfYVSSVoD34KTjaqPRuPW5Wk=</Integrity>
+      <Fingerprint>ecth74g8u4</Fingerprint>
+      <Integrity>MlpUJ0jommK8Ocjize0r28d9KHXviw3NP5YfnSTzZuI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\LoginJs\Logout.js'))</OriginalItemSpec>
@@ -2376,6 +2916,60 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\popper.js'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PropertyIdentity\AH_AMS_Dashboard.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/PropertyIdentity/AH_AMS_Dashboard.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>9goa8lz6kf</Fingerprint>
+      <Integrity>tznnMWb2aW3I6wB3SfNibYM4id26LfjZCG7ftWgw2z8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PropertyIdentity\AH_AMS_Dashboard.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PropertyIdentity\BH_ABH_Dashboard.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/PropertyIdentity/BH_ABH_Dashboard.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>yq8736dxyj</Fingerprint>
+      <Integrity>9gy20PtJ5KC8j03vMuN/iv6eeNB18dIVD4DM0FKxEnE=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PropertyIdentity\BH_ABH_Dashboard.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PropertyIdentity\HO_Dashboard.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/PropertyIdentity/HO_Dashboard.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ycxunkce4x</Fingerprint>
+      <Integrity>Yos87if8XpdMc5zx7irWueHwSO4O7Sc7gFOpmoM2WSM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\PropertyIdentity\HO_Dashboard.js'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\LO9Updation.js'))">
       <SourceType>Package</SourceType>
       <SourceId>AsirvadLegalModule</SourceId>
@@ -2388,8 +2982,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a4xaoxywpn</Fingerprint>
-      <Integrity>1t0UDRXkLzmsFI1+70AMCwOhDH4aTJGSRwaAYtxA7+c=</Integrity>
+      <Fingerprint>sf2sr1haa0</Fingerprint>
+      <Integrity>WCqbNRzH4mghiqsE6E5Gba+uHmwuKMUigumI5oxDNfQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\LO9Updation.js'))</OriginalItemSpec>
@@ -2406,8 +3000,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>0sqkwh25ru</Fingerprint>
-      <Integrity>cNcPH0d+dyvlZHPiibr9M+9SggKkTbx8l7Rf5TnlgiY=</Integrity>
+      <Fingerprint>rtvtjyrxj6</Fingerprint>
+      <Integrity>oQ4iwYzX7ieM723nTOS7ERwlygO1gZSdL/SOb7wfut8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\SeizedClassification.js'))</OriginalItemSpec>
@@ -2424,11 +3018,47 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>8bdo4y47ni</Fingerprint>
-      <Integrity>ZKUQCnnXHAo5tnBCS3/Bg1m1hJix+FvemL0EbZXtCY8=</Integrity>
+      <Fingerprint>j522vo4lm1</Fingerprint>
+      <Integrity>mSmD6wP32Tui+PODT/ACzSIgqct6blbqMxQIQ1QWMVg=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\SeizedSettlement.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\Seized_RM_LM_Recmd.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/SeizedPledges/Seized_RM_LM_Recmd.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>ship8fc79k</Fingerprint>
+      <Integrity>4E2AjbTEez9OvX1T7ej2/w9HvR7W76IVgXmVDQA97LY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\Seized_RM_LM_Recmd.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\Seized_ZM_OP_Auction.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/SeizedPledges/Seized_ZM_OP_Auction.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>wmyqwmg3iv</Fingerprint>
+      <Integrity>KNZkASd8RGvpMIV5AhqGnDpCq3+4FB1QueB1mjnLCok=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\Seized_ZM_OP_Auction.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\StatusReport.js'))">
       <SourceType>Package</SourceType>
@@ -2442,8 +3072,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>os5euo38ro</Fingerprint>
-      <Integrity>KH0b63glWLynCMQ3cU6EMCprqrlWOhmf+FhD8NSxThs=</Integrity>
+      <Fingerprint>japq7kdl8t</Fingerprint>
+      <Integrity>i0k2VvUeFtpwOzsxIBO1v1ex5fi1lCPsaAHdVIuZb1A=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\StatusReport.js'))</OriginalItemSpec>
@@ -2460,8 +3090,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>14rr595axb</Fingerprint>
-      <Integrity>/4SF66wdHZevHheI2jq914nxvkhfxWmLXBA3SWb9Fsw=</Integrity>
+      <Fingerprint>313he87x08</Fingerprint>
+      <Integrity>aThI3QszSfDkXe6yA7yIe3YzFyYpQd5cajlZtxFDCJA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\SeizedPledges\StolenDocView.js'))</OriginalItemSpec>
@@ -2496,8 +3126,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>iqcqcc34m4</Fingerprint>
-      <Integrity>BtG9DBgZ283ezBHtAU8kDbDs7Tmh3csCrrFU0yQw4XU=</Integrity>
+      <Fingerprint>1xhnlyrs2k</Fingerprint>
+      <Integrity>i5iTMplmLc2WO9TChLkC7M80U4a1JZ/hRt4w411Hd6s=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\Account_take_over_check.js'))</OriginalItemSpec>
@@ -2514,11 +3144,65 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>608iaiixul</Fingerprint>
-      <Integrity>+tRbqUH4bI2pvMAtAxzsDDQgQX0M98iFUnL1VnSBkuQ=</Integrity>
+      <Fingerprint>ctms5ozj3w</Fingerprint>
+      <Integrity>gNfE99xcV35Fq2O3OMgDXUmSJsHOXds3IaNd0RQNe+U=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\CommonMethod.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\pdf.min.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/UtilitiesJs/pdf.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gu53rt1nbq</Fingerprint>
+      <Integrity>WJ+E6HUVW00+f2yUaXM7lKNl1sY+z5GPGM2LVcn++Bw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\pdf.min.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\sweetalert.min.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/UtilitiesJs/sweetalert.min.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>644oxse6sl</Fingerprint>
+      <Integrity>KsRuvuRtUVvobe66OFtOQfjP8WA2SzYsmm4VPfMnxms=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\sweetalert.min.js'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\sweetalert2@11.js'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AsirvadLegalModule</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AsirvadLegalModule</BasePath>
+      <RelativePath>js/UtilitiesJs/sweetalert2@11.js</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>mgnl2wkpdy</Fingerprint>
+      <Integrity>BqxtzHKHyd83O/RKc0gQAGDYb7Lui0v2uVDx6srAkZI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\UtilitiesJs\sweetalert2@11.js'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\Xlxs.js'))">
       <SourceType>Package</SourceType>

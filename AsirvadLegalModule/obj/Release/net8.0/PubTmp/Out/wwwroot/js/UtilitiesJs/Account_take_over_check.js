@@ -1,7 +1,7 @@
 ﻿$(document).ready(async function () {
 
    
-    _approve.checkuser();
+   /* _approve.checkuser();*/
 });
 var _approve = {
 
@@ -18,10 +18,10 @@ var _approve = {
             };
             var Res = await fetch("/Challan_bh_data", "POST", requestData);
             Res = decryptAES(Res);
-            console.log("Error checking user:");
+           /* console.log("Error checking user:");*/
            
         } catch (error) {
-            console.error("Error checking user:", error);
+           /* console.error("Error checking user:", error);*/
         }
 
     }

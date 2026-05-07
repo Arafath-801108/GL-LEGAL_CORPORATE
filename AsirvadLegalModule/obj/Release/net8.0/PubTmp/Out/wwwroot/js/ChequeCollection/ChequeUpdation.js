@@ -26,7 +26,7 @@ $(document).on('change', '#chdt1', function () {
 });
 
 $(document).on('click', '#RadioButton4', function () {
-    Radio4_onclick(); radioclear();
+    radioclear(); Radio4_onclick();
 });
 
 $(document).on('change', '#FileUpload2', function () {
@@ -64,7 +64,7 @@ window.Update = {
                 Emp_id: sessionStorage.getItem("EmployeeId"),
                 Token: sessionStorage.getItem("Token"),
                     Indata: encryptAES(document.getElementById('DrpIrr').value),
-                    Flag: encryptAES(0)
+                    Flag:0
             };
 
             var Res = await fetch("/IrrSelection", "POST", requestData);
@@ -211,9 +211,9 @@ window.Update = {
                     Flag: 2
                 };
                 var Res = await fetch("/IrrSelection", "POST", requestData);
-
-                const responseData = JSON.parse(Res);
                 Res = decryptAES(Res);
+                const responseData = JSON.parse(Res);
+                
                 if (responseData.status === "1") {
 
                     const parsedOutdata = JSON.parse(responseData.outdata);
@@ -435,7 +435,7 @@ window.Update = {
                             Token: sessionStorage.getItem("Token"),
                             Img: img,
                             Indata: encryptAES(empValue),
-                            Flag: encryptAES(2)
+                            Flag:2
                         };
 
                         var Res = await fetch("/PdfUploadcheque", "POST", requestData);
@@ -460,7 +460,7 @@ window.Update = {
                         Emp_id: sessionStorage.getItem("EmployeeId"),
                         Token: sessionStorage.getItem("Token"),
                         Indata: encryptAES(`${empValue} ~ ${irrName} ~ ${categoryValue} ~ ${empRadioValue} ~ ${empstatus} ~ ${empRemark} ~ ${empDate} ~ ${amount}`),
-                        Flag: encryptAES(23)
+                        Flag: 23
                     };
                     var Res = await fetch("/ChequeSubmit", "POST", requestData);
                     Res = decryptAES(Res);
@@ -483,7 +483,7 @@ window.Update = {
                         Emp_id: sessionStorage.getItem("EmployeeId"),
                         Token: sessionStorage.getItem("Token"),
                         Indata: encryptAES(`${cusId} ~ ${pledgeValue} ~ ${irrName} ~ ${categoryValue} ~ ${cusRadioValue} ~  ~ ${cusRemark} ~ ${cusDate}`),
-                        Flag: encryptAES(3)
+                        Flag:3
                     };
 
                     var Res = await fetch("/ChequeSubmit", "POST", requestData);
@@ -565,7 +565,7 @@ window.Update = {
                                 Token: sessionStorage.getItem("Token"),
                                 Img: img,
                                 Indata: encryptAES(pledgeValue),
-                                Flag: encryptAES(3)
+                                Flag: 3
                             };
 
                             var Res = await fetch("/PdfUploadcheque", "POST", requestData);
@@ -593,7 +593,7 @@ window.Update = {
                         Emp_id: sessionStorage.getItem("EmployeeId"),
                         Token: sessionStorage.getItem("Token"),
                         Indata: encryptAES(`${cusId} ~ ${pledgeValue} ~ ${irrName} ~ ${categoryValue} ~ ${cusRadioValue} ~ ${cusstatus} ~ ${cusRemark} ~ ${cusDate}`),
-                        Flag: encryptAES(3)
+                        Flag: 3
                     };
                     var Res = await fetch("/ChequeSubmit", "POST", requestData);
                     Res = decryptAES(Res);
@@ -777,8 +777,8 @@ function clearAllFields() {
     document.getElementById("div25").style.display = "none"; 
     document.getElementById("div26").style.display = "none"; 
 }
-function clearexceptirr() {
-    document.getElementById("DrpPledgeEmp").selectedIndex = 0;
+function cleardiv() {
+    
     document.getElementById("emp_name").value = "";
     document.getElementById("phone_no").value = "";
     document.getElementById("desg").value = "";
@@ -801,7 +801,7 @@ function clearexceptirr() {
 
 
     // Reset Customer Details section
-    document.getElementById("DrpPledgeCust").selectedIndex = 0;
+    
     document.getElementById("cust_id").value = "";
     document.getElementById("cust_name").value = "";
     document.getElementById("con_num").value = "";

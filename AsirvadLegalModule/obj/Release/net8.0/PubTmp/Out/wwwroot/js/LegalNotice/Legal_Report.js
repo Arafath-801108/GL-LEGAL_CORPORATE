@@ -3,6 +3,25 @@ $(document).ready(async function () {
   
     checkAccess("17");
 });
+$(document).on('change', '#toDate', function () {
+    _report.validateDate1(this)
+});
+
+$(document).on('change', '#FromDate', function () {
+    _report.validateDate(this);
+});
+
+$(document).on('click', '#search', function () {
+    _report.getdtl(this);
+});
+
+$(document).on('click', '#btnexcel', function () {
+    _report.downloadExcel(this);
+});
+$(document).on('click', '#btnpdf', function () {
+    _report.downloadPDF(this);
+});
+
 function formatDate(inputDate) {
     const months = [
         'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
@@ -51,10 +70,10 @@ var _report = {
 
 
 
-        const response = await fetch("/report", "POST", requestData);
+        var response = await fetch("/report", "POST", requestData);
       
-
-
+        
+        response = decryptAES(response);
         const data = JSON.parse(response); // Ensure JSON parsing
       
 

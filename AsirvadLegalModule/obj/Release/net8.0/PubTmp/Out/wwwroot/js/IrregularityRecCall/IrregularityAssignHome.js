@@ -3,6 +3,29 @@
     checkAccess("35");
     _assign.getotherBranchDeatils()
 });
+
+$(document).on('change', '#cmb_category1', function () {
+    _assign.getBranchDetails();
+});
+
+$(document).on('change', '#cmb_branch1', function () {
+    _assign.getCustomerDetails();
+});
+
+$(document).on('change', '#cmb_custid1', function () {
+    _assign.getallDetails();
+});
+
+$(document).on('click', '#btn_Confirm', function () {
+    _assign.btnsubmitclick();
+});
+
+$(document).on('click', '#btn_exit', function () {
+    redirectToDashboard();
+});
+
+
+
 var _assign = {
     
     async getBranchDetails() {
@@ -13,11 +36,11 @@ var _assign = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "4"
+            p_indata: encryptAES(input_value),
+            as_optflag: encryptAES("4")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_branch1');
@@ -46,11 +69,11 @@ var _assign = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "5"
+            p_indata: encryptAES(input_value),
+            as_optflag: encryptAES("5")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_custid1');
@@ -91,11 +114,11 @@ var _assign = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: input_value,
-            as_optflag: "6"
+            p_indata: encryptAES(input_value),
+                as_optflag: encryptAES("6")
         };
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
-
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
 
@@ -121,11 +144,12 @@ var _assign = {
             employeeId: sessionStorage.getItem("EmployeeId"),
             token: sessionStorage.getItem("Token"),
             branch: sessionStorage.getItem("BranchId"),
-            p_indata: "",
-            as_optflag: "7"
+            p_indata: encryptAES(""),
+            as_optflag: encryptAES("7")
         };
 
         var Res = await fetch("/getIrregularityCustomer", "POST", requestData);
+        Res = decryptAES(Res);
         const responseData = JSON.parse(Res);
         if (responseData.err_code === "1") {
             const selectElement = document.getElementById('cmb_nearbranch1');
@@ -183,11 +207,12 @@ var _assign = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: sessionStorage.getItem("BranchId"),
-                p_indata: inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2,
-                as_optflag: flag
+                p_indata: encryptAES(inputData + "|" + home_data + "|" + fileData1 + "|" + fileData2),
+                as_optflag: encryptAES(flag)
             };
             
             var Res = await fetch("/IrregularityConfirmDetails", "POST", requestData);
+            Res = decryptAES(Res);
             const responseData = JSON.parse(Res);
             debugger;
             if ((responseData).err_code == "1") {

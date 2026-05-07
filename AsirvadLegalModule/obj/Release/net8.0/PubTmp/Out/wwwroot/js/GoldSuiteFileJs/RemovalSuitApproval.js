@@ -32,8 +32,8 @@ var _Removal = {
                 employeeId: sessionStorage.getItem("EmployeeId"),
                 token: sessionStorage.getItem("Token"),
                 branch: encryptAES(""),
-                p_indata: encryptAES("FORAPPROVAL" + "~" + "" + "~" + 0 + "~" + "" + "~" + "" + "~" + "")
-                
+                p_indata: encryptAES("FORAPPROVAL" + "~" + "" + "~" + 0 + "~" + "" + "~" + "" + "~" + ""),
+                 as_optflag: encryptAES(""),
             };
 
             var Res = await fetch("/GetDetailsRemovals", "POST", requestData);
@@ -87,8 +87,8 @@ var _Removal = {
                     employeeId: sessionStorage.getItem("EmployeeId"),
                     token: sessionStorage.getItem("Token"),
                     branch: encryptAES(""),
-                    p_indata: encryptAES("FORAPPROVALDTL" + "~" + "" + "~" + 0 + "~" + document.getElementById('ddllegalid').value + "~" + "" + "~" + "")
-
+                    p_indata: encryptAES("FORAPPROVALDTL" + "~" + "" + "~" + 0 + "~" + document.getElementById('ddllegalid').value + "~" + "" + "~" + ""),
+                    as_optflag: encryptAES(""),
                 };
 
                 var Res = await fetch("/GetDetailsRemoval", "POST", requestData);

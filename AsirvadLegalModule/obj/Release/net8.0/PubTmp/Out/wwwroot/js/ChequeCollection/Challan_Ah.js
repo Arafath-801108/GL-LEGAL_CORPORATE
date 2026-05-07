@@ -27,7 +27,7 @@ function showSuccessAlert(title, text, href) {
     }).then((result) => {
         if (result.isConfirmed) {
             const isDevelopment = window.location.hostname === 'localhost';
-            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+            const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
             window.location.href = liveurl + href;
         }
     });
@@ -176,6 +176,7 @@ var Challan_Ah = {
                     "Flag": encryptAES("12")
                 };
                 var Res = await fetch("/Challan_bh_data", "POST", requestData);
+                Res = decryptAES(Res);
                 const responseData = JSON.parse(Res);
 
                 /*if (responseData.status === "1") {*/

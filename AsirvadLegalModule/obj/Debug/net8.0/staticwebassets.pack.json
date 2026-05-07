@@ -1,811 +1,963 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AsirvadLegalModule.bundle.scp.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\AsirvadLegalModule.bundle.scp.css",
       "PackagePath": "staticwebassets\\AsirvadLegalModule.yrlczw8oxd.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\Challan_Ah.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\AdvocateEmpanelment\\EmpanelmentRequest.css",
+      "PackagePath": "staticwebassets\\css\\AdvocateEmpanelment\\EmpanelmentRequest.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\AdvocateEmpanelment\\Empanelmentcharge.css",
+      "PackagePath": "staticwebassets\\css\\AdvocateEmpanelment\\Empanelmentcharge.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\AdvocateEmpanelment\\Letter.css",
+      "PackagePath": "staticwebassets\\css\\AdvocateEmpanelment\\Letter.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\Challan_Ah.css",
       "PackagePath": "staticwebassets\\css\\ChequeCollection\\Challan_Ah.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\Challan_bh.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\Challan_bh.css",
       "PackagePath": "staticwebassets\\css\\ChequeCollection\\Challan_bh.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeReport.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeReport.css",
       "PackagePath": "staticwebassets\\css\\ChequeCollection\\ChequeReport.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeStatusVerification.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeStatusVerification.css",
       "PackagePath": "staticwebassets\\css\\ChequeCollection\\ChequeStatusVerification.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeUpdation.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeUpdation.css",
       "PackagePath": "staticwebassets\\css\\ChequeCollection\\ChequeUpdation.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeVerification.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ChequeCollection\\ChequeVerification.css",
       "PackagePath": "staticwebassets\\css\\ChequeCollection\\ChequeVerification.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\RemovalSuitApproval.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ExplainationModule\\ExplStyle.css",
+      "PackagePath": "staticwebassets\\css\\ExplainationModule\\ExplStyle.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\ExplainationModule\\ExplainationModule.css",
+      "PackagePath": "staticwebassets\\css\\ExplainationModule\\ExplainationModule.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\RemovalSuitApproval.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\RemovalSuitApproval.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\RemovalSuitRequest.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\RemovalSuitRequest.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\RemovalSuitRequest.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileApprove.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileApprove.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\SuitFileApprove.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileClassify.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileClassify.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\SuitFileClassify.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileLCHead.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileLCHead.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\SuitFileLCHead.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileLO.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\SuitFileLO.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\SuitFileLO.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\Suitfile_report.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\GoldSuiteFile\\Suitfile_report.css",
       "PackagePath": "staticwebassets\\css\\GoldSuiteFile\\Suitfile_report.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityAssignHome.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityAssignHome.css",
       "PackagePath": "staticwebassets\\css\\IrregularityRecCall\\IrregularityAssignHome.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityCall_Details.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityCall_Details.css",
       "PackagePath": "staticwebassets\\css\\IrregularityRecCall\\IrregularityCall_Details.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityVerification.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityVerification.css",
       "PackagePath": "staticwebassets\\css\\IrregularityRecCall\\IrregularityVerification.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityrecoveryRpt.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\IrregularityRecCall\\IrregularityrecoveryRpt.css",
       "PackagePath": "staticwebassets\\css\\IrregularityRecCall\\IrregularityrecoveryRpt.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\Index.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalFIR\\Legal_FIR_Report.css",
+      "PackagePath": "staticwebassets\\css\\LegalFIR\\Legal_FIR_Report.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalFIR\\PoliceComplaint.css",
+      "PackagePath": "staticwebassets\\css\\LegalFIR\\PoliceComplaint.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\Index.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\Index.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalAh_recommend.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalAh_recommend.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\LegalAh_recommend.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalLh_recommend.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalLh_recommend.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\LegalLh_recommend.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalLm_recommend.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalLm_recommend.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\LegalLm_recommend.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalRiimh_recommend.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\LegalRiimh_recommend.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\LegalRiimh_recommend.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\Legal_Report.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\Legal_Report.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\Legal_Report.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\demo.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalNotice\\demo.css",
       "PackagePath": "staticwebassets\\css\\LegalNotice\\demo.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\AssignHomeVisit.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\AssignHomeVisit.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\AssignHomeVisit.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\HomeVerify.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\HomeVerify.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\HomeVerify.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\HomeVisit.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\HomeVisit.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\HomeVisit.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\RecoveryCallDetail.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\RecoveryCallDetail.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\RecoveryCallDetail.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\RecoveryCallHO.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\RecoveryCallHO.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\RecoveryCallHO.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\RecoveryEmpReport.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\RecoveryEmpReport.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\RecoveryEmpReport.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\StaffBalanceRecovery.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\LegalRecoveryCall\\StaffBalanceRecovery.css",
       "PackagePath": "staticwebassets\\css\\LegalRecoveryCall\\StaffBalanceRecovery.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\Legal_Recovery\\RecoveryStatus_Report.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\Legal_Recovery\\RecoveryStatus_Report.css",
       "PackagePath": "staticwebassets\\css\\Legal_Recovery\\RecoveryStatus_Report.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\Login\\dasboardmedia.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\Login\\DashboardAlert.css",
+      "PackagePath": "staticwebassets\\css\\Login\\DashboardAlert.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\Login\\dasboardmedia.css",
       "PackagePath": "staticwebassets\\css\\Login\\dasboardmedia.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\Login\\logmedia.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\Login\\logmedia.css",
       "PackagePath": "staticwebassets\\css\\Login\\logmedia.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\LO9Updation.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\PropertyIdentity\\AH_AMS_Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\PropertyIdentity\\AH_AMS_Dashboard.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\PropertyIdentity\\BH_ABH_Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\PropertyIdentity\\BH_ABH_Dashboard.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\PropertyIdentity\\HO_Dashboard.css",
+      "PackagePath": "staticwebassets\\css\\PropertyIdentity\\HO_Dashboard.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\LO9Updation.css",
       "PackagePath": "staticwebassets\\css\\SeizedPledges\\LO9Updation.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\SeizedClassification.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\SeizedClassification.css",
       "PackagePath": "staticwebassets\\css\\SeizedPledges\\SeizedClassification.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\SeizedSettlement.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\SeizedSettlement.css",
       "PackagePath": "staticwebassets\\css\\SeizedPledges\\SeizedSettlement.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\StatusReport.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\StatusReport.css",
       "PackagePath": "staticwebassets\\css\\SeizedPledges\\StatusReport.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\StolenDocView.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\SeizedPledges\\StolenDocView.css",
       "PackagePath": "staticwebassets\\css\\SeizedPledges\\StolenDocView.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\font.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\font.css",
       "PackagePath": "staticwebassets\\css\\font.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\font1.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\font1.css",
       "PackagePath": "staticwebassets\\css\\font1.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\site.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\css\\sweetalert2.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\css\\sweetalert2.min.css",
       "PackagePath": "staticwebassets\\css\\sweetalert2.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\favicon.ico",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\all.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\files\\ApplicationForm.pdf",
+      "PackagePath": "staticwebassets\\files\\ApplicationForm.pdf"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\all.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\all.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\all.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\all.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\all.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\brands.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\brands.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\brands.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\brands.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\brands.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\brands.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\fontawesome.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\fontawesome.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\fontawesome.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\fontawesome.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\fontawesome.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\fontawesome.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\regular.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\regular.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\regular.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\regular.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\regular.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\regular.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\solid.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\solid.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\solid.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\solid.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\solid.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\solid.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\svg-with-js.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\svg-with-js.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\svg-with-js.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\svg-with-js.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\svg-with-js.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\svg-with-js.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-font-face.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-font-face.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\v4-font-face.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-font-face.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-font-face.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\v4-font-face.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-shims.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-shims.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\v4-shims.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-shims.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v4-shims.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\v4-shims.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v5-font-face.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v5-font-face.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\v5-font-face.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v5-font-face.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\css\\v5-font-face.min.css",
       "PackagePath": "staticwebassets\\fonts-awesome\\css\\v5-font-face.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\all.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\all.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\all.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\all.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\all.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\all.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\brands.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\brands.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\brands.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\brands.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\brands.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\brands.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\conflict-detection.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\conflict-detection.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\conflict-detection.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\conflict-detection.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\conflict-detection.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\conflict-detection.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\fontawesome.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\fontawesome.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\fontawesome.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\fontawesome.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\fontawesome.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\fontawesome.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\regular.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\regular.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\regular.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\regular.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\regular.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\regular.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\solid.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\solid.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\solid.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\solid.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\solid.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\solid.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\v4-shims.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\v4-shims.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\v4-shims.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\v4-shims.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\js\\v4-shims.min.js",
       "PackagePath": "staticwebassets\\fonts-awesome\\js\\v4-shims.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\sprites\\brands.svg",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\sprites\\brands.svg",
       "PackagePath": "staticwebassets\\fonts-awesome\\sprites\\brands.svg"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\sprites\\regular.svg",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\sprites\\regular.svg",
       "PackagePath": "staticwebassets\\fonts-awesome\\sprites\\regular.svg"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\sprites\\solid.svg",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\sprites\\solid.svg",
       "PackagePath": "staticwebassets\\fonts-awesome\\sprites\\solid.svg"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-brands-400.ttf",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-brands-400.ttf",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-brands-400.ttf"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-brands-400.woff2",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-brands-400.woff2",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-brands-400.woff2"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-regular-400.ttf",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-regular-400.ttf",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-regular-400.ttf"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-regular-400.woff2",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-regular-400.woff2",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-regular-400.woff2"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-solid-900.ttf",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-solid-900.ttf",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-solid-900.ttf"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-solid-900.woff2",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-solid-900.woff2",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-solid-900.woff2"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-v4compatibility.ttf",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-v4compatibility.ttf",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-v4compatibility.ttf"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-v4compatibility.woff2",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\fonts-awesome\\webfonts\\fa-v4compatibility.woff2",
       "PackagePath": "staticwebassets\\fonts-awesome\\webfonts\\fa-v4compatibility.woff2"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\images\\legal.jpg",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\images\\legal.jpg",
       "PackagePath": "staticwebassets\\images\\legal.jpg"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\images\\loginlogo.png",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\images\\loginlogo.png",
       "PackagePath": "staticwebassets\\images\\loginlogo.png"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\images\\logo1.png",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\images\\logo1.png",
       "PackagePath": "staticwebassets\\images\\logo1.png"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\images\\refresh.png",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\images\\refresh.png",
       "PackagePath": "staticwebassets\\images\\refresh.png"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\images\\user-logout.png",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\images\\user-logout.png",
       "PackagePath": "staticwebassets\\images\\user-logout.png"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\Challan_Ah.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\AdvocateEmpanelment\\AdvocateApprove.js",
+      "PackagePath": "staticwebassets\\js\\AdvocateEmpanelment\\AdvocateApprove.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\AdvocateEmpanelment\\EmpanelmentChargesheet.js",
+      "PackagePath": "staticwebassets\\js\\AdvocateEmpanelment\\EmpanelmentChargesheet.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\AdvocateEmpanelment\\EmpanelmentRequest.js",
+      "PackagePath": "staticwebassets\\js\\AdvocateEmpanelment\\EmpanelmentRequest.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\AdvocateEmpanelment\\Empanelment_Report.js",
+      "PackagePath": "staticwebassets\\js\\AdvocateEmpanelment\\Empanelment_Report.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\AdvocateEmpanelment\\RequestProffessional.js",
+      "PackagePath": "staticwebassets\\js\\AdvocateEmpanelment\\RequestProffessional.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\Challan_Ah.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\Challan_Ah.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\Challan_bh.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\Challan_bh.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\Challan_bh.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeReport.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeReport.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\ChequeReport.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeStatusVerification.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeStatusVerification.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\ChequeStatusVerification.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeUpdation.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeUpdation.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\ChequeUpdation.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeVerification.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\ChequeVerification.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\ChequeVerification.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\demo.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ChequeCollection\\demo.js",
       "PackagePath": "staticwebassets\\js\\ChequeCollection\\demo.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\GoldSuiteFileJs\\SuitFileClassify.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ExplainationUpdation\\ExplReport.js",
+      "PackagePath": "staticwebassets\\js\\ExplainationUpdation\\ExplReport.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ExplainationUpdation\\ExplainationUpdate.js",
+      "PackagePath": "staticwebassets\\js\\ExplainationUpdation\\ExplainationUpdate.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\ExplainationUpdation\\Validation.js",
+      "PackagePath": "staticwebassets\\js\\ExplainationUpdation\\Validation.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\GoldSuiteFileJs\\SuitFileClassify.js",
       "PackagePath": "staticwebassets\\js\\GoldSuiteFileJs\\SuitFileClassify.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\GoldSuiteFileJs\\SuitFileLO.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\GoldSuiteFileJs\\SuitFileLO.js",
       "PackagePath": "staticwebassets\\js\\GoldSuiteFileJs\\SuitFileLO.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\GoldSuiteFileJs\\SuitfileReport.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\GoldSuiteFileJs\\SuitfileReport.js",
       "PackagePath": "staticwebassets\\js\\GoldSuiteFileJs\\SuitfileReport.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\IrregularityAssignHome.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\IrregularityAssignHome.js",
       "PackagePath": "staticwebassets\\js\\IrregularityRecCall\\IrregularityAssignHome.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\IrregularityVerification.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\IrregularityVerification.js",
       "PackagePath": "staticwebassets\\js\\IrregularityRecCall\\IrregularityVerification.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\IrregularitycallRpt.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\IrregularitycallRpt.js",
       "PackagePath": "staticwebassets\\js\\IrregularityRecCall\\IrregularitycallRpt.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\irregularitycall_details.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\IrregularityRecCall\\irregularitycall_details.js",
       "PackagePath": "staticwebassets\\js\\IrregularityRecCall\\irregularitycall_details.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Ah_approve.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\Chargedetails.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\Chargedetails.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\FIRChargedtls.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\FIRChargedtls.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\FIRRegister.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\FIRRegister.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\Legal_FIR_Report.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\Legal_FIR_Report.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\PoliceComplaintEntry.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\PoliceComplaintEntry.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\SpComplaint.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\SpComplaint.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalFIR\\SpComplaintUpdation.js",
+      "PackagePath": "staticwebassets\\js\\LegalFIR\\SpComplaintUpdation.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Ah_approve.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\Ah_approve.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\LegalRequest.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\LegalRequest.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\LegalRequest.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Legal_Report.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Legal_Report.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\Legal_Report.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Lh_approve.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Lh_approve.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\Lh_approve.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Lm_approve.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Lm_approve.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\Lm_approve.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Riim_approve.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\Riim_approve.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\Riim_approve.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jquery-3.6.0.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jquery-3.6.0.min.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\jquery-3.6.0.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jquery.dataTables.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jquery.dataTables.min.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\jquery.dataTables.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jspdf.plugin.autotable.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jspdf.plugin.autotable.min.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\jspdf.plugin.autotable.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jspdf.umd.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\jspdf.umd.min.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\jspdf.umd.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\xlsx.full.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalNotice\\xlsx.full.min.js",
       "PackagePath": "staticwebassets\\js\\LegalNotice\\xlsx.full.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\HomeVerify.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\HomeVerify.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\HomeVerify.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\HomeVisit.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\HomeVisit.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\HomeVisit.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\RecoveryCallDetail.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\RecoveryCallDetail.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\RecoveryCallDetail.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\RecoveryCallHO.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\RecoveryCallHO.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\RecoveryCallHO.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\RecoveryEmpReport.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\RecoveryEmpReport.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\RecoveryEmpReport.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\assignhomevisit.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\assignhomevisit.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\assignhomevisit.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\staffbalancerecovery.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LegalRecoveryCall\\staffbalancerecovery.js",
       "PackagePath": "staticwebassets\\js\\LegalRecoveryCall\\staffbalancerecovery.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\Legal_Recovery\\RecoveryStatus_Report.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\Legal_Recovery\\RecoveryStatus_Report.js",
       "PackagePath": "staticwebassets\\js\\Legal_Recovery\\RecoveryStatus_Report.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LoginJs\\Login.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LoginJs\\Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\LoginJs\\Dashboard.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LoginJs\\Login.js",
       "PackagePath": "staticwebassets\\js\\LoginJs\\Login.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\LoginJs\\Logout.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\LoginJs\\Logout.js",
       "PackagePath": "staticwebassets\\js\\LoginJs\\Logout.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\LO9Updation.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\PropertyIdentity\\AH_AMS_Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\PropertyIdentity\\AH_AMS_Dashboard.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\PropertyIdentity\\BH_ABH_Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\PropertyIdentity\\BH_ABH_Dashboard.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\PropertyIdentity\\HO_Dashboard.js",
+      "PackagePath": "staticwebassets\\js\\PropertyIdentity\\HO_Dashboard.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\LO9Updation.js",
       "PackagePath": "staticwebassets\\js\\SeizedPledges\\LO9Updation.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\SeizedClassification.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\SeizedClassification.js",
       "PackagePath": "staticwebassets\\js\\SeizedPledges\\SeizedClassification.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\SeizedSettlement.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\SeizedSettlement.js",
       "PackagePath": "staticwebassets\\js\\SeizedPledges\\SeizedSettlement.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\StatusReport.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\Seized_RM_LM_Recmd.js",
+      "PackagePath": "staticwebassets\\js\\SeizedPledges\\Seized_RM_LM_Recmd.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\Seized_ZM_OP_Auction.js",
+      "PackagePath": "staticwebassets\\js\\SeizedPledges\\Seized_ZM_OP_Auction.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\StatusReport.js",
       "PackagePath": "staticwebassets\\js\\SeizedPledges\\StatusReport.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\StolenDocView.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\SeizedPledges\\StolenDocView.js",
       "PackagePath": "staticwebassets\\js\\SeizedPledges\\StolenDocView.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\Account_take_over_check.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\Account_take_over_check.js",
       "PackagePath": "staticwebassets\\js\\UtilitiesJs\\Account_take_over_check.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\CommonMethod.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\CommonMethod.js",
       "PackagePath": "staticwebassets\\js\\UtilitiesJs\\CommonMethod.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\Xlxs.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\pdf.min.js",
+      "PackagePath": "staticwebassets\\js\\UtilitiesJs\\pdf.min.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\sweetalert.min.js",
+      "PackagePath": "staticwebassets\\js\\UtilitiesJs\\sweetalert.min.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\UtilitiesJs\\sweetalert2@11.js",
+      "PackagePath": "staticwebassets\\js\\UtilitiesJs\\sweetalert2@11.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\Xlxs.js",
       "PackagePath": "staticwebassets\\js\\Xlxs.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\alertUtils.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\alertUtils.js",
       "PackagePath": "staticwebassets\\js\\alertUtils.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\jquerymin.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\jquerymin.js",
       "PackagePath": "staticwebassets\\js\\jquerymin.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\pdf 2.10.377.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\legalAudit.js",
+      "PackagePath": "staticwebassets\\js\\legalAudit.js"
+    },
+    {
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\pdf 2.10.377.js",
       "PackagePath": "staticwebassets\\js\\pdf 2.10.377.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\popper.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\popper.js",
       "PackagePath": "staticwebassets\\js\\popper.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\js\\site.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\Aes\\4.2.0-crypto-js.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\Aes\\4.2.0-crypto-js.min.js",
       "PackagePath": "staticwebassets\\lib\\Aes\\4.2.0-crypto-js.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\Aes\\Aes.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\Aes\\Aes.js",
       "PackagePath": "staticwebassets\\lib\\Aes\\Aes.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\sweet-alert\\sweet-alert2.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\sweet-alert\\sweet-alert2.js",
       "PackagePath": "staticwebassets\\lib\\sweet-alert\\sweet-alert2.js"
     },
     {
-      "Id": "C:\\Users\\101264\\Desktop\\legal_vapt\\legal_vapt\\legal_corporate\\AsirvadLegalModule\\wwwroot\\lib\\sweet-alert\\sweetalert2v11_22_2.js",
+      "Id": "E:\\Legal Module\\GL-LEGAL_CORPORATE\\AsirvadLegalModule\\wwwroot\\lib\\sweet-alert\\sweetalert2v11_22_2.js",
       "PackagePath": "staticwebassets\\lib\\sweet-alert\\sweetalert2v11_22_2.js"
     },
     {

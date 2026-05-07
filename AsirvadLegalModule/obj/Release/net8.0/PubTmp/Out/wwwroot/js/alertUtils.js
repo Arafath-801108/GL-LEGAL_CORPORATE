@@ -128,7 +128,7 @@
         }).then((result) => {
             if (result.isConfirmed) {
                 const isDevelopment = window.location.hostname === 'localhost';
-                const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate_Vapt';
+                const liveurl = isDevelopment ? '' : '/AsirvadGoldloan/LegalCorporate';
                 window.location.href = liveurl + '/Login/Dashboard'; // Refresh the page when OK is clicked
             }
         });

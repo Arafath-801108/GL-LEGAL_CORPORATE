@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.AdvocateEmpanelmentController",
+    "Method": "Emapnelment",
+    "RelativePath": "api/AdvocateEmpanelment/AdvEmapnelment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.AdvocateEmpanelment.Request.EmpanelmentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AsirvadLegalModule.DTO.AdvocateEmpanelment.Response.EmpanelmentResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AsirvadLegalModule.API.Controllers.AuthController",
     "Method": "TokenCheck",
     "RelativePath": "api/Auth/TokenCheck",
@@ -192,6 +218,136 @@
       {
         "Name": "request",
         "Type": "AsirvadLegalModule.DTO.ChequeCollection.Request.ChequeDocumentRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.ExplainationAPIController",
+    "Method": "GetBranchesAsyncReq",
+    "RelativePath": "api/ExplainationAPI/GetBranchesAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.ExplainationModule.Request.BranchloadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.ExplainationAPIController",
+    "Method": "GetIrrCodesAsyncReq",
+    "RelativePath": "api/ExplainationAPI/GetIrrCodesAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.ExplainationModule.Request.BranchloadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.ExplainationAPIController",
+    "Method": "GetIrrCustomerDetailsAsyncReq",
+    "RelativePath": "api/ExplainationAPI/GetIrrCustomerDetailsAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.ExplainationModule.Request.IrrCodeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.ExplainationAPIController",
+    "Method": "GetReport",
+    "RelativePath": "api/ExplainationAPI/getReport",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.ExplainationModule.Request.ReportReq",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.ExplainationAPIController",
+    "Method": "UpdateModuleAsync",
+    "RelativePath": "api/ExplainationAPI/UpdateModuleAsync",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.ExplainationModule.Request.ExplainationUpdateRequest",
         "IsRequired": true
       }
     ],
@@ -696,6 +852,162 @@
     ]
   },
   {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalAuditController",
+    "Method": "Preflight",
+    "RelativePath": "api/LegalAudit/Proc_new_RIIM_Legal_Details",
+    "HttpMethod": "OPTIONS",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalAuditController",
+    "Method": "Proc_new_RIIM_Legal_Details",
+    "RelativePath": "api/LegalAudit/Proc_new_RIIM_Legal_Details",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.LegalAudit.LegalAuditRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalFirPoliceController",
+    "Method": "FIRCHARGES",
+    "RelativePath": "api/LegalFirPolice/FIRCHARGES",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.LegalFIR.Request.PoliceFirEntryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalFirPoliceController",
+    "Method": "FIR_Register",
+    "RelativePath": "api/LegalFirPolice/FIRRegister",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.LegalFIR.Request.PoliceFirEntryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalFirPoliceController",
+    "Method": "police_updation",
+    "RelativePath": "api/LegalFirPolice/LegalFIRComplaints",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.LegalFIR.Request.PoliceFirEntryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalFirPoliceController",
+    "Method": "SPCOMPLAINT",
+    "RelativePath": "api/LegalFirPolice/SPCOMPLAINT",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.LegalFIR.Request.PoliceFirEntryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LegalFirPoliceController",
+    "Method": "SPUpdationFetch",
+    "RelativePath": "api/LegalFirPolice/SPUpdationFetch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.LegalFIR.Request.PoliceFirEntryRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "AsirvadLegalModule.API.Controllers.LegalNoticeController",
     "Method": "Dropdown",
     "RelativePath": "api/LegalNotice/Dropdown",
@@ -1018,6 +1330,58 @@
       {
         "Name": "request",
         "Type": "AsirvadLegalModule.DTO.Login.Request.LogoutRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.LoginController",
+    "Method": "proc_property_identification",
+    "RelativePath": "api/Login/proc_legal_workalert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.Login.Request.AccesscheckRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AsirvadLegalModule.API.Controllers.PropertyIdentityController",
+    "Method": "proc_property_identification",
+    "RelativePath": "api/PropertyIdentity/proc_property_identification",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "AsirvadLegalModule.DTO.PropertyIdentity.Request.PropertyIdentityRequest",
         "IsRequired": true
       }
     ],
